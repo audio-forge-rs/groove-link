@@ -1,0 +1,9 @@
+X:1
+T:Pop Pad
+M:4/4
+L:1/1
+Q:1/4=100
+K:G
+%%MIDI program 89
+|: [G,Bd]4 | [G,Bd]4 | [C,EG]4 | [C,EG]4 |
+[D,FA]4 | [D,FA]4 | [G,Bd]4 | [G,Bd]4 :|

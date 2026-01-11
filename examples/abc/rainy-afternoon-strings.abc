@@ -1,0 +1,9 @@
+X:1
+T:Rainy Afternoon Strings
+M:4/4
+L:1/4
+Q:1/4=75
+K:Am
+%%MIDI program 48
+|: A,4 | G,4 | F,4 | E,4 |
+A,4 | D4 | F,2 E,2 | A,4 :|

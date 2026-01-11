@@ -1,0 +1,9 @@
+X:1
+T:Lofi Keys
+M:4/4
+L:1/8
+Q:1/4=85
+K:Dm
+%%MIDI program 4
+|: z2 [DFA]4 z2 | z2 [CEG]4 z2 | z2 [B,DF]4 z2 | z2 [A,CE]4 z2 |
+z2 [DFA]4 z2 | z2 [CEG]4 z2 | z2 [B,DF]4 z2 | z2 [A,CE]2 z4 :|

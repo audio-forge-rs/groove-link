@@ -1,0 +1,9 @@
+X:1
+T:Vast Texture
+M:4/4
+L:1/1
+Q:1/4=50
+K:D
+%%MIDI program 91
+|: z4 | [FA]4 | z4 | [EA]4 |
+z4 | [FA]4 | z4 | z4 :|

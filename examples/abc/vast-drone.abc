@@ -1,0 +1,9 @@
+X:1
+T:Vast Drone
+M:4/4
+L:1/1
+Q:1/4=50
+K:D
+%%MIDI program 89
+|: [D,A,]4 | [D,A,]4 | [D,A,]4 | [D,A,]4 |
+[D,A,]4 | [D,A,]4 | [D,A,]4 | [D,A,]4 :|

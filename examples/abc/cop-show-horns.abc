@@ -1,0 +1,9 @@
+X:1
+T:Cop Show Horns
+M:4/4
+L:1/8
+Q:1/4=105
+K:Em
+%%MIDI program 61
+|: z8 | z6 [EGB]2 | z8 | z4 [B,DF]2 z2 |
+z8 | z6 [EGB]2 | z8 | [B,DF]4 z4 :|

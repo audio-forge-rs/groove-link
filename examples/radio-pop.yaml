@@ -1,0 +1,64 @@
+song:
+  title: Radio Pop
+  tempo: 100
+  key: G
+  time: 4/4
+
+tracks:
+  # Rhythm section
+  drums:
+    instrument: v0 E-drums Kit 01
+    part: pop-drums.abc
+
+  bass:
+    instrument: PlanetSynth - Synth Pop Bass
+    part: pop-bass.abc
+
+  # Harmonic foundation
+  keys:
+    instrument: Acoustic Piano (Nektar)
+    fx:
+      - Stereo Eigths Delay
+    part: pop-keys.abc
+
+  # Lead and melody
+  lead:
+    instrument: Lead 2
+    fx:
+      - Slapback Delay
+    part: pop-lead.abc
+
+  # Atmosphere
+  pad:
+    instrument: Warmifier Pad
+    part: pop-pad.abc
+
+  # Movement
+  pluck:
+    instrument: FM Pluck 2
+    part: pop-pluck.abc
+
+  # Shared FX bus - reverb
+  reverb_bus:
+    receives:
+      - keys: post
+      - lead: post
+      - pad: post
+      - pluck: post
+    fx:
+      - Room In Charlotenburg
+
+  # Shared FX bus - delay
+  delay_bus:
+    receives:
+      - lead: post
+      - pluck: post
+    fx:
+      - Long Clean Fourths Delay
+
+  # Master chain
+  master:
+    fx:
+      - Solid State Glue
+      - query: Peak Limiter
+        hint: device

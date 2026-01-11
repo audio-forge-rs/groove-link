@@ -1,0 +1,25 @@
+song:
+  title: Windfall
+  tempo: 85
+  key: G
+  time: 3/4
+
+tracks:
+  guitar:
+    instrument: Picked Acoustic
+    fx:
+      - Tape-Machine
+      - Dark Spring
+    part: windfall-guitar.abc
+
+  steel:
+    instrument:
+      query: Pedal Steel
+      hint: kontakt
+    fx:
+      - Room Two
+    part: windfall-steel.abc
+
+  bass:
+    instrument: Acoustic Bass Long
+    part: windfall-bass.abc

@@ -1,0 +1,9 @@
+X:1
+T:Pop Keys
+M:4/4
+L:1/8
+Q:1/4=100
+K:G
+%%MIDI program 0
+|: z2 [GBd]4 z2 | z2 [GBd]2 z4 | z2 [CEG]4 z2 | z2 [CEG]2 z4 |
+z2 [DF^A]4 z2 | z2 [DFA]2 z4 | z2 [GBd]4 z2 | z2 [GBd]2 [DFA]4 :|

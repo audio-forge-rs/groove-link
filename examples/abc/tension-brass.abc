@@ -1,0 +1,9 @@
+X:1
+T:Tension Brass
+M:4/4
+L:1/2
+Q:1/4=60
+K:Dm
+%%MIDI program 61
+|: z4 | z4 | z4 | z4 |
+D2 F2 | A4 | z4 | D4 :|

@@ -1,0 +1,9 @@
+X:1
+T:Pop Lead
+M:4/4
+L:1/8
+Q:1/4=100
+K:G
+%%MIDI program 81
+|: z4 d2 e2 | g4 z2 d2 | e4 z2 c2 | B4 z4 |
+z4 d2 e2 | g4 a2 g2 | e4 d2 B2 | G4 z4 :|

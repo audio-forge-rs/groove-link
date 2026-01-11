@@ -1,0 +1,12 @@
+X:1
+T:Fight Drums
+M:4/4
+L:1/16
+Q:1/4=120
+K:C
+%%MIDI channel 10
+% Marching pattern - Kick=C1 (C,,), Snare=D1 (D,,)
+|: C,,4 D,,2D,,2 D,,2D,,2 D,,2D,,2 | C,,4 D,,2D,,2 D,,2D,,2 D,,4 |
+C,,4 D,,2D,,2 D,,2D,,2 D,,2D,,2 | C,,4 D,,4 D,,4 D,,4 |
+C,,4 D,,2D,,2 D,,2D,,2 D,,2D,,2 | C,,4 D,,2D,,2 D,,2D,,2 D,,4 |
+C,,4 D,,2D,,2 D,,2D,,2 D,,2D,,2 | C,,4 D,,4 C,,4 D,,4 :|

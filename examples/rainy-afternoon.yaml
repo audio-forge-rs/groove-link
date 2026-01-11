@@ -1,0 +1,28 @@
+song:
+  title: Rainy Afternoon
+  tempo: 75
+  key: Am
+  time: 4/4
+
+tracks:
+  piano:
+    instrument: Acoustic Piano (Nektar)
+    fx:
+      - Tape-Machine
+      - Room In Charlotenburg
+    part: rainy-afternoon-piano.abc
+
+  strings:
+    instrument: Orchestral Strings–Sustained Soft
+    fx:
+      - Room Two
+    part: rainy-afternoon-strings.abc
+
+  bass:
+    instrument: Acoustic Bass Long
+    part: rainy-afternoon-bass.abc
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

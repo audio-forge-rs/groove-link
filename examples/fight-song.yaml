@@ -1,0 +1,35 @@
+song:
+  title: Fight Song
+  tempo: 120
+  key: Bb
+  time: 4/4
+
+tracks:
+  trumpets:
+    instrument:
+      query: Trumpet 2.0
+      hint: kontakt
+    part: fight-trumpets.abc
+
+  trombones:
+    instrument:
+      query: Trombone - Stabs 2.0
+      hint: kontakt
+    part: fight-trombones.abc
+
+  sousaphone:
+    instrument: Orchestral Trombone Ensemble and Tuba–Marcato
+    part: fight-sousaphone.abc
+
+  drums:
+    instrument: Marching Band Punch
+    part: fight-drums.abc
+
+  glockenspiel:
+    instrument: FM Glockenspiel
+    part: fight-glock.abc
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

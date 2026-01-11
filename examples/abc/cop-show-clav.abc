@@ -1,0 +1,11 @@
+X:1
+T:Cop Show Clav
+M:4/4
+L:1/16
+Q:1/4=105
+K:Em
+%%MIDI program 7
+|: z4 [EGB]4 z4 [EGB]2 z2 | z4 [EGB]4 z4 [EGB]2 z2 |
+z4 [ACE]4 z4 [ACE]2 z2 | z4 [EGB]4 z2 [B,DF]4 z2 |
+z4 [EGB]4 z4 [EGB]2 z2 | z4 [EGB]4 z4 [EGB]2 z2 |
+z4 [ACE]4 z4 [ACE]2 z2 | [B,DF]4 z4 [EGB]4 z4 :|

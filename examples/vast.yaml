@@ -1,0 +1,29 @@
+song:
+  title: Vast
+  tempo: 50
+  key: D
+  time: 4/4
+
+tracks:
+  drone:
+    instrument: Moving Drone
+    fx:
+      - Shimmer Verb
+    part: vast-drone.abc
+
+  texture:
+    instrument: Ambient Strings
+    fx:
+      - Tonal Drone 01 (20.2s)
+    part: vast-texture.abc
+
+  melody:
+    instrument: Shimmer
+    fx:
+      - MA7 - Shimmering Sky (9.2)
+    part: vast-melody.abc
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

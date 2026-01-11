@@ -1,0 +1,11 @@
+X:1
+T:Fight Trumpets
+M:4/4
+L:1/8
+Q:1/4=120
+K:Bb
+%%MIDI program 56
+|: [B,DF]4 [B,DF]2 [B,DF]2 | [CEG]4 [CEG]2 [CEG]2 |
+[B,DF]2 [B,DF]2 [CEG]2 [CEG]2 | [DFA]4 z4 |
+[B,DF]4 [B,DF]2 [B,DF]2 | [CEG]4 [CEG]2 [CEG]2 |
+[DFA]2 [CEG]2 [B,DF]2 [CEG]2 | [B,DF]4 z4 :|

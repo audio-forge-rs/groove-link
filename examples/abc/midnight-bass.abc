@@ -1,0 +1,11 @@
+X:1
+T:Midnight Bass
+M:4/4
+L:1/8
+Q:1/4=118
+K:Am
+%%MIDI program 38
+|: A,,2 A,,2 A,2 A,,2 | G,,2 G,,2 G,2 G,,2 |
+F,,2 F,,2 F,2 F,,2 | E,,2 E,,2 E,2 E,,2 |
+A,,2 A,,2 A,2 A,,2 | G,,2 G,,2 G,2 G,,2 |
+F,,2 F,,2 F,2 F,,2 | E,,4 E,4 :|

@@ -1,0 +1,11 @@
+X:1
+T:Fight Trombones
+M:4/4
+L:1/8
+Q:1/4=120
+K:Bb
+%%MIDI program 57
+|: [B,,D,F,]4 z2 [B,,D,F,]2 | [C,E,G,]4 z2 [C,E,G,]2 |
+[B,,D,F,]4 [C,E,G,]4 | [D,F,A,]4 z4 |
+[B,,D,F,]4 z2 [B,,D,F,]2 | [C,E,G,]4 z2 [C,E,G,]2 |
+[D,F,A,]2 z2 [C,E,G,]2 z2 | [B,,D,F,]4 z4 :|

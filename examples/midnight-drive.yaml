@@ -1,0 +1,29 @@
+song:
+  title: Midnight Drive
+  tempo: 118
+  key: Am
+  time: 4/4
+
+tracks:
+  arp:
+    instrument: 80s Arp
+    part: midnight-arp.abc
+
+  lead:
+    instrument: FM Lead 2
+    fx:
+      - Gated Reverb
+    part: midnight-lead.abc
+
+  bass:
+    instrument: 808 Ba$$
+    part: midnight-bass.abc
+
+  drums:
+    instrument: MD Synthwave
+    part: midnight-drums.abc
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

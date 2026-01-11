@@ -1,0 +1,33 @@
+song:
+  title: Tension
+  tempo: 60
+  key: Dm
+  time: 4/4
+
+tracks:
+  low_strings:
+    instrument:
+      query: Cello - Long Sul Pont
+      hint: kontakt
+    fx:
+      - Room Two
+    part: tension-cello.abc
+
+  brass:
+    instrument: Orchestral Brass–Sustained Soft
+    fx:
+      - Room In Charlotenburg
+    part: tension-brass.abc
+
+  timpani:
+    instrument: Orchestral Percussion - Timpani Crescendo
+    part: tension-timpani.abc
+
+  pad:
+    instrument: Heavy Cinematic Pad
+    part: tension-pad.abc
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

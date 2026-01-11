@@ -1,0 +1,29 @@
+song:
+  title: Lofi Study
+  tempo: 85
+  key: Dm
+  time: 4/4
+
+tracks:
+  keys:
+    instrument: Rusty Rhodes
+    fx:
+      - LoFi Vibes
+      - Room Two
+    part: lofi-keys.abc
+
+  bass:
+    instrument: Acoustic Bass Long
+    part: lofi-bass.abc
+
+  drums:
+    instrument: v0 E-drums Kit 01
+    fx:
+      - LoFi Boomgasm
+    part: lofi-drums.abc
+
+  master:
+    fx:
+      - Vinyl Simulation
+      - query: Peak Limiter
+        hint: device

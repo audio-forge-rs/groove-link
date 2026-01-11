@@ -1,0 +1,37 @@
+song:
+  title: Cop Show
+  tempo: 105
+  key: Em
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument: Seven String Electric Guitar Clean
+    fx:
+      - Wah Wah Envelope
+    part: cop-show-guitar.abc
+
+  bass:
+    instrument:
+      query: Scarbee Rickenbacker Bass
+      hint: kontakt
+    part: cop-show-bass.abc
+
+  clav:
+    instrument: Clavinet Muted
+    part: cop-show-clav.abc
+
+  horns:
+    instrument:
+      query: Trumpet - Stabs 2.0
+      hint: kontakt
+    part: cop-show-horns.abc
+
+  drums:
+    instrument: Acoustic Drums Kit Yamaha 1 Clean
+    part: cop-show-drums.abc
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

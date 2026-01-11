@@ -1,0 +1,9 @@
+X:1
+T:Pop Bass
+M:4/4
+L:1/8
+Q:1/4=100
+K:G
+%%MIDI program 38
+|: G,,4 z2 G,,2 | G,,2 z2 B,,4 | C,4 z2 C,2 | C,2 z2 E,4 |
+D,4 z2 D,2 | D,2 z2 F,4 | G,,4 z2 G,,2 | G,,2 D,2 G,,4 :|

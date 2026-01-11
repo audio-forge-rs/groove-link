@@ -1,0 +1,9 @@
+X:1
+T:Midnight Lead
+M:4/4
+L:1/8
+Q:1/4=118
+K:Am
+%%MIDI program 81
+|: z4 e2 d2 | c4 B2 A2 | z4 e2 d2 | c6 z2 |
+z4 e2 f2 | g4 f2 e2 | d4 c2 B2 | A6 z2 :|

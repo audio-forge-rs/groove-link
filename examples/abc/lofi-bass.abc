@@ -1,0 +1,9 @@
+X:1
+T:Lofi Bass
+M:4/4
+L:1/4
+Q:1/4=85
+K:Dm
+%%MIDI program 32
+|: D,2 z D, | C,2 z C, | B,,2 z B,, | A,,2 z2 |
+D,2 z D, | C,2 z C, | B,,2 z B,, | A,,2 z2 :|

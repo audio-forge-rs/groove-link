@@ -1,0 +1,11 @@
+X:1
+T:Windfall Guitar
+M:3/4
+L:1/8
+Q:1/4=85
+K:G
+%%MIDI program 25
+|: G,2 [B,DG]2 [B,DG]2 | G,2 [B,DG]2 [B,DF]2 |
+C,2 [CEG]2 [CEG]2 | C,2 [CEG]2 [CEB]2 |
+D,2 [DF^A]2 [DFA]2 | D,2 [DFA]2 [DFG]2 |
+E,2 [EGB]2 [EGB]2 | D,2 [DFA]2 [DGB]2 :|
