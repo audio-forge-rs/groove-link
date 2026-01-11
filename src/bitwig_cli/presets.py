@@ -88,45 +88,56 @@ def _parse_preset_path(path: str) -> tuple[str, str, str, str | None, str | None
     return name, "Unknown", p.parent.name, None, None
 
 
-def _fuzzy_match(query: str, text: str) -> float:
-    """Simple fuzzy match score. Returns 0-1, higher is better.
+def _fuzzy_match(query: str, name: str, device: str | None) -> float:
+    """Fuzzy match score with device weighting. Returns 0-1, higher is better.
 
-    Scoring:
-    - Exact match (case insensitive): 1.0
-    - Query is substring: 0.8
-    - All query words present: 0.6
-    - Partial word matches: 0.3 per match
+    Scoring (device match is weighted heavily):
+    - Device exact match: +0.5 bonus
+    - Device partial match: +0.3 bonus
+    - Name exact match: 1.0
+    - Name substring: 0.7
+    - Name word match: 0.5
+    - Name partial word: 0.3
     """
     query_lower = query.lower()
-    text_lower = text.lower()
+    name_lower = name.lower()
+    device_lower = (device or "").lower()
 
-    # Exact match
-    if query_lower == text_lower:
-        return 1.0
+    score = 0.0
 
-    # Substring match
-    if query_lower in text_lower:
+    # Device matching (high weight - this is what the user often wants)
+    if device_lower:
+        if query_lower == device_lower:
+            score += 0.5  # Exact device match
+        elif query_lower in device_lower or device_lower in query_lower:
+            score += 0.3  # Partial device match (e.g., "delay" matches "Delay-2")
+
+    # Name matching
+    if query_lower == name_lower:
+        score += 1.0
+    elif query_lower in name_lower:
         # Boost if at word boundary
-        if re.search(rf"\b{re.escape(query_lower)}", text_lower):
-            return 0.9
-        return 0.8
+        if re.search(rf"\b{re.escape(query_lower)}", name_lower):
+            score += 0.7
+        else:
+            score += 0.5
+    else:
+        # Word matching in name
+        query_words = query_lower.split()
+        name_words = set(re.findall(r"\w+", name_lower))
 
-    # Word matching
-    query_words = query_lower.split()
-    text_words = set(re.findall(r"\w+", text_lower))
+        matches = sum(1 for qw in query_words if qw in name_words)
+        if matches == len(query_words):
+            score += 0.5
+        else:
+            # Partial word matching
+            partial_matches = sum(
+                1 for qw in query_words if any(qw in nw for nw in name_words)
+            )
+            if partial_matches > 0:
+                score += 0.3 * (partial_matches / len(query_words))
 
-    matches = sum(1 for qw in query_words if qw in text_words)
-    if matches == len(query_words):
-        return 0.6
-
-    # Partial word matching
-    partial_matches = sum(
-        1 for qw in query_words if any(qw in tw for tw in text_words)
-    )
-    if partial_matches > 0:
-        return 0.3 * (partial_matches / len(query_words))
-
-    return 0.0
+    return min(score, 1.5)  # Cap at 1.5 (device + name match)
 
 
 def find_presets_spotlight() -> Iterator[str]:
@@ -190,10 +201,8 @@ def search_presets(
 
         name, package, pack, category, device = _parse_preset_path(path)
 
-        # Build searchable text from all metadata
-        search_text = f"{name} {package} {pack} {category or ''} {device or ''}"
-
-        score = _fuzzy_match(query, search_text)
+        # Score based on name and device match
+        score = _fuzzy_match(query, name, device)
 
         if score >= min_score:
             results.append(

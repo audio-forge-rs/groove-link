@@ -164,19 +164,19 @@ def preset(
             print(r.file_path)
     else:
         table = Table(show_header=True, header_style="bold")
-        table.add_column("Name", width=24, no_wrap=True)
+        table.add_column("Name", width=22, no_wrap=True)
         table.add_column("Device", width=10)
         table.add_column("Category", width=12)
-        table.add_column("Pack", width=18)
-        table.add_column("Pkg", width=7)
+        table.add_column("Pack", width=20)
+        table.add_column("Package", width=10)
 
         for r in results:
             table.add_row(
-                r.name[:24],
+                r.name[:22],
                 (r.device or "")[:10],
                 (r.category or "")[:12],
-                r.pack[:18],
-                r.package[:7],
+                r.pack[:20],
+                r.package[:10],
             )
 
         console.print(table)
