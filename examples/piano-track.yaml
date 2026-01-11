@@ -1,37 +1,30 @@
-# Example song config showing track creation
+# Morning Light - acoustic piano and bass duet
 # Usage: bitwig track create examples/piano-track.yaml
 
-name: Example Song
+name: Morning Light
 bpm: 88
 
 tracks:
   piano:
     type: instrument
     devices:
-      # Note FX preset
+      # Subtle humanization for natural feel
       - Humanize x 3
-      # Instrument preset
+      # Acoustic piano
       - nektar piano
-      # Effect presets
-      - dynamic eq
-      - Abbey Road
-      - reverb
-    # Optional: ABC notation file (converted to MIDI via abc2midi)
+      # Gentle warmth
+      - Tape-Machine
+      # Natural room ambience
+      - Room One
     abc: piano.abc
-    # Optional: MIDI file to insert into clip launcher slot 1 (or use abc above)
-    # midi: piano.mid
 
   bass:
     type: instrument
     devices:
-      # Note FX - tighten timing
-      - Note Length
-      # Bass instrument
-      - Bass Dub 2
-      # Saturation for harmonics (KVR: "adds life to bass")
-      - Bass Driver
-      # EQ to control boominess (KVR: "control sub frequencies")
-      - Low Cut EQ
-      # Compression with fast attack (KVR: "4-5dB reduction evens low end")
-      - Bass Compressor
+      # Acoustic upright bass
+      - Acoustic Bass Long
+      # Warm saturation - gentle harmonics
+      - Warm Saturator
+      # Room to match piano
+      - Room One
     abc: bass.abc
