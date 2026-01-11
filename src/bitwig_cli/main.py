@@ -576,7 +576,7 @@ def _create_track(
 
     # Show result details
     if isinstance(rpc_result, dict):
-        devices_loaded = rpc_result.get("devices", 0)
+        devices_loaded = rpc_result.get("devicesAdded", 0)
         rprint(f"  [green]✓[/green] Created with {devices_loaded} devices")
 
     return True
