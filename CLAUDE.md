@@ -543,7 +543,7 @@ bitwig track create song.yaml --track piano
 
 ```yaml
 name: My Song
-bpm: 120
+bpm: 88  # Sets project tempo before creating tracks
 
 tracks:
   piano:
@@ -552,14 +552,22 @@ tracks:
       - Humanize x 3        # Note FX preset (fuzzy matched)
       - nektar piano        # Instrument preset
       - dynamic eq          # Effect preset
-      - Multiband Dynamics  # Effect preset
+      - Abbey Road          # Effect preset
       - reverb              # Effect preset
+    abc: piano.abc          # ABC notation (converted to MIDI via abc2midi)
 
   bass:
     type: instrument
     devices:
       - bass preset
+    midi: bass.mid          # MIDI file inserted into clip launcher slot 1
 ```
+
+**Song push workflow:**
+1. Set tempo (if `bpm` specified)
+2. Create each track with devices
+3. Convert ABC → MIDI (if `abc` specified per track)
+4. Insert MIDI into clip launcher slot 1 (if `abc` or `midi` specified)
 
 **Device resolution:**
 - Simple strings are fuzzy-matched against presets, then plugins
