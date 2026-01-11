@@ -2,6 +2,7 @@
 # Usage: bitwig track create examples/piano-track.yaml
 
 name: Example Song
+bpm: 88
 
 tracks:
   piano:
@@ -15,9 +16,12 @@ tracks:
       - dynamic eq
       - Abbey Road
       - reverb
+    # Optional: MIDI file to insert into clip launcher slot 1
+    # midi: piano.mid
 
   # Additional tracks could be defined here
   # bass:
   #   type: instrument
   #   devices:
   #     - bass preset
+  #   midi: bass.mid

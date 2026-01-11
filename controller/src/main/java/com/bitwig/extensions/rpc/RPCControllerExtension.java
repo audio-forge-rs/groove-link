@@ -11,8 +11,11 @@ import com.bitwig.extension.controller.api.ControllerHost;
 import com.bitwig.extension.controller.api.CursorTrack;
 import com.bitwig.extension.controller.api.InsertionPoint;
 import com.bitwig.extension.controller.api.RemoteConnection;
+import com.bitwig.extension.controller.api.ClipLauncherSlotBank;
+import com.bitwig.extension.controller.api.ClipLauncherSlotOrScene;
 import com.bitwig.extension.controller.api.Track;
 import com.bitwig.extension.controller.api.TrackBank;
+import com.bitwig.extension.controller.api.Transport;
 
 /**
  * Bitwig controller extension that connects to the MCP server as a TCP client.
@@ -28,12 +31,13 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.4.2";
+    public static final String VERSION = "0.5.0";
 
     private ControllerHost host;
     private Application application;
     private TrackBank trackBank;
     private CursorTrack cursorTrack;
+    private Transport transport;
 
     // Connection to MCP server
     private RemoteConnection mcpConnection;
@@ -66,6 +70,9 @@ public class RPCControllerExtension extends ControllerExtension {
 
         host.println("[init] Creating cursorTrack...");
         cursorTrack = host.createCursorTrack(0, 0);
+
+        host.println("[init] Creating transport...");
+        transport = host.createTransport();
 
         // Mark project name as interested
         host.println("[init] Marking interests...");
@@ -204,6 +211,12 @@ public class RPCControllerExtension extends ControllerExtension {
         if (method.equals("track.create")) {
             return handleTrackCreate(requestJson, idStr);
         }
+        if (method.equals("transport.setTempo")) {
+            return handleSetTempo(requestJson, idStr);
+        }
+        if (method.equals("clip.insertFile")) {
+            return handleClipInsertFile(requestJson, idStr);
+        }
 
         String result = dispatchMethod(method);
 
@@ -241,6 +254,74 @@ public class RPCControllerExtension extends ControllerExtension {
                 return listScenes();
             default:
                 return "{\"error\":{\"code\":-32601,\"message\":\"Method not found: " + method + "\"}}";
+        }
+    }
+
+    // ==================== Transport Control ====================
+
+    /**
+     * Handle transport.setTempo method.
+     *
+     * Params:
+     *   bpm: number - tempo in beats per minute (20-666)
+     */
+    private String handleSetTempo(String requestJson, String idStr) {
+        try {
+            double bpm = extractDouble(requestJson, "bpm");
+            if (bpm < 20 || bpm > 666) {
+                return formatError(idStr, -32602, "Tempo must be between 20 and 666 BPM");
+            }
+
+            host.println("[transport.setTempo] Setting tempo to " + bpm + " BPM");
+            transport.tempo().setRaw(bpm);
+
+            return formatResult(idStr, String.format("{\"bpm\":%.1f}", bpm));
+        } catch (Exception e) {
+            host.errorln("[transport.setTempo] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error setting tempo: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Handle clip.insertFile method - insert file into clip launcher slot.
+     *
+     * Params:
+     *   trackIndex: int - track index (0-based)
+     *   slotIndex: int - clip launcher slot index (0-based)
+     *   path: string - absolute path to file (MIDI, audio, etc.)
+     */
+    private String handleClipInsertFile(String requestJson, String idStr) {
+        try {
+            int trackIndex = extractInt(requestJson, "trackIndex");
+            int slotIndex = extractInt(requestJson, "slotIndex");
+            String path = extractString(requestJson, "path");
+
+            if (path.isEmpty()) {
+                return formatError(idStr, -32602, "Missing 'path' parameter");
+            }
+
+            host.println("[clip.insertFile] track=" + trackIndex + ", slot=" + slotIndex + ", path=" + path);
+
+            // Get the track and clip launcher slot
+            Track track = (Track) trackBank.getItemAt(trackIndex);
+            if (!track.exists().get()) {
+                return formatError(idStr, -32602, "Track " + trackIndex + " does not exist");
+            }
+
+            ClipLauncherSlotBank slotBank = track.clipLauncherSlotBank();
+            ClipLauncherSlotOrScene slot = (ClipLauncherSlotOrScene) slotBank.getItemAt(slotIndex);
+
+            // Insert the file using the slot's insertion point
+            InsertionPoint insertionPoint = slot.replaceInsertionPoint();
+            insertionPoint.insertFile(path);
+
+            return formatResult(idStr, String.format(
+                "{\"trackIndex\":%d,\"slotIndex\":%d,\"path\":\"%s\"}",
+                trackIndex, slotIndex, escapeJson(path)
+            ));
+        } catch (Exception e) {
+            host.errorln("[clip.insertFile] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error inserting file: " + e.getMessage());
         }
     }
 
@@ -591,6 +672,60 @@ public class RPCControllerExtension extends ControllerExtension {
         int end = json.indexOf("\"", start);
         if (end < 0) return "";
         return unescapeJson(json.substring(start, end));
+    }
+
+    private double extractDouble(String json, String key) {
+        String search = "\"" + key + "\":";
+        int start = json.indexOf(search);
+        if (start < 0) return 0.0;
+        start += search.length();
+
+        // Skip whitespace
+        while (start < json.length() && Character.isWhitespace(json.charAt(start))) {
+            start++;
+        }
+
+        // Find end of number
+        int end = start;
+        while (end < json.length()) {
+            char c = json.charAt(end);
+            if (!Character.isDigit(c) && c != '.' && c != '-' && c != '+' && c != 'e' && c != 'E') break;
+            end++;
+        }
+
+        if (end == start) return 0.0;
+        try {
+            return Double.parseDouble(json.substring(start, end));
+        } catch (NumberFormatException e) {
+            return 0.0;
+        }
+    }
+
+    private int extractInt(String json, String key) {
+        String search = "\"" + key + "\":";
+        int start = json.indexOf(search);
+        if (start < 0) return 0;
+        start += search.length();
+
+        // Skip whitespace
+        while (start < json.length() && Character.isWhitespace(json.charAt(start))) {
+            start++;
+        }
+
+        // Find end of number
+        int end = start;
+        while (end < json.length()) {
+            char c = json.charAt(end);
+            if (!Character.isDigit(c) && c != '-') break;
+            end++;
+        }
+
+        if (end == start) return 0;
+        try {
+            return Integer.parseInt(json.substring(start, end));
+        } catch (NumberFormatException e) {
+            return 0;
+        }
     }
 
     private String extractId(String json) {

@@ -276,12 +276,14 @@ socket.setClientConnectCallback(connection -> {
 | `info.get` | `{}` | Get controller/Bitwig version info |
 | `list.tracks` | `{}` | List all tracks with properties |
 | `list.scenes` | `{}` | List scenes (stub, returns `[]`) |
+| `track.create` | `{type, name?, devices?}` | Create track with optional device chain |
+| `transport.setTempo` | `{bpm}` | Set project tempo (20-666 BPM) |
+| `clip.insertFile` | `{trackIndex, slotIndex, path}` | Insert file into clip launcher slot |
 
 **Planned:**
 
 | Method | Params | Description |
 |--------|--------|-------------|
-| `track.create` | `{type, name?, index?}` | Create track |
 | `track.delete` | `{trackId}` | Delete track |
 | `track.rename` | `{trackId, name}` | Rename track |
 | `device.load` | `{trackId, uri}` | Load device by URI |

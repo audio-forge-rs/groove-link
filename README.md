@@ -118,6 +118,7 @@ bitwig track create song.yaml --track piano  # Create specific track
 
 ```yaml
 name: My Song
+bpm: 88  # Sets project tempo
 
 tracks:
   piano:
@@ -126,11 +127,21 @@ tracks:
       - Humanize x 3        # Note FX preset
       - nektar piano        # Instrument preset
       - dynamic eq          # Effect preset
-      - Multiband Dynamics  # Effect preset (Abbey Road style)
+      - Abbey Road          # Effect preset
       - reverb              # Effect preset
+    midi: piano.mid         # Optional: insert into clip launcher
+
+  bass:
+    type: instrument
+    devices:
+      - bass preset
+    midi: midi/bass.mid     # Paths relative to config file
 ```
 
-Devices are resolved via fuzzy search - use exact names or partial matches.
+**Features:**
+- Devices are resolved via fuzzy search - use exact names or partial matches
+- Tempo is set before creating tracks (part of song push)
+- MIDI files are inserted into clip launcher slot 1 of each track
 
 ## How It Works
 
@@ -160,6 +171,8 @@ groove-link/
 │   ├── client.py        # JSON-RPC client
 │   ├── protocol.py      # Framing
 │   ├── presets.py       # Preset search (Spotlight-based)
+│   ├── abc.py           # ABC notation to MIDI conversion
+│   ├── resolve.py       # Device name resolution
 │   └── table.py         # Adaptive table display
 ├── docs/                # Documentation
 │   └── CLI_SEARCH_SPEC.md  # Search commands spec

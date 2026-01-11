@@ -384,17 +384,22 @@ def track_create(
               - nektar piano
               - query: abbey road
                 hint: plugin
+            midi: piano.mid  # Optional: MIDI file for clip launcher
 
           bass:
             type: instrument
             devices:
               - bass preset
+            midi: midi/bass.mid
 
     Use --track to create a specific track, or omit to create all tracks.
 
     Device entries can be:
       - A string (fuzzy searched as preset then plugin)
       - A dict with 'query' and optional 'hint' (preset/plugin/kontakt/mtron)
+
+    MIDI paths can be relative (to config file) or absolute.
+    MIDI files are inserted into clip launcher slot 1 of each track.
     """
     import time
 
@@ -424,6 +429,11 @@ def track_create(
         single_name = config.get("name", "New Track")
         tracks_config = {single_name: config}
 
+    # Set tempo if specified (part of song push, before creating tracks)
+    tempo = config.get("bpm") or config.get("tempo")
+    if tempo:
+        _set_tempo(tempo, host, port)
+
     # Filter to specific track if requested
     if track_name:
         if track_name not in tracks_config:
@@ -432,16 +442,42 @@ def track_create(
             raise typer.Exit(1)
         tracks_config = {track_name: tracks_config[track_name]}
 
+    # Get config directory for resolving relative MIDI paths
+    config_dir = config_file.parent
+
     # Create each track
     created_count = 0
-    for tname, track_cfg in tracks_config.items():
+    midi_inserted = 0
+    for track_index, (tname, track_cfg) in enumerate(tracks_config.items()):
         if not _create_track(tname, track_cfg, host, port):
             rprint(f"[red]Failed to create track:[/red] {tname}")
-        else:
-            created_count += 1
+            continue
+
+        created_count += 1
+
+        # Insert MIDI if specified
+        midi_file = track_cfg.get("midi")
+        if midi_file:
+            midi_path = Path(midi_file)
+            if not midi_path.is_absolute():
+                midi_path = config_dir / midi_path
+            midi_path = midi_path.resolve()
+
+            if not midi_path.exists():
+                rprint(f"  [yellow]Warning:[/yellow] MIDI file not found: {midi_path}")
+            else:
+                rprint(f"  [dim]Inserting MIDI:[/dim] {midi_path.name}")
+                if _insert_midi(track_index, 0, str(midi_path), host, port):
+                    rprint(f"  [green]✓[/green] MIDI inserted into slot 1")
+                    midi_inserted += 1
+                else:
+                    rprint(f"  [red]✗[/red] Failed to insert MIDI")
 
     elapsed = time.perf_counter() - start
-    rprint(f"[green]✓[/green] Created {created_count}/{len(tracks_config)} tracks in {elapsed:.2f}s")
+    summary = f"Created {created_count}/{len(tracks_config)} tracks"
+    if midi_inserted > 0:
+        summary += f", inserted {midi_inserted} MIDI files"
+    rprint(f"[green]✓[/green] {summary} in {elapsed:.2f}s")
 
 
 def _create_track(
@@ -518,6 +554,57 @@ def _create_track(
         rprint(f"  [green]✓[/green] Created with {devices_loaded} devices")
 
     return True
+
+
+def _set_tempo(bpm: float, host: str, port: int) -> bool:
+    """Set the project tempo.
+
+    Returns True on success, False on failure.
+    """
+    rprint(f"[cyan]Setting tempo:[/cyan] {bpm} BPM")
+
+    with get_client(host, port) as client:
+        try:
+            result = client.call("transport.setTempo", {"bpm": float(bpm)})
+            rprint(f"[green]✓[/green] Tempo set to {result.get('bpm', bpm)} BPM")
+            return True
+        except RPCException as e:
+            rprint(f"[red]Error setting tempo:[/red] {e}")
+            return False
+
+
+def _insert_midi(
+    track_index: int,
+    slot_index: int,
+    midi_path: str,
+    host: str,
+    port: int,
+) -> bool:
+    """Insert a MIDI file into a clip launcher slot.
+
+    Args:
+        track_index: Track index (0-based)
+        slot_index: Clip launcher slot index (0-based)
+        midi_path: Absolute path to MIDI file
+        host: Controller host
+        port: Controller port
+
+    Returns True on success, False on failure.
+    """
+    with get_client(host, port) as client:
+        try:
+            client.call(
+                "clip.insertFile",
+                {
+                    "trackIndex": track_index,
+                    "slotIndex": slot_index,
+                    "path": midi_path,
+                },
+            )
+            return True
+        except RPCException as e:
+            rprint(f"[red]Error inserting MIDI:[/red] {e}")
+            return False
 
 
 @app.command()
