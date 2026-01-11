@@ -70,10 +70,11 @@ Restart Claude Code. Now Claude has direct access to Bitwig tools:
 ## CLI Commands
 
 ```bash
-bitwig info              # Show version info
-bitwig list tracks       # List all tracks
-bitwig preset <query>    # Search Bitwig presets
-bitwig --help            # Show all commands
+bitwig info                       # Show version info
+bitwig list tracks                # List all tracks
+bitwig preset <query>             # Search Bitwig presets
+bitwig track create song.yaml     # Create tracks from YAML config
+bitwig --help                     # Show all commands
 ```
 
 ### Search Commands
@@ -103,6 +104,33 @@ bitwig mtron choir --category Voices # Filter by category
 - `inst` - Instruments (Polymer, Phase-4, Sampler)
 - `note` - Note effects (Note Delay, Arpeggiator)
 - `fx` - Audio effects (Delay+, Reverb, Compressor)
+
+### Track Creation
+
+Create tracks with device chains from a YAML config:
+
+```bash
+bitwig track create song.yaml              # Create all tracks
+bitwig track create song.yaml --track piano  # Create specific track
+```
+
+**Song config format:**
+
+```yaml
+name: My Song
+
+tracks:
+  piano:
+    type: instrument
+    devices:
+      - Humanize x 3        # Note FX preset
+      - nektar piano        # Instrument preset
+      - dynamic eq          # Effect preset
+      - Multiband Dynamics  # Effect preset (Abbey Road style)
+      - reverb              # Effect preset
+```
+
+Devices are resolved via fuzzy search - use exact names or partial matches.
 
 ## How It Works
 

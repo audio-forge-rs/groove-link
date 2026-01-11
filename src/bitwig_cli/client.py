@@ -4,15 +4,17 @@ from __future__ import annotations
 
 import logging
 import socket
-from typing import Any
+from typing import Any, Callable
 
 from .protocol import (
     FRAME_HEADER_SIZE,
     RPCException,
+    RPCNotification,
     RPCRequest,
     RPCResponse,
     batch_to_frame,
     decode_frame_header,
+    parse_message,
     parse_response,
     request_to_frame,
 )
@@ -125,6 +127,61 @@ class BitwigClient:
         response.raise_for_error()
         logger.debug("Result: %s", response.result)
         return response.result
+
+    def call_with_progress(
+        self,
+        method: str,
+        params: dict[str, Any] | None = None,
+        on_progress: Callable[[int, int, str], None] | None = None,
+        timeout: float | None = None,
+    ) -> Any:
+        """Make an RPC call that may emit progress notifications.
+
+        Args:
+            method: The RPC method name
+            params: Optional parameters dict
+            on_progress: Callback for progress notifications (step, total, message)
+            timeout: Optional longer timeout for operations that take time
+
+        Returns:
+            The result from the final RPC response
+
+        Raises:
+            RPCException: If the server returns an error
+            ConnectionError: If not connected or connection lost
+        """
+        request = RPCRequest(method=method, params=params or {}, id=self._next_id())
+        logger.debug("Calling with progress: %s(%s)", method, params)
+
+        # Use longer timeout if specified
+        if self._sock and timeout:
+            self._sock.settimeout(timeout)
+
+        try:
+            self._send(request_to_frame(request))
+
+            # Read messages until we get a response (not notification)
+            while True:
+                frame_data = self._recv_frame()
+                message = parse_message(frame_data)
+
+                if isinstance(message, RPCNotification):
+                    # Progress notification
+                    logger.debug("Progress: %s %s", message.method, message.params)
+                    if on_progress and message.method == "progress":
+                        step = message.params.get("step", 0)
+                        total = message.params.get("total", 0)
+                        msg = message.params.get("message", "")
+                        on_progress(step, total, msg)
+                elif isinstance(message, RPCResponse):
+                    # Final response
+                    message.raise_for_error()
+                    logger.debug("Result: %s", message.result)
+                    return message.result
+        finally:
+            # Restore original timeout
+            if self._sock:
+                self._sock.settimeout(self.timeout)
 
     def batch(self, calls: list[tuple[str, dict[str, Any] | None]]) -> list[Any]:
         """Make a batch of RPC calls and return the results.

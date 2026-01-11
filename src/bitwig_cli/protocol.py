@@ -106,3 +106,31 @@ def parse_response(data: bytes) -> RPCResponse | list[RPCResponse]:
     if isinstance(decoded, list):
         return [RPCResponse.from_dict(d) for d in decoded]
     return RPCResponse.from_dict(decoded)
+
+
+@dataclass
+class RPCNotification:
+    """JSON-RPC 2.0 notification (no id, no response expected)."""
+
+    method: str
+    params: dict[str, Any] = field(default_factory=dict)
+
+    @classmethod
+    def from_dict(cls, d: dict[str, Any]) -> RPCNotification:
+        return cls(method=d["method"], params=d.get("params", {}))
+
+
+def parse_message(data: bytes) -> RPCResponse | RPCNotification:
+    """Parse a message as either response or notification.
+
+    Notifications have a 'method' field but no 'id'.
+    Responses have an 'id' field (and 'result' or 'error').
+    """
+    decoded = json.loads(data.decode("utf-8"))
+
+    # If it has 'method' but no 'id', it's a notification
+    if "method" in decoded and "id" not in decoded:
+        return RPCNotification.from_dict(decoded)
+
+    # Otherwise it's a response
+    return RPCResponse.from_dict(decoded)

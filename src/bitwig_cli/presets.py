@@ -72,6 +72,7 @@ class PresetMatch:
     device: str | None  # Extracted device name, e.g., "Polymer"
     device_type: str  # "inst", "note", "fx", or ""
     score: float  # Match relevance score
+    load_type: str = "file"  # How to load: always "file" for presets
 
     def to_dict(self) -> dict:
         return {
@@ -82,6 +83,7 @@ class PresetMatch:
             "category": self.category,
             "device": self.device,
             "device_type": self.device_type,
+            "load_type": self.load_type,
         }
 
 
@@ -177,6 +179,16 @@ def find_presets_filesystem() -> Iterator[str]:
                         yield os.path.join(root, f)
 
 
+def find_presets_user_library() -> Iterator[str]:
+    """Find presets in user's Bitwig Library (not always indexed by Spotlight)."""
+    user_lib = Path.home() / "Documents/Bitwig Studio/Library/Presets"
+    if user_lib.exists():
+        for root, _, files in os.walk(user_lib):
+            for f in files:
+                if f.endswith(".bwpreset"):
+                    yield os.path.join(root, f)
+
+
 def search_presets(
     query: str,
     limit: int = 20,
@@ -193,8 +205,15 @@ def search_presets(
         List of PresetMatch sorted by relevance
     """
     results: list[PresetMatch] = []
+    seen_paths: set[str] = set()
 
-    for path in find_presets_spotlight():
+    # Combine Spotlight results with user library (which may not be indexed)
+    from itertools import chain
+    for path in chain(find_presets_spotlight(), find_presets_user_library()):
+        # Skip duplicates
+        if path in seen_paths:
+            continue
+        seen_paths.add(path)
         # Skip device-settings (default presets with UUID dirs)
         if "/device-settings/" in path:
             continue

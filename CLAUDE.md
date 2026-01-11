@@ -525,6 +525,52 @@ bitwig list tracks
 bitwig --host 192.168.1.100 --port 8417 info
 ```
 
+### Track Creation
+
+Create tracks with device chains from a YAML song config:
+
+```bash
+# Create all tracks defined in config
+bitwig track create song.yaml
+
+# Create a specific track
+bitwig track create song.yaml --track piano
+```
+
+**Song config format:**
+
+```yaml
+name: My Song
+bpm: 120
+
+tracks:
+  piano:
+    type: instrument  # instrument, audio, effect
+    devices:
+      - Humanize x 3        # Note FX preset (fuzzy matched)
+      - nektar piano        # Instrument preset
+      - dynamic eq          # Effect preset
+      - Multiband Dynamics  # Effect preset
+      - reverb              # Effect preset
+
+  bass:
+    type: instrument
+    devices:
+      - bass preset
+```
+
+**Device resolution:**
+- Simple strings are fuzzy-matched against presets, then plugins
+- Use `query` + `hint` for explicit control:
+  ```yaml
+  - query: surge
+    hint: plugin  # force plugin search
+  ```
+
+**Progress notifications:**
+- Track creation sends progress updates for each device loaded
+- CLI displays progress in real-time
+
 ### Project Structure
 
 ```
@@ -532,9 +578,15 @@ src/bitwig_cli/
 ├── __init__.py      # Package version
 ├── __main__.py      # python -m bitwig_cli entry
 ├── main.py          # CLI commands (typer)
-├── client.py        # JSON-RPC client
-├── protocol.py      # Framing + JSON-RPC types
-└── config.py        # Configuration
+├── client.py        # JSON-RPC client (with progress support)
+├── protocol.py      # Framing + JSON-RPC types + notifications
+├── resolve.py       # Device name resolution (fuzzy search)
+├── presets.py       # Bitwig preset search (Spotlight)
+├── plugins.py       # Plugin search (VST3, AU, CLAP)
+├── kontakt.py       # Kontakt instrument search
+├── mtron.py         # M-Tron patch search
+├── search.py        # Common fuzzy matching
+└── table.py         # Adaptive table display
 ```
 
 ### Adding New Commands

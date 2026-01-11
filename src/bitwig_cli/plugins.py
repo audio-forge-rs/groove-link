@@ -24,6 +24,17 @@ class PluginMatch:
     bundle_id: str | None = None
     score: float = field(default=0.0)
 
+    @property
+    def load_type(self) -> str:
+        """How to load this plugin: vst3, clap, vst2, or au."""
+        format_to_load = {
+            "vst3": "vst3",
+            "clap": "clap",
+            "vst": "vst2",
+            "au": "au",
+        }
+        return format_to_load.get(self.format, self.format)
+
     def to_dict(self) -> dict:
         return {
             "name": self.name,
@@ -32,6 +43,7 @@ class PluginMatch:
             "vendor": self.vendor,
             "version": self.version,
             "location": self.location,
+            "load_type": self.load_type,
         }
 
 

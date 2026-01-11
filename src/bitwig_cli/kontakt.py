@@ -21,6 +21,7 @@ class KontaktMatch:
     vendor: str | None
     category: str | None
     score: float = field(default=0.0)
+    load_type: str = "kontakt"  # Loaded via Kontakt plugin
 
     def to_dict(self) -> dict:
         return {
@@ -29,6 +30,7 @@ class KontaktMatch:
             "library": self.library,
             "vendor": self.vendor,
             "category": self.category,
+            "load_type": self.load_type,
         }
 
 

@@ -1,0 +1,23 @@
+# Example song config showing track creation
+# Usage: bitwig track create examples/piano-track.yaml
+
+name: Example Song
+
+tracks:
+  piano:
+    type: instrument
+    devices:
+      # Note FX preset
+      - Humanize x 3
+      # Instrument preset
+      - nektar piano
+      # Effect presets
+      - dynamic eq
+      - Abbey Road
+      - reverb
+
+  # Additional tracks could be defined here
+  # bass:
+  #   type: instrument
+  #   devices:
+  #     - bass preset

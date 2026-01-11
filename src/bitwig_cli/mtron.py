@@ -22,6 +22,7 @@ class MTronMatch:
     timbres: list[str]  # e.g., ["Breathy", "Vibrato", "Hollow"]
     types: list[str]  # e.g., ["Artist Patch", "Dynamic", "Layered"]
     score: float = field(default=0.0)
+    load_type: str = "mtron"  # Loaded via M-Tron Pro IV plugin
 
     def to_dict(self) -> dict:
         return {
@@ -32,6 +33,7 @@ class MTronMatch:
             "author": self.author,
             "timbres": self.timbres,
             "types": self.types,
+            "load_type": self.load_type,
         }
 
 

@@ -2,10 +2,14 @@ package com.bitwig.extensions.rpc;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.bitwig.extension.controller.ControllerExtension;
 import com.bitwig.extension.controller.api.Application;
 import com.bitwig.extension.controller.api.ControllerHost;
+import com.bitwig.extension.controller.api.CursorTrack;
+import com.bitwig.extension.controller.api.InsertionPoint;
 import com.bitwig.extension.controller.api.RemoteConnection;
 import com.bitwig.extension.controller.api.Track;
 import com.bitwig.extension.controller.api.TrackBank;
@@ -24,14 +28,22 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.3.2";
+    public static final String VERSION = "0.4.2";
 
     private ControllerHost host;
     private Application application;
     private TrackBank trackBank;
+    private CursorTrack cursorTrack;
 
     // Connection to MCP server
     private RemoteConnection mcpConnection;
+
+    // Pending operation state for async device insertion
+    private List<DeviceSpec> pendingDevices;
+    private int currentDeviceIndex;
+    private String pendingRequestId;
+    private String pendingTrackName;
+    private int devicesAdded;
 
     protected RPCControllerExtension(
             RPCControllerExtensionDefinition definition,
@@ -48,15 +60,22 @@ public class RPCControllerExtension extends ControllerExtension {
         // Get Bitwig API objects
         host.println("[init] Creating application...");
         application = host.createApplication();
+
         host.println("[init] Creating trackBank...");
-        trackBank = host.createTrackBank(8, 0, 8);
+        trackBank = host.createTrackBank(16, 0, 8);
+
+        host.println("[init] Creating cursorTrack...");
+        cursorTrack = host.createCursorTrack(0, 0);
 
         // Mark project name as interested
         host.println("[init] Marking interests...");
         application.projectName().markInterested();
+        cursorTrack.name().markInterested();
+        cursorTrack.exists().markInterested();
+        cursorTrack.trackType().markInterested();
 
         // Mark all track properties as interested so we get updates
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 16; i++) {
             Track track = (Track) trackBank.getItemAt(i);
             track.name().markInterested();
             track.color().markInterested();
@@ -126,10 +145,11 @@ public class RPCControllerExtension extends ControllerExtension {
         host.println("[mcp] Request (" + data.length + " bytes): " + request);
 
         String response = handleRequest(request);
-        host.println("[mcp] Response: " + response);
-
-        // Send response with length prefix (MCP server expects framing)
-        sendResponse(response);
+        if (response != null) {
+            host.println("[mcp] Response: " + response);
+            sendResponse(response);
+        }
+        // null response means async operation in progress
     }
 
     private void sendResponse(String response) {
@@ -148,6 +168,15 @@ public class RPCControllerExtension extends ControllerExtension {
         } catch (Exception e) {
             host.errorln("[mcp] Failed to send response: " + e.getMessage());
         }
+    }
+
+    /** Send a progress notification (no id) */
+    private void sendProgress(int step, int total, String message) {
+        String notification = String.format(
+            "{\"jsonrpc\":\"2.0\",\"method\":\"progress\",\"params\":{\"step\":%d,\"total\":%d,\"message\":\"%s\"}}",
+            step, total, escapeJson(message)
+        );
+        sendResponse(notification);
     }
 
     private String handleRequest(String requestJson) {
@@ -170,6 +199,11 @@ public class RPCControllerExtension extends ControllerExtension {
         // Parse request (simple parsing)
         String method = extractString(requestJson, "method");
         String idStr = extractId(requestJson);
+
+        // Handle methods that need params
+        if (method.equals("track.create")) {
+            return handleTrackCreate(requestJson, idStr);
+        }
 
         String result = dispatchMethod(method);
 
@@ -210,6 +244,235 @@ public class RPCControllerExtension extends ControllerExtension {
         }
     }
 
+    // ==================== Track Creation ====================
+
+    /**
+     * Handle track.create method with optional device loading.
+     *
+     * Params:
+     *   name: string - track name
+     *   type: string - "instrument", "audio", or "effect"
+     *   devices: array of {type: "file"|"vst3"|"clap", path/id: string}
+     */
+    private String handleTrackCreate(String requestJson, String idStr) {
+        try {
+            // Extract params object first to avoid matching nested "type" in devices
+            String paramsJson = extractParamsObject(requestJson);
+            String trackName = extractString(paramsJson, "name");
+            String trackType = extractTopLevelString(paramsJson, "type");
+            List<DeviceSpec> devices = extractDevices(requestJson);
+
+            host.println("[track.create] name=" + trackName + ", type=" + trackType + ", devices=" + devices.size());
+
+            // Send initial progress
+            int totalSteps = 1 + devices.size();
+            sendProgress(1, totalSteps, "Creating track '" + trackName + "'");
+
+            // Create the track
+            int position = -1; // -1 = at end
+            switch (trackType.toLowerCase()) {
+                case "instrument":
+                    application.createInstrumentTrack(position);
+                    break;
+                case "audio":
+                    application.createAudioTrack(position);
+                    break;
+                case "effect":
+                    application.createEffectTrack(position);
+                    break;
+                default:
+                    return formatError(idStr, -32602, "Invalid track type: " + trackType);
+            }
+
+            // If no devices, we're done immediately
+            if (devices.isEmpty()) {
+                // Schedule name setting after track is created
+                host.scheduleTask(() -> {
+                    if (trackName != null && !trackName.isEmpty()) {
+                        cursorTrack.name().set(trackName);
+                    }
+                }, 100);
+
+                return formatResult(idStr, String.format(
+                    "{\"trackName\":\"%s\",\"type\":\"%s\",\"devicesAdded\":0}",
+                    escapeJson(trackName), escapeJson(trackType)
+                ));
+            }
+
+            // Store state for async device insertion
+            this.pendingDevices = devices;
+            this.currentDeviceIndex = 0;
+            this.pendingRequestId = idStr;
+            this.pendingTrackName = trackName;
+            this.devicesAdded = 0;
+
+            // Schedule device insertion after track is created and selected
+            // Give Bitwig time to create the track and select it
+            host.scheduleTask(() -> {
+                if (trackName != null && !trackName.isEmpty()) {
+                    cursorTrack.name().set(trackName);
+                }
+                // Start inserting devices
+                host.scheduleTask(this::insertNextDevice, 100);
+            }, 200);
+
+            // Return null to indicate async response
+            return null;
+
+        } catch (Exception e) {
+            host.errorln("[track.create] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error creating track: " + e.getMessage());
+        }
+    }
+
+    /** Insert the next device in the pending list */
+    private void insertNextDevice() {
+        if (pendingDevices == null || currentDeviceIndex >= pendingDevices.size()) {
+            // All done - send final response
+            sendFinalTrackResponse();
+            return;
+        }
+
+        DeviceSpec device = pendingDevices.get(currentDeviceIndex);
+        int totalSteps = 1 + pendingDevices.size();
+        int step = 2 + currentDeviceIndex;
+
+        host.println("[device] Inserting device " + (currentDeviceIndex + 1) + "/" + pendingDevices.size() +
+                     ": type=" + device.type + ", path=" + device.path);
+
+        sendProgress(step, totalSteps, "Adding " + device.getDisplayName());
+
+        // Get insertion point at end of device chain
+        InsertionPoint insertionPoint = cursorTrack.endOfDeviceChainInsertionPoint();
+
+        try {
+            switch (device.type) {
+                case "file":
+                    // Insert preset file
+                    insertionPoint.insertFile(device.path);
+                    devicesAdded++;
+                    break;
+                case "vst3":
+                    // Insert VST3 plugin
+                    insertionPoint.insertVST3Device(device.path);
+                    devicesAdded++;
+                    break;
+                case "clap":
+                    // Insert CLAP plugin
+                    insertionPoint.insertCLAPDevice(device.path);
+                    devicesAdded++;
+                    break;
+                case "vst2":
+                    // VST2 needs int ID, parse it
+                    try {
+                        int vst2Id = Integer.parseInt(device.path);
+                        insertionPoint.insertVST2Device(vst2Id);
+                        devicesAdded++;
+                    } catch (NumberFormatException e) {
+                        host.errorln("[device] Invalid VST2 ID: " + device.path);
+                    }
+                    break;
+                default:
+                    host.errorln("[device] Unknown device type: " + device.type);
+            }
+        } catch (Exception e) {
+            host.errorln("[device] Error inserting device: " + e.getMessage());
+        }
+
+        currentDeviceIndex++;
+
+        // Schedule next device with delay to let Bitwig process
+        host.scheduleTask(this::insertNextDevice, 150);
+    }
+
+    /** Send the final response after all devices are inserted */
+    private void sendFinalTrackResponse() {
+        String result = String.format(
+            "{\"trackName\":\"%s\",\"devicesAdded\":%d}",
+            escapeJson(pendingTrackName != null ? pendingTrackName : ""),
+            devicesAdded
+        );
+
+        String response = formatResult(pendingRequestId, result);
+        sendResponse(response);
+
+        // Clear state
+        pendingDevices = null;
+        currentDeviceIndex = 0;
+        pendingRequestId = null;
+        pendingTrackName = null;
+        devicesAdded = 0;
+    }
+
+    // ==================== Device Spec Parsing ====================
+
+    private static class DeviceSpec {
+        String type;  // "file", "vst3", "clap", "vst2"
+        String path;  // file path or plugin ID
+
+        String getDisplayName() {
+            if (path == null) return type;
+            // Extract filename from path
+            int lastSlash = Math.max(path.lastIndexOf('/'), path.lastIndexOf('\\'));
+            String name = lastSlash >= 0 ? path.substring(lastSlash + 1) : path;
+            // Remove extension
+            int lastDot = name.lastIndexOf('.');
+            if (lastDot > 0) name = name.substring(0, lastDot);
+            return name;
+        }
+    }
+
+    /** Extract devices array from JSON request */
+    private List<DeviceSpec> extractDevices(String json) {
+        List<DeviceSpec> devices = new ArrayList<>();
+
+        // Find devices array
+        int start = json.indexOf("\"devices\"");
+        if (start < 0) return devices;
+
+        // Find opening bracket
+        int arrayStart = json.indexOf('[', start);
+        if (arrayStart < 0) return devices;
+
+        // Find matching closing bracket
+        int depth = 1;
+        int pos = arrayStart + 1;
+        int objStart = -1;
+
+        while (pos < json.length() && depth > 0) {
+            char c = json.charAt(pos);
+            if (c == '[') depth++;
+            else if (c == ']') depth--;
+            else if (c == '{' && depth == 1) objStart = pos;
+            else if (c == '}' && depth == 1 && objStart >= 0) {
+                // Extract this device object
+                String deviceJson = json.substring(objStart, pos + 1);
+                DeviceSpec spec = parseDeviceSpec(deviceJson);
+                if (spec != null) devices.add(spec);
+                objStart = -1;
+            }
+            pos++;
+        }
+
+        return devices;
+    }
+
+    /** Parse a single device spec from JSON */
+    private DeviceSpec parseDeviceSpec(String json) {
+        DeviceSpec spec = new DeviceSpec();
+        spec.type = extractString(json, "type");
+        spec.path = extractString(json, "path");
+        if (spec.path.isEmpty()) {
+            spec.path = extractString(json, "id");
+        }
+        if (spec.type.isEmpty() || spec.path.isEmpty()) {
+            return null;
+        }
+        return spec;
+    }
+
+    // ==================== Existing Methods ====================
+
     private String getInfo() {
         String bitwigVersion = host.getHostVersion();
         int apiVersion = host.getHostApiVersion();
@@ -231,7 +494,7 @@ public class RPCControllerExtension extends ControllerExtension {
         StringBuilder sb = new StringBuilder("[");
         boolean first = true;
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 16; i++) {
             Track track = (Track) trackBank.getItemAt(i);
             if (!track.exists().get()) continue;
 
@@ -268,6 +531,58 @@ public class RPCControllerExtension extends ControllerExtension {
         return "[]";
     }
 
+    // ==================== JSON Helpers ====================
+
+    /** Extract the params object from a JSON-RPC request */
+    private String extractParamsObject(String json) {
+        int start = json.indexOf("\"params\"");
+        if (start < 0) return json;
+
+        // Find the opening brace
+        int braceStart = json.indexOf('{', start);
+        if (braceStart < 0) return json;
+
+        // Find matching closing brace
+        int depth = 1;
+        int pos = braceStart + 1;
+        while (pos < json.length() && depth > 0) {
+            char c = json.charAt(pos);
+            if (c == '{') depth++;
+            else if (c == '}') depth--;
+            pos++;
+        }
+
+        return json.substring(braceStart, pos);
+    }
+
+    /** Extract a top-level string value, skipping matches inside arrays */
+    private String extractTopLevelString(String json, String key) {
+        String search = "\"" + key + "\":\"";
+        int searchFrom = 0;
+
+        while (true) {
+            int start = json.indexOf(search, searchFrom);
+            if (start < 0) return "";
+
+            // Check if this match is inside an array
+            String before = json.substring(0, start);
+            int lastOpen = before.lastIndexOf('[');
+            int lastClose = before.lastIndexOf(']');
+
+            if (lastOpen > lastClose) {
+                // We're inside an array, skip this match and continue searching
+                searchFrom = start + 1;
+                continue;
+            }
+
+            // Found a top-level match
+            start += search.length();
+            int end = json.indexOf("\"", start);
+            if (end < 0) return "";
+            return unescapeJson(json.substring(start, end));
+        }
+    }
+
     private String extractString(String json, String key) {
         String search = "\"" + key + "\":\"";
         int start = json.indexOf(search);
@@ -275,7 +590,7 @@ public class RPCControllerExtension extends ControllerExtension {
         start += search.length();
         int end = json.indexOf("\"", start);
         if (end < 0) return "";
-        return json.substring(start, end);
+        return unescapeJson(json.substring(start, end));
     }
 
     private String extractId(String json) {
@@ -307,6 +622,26 @@ public class RPCControllerExtension extends ControllerExtension {
                 .replace("\n", "\\n")
                 .replace("\r", "\\r")
                 .replace("\t", "\\t");
+    }
+
+    private String unescapeJson(String s) {
+        if (s == null) return "";
+        return s.replace("\\\"", "\"")
+                .replace("\\\\", "\\")
+                .replace("\\n", "\n")
+                .replace("\\r", "\r")
+                .replace("\\t", "\t");
+    }
+
+    private String formatResult(String id, String result) {
+        return "{\"jsonrpc\":\"2.0\",\"result\":" + result + ",\"id\":" + id + "}";
+    }
+
+    private String formatError(String id, int code, String message) {
+        return String.format(
+            "{\"jsonrpc\":\"2.0\",\"error\":{\"code\":%d,\"message\":\"%s\"},\"id\":%s}",
+            code, escapeJson(message), id
+        );
     }
 
     @Override

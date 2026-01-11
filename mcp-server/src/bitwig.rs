@@ -10,7 +10,7 @@ use tokio::net::{TcpListener, TcpStream};
 use tokio::sync::{Mutex, RwLock};
 use tracing::{error, info, warn};
 
-use crate::protocol::{self, RpcRequest};
+use crate::protocol::{self, RpcMessage, RpcNotification, RpcRequest};
 
 /// A single Bitwig connection
 struct BitwigConnection {
@@ -37,6 +37,16 @@ impl BitwigConnection {
 
     /// Send a request to Bitwig and wait for response
     async fn call(&self, method: &str, params: serde_json::Value) -> Result<serde_json::Value> {
+        let (result, _notifications) = self.call_with_progress(method, params).await?;
+        Ok(result)
+    }
+
+    /// Send a request to Bitwig and collect progress notifications
+    async fn call_with_progress(
+        &self,
+        method: &str,
+        params: serde_json::Value,
+    ) -> Result<(serde_json::Value, Vec<RpcNotification>)> {
         let id = self.next_id().await;
 
         let request = RpcRequest {
@@ -52,10 +62,27 @@ impl BitwigConnection {
             protocol::write_request(&mut *writer, &request).await?;
         }
 
-        // Read response
+        // Read messages until we get a response with matching id
+        let mut notifications = Vec::new();
         let response = {
             let mut reader = self.reader.lock().await;
-            protocol::read_response(&mut *reader).await?
+            loop {
+                let message = protocol::read_message(&mut *reader).await?;
+                match message {
+                    RpcMessage::Notification(notif) => {
+                        info!("Received notification: {:?}", notif);
+                        notifications.push(notif);
+                    }
+                    RpcMessage::Response(resp) => {
+                        // Check if this is our response
+                        if resp.id == serde_json::json!(id) {
+                            break resp;
+                        } else {
+                            warn!("Received response with unexpected id: {:?}", resp.id);
+                        }
+                    }
+                }
+            }
         };
 
         // Check for error
@@ -63,9 +90,11 @@ impl BitwigConnection {
             return Err(anyhow!("RPC error {}: {}", error.code, error.message));
         }
 
-        response
+        let result = response
             .result
-            .ok_or_else(|| anyhow!("No result in response"))
+            .ok_or_else(|| anyhow!("No result in response"))?;
+
+        Ok((result, notifications))
     }
 }
 
@@ -110,6 +139,23 @@ impl BitwigManager {
 
         match conn {
             Some(conn) => conn.call(method, params).await,
+            None => Err(anyhow!("Bitwig not connected")),
+        }
+    }
+
+    /// Call a method on Bitwig and collect progress notifications
+    pub async fn call_with_progress(
+        &self,
+        method: &str,
+        params: serde_json::Value,
+    ) -> Result<(serde_json::Value, Vec<RpcNotification>)> {
+        let conn = {
+            let lock = self.connection.read().await;
+            lock.clone()
+        };
+
+        match conn {
+            Some(conn) => conn.call_with_progress(method, params).await,
             None => Err(anyhow!("Bitwig not connected")),
         }
     }

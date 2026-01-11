@@ -33,6 +33,15 @@ pub struct RpcResponse {
     pub id: serde_json::Value,
 }
 
+/// JSON-RPC 2.0 Notification (no id)
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct RpcNotification {
+    pub jsonrpc: String,
+    pub method: String,
+    #[serde(default)]
+    pub params: serde_json::Value,
+}
+
 /// JSON-RPC 2.0 Error
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct RpcError {
@@ -40,6 +49,35 @@ pub struct RpcError {
     pub message: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub data: Option<serde_json::Value>,
+}
+
+/// A message that could be either a response (with id) or notification (no id)
+#[derive(Debug, Clone)]
+pub enum RpcMessage {
+    Response(RpcResponse),
+    Notification(RpcNotification),
+}
+
+impl RpcMessage {
+    /// Parse a JSON-RPC message (response or notification)
+    pub fn from_slice(data: &[u8]) -> Result<Self> {
+        // Try to detect if it's a notification (has method, no id)
+        let value: serde_json::Value = serde_json::from_slice(data)?;
+
+        if value.get("id").is_some() && !value.get("id").unwrap().is_null() {
+            // Has id - it's a response
+            let response: RpcResponse = serde_json::from_value(value)?;
+            Ok(RpcMessage::Response(response))
+        } else if value.get("method").is_some() {
+            // Has method, no id - it's a notification
+            let notification: RpcNotification = serde_json::from_value(value)?;
+            Ok(RpcMessage::Notification(notification))
+        } else {
+            // Fallback to response (for null id)
+            let response: RpcResponse = serde_json::from_value(value)?;
+            Ok(RpcMessage::Response(response))
+        }
+    }
 }
 
 impl RpcResponse {
@@ -140,6 +178,24 @@ pub async fn read_response<R: AsyncReadExt + Unpin>(reader: &mut R) -> Result<Rp
     let response: RpcResponse = serde_json::from_slice(&payload)?;
     tracing::debug!("Received response: {:?}", response);
     Ok(response)
+}
+
+/// Read a JSON-RPC message (response or notification) from a stream
+pub async fn read_message<R: AsyncReadExt + Unpin>(reader: &mut R) -> Result<RpcMessage> {
+    let payload = read_frame(reader).await?;
+    let message = RpcMessage::from_slice(&payload)?;
+    tracing::debug!("Received message: {:?}", message);
+    Ok(message)
+}
+
+/// Write a JSON-RPC notification to a stream
+pub async fn write_notification<W: AsyncWriteExt + Unpin>(
+    writer: &mut W,
+    notification: &RpcNotification,
+) -> Result<()> {
+    let payload = serde_json::to_vec(notification)?;
+    tracing::debug!("Sending notification: {:?}", notification);
+    write_frame(writer, &payload).await
 }
 
 /// Write a JSON-RPC request to a stream

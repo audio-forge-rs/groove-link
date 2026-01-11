@@ -4,7 +4,10 @@ from __future__ import annotations
 
 import logging
 import sys
+from pathlib import Path
 from typing import Annotated, Optional
+
+import yaml
 
 import typer
 from rich import print as rprint
@@ -18,6 +21,7 @@ from .mtron import search_mtron
 from .plugins import search_plugins
 from .presets import search_presets
 from .protocol import RPCException
+from .resolve import resolve_device
 from .table import Column, adaptive_table
 
 # CLI app
@@ -185,9 +189,10 @@ def preset(
     else:
         columns = [
             Column("Name", "name", min_width=15, max_width=28, priority=3),
-            Column("Type", "device_type", min_width=4, max_width=4, priority=3),
-            Column("Device", "device", min_width=8, max_width=12, priority=3),
-            Column("Pack", "pack", min_width=10, max_width=24, priority=2),
+            Column("Load", "load_type", min_width=4, max_width=6, priority=3),
+            Column("Type", "device_type", min_width=4, max_width=4, priority=2),
+            Column("Device", "device", min_width=8, max_width=12, priority=2),
+            Column("Pack", "pack", min_width=10, max_width=24, priority=1),
             Column("Package", "package", min_width=6, max_width=12, priority=1),
         ]
         table = adaptive_table(results, columns)
@@ -234,7 +239,7 @@ def plugin(
     else:
         columns = [
             Column("Name", "name", min_width=15, max_width=30, priority=3),
-            Column("Format", "format", min_width=4, max_width=5, priority=3),
+            Column("Load", "load_type", min_width=4, max_width=5, priority=3),
             Column("Vendor", "vendor", min_width=10, max_width=20, priority=2),
             Column("Version", "version", min_width=5, max_width=10, priority=1),
             Column("Location", "location", min_width=4, max_width=6, priority=1),
@@ -282,6 +287,7 @@ def kontakt(
     else:
         columns = [
             Column("Name", "name", min_width=15, max_width=35, priority=3),
+            Column("Load", "load_type", min_width=7, max_width=7, priority=3),
             Column("Library", "library", min_width=15, max_width=40, priority=2),
             Column("Vendor", "vendor", min_width=10, max_width=20, priority=1),
         ]
@@ -334,6 +340,7 @@ def mtron(
     else:
         columns = [
             Column("Name", "name", min_width=15, max_width=35, priority=3),
+            Column("Load", "load_type", min_width=5, max_width=5, priority=3),
             Column("Collection", "collection", min_width=15, max_width=35, priority=2),
             Column("Category", "category", min_width=8, max_width=15, priority=2),
         ]
@@ -341,6 +348,176 @@ def mtron(
         wide_console = Console(width=300)
         wide_console.print(table)
         rprint(f"[dim]Found {len(results)} patches in {elapsed:.2f}s[/dim]")
+
+
+# Track subcommand group
+track_app = typer.Typer(help="Track operations")
+app.add_typer(track_app, name="track")
+
+
+@track_app.command("create")
+def track_create(
+    config_file: Annotated[
+        Path,
+        typer.Argument(help="YAML config file (song config with tracks section)"),
+    ],
+    track_name: Annotated[
+        Optional[str],
+        typer.Option("--track", "-t", help="Specific track to create (default: all)"),
+    ] = None,
+    host: HostOption = DEFAULT_HOST,
+    port: PortOption = DEFAULT_PORT,
+    verbose: VerboseOption = False,
+) -> None:
+    """Create tracks with devices from a song YAML config.
+
+    The YAML config file can define tracks in a 'tracks' section:
+
+        name: My Song
+        bpm: 120
+
+        tracks:
+          piano:
+            type: instrument
+            devices:
+              - Humanize
+              - nektar piano
+              - query: abbey road
+                hint: plugin
+
+          bass:
+            type: instrument
+            devices:
+              - bass preset
+
+    Use --track to create a specific track, or omit to create all tracks.
+
+    Device entries can be:
+      - A string (fuzzy searched as preset then plugin)
+      - A dict with 'query' and optional 'hint' (preset/plugin/kontakt/mtron)
+    """
+    import time
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    # Load and parse YAML config
+    if not config_file.exists():
+        rprint(f"[red]Error:[/red] Config file not found: {config_file}")
+        raise typer.Exit(1)
+
+    try:
+        with open(config_file) as f:
+            config = yaml.safe_load(f)
+    except yaml.YAMLError as e:
+        rprint(f"[red]Error:[/red] Invalid YAML: {e}")
+        raise typer.Exit(1)
+
+    if not isinstance(config, dict):
+        rprint("[red]Error:[/red] Config must be a YAML mapping")
+        raise typer.Exit(1)
+
+    # Get tracks section (or use whole config if no tracks section)
+    tracks_config = config.get("tracks", {})
+    if not tracks_config:
+        # Backwards compat: if no 'tracks' section, treat whole config as single track
+        single_name = config.get("name", "New Track")
+        tracks_config = {single_name: config}
+
+    # Filter to specific track if requested
+    if track_name:
+        if track_name not in tracks_config:
+            rprint(f"[red]Error:[/red] Track '{track_name}' not found in config")
+            rprint(f"[dim]Available tracks: {', '.join(tracks_config.keys())}[/dim]")
+            raise typer.Exit(1)
+        tracks_config = {track_name: tracks_config[track_name]}
+
+    # Create each track
+    created_count = 0
+    for tname, track_cfg in tracks_config.items():
+        if not _create_track(tname, track_cfg, host, port):
+            rprint(f"[red]Failed to create track:[/red] {tname}")
+        else:
+            created_count += 1
+
+    elapsed = time.perf_counter() - start
+    rprint(f"[green]✓[/green] Created {created_count}/{len(tracks_config)} tracks in {elapsed:.2f}s")
+
+
+def _create_track(
+    name: str,
+    track_cfg: dict,
+    host: str,
+    port: int,
+) -> bool:
+    """Create a single track with devices.
+
+    Returns True on success, False on failure.
+    """
+    track_type = track_cfg.get("type", "instrument")
+    device_specs = track_cfg.get("devices", [])
+
+    # Resolve device names to actual paths
+    rprint(f"[cyan]Creating track:[/cyan] {name} ({track_type})")
+    resolved_devices = []
+    for spec in device_specs:
+        if isinstance(spec, str):
+            # Simple string query
+            query = spec
+            hint = None
+        elif isinstance(spec, dict):
+            query = spec.get("query", spec.get("name", ""))
+            hint = spec.get("hint")
+        else:
+            rprint(f"[yellow]Warning:[/yellow] Skipping invalid device spec: {spec}")
+            continue
+
+        rprint(f"  [dim]Resolving:[/dim] {query}...", end="")
+        result = resolve_device(query, hint)
+
+        if result.success and result.spec:
+            resolved_devices.append(result.spec.to_dict())
+            rprint(f" [green]→[/green] {result.spec.display_name} ({result.spec.type})")
+        else:
+            rprint(f" [red]✗[/red] {result.error}")
+            if result.alternatives:
+                rprint(f"    [dim]Suggestions: {', '.join(result.alternatives)}[/dim]")
+
+    if not resolved_devices and not device_specs:
+        rprint("  [dim]No devices specified[/dim]")
+
+    # Build RPC params
+    params = {
+        "name": name,
+        "type": track_type,
+        "devices": resolved_devices,
+    }
+
+    # Progress callback
+    def on_progress(step: int, total: int, message: str) -> None:
+        rprint(f"  [dim][{step}/{total}][/dim] {message}")
+
+    # Make RPC call with progress
+    with get_client(host, port) as client:
+        try:
+            # Longer timeout for track creation with multiple devices
+            timeout = 5.0 + len(resolved_devices) * 2.0
+            rpc_result = client.call_with_progress(
+                "track.create",
+                params,
+                on_progress=on_progress,
+                timeout=timeout,
+            )
+        except RPCException as e:
+            rprint(f"  [red]Error:[/red] {e}")
+            return False
+
+    # Show result details
+    if isinstance(rpc_result, dict):
+        devices_loaded = rpc_result.get("devices", 0)
+        rprint(f"  [green]✓[/green] Created with {devices_loaded} devices")
+
+    return True
 
 
 @app.command()

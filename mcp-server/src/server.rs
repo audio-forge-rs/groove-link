@@ -15,7 +15,7 @@ use tokio::net::TcpListener;
 use tracing::{error, info};
 
 use crate::bitwig::BitwigManager;
-use crate::protocol::{self, RpcResponse};
+use crate::protocol::{self, RpcNotification, RpcResponse};
 
 /// MCP Server with Bitwig tools
 #[derive(Clone)]
@@ -64,6 +64,13 @@ impl GrooveMcpServer {
         let connected = self.bitwig.is_connected().await;
         format!("Bitwig connected: {}", connected)
     }
+
+    // Note: For track creation with devices, use the Python CLI:
+    //   bitwig track create config.yaml
+    // This resolves device names and handles progress display.
+    //
+    // Search operations (presets, plugins, kontakt, mtron) are also local
+    // and handled by the Python CLI: bitwig preset "query", bitwig plugin "query", etc.
 }
 
 /// Run MCP server over stdio for Claude Code
@@ -105,16 +112,49 @@ async fn handle_cli_connection(
             }
         };
 
-        // Dispatch to Bitwig
-        let response = match bitwig.call(&request.method, request.params.clone()).await {
-            Ok(result) => RpcResponse::success(request.id, result),
-            Err(e) => RpcResponse::error(request.id, -32603, e.to_string()),
-        };
+        // Check if this is a method that produces progress notifications
+        let uses_progress = request.method == "track.create";
 
-        // Send response back to CLI
-        if let Err(e) = protocol::write_response(&mut writer, &response).await {
-            error!("Failed to send CLI response: {}", e);
-            break;
+        if uses_progress {
+            // Use call_with_progress and forward notifications
+            match bitwig
+                .call_with_progress(&request.method, request.params.clone())
+                .await
+            {
+                Ok((result, notifications)) => {
+                    // Send notifications first
+                    for notif in notifications {
+                        if let Err(e) = protocol::write_notification(&mut writer, &notif).await {
+                            error!("Failed to send progress notification: {}", e);
+                            // Continue anyway - CLI might have disconnected
+                        }
+                    }
+                    // Then send final response
+                    let response = RpcResponse::success(request.id, result);
+                    if let Err(e) = protocol::write_response(&mut writer, &response).await {
+                        error!("Failed to send CLI response: {}", e);
+                        break;
+                    }
+                }
+                Err(e) => {
+                    let response = RpcResponse::error(request.id, -32603, e.to_string());
+                    if let Err(e) = protocol::write_response(&mut writer, &response).await {
+                        error!("Failed to send CLI error response: {}", e);
+                        break;
+                    }
+                }
+            }
+        } else {
+            // Standard call without progress
+            let response = match bitwig.call(&request.method, request.params.clone()).await {
+                Ok(result) => RpcResponse::success(request.id, result),
+                Err(e) => RpcResponse::error(request.id, -32603, e.to_string()),
+            };
+
+            if let Err(e) = protocol::write_response(&mut writer, &response).await {
+                error!("Failed to send CLI response: {}", e);
+                break;
+            }
         }
     }
 
