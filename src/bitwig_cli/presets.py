@@ -18,7 +18,8 @@ class PresetMatch:
     file_path: str
     package: str  # e.g., "Bitwig", "Bajaao"
     pack: str  # e.g., "Wundertuete Vol. 1"
-    category: str | None  # e.g., "Synth", "Drums" (from subdirectory)
+    category: str | None  # Full path after pack, e.g., "Presets/Polymer"
+    device: str | None  # Extracted device name, e.g., "Polymer"
     score: float  # Match relevance score
 
     def to_dict(self) -> dict:
@@ -28,18 +29,22 @@ class PresetMatch:
             "package": self.package,
             "pack": self.pack,
             "category": self.category,
+            "device": self.device,
         }
 
 
-def _parse_preset_path(path: str) -> tuple[str, str, str, str | None]:
+def _parse_preset_path(path: str) -> tuple[str, str, str, str | None, str | None]:
     """Extract metadata from preset file path.
 
-    Path structure:
-    .../installed-packages/5.0/{Package}/{Pack}/{Category?}/{Name}.bwpreset
-    .../Library/Presets/{DeviceType}/{Name}.bwpreset
+    Path structures:
+    .../installed-packages/5.0/{Package}/{Pack}/Presets/{Device}/{Name}.bwpreset
+    .../installed-packages/5.0/{Package}/{Pack}/{Name}.bwpreset  (flat pack)
+    .../Library/Presets/{Device}/{Name}.bwpreset
 
     Returns:
-        (name, package, pack, category)
+        (name, package, pack, category, device)
+        - category: full path between pack and filename (e.g., "Presets/Polymer")
+        - device: extracted device name when identifiable (e.g., "Polymer")
     """
     p = Path(path)
     name = p.stem  # Filename without extension
@@ -49,16 +54,24 @@ def _parse_preset_path(path: str) -> tuple[str, str, str, str | None]:
     # Try to find installed-packages structure
     try:
         pkg_idx = parts.index("installed-packages")
-        # installed-packages/5.0/Package/Pack/[Category/]Name.bwpreset
+        # installed-packages/5.0/Package/Pack/...
         if pkg_idx + 3 < len(parts):
             package = parts[pkg_idx + 2]  # After 5.0
             pack = parts[pkg_idx + 3]
 
-            # Check if there's a category subdirectory
+            # Get everything between pack and filename as category
             remaining = parts[pkg_idx + 4 : -1]  # Between pack and filename
             category = "/".join(remaining) if remaining else None
 
-            return name, package, pack, category
+            # Extract device from Presets/{Device}/ structure
+            device = None
+            if remaining and remaining[0] == "Presets" and len(remaining) >= 2:
+                device = remaining[1]
+            elif remaining:
+                # Use last subdirectory as device hint
+                device = remaining[-1]
+
+            return name, package, pack, category, device
     except ValueError:
         pass
 
@@ -66,13 +79,13 @@ def _parse_preset_path(path: str) -> tuple[str, str, str, str | None]:
     try:
         lib_idx = parts.index("Library")
         if lib_idx + 2 < len(parts) and parts[lib_idx + 1] == "Presets":
-            device_type = parts[lib_idx + 2]
-            return name, "User", device_type, None
+            device = parts[lib_idx + 2]
+            return name, "User", "User Library", device, device
     except ValueError:
         pass
 
     # Fallback: use parent directory as pack
-    return name, "Unknown", p.parent.name, None
+    return name, "Unknown", p.parent.name, None, None
 
 
 def _fuzzy_match(query: str, text: str) -> float:
@@ -175,10 +188,10 @@ def search_presets(
         if "/device-settings/" in path:
             continue
 
-        name, package, pack, category = _parse_preset_path(path)
+        name, package, pack, category, device = _parse_preset_path(path)
 
         # Build searchable text from all metadata
-        search_text = f"{name} {package} {pack} {category or ''}"
+        search_text = f"{name} {package} {pack} {category or ''} {device or ''}"
 
         score = _fuzzy_match(query, search_text)
 
@@ -190,6 +203,7 @@ def search_presets(
                     package=package,
                     pack=pack,
                     category=category,
+                    device=device,
                     score=score,
                 )
             )
