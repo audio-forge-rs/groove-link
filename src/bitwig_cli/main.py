@@ -519,11 +519,14 @@ def track_create(
     # Get config directory for resolving relative MIDI paths
     config_dir = config_file.parent
 
+    # Get all track names for cross-referencing (e.g., receives)
+    all_track_names = list(tracks_config.keys())
+
     # Create each track
     created_count = 0
     midi_inserted = 0
     for track_index, (tname, track_cfg) in enumerate(tracks_config.items()):
-        if not _create_track(tname, track_cfg, host, port):
+        if not _create_track(tname, track_cfg, host, port, all_track_names):
             rprint(f"[red]Failed to create track:[/red] {tname}")
             continue
 
@@ -595,6 +598,7 @@ def _create_track(
     track_cfg: dict,
     host: str,
     port: int,
+    all_track_names: list[str] | None = None,
 ) -> bool:
     """Create a single track with devices.
 
@@ -602,6 +606,12 @@ def _create_track(
         instrument: nektar piano
         note_fx: [Humanize x 3]
         fx: [Tape-Machine, Room One]
+
+    Or receives format (for shared FX):
+        receives:
+          - piano: pre
+          - bass: pre
+        fx: [Reverb, Delay]
 
     Or legacy format:
         devices: [Humanize x 3, nektar piano, Tape-Machine]
@@ -612,16 +622,40 @@ def _create_track(
     track_type = track_cfg.get("type", "instrument")
     if "instrument" in track_cfg:
         track_type = "instrument"
+    elif "receives" in track_cfg:
+        track_type = "audio"  # Receiving tracks are audio tracks
 
-    # Build device list from declarative or legacy format
+    # Build device list from declarative format
     device_specs = []
+    audio_receiver_sources = []  # Track names to receive from
+
+    # Handle receives: add Audio Receiver for each source
+    receives = track_cfg.get("receives", [])
+    if receives:
+        for recv_spec in receives:
+            # recv_spec is either "track_name" or {"track_name": "pre/post"}
+            if isinstance(recv_spec, str):
+                source_track = recv_spec
+                tap = "pre"
+            elif isinstance(recv_spec, dict):
+                # {"piano": "pre"} format
+                source_track = list(recv_spec.keys())[0]
+                tap = recv_spec[source_track]
+            else:
+                rprint(f"[yellow]Warning:[/yellow] Invalid receives spec: {recv_spec}")
+                continue
+
+            audio_receiver_sources.append((source_track, tap))
+            # Add Audio Receiver device (will need source param set later)
+            device_specs.append({"query": "Audio Receiver", "hint": "device"})
+
+    # Handle declarative instrument/note_fx/fx format
     if "instrument" in track_cfg or "note_fx" in track_cfg or "fx" in track_cfg:
-        # Declarative format: note_fx -> instrument -> fx
         device_specs.extend(track_cfg.get("note_fx", []))
         if "instrument" in track_cfg:
             device_specs.append(track_cfg["instrument"])
         device_specs.extend(track_cfg.get("fx", []))
-    else:
+    elif not receives:
         # Legacy format: flat devices list
         device_specs = track_cfg.get("devices", [])
 
@@ -684,6 +718,12 @@ def _create_track(
     if isinstance(rpc_result, dict):
         devices_loaded = rpc_result.get("devicesAdded", 0)
         rprint(f"  [green]✓[/green] Created with {devices_loaded} devices")
+
+    # Note about Audio Receiver sources (parameter setting is TODO)
+    if audio_receiver_sources:
+        for source_track, tap in audio_receiver_sources:
+            rprint(f"  [dim]Audio Receiver:[/dim] source={source_track} ({tap})")
+        rprint(f"  [yellow]Note:[/yellow] Audio Receiver sources need manual configuration")
 
     return True
 

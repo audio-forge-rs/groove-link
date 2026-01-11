@@ -9,6 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Literal
 
+from .devices import search_devices
 from .kontakt import search_kontakt
 from .mtron import search_mtron
 from .plugins import search_plugins
@@ -193,6 +194,37 @@ def resolve_mtron(
     return ResolveResult(success=True, spec=spec, alternatives=alternatives)
 
 
+def resolve_base_device(query: str, category_filter: str | None = None) -> ResolveResult:
+    """Resolve a Bitwig base device name (Audio Receiver, Compressor, etc.).
+
+    Args:
+        query: Fuzzy search query (e.g., "audio receiver", "compressor")
+        category_filter: Optional filter: "inst", "note", "fx", "routing", "mod", "util"
+
+    Returns:
+        ResolveResult with the resolved DeviceSpec or error
+    """
+    results = search_devices(query, limit=5, category_filter=category_filter)
+
+    if not results:
+        return ResolveResult(
+            success=False,
+            spec=None,
+            error=f"No base device found for '{query}'",
+        )
+
+    best = results[0]
+    spec = DeviceSpec(
+        type="file",  # Base devices are loaded as files (.bwdevice)
+        path=best.file_path,
+        display_name=best.name,
+    )
+
+    alternatives = [r.name for r in results[1:4]] if len(results) > 1 else None
+
+    return ResolveResult(success=True, spec=spec, alternatives=alternatives)
+
+
 def resolve_device(query: str, hint: str | None = None) -> ResolveResult:
     """Resolve a device name with auto-detection.
 
@@ -201,7 +233,7 @@ def resolve_device(query: str, hint: str | None = None) -> ResolveResult:
 
     Args:
         query: Fuzzy search query
-        hint: Optional hint: "preset", "plugin", "kontakt", "mtron"
+        hint: Optional hint: "preset", "plugin", "kontakt", "mtron", "device"
 
     Returns:
         ResolveResult with the resolved device
@@ -215,10 +247,17 @@ def resolve_device(query: str, hint: str | None = None) -> ResolveResult:
         return resolve_kontakt(query)
     elif hint == "mtron":
         return resolve_mtron(query)
+    elif hint == "device":
+        return resolve_base_device(query)
 
     # Try to auto-detect based on the query
     # First, try as a preset (most common)
     result = resolve_preset(query)
+    if result.success:
+        return result
+
+    # Then try as a base device (Audio Receiver, Compressor, etc.)
+    result = resolve_base_device(query)
     if result.success:
         return result
 

@@ -130,31 +130,35 @@ bitwig track create song.yaml --track piano  # Create specific track
 **Song config format:**
 
 ```yaml
-name: My Song
-bpm: 88  # Sets project tempo
+song:
+  title: Morning Light
+  tempo: 88             # Sets project tempo
 
 tracks:
   piano:
-    type: instrument
-    devices:
-      - Humanize x 3        # Note FX preset
-      - nektar piano        # Instrument preset
-      - dynamic eq          # Effect preset
-      - Abbey Road          # Effect preset
-      - reverb              # Effect preset
-    midi: piano.mid         # Optional: insert into clip launcher
+    instrument: nektar piano
+    note_fx:
+      - Humanize x 3
+    part: piano.abc     # ABC or MIDI file
 
   bass:
-    type: instrument
-    devices:
-      - bass preset
-    midi: midi/bass.mid     # Paths relative to config file
+    instrument: Acoustic Bass Long
+    part: bass.abc
+
+  room:                 # Shared FX track
+    receives:           # Audio Receiver sources
+      - piano: pre
+      - bass: pre
+    fx:
+      - Tape-Machine
+      - Room One
 ```
 
 **Features:**
-- Devices are resolved via fuzzy search - use exact names or partial matches
-- Tempo is set before creating tracks (part of song push)
-- MIDI files are inserted into clip launcher slot 1 of each track
+- Declarative format: `instrument`, `note_fx`, `fx`, `part`, `receives`
+- Devices fuzzy-matched against presets, base devices, and plugins
+- `receives` creates Audio Receiver devices for shared FX routing
+- ABC notation auto-converted to MIDI via `abc2midi`
 
 ## How It Works
 

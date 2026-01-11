@@ -7,23 +7,22 @@ song:
   key: G
   time: 4/4
 
-groups:
-  rhythm:
-    tracks: [piano, bass]
-
 tracks:
   piano:
     instrument: nektar piano
     note_fx:
       - Humanize x 3
-    fx:
-      - Tape-Machine
-      - Room One
     part: piano.abc
 
   bass:
     instrument: Acoustic Bass Long
-    fx:
-      - Warm Saturator
-      - Room One
     part: bass.abc
+
+  # Shared room reverb - receives audio from piano and bass
+  room:
+    receives:
+      - piano: pre
+      - bass: pre
+    fx:
+      - Tape-Machine
+      - Room One

@@ -545,29 +545,28 @@ bitwig track create song.yaml --track piano
 song:
   title: Morning Light
   tempo: 88         # Sets project tempo
-  key: G            # Informational (not used by Bitwig)
+  key: G            # Informational
   time: 4/4         # Informational
-
-groups:
-  rhythm:
-    tracks: [piano, bass]  # Grouping (manual in Bitwig UI for now)
 
 tracks:
   piano:
     instrument: nektar piano     # Main sound source
     note_fx:                     # Note effects (before instrument)
       - Humanize x 3
-    fx:                          # Audio effects (after instrument)
-      - Tape-Machine
-      - Room One
     part: piano.abc              # ABC or MIDI file for clip launcher
 
   bass:
     instrument: Acoustic Bass Long
-    fx:
-      - Warm Saturator
-      - Room One
     part: bass.abc
+
+  # Shared FX track - receives audio from other tracks
+  room:
+    receives:                    # Audio Receiver sources
+      - piano: pre               # pre-fader tap
+      - bass: pre
+    fx:                          # Applied to received audio
+      - Tape-Machine
+      - Room One
 ```
 
 **Track fields:**
@@ -575,25 +574,25 @@ tracks:
 - `note_fx` - Note-level effects inserted before instrument
 - `fx` - Audio effects inserted after instrument
 - `part` - ABC (.abc) or MIDI (.mid) file for clip launcher slot 1
+- `receives` - List of tracks to receive audio from (creates Audio Receiver devices)
 
 **Song push workflow:**
 1. Set tempo (if `song.tempo` specified)
-2. Create each track with devices in order: note_fx → instrument → fx
+2. Create each track with devices in order: Audio Receivers → note_fx → instrument → fx
 3. Convert ABC → MIDI (if `.abc` part specified)
 4. Insert MIDI into clip launcher slot 1
 
 **Device resolution:**
-- Device names are fuzzy-matched against presets, then plugins
+- Device names are fuzzy-matched against presets, base devices, then plugins
 - Use `query` + `hint` for explicit control:
   ```yaml
-  - query: surge
-    hint: plugin  # force plugin search
+  - query: Audio Receiver
+    hint: device  # force base device search
   ```
 
-**Groups (limitation):**
-- The Bitwig Control Surface API does not support programmatic group creation
-- Groups defined in config are informational; create them manually in Bitwig (Cmd+G)
-- Track bank uses hierarchical mode for proper group representation
+**Audio Receiver (limitation):**
+- Audio Receiver devices are inserted but source selection requires manual configuration
+- The Bitwig API exposes device parameters but source selector automation is not yet implemented
 
 **Progress notifications:**
 - Track creation sends progress updates for each device loaded
