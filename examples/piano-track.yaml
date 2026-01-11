@@ -17,8 +17,8 @@ tracks:
       - Abbey Road
       - reverb
     # Optional: ABC notation file (converted to MIDI via abc2midi)
-    # abc: piano.abc
-    # Optional: MIDI file to insert into clip launcher slot 1
+    abc: piano.abc
+    # Optional: MIDI file to insert into clip launcher slot 1 (or use abc above)
     # midi: piano.mid
 
   # Additional tracks could be defined here
