@@ -369,38 +369,43 @@ def track_create(
     port: PortOption = DEFAULT_PORT,
     verbose: VerboseOption = False,
 ) -> None:
-    """Create tracks with devices from a song YAML config.
+    """Create tracks with devices from a declarative song config.
 
-    The YAML config file can define tracks in a 'tracks' section:
+    Example config:
 
-        name: My Song
-        bpm: 120
+        song:
+          title: Morning Light
+          tempo: 88
+          key: G
+
+        groups:
+          rhythm:
+            tracks: [piano, bass]
 
         tracks:
           piano:
-            type: instrument
-            devices:
-              - Humanize
-              - nektar piano
-              - query: abbey road
-                hint: plugin
-            midi: piano.mid  # Optional: MIDI file for clip launcher
+            instrument: nektar piano
+            note_fx:
+              - Humanize x 3
+            fx:
+              - Tape-Machine
+              - Room One
+            part: piano.abc
 
           bass:
-            type: instrument
-            devices:
-              - bass preset
-            midi: midi/bass.mid
+            instrument: Acoustic Bass Long
+            fx:
+              - Warm Saturator
+              - Room One
+            part: bass.abc
 
-    Use --track to create a specific track, or omit to create all tracks.
+    Track fields:
+      - instrument: main sound source (required for instrument tracks)
+      - note_fx: note-level effects (before instrument)
+      - fx: audio effects (after instrument)
+      - part: ABC or MIDI file for clip launcher
 
-    Device entries can be:
-      - A string (fuzzy searched as preset then plugin)
-      - A dict with 'query' and optional 'hint' (preset/plugin/kontakt/mtron)
-
-    ABC/MIDI paths can be relative (to config file) or absolute.
-    ABC files are converted to MIDI using abc2midi before insertion.
-    MIDI files are inserted into clip launcher slot 1 of each track.
+    Use --track to create a specific track, or omit to create all.
     """
     import time
 
@@ -423,15 +428,25 @@ def track_create(
         rprint("[red]Error:[/red] Config must be a YAML mapping")
         raise typer.Exit(1)
 
-    # Get tracks section (or use whole config if no tracks section)
+    # Parse declarative format: song metadata at top level or in 'song' section
+    song_meta = config.get("song", {})
+    song_title = song_meta.get("title") or config.get("name", "Untitled")
+
+    # Get tracks section
     tracks_config = config.get("tracks", {})
     if not tracks_config:
-        # Backwards compat: if no 'tracks' section, treat whole config as single track
-        single_name = config.get("name", "New Track")
-        tracks_config = {single_name: config}
+        rprint("[red]Error:[/red] No tracks defined in config")
+        raise typer.Exit(1)
 
-    # Set tempo if specified (part of song push, before creating tracks)
-    tempo = config.get("bpm") or config.get("tempo")
+    # Get groups (for future use - API may not support programmatic grouping)
+    groups_config = config.get("groups", {})
+    if groups_config:
+        rprint(f"[dim]Groups defined: {', '.join(groups_config.keys())}[/dim]")
+
+    rprint(f"[cyan]Song:[/cyan] {song_title}")
+
+    # Set tempo from song.tempo or legacy bpm field
+    tempo = song_meta.get("tempo") or config.get("bpm") or config.get("tempo")
     if tempo:
         _set_tempo(tempo, host, port)
 
@@ -456,9 +471,20 @@ def track_create(
 
         created_count += 1
 
-        # Convert ABC to MIDI if specified
-        abc_file = track_cfg.get("abc")
-        midi_file = track_cfg.get("midi")
+        # Get part file (declarative) or legacy abc/midi fields
+        part_file = track_cfg.get("part")
+        abc_file = track_cfg.get("abc") if not part_file else None
+        midi_file = track_cfg.get("midi") if not part_file else None
+
+        # Determine if part is ABC or MIDI based on extension
+        if part_file:
+            if part_file.endswith(".abc"):
+                abc_file = part_file
+            elif part_file.endswith(".mid") or part_file.endswith(".midi"):
+                midi_file = part_file
+            else:
+                # Default to ABC
+                abc_file = part_file
 
         if abc_file:
             from .abc import abc_to_midi
@@ -514,10 +540,32 @@ def _create_track(
 ) -> bool:
     """Create a single track with devices.
 
+    Supports declarative format:
+        instrument: nektar piano
+        note_fx: [Humanize x 3]
+        fx: [Tape-Machine, Room One]
+
+    Or legacy format:
+        devices: [Humanize x 3, nektar piano, Tape-Machine]
+
     Returns True on success, False on failure.
     """
+    # Determine track type from config
     track_type = track_cfg.get("type", "instrument")
-    device_specs = track_cfg.get("devices", [])
+    if "instrument" in track_cfg:
+        track_type = "instrument"
+
+    # Build device list from declarative or legacy format
+    device_specs = []
+    if "instrument" in track_cfg or "note_fx" in track_cfg or "fx" in track_cfg:
+        # Declarative format: note_fx -> instrument -> fx
+        device_specs.extend(track_cfg.get("note_fx", []))
+        if "instrument" in track_cfg:
+            device_specs.append(track_cfg["instrument"])
+        device_specs.extend(track_cfg.get("fx", []))
+    else:
+        # Legacy format: flat devices list
+        device_specs = track_cfg.get("devices", [])
 
     # Resolve device names to actual paths
     rprint(f"[cyan]Creating track:[/cyan] {name} ({track_type})")

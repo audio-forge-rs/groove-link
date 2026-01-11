@@ -31,7 +31,7 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.5.0";
+    public static final String VERSION = "0.5.2";
 
     private ControllerHost host;
     private Application application;
@@ -65,8 +65,11 @@ public class RPCControllerExtension extends ControllerExtension {
         host.println("[init] Creating application...");
         application = host.createApplication();
 
-        host.println("[init] Creating trackBank...");
-        trackBank = host.createTrackBank(16, 0, 8);
+        // Use hierarchical track bank (hasFlatTrackList=false) for proper group representation
+        // When false: operates on direct child tracks, not all nested tracks
+        // This is better for representing nested tracks in groups
+        host.println("[init] Creating hierarchical trackBank...");
+        trackBank = host.createTrackBank(16, 0, 8, false);
 
         host.println("[init] Creating cursorTrack...");
         cursorTrack = host.createCursorTrack(0, 0);
@@ -93,6 +96,7 @@ public class RPCControllerExtension extends ControllerExtension {
             track.arm().markInterested();
             track.exists().markInterested();
             track.trackType().markInterested();
+            track.isGroup().markInterested();
         }
 
         // Connect to MCP server as client
@@ -589,12 +593,14 @@ public class RPCControllerExtension extends ControllerExtension {
             boolean mute = track.mute().get();
             boolean solo = track.solo().get();
             boolean arm = track.arm().get();
+            boolean isGroup = track.isGroup().get();
 
             sb.append(String.format(
-                "{\"id\":%d,\"name\":\"%s\",\"type\":\"%s\",\"volume\":%.3f,\"pan\":%.3f,\"mute\":%b,\"solo\":%b,\"arm\":%b}",
+                "{\"id\":%d,\"name\":\"%s\",\"type\":\"%s\",\"isGroup\":%b,\"volume\":%.3f,\"pan\":%.3f,\"mute\":%b,\"solo\":%b,\"arm\":%b}",
                 i,
                 escapeJson(name != null ? name : ""),
                 escapeJson(trackType != null ? trackType.toLowerCase() : ""),
+                isGroup,
                 volume,
                 pan,
                 mute,

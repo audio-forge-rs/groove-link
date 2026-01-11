@@ -1,30 +1,29 @@
 # Morning Light - acoustic piano and bass duet
 # Usage: bitwig track create examples/piano-track.yaml
 
-name: Morning Light
-bpm: 88
+song:
+  title: Morning Light
+  tempo: 88
+  key: G
+  time: 4/4
+
+groups:
+  rhythm:
+    tracks: [piano, bass]
 
 tracks:
   piano:
-    type: instrument
-    devices:
-      # Subtle humanization for natural feel
+    instrument: nektar piano
+    note_fx:
       - Humanize x 3
-      # Acoustic piano
-      - nektar piano
-      # Gentle warmth
+    fx:
       - Tape-Machine
-      # Natural room ambience
       - Room One
-    abc: piano.abc
+    part: piano.abc
 
   bass:
-    type: instrument
-    devices:
-      # Acoustic upright bass
-      - Acoustic Bass Long
-      # Warm saturation - gentle harmonics
+    instrument: Acoustic Bass Long
+    fx:
       - Warm Saturator
-      # Room to match piano
       - Room One
-    abc: bass.abc
+    part: bass.abc

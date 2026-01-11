@@ -539,43 +539,61 @@ bitwig track create song.yaml
 bitwig track create song.yaml --track piano
 ```
 
-**Song config format:**
+**Declarative song config format:**
 
 ```yaml
-name: My Song
-bpm: 88  # Sets project tempo before creating tracks
+song:
+  title: Morning Light
+  tempo: 88         # Sets project tempo
+  key: G            # Informational (not used by Bitwig)
+  time: 4/4         # Informational
+
+groups:
+  rhythm:
+    tracks: [piano, bass]  # Grouping (manual in Bitwig UI for now)
 
 tracks:
   piano:
-    type: instrument  # instrument, audio, effect
-    devices:
-      - Humanize x 3        # Note FX preset (fuzzy matched)
-      - nektar piano        # Instrument preset
-      - dynamic eq          # Effect preset
-      - Abbey Road          # Effect preset
-      - reverb              # Effect preset
-    abc: piano.abc          # ABC notation (converted to MIDI via abc2midi)
+    instrument: nektar piano     # Main sound source
+    note_fx:                     # Note effects (before instrument)
+      - Humanize x 3
+    fx:                          # Audio effects (after instrument)
+      - Tape-Machine
+      - Room One
+    part: piano.abc              # ABC or MIDI file for clip launcher
 
   bass:
-    type: instrument
-    devices:
-      - bass preset
-    midi: bass.mid          # MIDI file inserted into clip launcher slot 1
+    instrument: Acoustic Bass Long
+    fx:
+      - Warm Saturator
+      - Room One
+    part: bass.abc
 ```
 
+**Track fields:**
+- `instrument` - Main sound source (required for instrument tracks)
+- `note_fx` - Note-level effects inserted before instrument
+- `fx` - Audio effects inserted after instrument
+- `part` - ABC (.abc) or MIDI (.mid) file for clip launcher slot 1
+
 **Song push workflow:**
-1. Set tempo (if `bpm` specified)
-2. Create each track with devices
-3. Convert ABC → MIDI (if `abc` specified per track)
-4. Insert MIDI into clip launcher slot 1 (if `abc` or `midi` specified)
+1. Set tempo (if `song.tempo` specified)
+2. Create each track with devices in order: note_fx → instrument → fx
+3. Convert ABC → MIDI (if `.abc` part specified)
+4. Insert MIDI into clip launcher slot 1
 
 **Device resolution:**
-- Simple strings are fuzzy-matched against presets, then plugins
+- Device names are fuzzy-matched against presets, then plugins
 - Use `query` + `hint` for explicit control:
   ```yaml
   - query: surge
     hint: plugin  # force plugin search
   ```
+
+**Groups (limitation):**
+- The Bitwig Control Surface API does not support programmatic group creation
+- Groups defined in config are informational; create them manually in Bitwig (Cmd+G)
+- Track bank uses hierarchical mode for proper group representation
 
 **Progress notifications:**
 - Track creation sends progress updates for each device loaded
