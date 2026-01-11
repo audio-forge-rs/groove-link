@@ -24,7 +24,7 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.3.1";
+    public static final String VERSION = "0.3.2";
 
     private ControllerHost host;
     private Application application;
@@ -77,6 +77,8 @@ public class RPCControllerExtension extends ControllerExtension {
     }
 
     private void connectToMcpServer() {
+        host.println("[mcp] Attempting connection to " + MCP_HOST + ":" + MCP_PORT + "...");
+
         host.connectToRemoteHost(MCP_HOST, MCP_PORT, connection -> {
             host.println("[mcp] Connected to MCP server!");
             mcpConnection = connection;
@@ -93,6 +95,15 @@ public class RPCControllerExtension extends ControllerExtension {
                 host.scheduleTask(this::connectToMcpServer, 5000);
             });
         });
+
+        // If connection fails silently (server not running), callback never fires.
+        // Schedule a check - if still not connected after 5 seconds, retry.
+        host.scheduleTask(() -> {
+            if (mcpConnection == null) {
+                host.println("[mcp] Connection attempt timed out, retrying...");
+                connectToMcpServer();
+            }
+        }, 5000);
     }
 
     private static String bytesToHex(byte[] bytes, int len) {
