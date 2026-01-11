@@ -43,6 +43,7 @@ tracks:
     instrument: Drum Machine
     fx:
       - Transient Shaper       # Attack enhancement
+    part: morning-light-drums.abc
 
   # Ambient pad for atmosphere - the "secret sauce"
   pad:
@@ -54,6 +55,7 @@ tracks:
       - Handmade Chorus        # Lush stereo width
       - Smooth Compression     # Sustain and glue
       - Ducking Soft Stereo Feed  # Subtle delay tail
+    part: morning-light-pad.abc
 
   # Shared room reverb - receives from all instruments
   # Creates cohesive space without per-track reverb

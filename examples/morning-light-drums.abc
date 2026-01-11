@@ -1,0 +1,26 @@
+X:1
+T:Morning Light - Drums
+C:Groove Link Example
+M:4/4
+L:1/8
+Q:1/4=72
+K:C perc
+%%MIDI channel 10
+%
+% Brushed jazz pattern - 8 bars
+% Subtle groove: kick on 1 and 3, snare brushes on 2 and 4
+% Hi-hat keeps steady eighth notes
+%
+% GM Drum Map: C=kick, D=snare, ^F=hi-hat closed, ^G=hi-hat open
+%
+|: [C^F] ^F [D^F] ^F [C^F] ^F [D^F] ^F |
+| [C^F] ^F [D^F] ^F [C^F] ^F [D^G] ^F |
+| [C^F] ^F [D^F] ^F [C^F] ^F [D^F] ^F |
+| [C^F] ^F [D^F] ^F C ^F [D^F] z :|
+%
+% B section - slightly more active
+%
+| [C^F] ^F [D^F] ^F C ^F [D^F] ^F |
+| [C^F] ^F [D^F] ^F [C^F] ^F [D^G] ^F |
+| [C^F] ^F [D^F] ^F [C^F] ^F [D^F] ^F |
+| C ^F D ^F C z D z |

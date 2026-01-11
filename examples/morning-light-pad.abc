@@ -1,0 +1,24 @@
+X:1
+T:Morning Light - Pad
+C:Groove Link Example
+M:4/4
+L:1/1
+Q:1/4=72
+K:C
+%%MIDI program 48
+%
+% Ambient string pad - sustained chords following the progression
+% Cmaj7 - Am7 - Dm7 - G7
+% Whole notes for lush, sustained texture
+%
+|: [E G B c] | [A, C E G] |
+| [D F A c] | [G, B, D F] |
+| [E G B c] | [A, C E G] |
+| [D F A c] | [C E G c] :|
+%
+% B section - higher voicings for lift
+%
+| [c e g b] | [A c e g] |
+| [d f a c'] | [G B d f] |
+| [c e g b] | [A c e g] |
+| [d f a b] | [c e g c'] |
