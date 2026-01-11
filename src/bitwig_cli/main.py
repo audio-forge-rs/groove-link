@@ -166,8 +166,8 @@ def preset(
     else:
         columns = [
             Column("Name", "name", min_width=15, max_width=28, priority=3),
+            Column("Type", "device_type", min_width=4, max_width=4, priority=3),
             Column("Device", "device", min_width=8, max_width=12, priority=3),
-            Column("Category", "category", min_width=6, max_width=14, priority=1),
             Column("Pack", "pack", min_width=10, max_width=24, priority=2),
             Column("Package", "package", min_width=6, max_width=12, priority=1),
         ]

@@ -10,6 +10,50 @@ from pathlib import Path
 from typing import Iterator
 
 
+# Device type classifications
+INSTRUMENTS = {
+    "Polymer", "Phase-4", "FM-4", "Polysynth", "Sampler", "Drum Machine",
+    "E-Clap", "E-Cowbell", "E-Hat", "E-Kick", "E-Snare", "E-Tom",
+    "Organ", "FM-4 Operator", "Wavetable",
+}
+NOTE_FX = {
+    "Note Delay", "Arpeggiator", "Multi-Note", "Note Echo", "Note Filter",
+    "Note Harmonizer", "Note Latch", "Note Length", "Note MOD",
+    "Note Pitch Shifter", "Note Receiver", "Note Velocity", "Transposition Map",
+    "Diatonic Transposer", "Note FX Layer", "Note FX Selector",
+}
+AUDIO_FX = {
+    "Delay+", "Delay-2", "Delay-4", "Reverb", "Convolution",
+    "Compressor", "Dynamics", "Gate", "Peak Limiter", "Transient Control",
+    "EQ+", "EQ-5", "EQ-2", "Ladder", "Resonator Bank",
+    "Chorus", "Flanger", "Phaser", "Freq Shifter", "Pitch Shifter",
+    "Distortion", "Amp", "Bit-8", "Treemonster",
+    "Filter", "Comb", "DC Blocker",
+    "Blur", "Dual Pan", "Stereo Width", "Mid-Side Split", "Multiband FX-2", "Multiband FX-3",
+    "Tool", "Oscilloscope", "Spectrum Analyzer", "Replacer",
+    "FX Grid", "FX Layer", "FX Selector", "Chain",
+    "Rotary", "De-Esser", "Harmonic EQ",
+}
+
+
+def _get_device_type(device: str | None) -> str:
+    """Determine if device is instrument, note_fx, or audio_fx."""
+    if not device:
+        return ""
+    if device in INSTRUMENTS:
+        return "inst"
+    if device in NOTE_FX:
+        return "note"
+    if device in AUDIO_FX:
+        return "fx"
+    # Heuristics for unknown devices
+    if "Note" in device:
+        return "note"
+    if device.endswith("+") or device.endswith("-2") or device.endswith("-4"):
+        return "fx"
+    return ""
+
+
 @dataclass
 class PresetMatch:
     """A preset search result with metadata extracted from path."""
@@ -20,6 +64,7 @@ class PresetMatch:
     pack: str  # e.g., "Wundertuete Vol. 1"
     category: str | None  # Full path after pack, e.g., "Presets/Polymer"
     device: str | None  # Extracted device name, e.g., "Polymer"
+    device_type: str  # "inst", "note", "fx", or ""
     score: float  # Match relevance score
 
     def to_dict(self) -> dict:
@@ -30,6 +75,7 @@ class PresetMatch:
             "pack": self.pack,
             "category": self.category,
             "device": self.device,
+            "device_type": self.device_type,
         }
 
 
@@ -149,12 +195,9 @@ def _fuzzy_match(query: str, name: str, device: str | None) -> float:
             coverage = partial_matches / len(query_words)
             score += 0.15 * coverage
 
-    # Small length similarity bonus to break ties
-    len_ratio = min(len(query), len(name)) / max(len(query), len(name), 1)
-    score += 0.02 * len_ratio
-
-    # Tiny random jitter to randomize ties (±0.001)
-    score += random.uniform(-0.001, 0.001)
+    # Random jitter to randomize ties (±0.03)
+    # Large enough to shuffle results with similar scores
+    score += random.uniform(-0.03, 0.03)
 
     return min(score, 1.5)
 
@@ -232,6 +275,7 @@ def search_presets(
                     pack=pack,
                     category=category,
                     device=device,
+                    device_type=_get_device_type(device),
                     score=score,
                 )
             )
