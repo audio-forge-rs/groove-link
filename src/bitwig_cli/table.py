@@ -35,18 +35,16 @@ def adaptive_table(
     rows: list[Any],
     columns: list[Column],
     title: str | None = None,
-    max_total_width: int = 100,
 ) -> Table:
-    """Create a table with columns sized to fit content.
+    """Create a table with columns sized to fit ALL content. Never truncates.
 
     Args:
         rows: List of data objects
         columns: Column definitions
         title: Optional table title
-        max_total_width: Maximum total table width
 
     Returns:
-        Rich Table with adaptive column widths
+        Rich Table with columns wide enough for all content
     """
     if not rows:
         table = Table(title=title, show_header=True, header_style="bold")
@@ -54,46 +52,23 @@ def adaptive_table(
             table.add_column(col.name)
         return table
 
-    # Calculate content widths for each column
-    col_widths: list[int] = []
+    # Calculate content widths for each column - use actual max width needed
     col_values: list[list[str]] = []
 
     for col in columns:
         values = [col.get_value(row) for row in rows]
         col_values.append(values)
 
-        # Width = max of header and content, bounded by min/max
-        max_content = max(len(v) for v in values) if values else 0
-        width = max(len(col.name), max_content)
-        width = max(col.min_width, min(col.max_width, width))
-        col_widths.append(width)
+    # Create table - no truncation, columns size to content
+    # width=None removes the terminal width constraint
+    table = Table(title=title, show_header=True, header_style="bold", width=None)
+    for col in columns:
+        table.add_column(col.name, no_wrap=True)
 
-    # If total exceeds max, shrink lower priority columns first
-    total = sum(col_widths) + (len(columns) * 3)  # Account for separators
-    if total > max_total_width:
-        overflow = total - max_total_width
-
-        # Sort columns by priority (lower first) for shrinking
-        shrink_order = sorted(range(len(columns)), key=lambda i: columns[i].priority)
-
-        for i in shrink_order:
-            if overflow <= 0:
-                break
-            col = columns[i]
-            shrinkable = col_widths[i] - col.min_width
-            shrink = min(shrinkable, overflow)
-            col_widths[i] -= shrink
-            overflow -= shrink
-
-    # Create table
-    table = Table(title=title, show_header=True, header_style="bold")
-    for col, width in zip(columns, col_widths):
-        table.add_column(col.name, width=width, no_wrap=True)
-
-    # Add rows with truncated values
-    for row_idx, row in enumerate(rows):
+    # Add rows with FULL values - no truncation
+    for row_idx, _row in enumerate(rows):
         table.add_row(*[
-            col_values[col_idx][row_idx][:col_widths[col_idx]]
+            col_values[col_idx][row_idx]
             for col_idx in range(len(columns))
         ])
 

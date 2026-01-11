@@ -171,8 +171,10 @@ def preset(
             Column("Pack", "pack", min_width=10, max_width=24, priority=2),
             Column("Package", "package", min_width=6, max_width=12, priority=1),
         ]
-        table = adaptive_table(results, columns, max_total_width=120)
-        console.print(table)
+        table = adaptive_table(results, columns)
+        # Use wide console to prevent truncation - allows horizontal scroll
+        wide_console = Console(width=300)
+        wide_console.print(table)
         rprint(f"[dim]Found {len(results)} presets in {elapsed:.2f}s[/dim]")
 
 
