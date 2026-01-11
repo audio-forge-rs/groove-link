@@ -138,6 +138,10 @@ def list_cmd(
 def preset(
     query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
     limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    type_filter: Annotated[
+        str | None,
+        typer.Option("-t", "--type", help="Filter by type: inst, note, or fx"),
+    ] = None,
     paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
     verbose: VerboseOption = False,
 ) -> None:
@@ -147,13 +151,25 @@ def preset(
         bitwig preset nektar
         bitwig preset "warm pad"
         bitwig preset bass -n 10
+        bitwig preset delay --type fx
+        bitwig preset arp -t note
     """
     import time
 
     setup_logging(verbose)
     start = time.perf_counter()
 
-    results = search_presets(query, limit=limit)
+    # Get more results if filtering, then filter down
+    fetch_limit = limit * 5 if type_filter else limit
+    results = search_presets(query, limit=fetch_limit)
+
+    # Filter by type if specified
+    if type_filter:
+        type_filter = type_filter.lower()
+        if type_filter not in ("inst", "note", "fx"):
+            rprint(f"[red]Error:[/red] Invalid type '{type_filter}'. Use: inst, note, or fx")
+            raise typer.Exit(1)
+        results = [r for r in results if r.device_type == type_filter][:limit]
     elapsed = time.perf_counter() - start
 
     if not results:
