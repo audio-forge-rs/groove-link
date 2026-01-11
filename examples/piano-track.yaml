@@ -21,10 +21,17 @@ tracks:
     # Optional: MIDI file to insert into clip launcher slot 1 (or use abc above)
     # midi: piano.mid
 
-  # Additional tracks could be defined here
-  # bass:
-  #   type: instrument
-  #   devices:
-  #     - bass preset
-  #   abc: bass.abc    # ABC notation (converted to MIDI)
-  #   midi: bass.mid   # Or direct MIDI file
+  bass:
+    type: instrument
+    devices:
+      # Note FX - tighten timing
+      - Note Length
+      # Bass instrument
+      - Bass Dub 2
+      # Saturation for harmonics (KVR: "adds life to bass")
+      - Bass Driver
+      # EQ to control boominess (KVR: "control sub frequencies")
+      - Low Cut EQ
+      # Compression with fast attack (KVR: "4-5dB reduction evens low end")
+      - Bass Compressor
+    abc: bass.abc
