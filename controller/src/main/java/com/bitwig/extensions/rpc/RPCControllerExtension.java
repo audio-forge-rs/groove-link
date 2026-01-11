@@ -34,7 +34,7 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.5.8";
+    public static final String VERSION = "0.5.9";
 
     private ControllerHost host;
     private Application application;
