@@ -1,16 +1,17 @@
-# Morning Light - A jazz-influenced piano trio
+# Morning Light - A jazz-influenced trio with ambient pad
 #
 # This example demonstrates groove-link capabilities:
 #   - Tempo and song metadata
-#   - Instrument tracks with presets
-#   - Note FX (humanization, arpeggio)
-#   - Audio FX chains
+#   - Instrument tracks with presets and production FX
+#   - Note FX (humanization, note delay)
+#   - Audio FX chains with preset effects
 #   - Shared FX via Audio Receiver routing
+#   - Mastering chain on master track
 #   - ABC notation parts auto-converted to MIDI
 #
 # Usage:
-#   bitwig track create examples/morning-light.yaml
-#   bitwig track create examples/morning-light.yaml --track piano
+#   bitwig project create examples/morning-light.yaml
+#   bitwig project create examples/morning-light.yaml --track piano
 
 song:
   title: Morning Light
@@ -19,29 +20,40 @@ song:
   time: 4/4
 
 tracks:
-  # Lead piano with humanization for natural feel
+  # Lead piano with humanization and warm character
   piano:
     instrument: nektar piano
     note_fx:
       - Humanize x 3           # Subtle timing/velocity variation
     fx:
-      - Transient Shaper       # Attack enhancement
+      - Smooth Compression     # Gentle dynamics control
+      - Tape-Machine           # Warm analog character
     part: morning-light-piano.abc
 
-  # Upright bass with warm processing
+  # Upright bass with focused low end
   bass:
     instrument: Acoustic Bass Long
     fx:
-      - EQ-5                   # Shape the low end
-      - Compressor             # Even out dynamics
+      - Analogue Compressor    # Vintage-style compression
+      - Basic Soft Knee Compression  # Even out dynamics
     part: morning-light-bass.abc
 
-  # Brushed drums - using a drum machine preset
+  # Brushed drums with punch
   drums:
     instrument: Drum Machine
     fx:
-      - Transient Shaper
-    # No part - will be programmed manually or via separate MIDI
+      - Transient Shaper       # Attack enhancement
+
+  # Ambient pad for atmosphere - the "secret sauce"
+  pad:
+    instrument: Ambient Strings
+    note_fx:
+      - 8th Note Delay         # Rhythmic echoes
+      - Humanize x 3           # Natural feel
+    fx:
+      - Handmade Chorus        # Lush stereo width
+      - Smooth Compression     # Sustain and glue
+      - Ducking Soft Stereo Feed  # Subtle delay tail
 
   # Shared room reverb - receives from all instruments
   # Creates cohesive space without per-track reverb
@@ -50,6 +62,7 @@ tracks:
       - piano: pre             # Pre-fader: reverb independent of volume
       - bass: pre
       - drums: pre
+      - pad: pre
     fx:
       - Room One               # Natural room ambience
       - EQ-5                   # Roll off low frequencies from reverb
@@ -61,3 +74,10 @@ tracks:
     fx:
       - Compressor             # Heavy compression
       - Saturator              # Add harmonics
+
+  # Master bus - final polish
+  master:
+    fx:
+      - EQ-5                   # Gentle tonal shaping
+      - Focused Mastering      # Glue compression
+      - Peak Limiter           # Final ceiling

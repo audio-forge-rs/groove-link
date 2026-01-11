@@ -59,7 +59,7 @@ Claude Code uses the Python CLI via Bash. No MCP server registration needed.
 
 ```
 Claude: "Create an instrument track with Polymer"
-→ runs: bitwig track create config.yaml
+→ runs: bitwig project create config.yaml
 ```
 
 The CLI has all the domain knowledge: device resolution, search, track creation.
@@ -70,7 +70,7 @@ The CLI has all the domain knowledge: device resolution, search, track creation.
 bitwig info                       # Show version info
 bitwig list tracks                # List all tracks
 bitwig preset <query>             # Search Bitwig presets
-bitwig track create song.yaml     # Create tracks from YAML config
+bitwig project create song.yaml     # Create tracks from YAML config
 bitwig --help                     # Show all commands
 ```
 
@@ -115,46 +115,69 @@ bitwig mtron choir --category Voices # Filter by category
 - `mod` - Modulators (LFO, ADSR)
 - `util` - Utilities (Test Tone, DC Offset)
 
-### Track Creation
+### Project Setup
 
-Create tracks with device chains from a YAML config:
+Create complete project setups from a declarative YAML config:
 
 ```bash
-bitwig track create song.yaml              # Create all tracks
-bitwig track create song.yaml --track piano  # Create specific track
+bitwig project create song.yaml              # Create all tracks
+bitwig project create song.yaml --track piano  # Create specific track
 ```
 
-**Song config format:**
+**Song config format (see `examples/morning-light.yaml`):**
 
 ```yaml
 song:
   title: Morning Light
-  tempo: 88             # Sets project tempo
+  tempo: 72
 
 tracks:
   piano:
     instrument: nektar piano
     note_fx:
-      - Humanize x 3
-    part: piano.abc     # ABC or MIDI file
+      - Humanize x 3           # Natural timing variation
+    fx:
+      - Smooth Compression     # Dynamics control
+      - Tape-Machine           # Warm character
+    part: morning-light-piano.abc
 
   bass:
     instrument: Acoustic Bass Long
-    part: bass.abc
+    fx:
+      - Analogue Compressor
+    part: morning-light-bass.abc
 
-  room:                 # Shared FX track
-    receives:           # Audio Receiver sources
+  pad:
+    instrument: Ambient Strings
+    note_fx:
+      - 8th Note Delay         # Rhythmic echoes
+      - Humanize x 3
+    fx:
+      - Handmade Chorus        # Stereo width
+      - Smooth Compression
+      - Ducking Soft Stereo Feed
+
+  room:                        # Shared FX track
+    receives:
       - piano: pre
       - bass: pre
+      - pad: pre
     fx:
-      - Tape-Machine
       - Room One
+      - EQ-5
+
+  master:                      # Mastering chain
+    fx:
+      - EQ-5
+      - Focused Mastering
+      - Peak Limiter
 ```
 
 **Features:**
 - Declarative format: `instrument`, `note_fx`, `fx`, `part`, `receives`
 - Devices fuzzy-matched against presets, base devices, and plugins
 - `receives` creates Audio Receiver devices for shared FX routing
+- `master` track adds effects to the master bus
 - ABC notation auto-converted to MIDI via `abc2midi`
 
 ## How It Works

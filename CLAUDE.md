@@ -537,10 +537,10 @@ Create tracks with device chains from a YAML song config:
 
 ```bash
 # Create all tracks defined in config
-bitwig track create song.yaml
+bitwig project create song.yaml
 
 # Create a specific track
-bitwig track create song.yaml --track piano
+bitwig project create song.yaml --track piano
 ```
 
 **Declarative song config format:**
@@ -763,7 +763,7 @@ Claude Code uses the Python CLI via Bash. No MCP server registration needed.
 ### How Claude Uses Bitwig
 
 ```
-Claude Code ──── Bash ────► bitwig track create song.yaml
+Claude Code ──── Bash ────► bitwig project create song.yaml
                            bitwig list tracks
                            bitwig preset "query"
                            groove-link device list-params  # debugging
@@ -780,7 +780,7 @@ Claude Code ──── Bash ────► bitwig track create song.yaml
 ```bash
 # Claude creates a song config
 # Then runs:
-bitwig track create examples/morning-light.yaml
+bitwig project create examples/morning-light.yaml
 
 # To debug device parameters:
 groove-link device select-first

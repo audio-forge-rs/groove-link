@@ -15,6 +15,7 @@ import com.bitwig.extension.controller.api.InsertionPoint;
 import com.bitwig.extension.controller.api.RemoteConnection;
 import com.bitwig.extension.controller.api.ClipLauncherSlotBank;
 import com.bitwig.extension.controller.api.ClipLauncherSlotOrScene;
+import com.bitwig.extension.controller.api.MasterTrack;
 import com.bitwig.extension.controller.api.Track;
 import com.bitwig.extension.controller.api.TrackBank;
 import com.bitwig.extension.controller.api.Transport;
@@ -33,13 +34,14 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.5.7";
+    public static final String VERSION = "0.5.8";
 
     private ControllerHost host;
     private Application application;
     private TrackBank trackBank;
     private CursorTrack cursorTrack;
     private CursorDevice cursorDevice;
+    private MasterTrack masterTrack;
     private Transport transport;
 
     // Device parameter IDs discovered from current device
@@ -54,6 +56,7 @@ public class RPCControllerExtension extends ControllerExtension {
     private String pendingRequestId;
     private String pendingTrackName;
     private int devicesAdded;
+    private boolean pendingIsMaster;  // True if inserting to master bus
 
     protected RPCControllerExtension(
             RPCControllerExtensionDefinition definition,
@@ -82,6 +85,9 @@ public class RPCControllerExtension extends ControllerExtension {
 
         host.println("[init] Creating cursorDevice...");
         cursorDevice = cursorTrack.createCursorDevice();
+
+        host.println("[init] Creating masterTrack...");
+        masterTrack = host.createMasterTrack(0);
 
         // Mark device properties as interested so we can get values
         cursorDevice.name().markInterested();
@@ -382,34 +388,45 @@ public class RPCControllerExtension extends ControllerExtension {
 
             host.println("[track.create] name=" + trackName + ", type=" + trackType + ", devices=" + devices.size());
 
+            // Check if this is master track (add to master bus, don't create new track)
+            boolean isMaster = trackType.equalsIgnoreCase("master");
+
             // Send initial progress
             int totalSteps = 1 + devices.size();
-            sendProgress(1, totalSteps, "Creating track '" + trackName + "'");
+            if (isMaster) {
+                sendProgress(1, totalSteps, "Adding devices to master bus");
+            } else {
+                sendProgress(1, totalSteps, "Creating track '" + trackName + "'");
+            }
 
-            // Create the track
-            int position = -1; // -1 = at end
-            switch (trackType.toLowerCase()) {
-                case "instrument":
-                    application.createInstrumentTrack(position);
-                    break;
-                case "audio":
-                    application.createAudioTrack(position);
-                    break;
-                case "effect":
-                    application.createEffectTrack(position);
-                    break;
-                default:
-                    return formatError(idStr, -32602, "Invalid track type: " + trackType);
+            // Create the track (unless it's master)
+            if (!isMaster) {
+                int position = -1; // -1 = at end
+                switch (trackType.toLowerCase()) {
+                    case "instrument":
+                        application.createInstrumentTrack(position);
+                        break;
+                    case "audio":
+                        application.createAudioTrack(position);
+                        break;
+                    case "effect":
+                        application.createEffectTrack(position);
+                        break;
+                    default:
+                        return formatError(idStr, -32602, "Invalid track type: " + trackType);
+                }
             }
 
             // If no devices, we're done immediately
             if (devices.isEmpty()) {
-                // Schedule name setting after track is created
-                host.scheduleTask(() -> {
-                    if (trackName != null && !trackName.isEmpty()) {
-                        cursorTrack.name().set(trackName);
-                    }
-                }, 100);
+                // Schedule name setting after track is created (not for master)
+                if (!isMaster) {
+                    host.scheduleTask(() -> {
+                        if (trackName != null && !trackName.isEmpty()) {
+                            cursorTrack.name().set(trackName);
+                        }
+                    }, 100);
+                }
 
                 return formatResult(idStr, String.format(
                     "{\"trackName\":\"%s\",\"type\":\"%s\",\"devicesAdded\":0}",
@@ -423,16 +440,22 @@ public class RPCControllerExtension extends ControllerExtension {
             this.pendingRequestId = idStr;
             this.pendingTrackName = trackName;
             this.devicesAdded = 0;
+            this.pendingIsMaster = isMaster;
 
-            // Schedule device insertion after track is created and selected
-            // Give Bitwig time to create the track and select it
-            host.scheduleTask(() -> {
-                if (trackName != null && !trackName.isEmpty()) {
-                    cursorTrack.name().set(trackName);
-                }
-                // Start inserting devices
+            // Schedule device insertion
+            if (isMaster) {
+                // For master, start inserting immediately (no new track to wait for)
                 host.scheduleTask(this::insertNextDevice, 100);
-            }, 200);
+            } else {
+                // Give Bitwig time to create the track and select it
+                host.scheduleTask(() -> {
+                    if (trackName != null && !trackName.isEmpty()) {
+                        cursorTrack.name().set(trackName);
+                    }
+                    // Start inserting devices
+                    host.scheduleTask(this::insertNextDevice, 100);
+                }, 200);
+            }
 
             // Return null to indicate async response
             return null;
@@ -461,7 +484,10 @@ public class RPCControllerExtension extends ControllerExtension {
         sendProgress(step, totalSteps, "Adding " + device.getDisplayName());
 
         // Get insertion point at end of device chain
-        InsertionPoint insertionPoint = cursorTrack.endOfDeviceChainInsertionPoint();
+        // Use master track's insertion point if inserting to master bus
+        InsertionPoint insertionPoint = pendingIsMaster
+            ? masterTrack.endOfDeviceChainInsertionPoint()
+            : cursorTrack.endOfDeviceChainInsertionPoint();
 
         try {
             switch (device.type) {
@@ -520,6 +546,7 @@ public class RPCControllerExtension extends ControllerExtension {
         pendingRequestId = null;
         pendingTrackName = null;
         devicesAdded = 0;
+        pendingIsMaster = false;
     }
 
     // ==================== Device Spec Parsing ====================

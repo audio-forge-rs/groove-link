@@ -378,12 +378,12 @@ def device(
         rprint(f"[dim]Found {len(results)} devices in {elapsed:.2f}s[/dim]")
 
 
-# Track subcommand group
-track_app = typer.Typer(help="Track operations")
-app.add_typer(track_app, name="track")
+# Project subcommand group
+project_app = typer.Typer(help="Project setup from song config")
+app.add_typer(project_app, name="project")
 
 
-@track_app.command("create")
+@project_app.command("create")
 def track_create(
     config_file: Annotated[
         Path,
@@ -583,14 +583,23 @@ def _create_track(
           - bass: pre
         fx: [Reverb, Delay]
 
+    Or master track (adds to master bus, no new track):
+        master:
+          fx: [EQ-5, Peak Limiter]
+
     Or legacy format:
         devices: [Humanize x 3, nektar piano, Tape-Machine]
 
     Returns True on success, False on failure.
     """
+    # Special case: master track adds devices to master bus
+    is_master = name.lower() == "master"
+
     # Determine track type from config
     track_type = track_cfg.get("type", "instrument")
-    if "instrument" in track_cfg:
+    if is_master:
+        track_type = "master"  # Signal to extension: add to master bus
+    elif "instrument" in track_cfg:
         track_type = "instrument"
     elif "receives" in track_cfg:
         track_type = "audio"  # Receiving tracks are audio tracks
@@ -630,7 +639,10 @@ def _create_track(
         device_specs = track_cfg.get("devices", [])
 
     # Resolve device names to actual paths
-    rprint(f"[cyan]Creating track:[/cyan] {name} ({track_type})")
+    if is_master:
+        rprint(f"[cyan]Master bus:[/cyan] adding {len(device_specs)} devices")
+    else:
+        rprint(f"[cyan]Creating track:[/cyan] {name} ({track_type})")
     resolved_devices = []
     for spec in device_specs:
         if isinstance(spec, str):
@@ -687,7 +699,10 @@ def _create_track(
     # Show result details
     if isinstance(rpc_result, dict):
         devices_loaded = rpc_result.get("devicesAdded", 0)
-        rprint(f"  [green]✓[/green] Created with {devices_loaded} devices")
+        if is_master:
+            rprint(f"  [green]✓[/green] Added {devices_loaded} devices to master bus")
+        else:
+            rprint(f"  [green]✓[/green] Created with {devices_loaded} devices")
 
     # Note about Audio Receiver sources (parameter setting is TODO)
     if audio_receiver_sources:
