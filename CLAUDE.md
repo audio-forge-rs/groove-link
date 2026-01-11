@@ -190,6 +190,20 @@ socket.setClientConnectCallback(connection -> {
 - `getPort()` just returns wrong value - ignore it
 - Don't treat -1 as failure; test actual connectivity instead
 
+**Server-mode receive callback is broken** (macOS, Bitwig 5.x)
+- `host.createRemoteConnection()` creates a TCP server
+- Clients CAN connect (callback fires)
+- Extension CAN send data to clients (works)
+- BUT: receive callback NEVER fires when client sends data
+- Workaround: Use client mode instead (see below)
+
+**Client-mode auto-strips length prefix on receive**
+- `host.connectToRemoteHost()` connects as TCP client (this works!)
+- Extension CAN send AND receive (both work)
+- BUT: Bitwig automatically strips the 4-byte length prefix before delivering to callback
+- Extension receives raw JSON, not length-prefixed frames
+- Extension must still SEND length-prefixed responses (server expects framing)
+
 ### Wire Protocol: Length-Prefixed Frames
 
 ```
@@ -253,7 +267,17 @@ socket.setClientConnectCallback(connection -> {
 ]
 ```
 
-### RPC Methods (planned)
+### RPC Methods
+
+**Implemented:**
+
+| Method | Params | Description |
+|--------|--------|-------------|
+| `info.get` | `{}` | Get controller/Bitwig version info |
+| `list.tracks` | `{}` | List all tracks with properties |
+| `list.scenes` | `{}` | List scenes (stub, returns `[]`) |
+
+**Planned:**
 
 | Method | Params | Description |
 |--------|--------|-------------|
@@ -265,7 +289,6 @@ socket.setClientConnectCallback(connection -> {
 | `browser.search` | `{query, filters?}` | Search browser |
 | `browser.load` | `{resultId, trackId?}` | Load browser result |
 | `project.save` | `{}` | Save project |
-| `project.info` | `{}` | Get project info |
 | `clip.create` | `{trackId, sceneId, length}` | Create clip |
 
 ### Python Client Example
@@ -402,10 +425,11 @@ liblo.send(target, '/clip/0/0/launch')
 
 ## Default Ports
 
-| Service | Port | Protocol |
-|---------|------|----------|
-| JSON-RPC | 8417 | TCP |
-| OSC | 8418 | UDP |
+| Service | Port | Protocol | Direction |
+|---------|------|----------|-----------|
+| MCP Server (Bitwig) | 8417 | TCP | Bitwig connects IN |
+| MCP Server (CLI) | 8418 | TCP | CLI connects IN |
+| OSC (future) | 8419 | UDP | Real-time control |
 
 ---
 
@@ -503,3 +527,56 @@ src/bitwig_cli/
 1. Add CLI command in `main.py`
 2. Implement RPC method in Bitwig extension
 3. Test against real Bitwig
+
+---
+
+## Claude Code MCP Integration
+
+The MCP server exposes Bitwig tools directly to Claude Code.
+
+### Setup
+
+```bash
+# Register the MCP server with Claude Code
+claude mcp add groove-link /path/to/groove-link/mcp-server/target/release/groove_mcp -- --stdio
+```
+
+This adds the server to `~/.claude.json`. Restart Claude Code to activate.
+
+### Available Tools
+
+| Tool | Description |
+|------|-------------|
+| `bitwig_info` | Get Bitwig Studio and controller extension information |
+| `bitwig_list_tracks` | List all tracks in the current Bitwig project |
+| `bitwig_status` | Check if Bitwig Studio is connected to the MCP server |
+
+### Startup Order
+
+The MCP server must be running BEFORE Bitwig tries to connect:
+
+1. **Start Claude Code** - This spawns `groove_mcp --stdio` which listens on port 8417
+2. **Start/restart Bitwig** - Or reload the extension in Settings → Controllers
+3. **Extension connects** - Look for "Connected to MCP server" in Bitwig's console
+4. **Use tools** - Now `bitwig_info`, etc. will work
+
+If you see "Bitwig not connected", it means the extension hasn't connected yet.
+The extension auto-reconnects every 5 seconds, so you can also just wait.
+
+### Prerequisites
+
+Before using MCP tools, ensure:
+1. Claude Code is running (starts the MCP server)
+2. Bitwig Studio is running
+3. The RPC Controller extension is loaded and connected
+
+### How It Works
+
+```
+Claude Code ←── stdio/MCP ──→ groove_mcp ←── TCP:8417 ──→ Bitwig Extension
+```
+
+1. Claude Code spawns `groove_mcp --stdio` as a subprocess
+2. MCP protocol over stdin/stdout for tool calls
+3. MCP server maintains TCP connection to Bitwig extension
+4. Tool calls are forwarded as JSON-RPC to Bitwig
