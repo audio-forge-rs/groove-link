@@ -16,6 +16,8 @@ tracks:
       - dynamic eq
       - Abbey Road
       - reverb
+    # Optional: ABC notation file (converted to MIDI via abc2midi)
+    # abc: piano.abc
     # Optional: MIDI file to insert into clip launcher slot 1
     # midi: piano.mid
 
@@ -24,4 +26,5 @@ tracks:
   #   type: instrument
   #   devices:
   #     - bass preset
-  #   midi: bass.mid
+  #   abc: bass.abc    # ABC notation (converted to MIDI)
+  #   midi: bass.mid   # Or direct MIDI file

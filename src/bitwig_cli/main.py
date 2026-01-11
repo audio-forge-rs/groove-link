@@ -398,7 +398,8 @@ def track_create(
       - A string (fuzzy searched as preset then plugin)
       - A dict with 'query' and optional 'hint' (preset/plugin/kontakt/mtron)
 
-    MIDI paths can be relative (to config file) or absolute.
+    ABC/MIDI paths can be relative (to config file) or absolute.
+    ABC files are converted to MIDI using abc2midi before insertion.
     MIDI files are inserted into clip launcher slot 1 of each track.
     """
     import time
@@ -455,8 +456,33 @@ def track_create(
 
         created_count += 1
 
-        # Insert MIDI if specified
+        # Convert ABC to MIDI if specified
+        abc_file = track_cfg.get("abc")
         midi_file = track_cfg.get("midi")
+
+        if abc_file:
+            from .abc import abc_to_midi
+
+            abc_path = Path(abc_file)
+            if not abc_path.is_absolute():
+                abc_path = config_dir / abc_path
+            abc_path = abc_path.resolve()
+
+            if not abc_path.exists():
+                rprint(f"  [yellow]Warning:[/yellow] ABC file not found: {abc_path}")
+            else:
+                rprint(f"  [dim]Converting ABC:[/dim] {abc_path.name}")
+                result = abc_to_midi(abc_path)
+                if result.success and result.midi_file:
+                    midi_file = str(result.midi_file)
+                    rprint(f"  [green]✓[/green] Converted to {result.midi_file.name}")
+                    if result.warnings:
+                        for warn in result.warnings[:3]:
+                            rprint(f"    [dim]{warn}[/dim]")
+                else:
+                    rprint(f"  [red]✗[/red] ABC conversion failed: {result.error}")
+
+        # Insert MIDI if specified (or converted from ABC)
         if midi_file:
             midi_path = Path(midi_file)
             if not midi_path.is_absolute():
