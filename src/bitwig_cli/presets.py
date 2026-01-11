@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import os
-import re
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator
+
+from .search import fuzzy_match
 
 
 # Device type classifications
@@ -15,6 +16,7 @@ INSTRUMENTS = {
     "Polymer", "Phase-4", "FM-4", "Polysynth", "Sampler", "Drum Machine",
     "E-Clap", "E-Cowbell", "E-Hat", "E-Kick", "E-Snare", "E-Tom",
     "Organ", "FM-4 Operator", "Wavetable",
+    "Poly Grid", "Note Grid",  # Grid-based instruments
 }
 NOTE_FX = {
     "Note Delay", "Arpeggiator", "Multi-Note", "Note Echo", "Note Filter",
@@ -47,6 +49,10 @@ def _get_device_type(device: str | None) -> str:
     if device in AUDIO_FX:
         return "fx"
     # Heuristics for unknown devices
+    if "Grid" in device:
+        if "FX" in device:
+            return "fx"
+        return "inst"  # Poly Grid, Note Grid variants
     if "Note" in device:
         return "note"
     if device.endswith("+") or device.endswith("-2") or device.endswith("-4"):
@@ -134,74 +140,6 @@ def _parse_preset_path(path: str) -> tuple[str, str, str, str | None, str | None
     return name, "Unknown", p.parent.name, None, None
 
 
-def _fuzzy_match(query: str, name: str, device: str | None) -> float:
-    """Fuzzy match score with device weighting and granular scoring.
-
-    Scoring is designed to minimize ties:
-    - Device exact match: +0.50
-    - Device partial match: +0.30
-    - Name exact match: +1.00
-    - Name substring at word boundary: +0.60 + position bonus
-    - Name substring anywhere: +0.40 + position bonus
-    - Name word match: +0.30 + coverage bonus
-    - Name partial word: +0.15 + coverage bonus
-    - Length similarity bonus: up to +0.05
-    """
-    import random
-
-    query_lower = query.lower()
-    name_lower = name.lower()
-    device_lower = (device or "").lower()
-
-    score = 0.0
-
-    # Device matching (high weight)
-    if device_lower:
-        if query_lower == device_lower:
-            score += 0.50
-        elif query_lower in device_lower or device_lower in query_lower:
-            score += 0.30
-
-    # Name matching with position-based bonuses for variety
-    if query_lower == name_lower:
-        score += 1.00
-    elif query_lower in name_lower:
-        pos = name_lower.find(query_lower)
-        # Earlier position = slightly higher score
-        position_bonus = 0.05 * (1 - pos / max(len(name_lower), 1))
-
-        if re.search(rf"\b{re.escape(query_lower)}", name_lower):
-            score += 0.60 + position_bonus
-        else:
-            score += 0.40 + position_bonus
-    else:
-        # Word matching
-        query_words = query_lower.split()
-        name_words = list(re.findall(r"\w+", name_lower))
-        name_word_set = set(name_words)
-
-        exact_matches = sum(1 for qw in query_words if qw in name_word_set)
-        if exact_matches > 0:
-            # Coverage bonus: what fraction of query words matched
-            coverage = exact_matches / len(query_words)
-            score += 0.30 * coverage
-
-        # Partial word matching
-        partial_matches = sum(
-            1 for qw in query_words
-            if any(qw in nw for nw in name_word_set) and qw not in name_word_set
-        )
-        if partial_matches > 0:
-            coverage = partial_matches / len(query_words)
-            score += 0.15 * coverage
-
-    # Random jitter to randomize ties (±0.03)
-    # Large enough to shuffle results with similar scores
-    score += random.uniform(-0.03, 0.03)
-
-    return min(score, 1.5)
-
-
 def find_presets_spotlight() -> Iterator[str]:
     """Find all .bwpreset files using Spotlight (mdfind).
 
@@ -263,8 +201,8 @@ def search_presets(
 
         name, package, pack, category, device = _parse_preset_path(path)
 
-        # Score based on name and device match
-        score = _fuzzy_match(query, name, device)
+        # Score based on name and device match (boost by device name)
+        score = fuzzy_match(query, name, device)
 
         if score >= min_score:
             results.append(

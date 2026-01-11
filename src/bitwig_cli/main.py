@@ -13,6 +13,9 @@ from rich.table import Table
 
 from . import __version__
 from .client import BitwigClient, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_TIMEOUT
+from .kontakt import search_kontakt
+from .mtron import search_mtron
+from .plugins import search_plugins
 from .presets import search_presets
 from .protocol import RPCException
 from .table import Column, adaptive_table
@@ -192,6 +195,152 @@ def preset(
         wide_console = Console(width=300)
         wide_console.print(table)
         rprint(f"[dim]Found {len(results)} presets in {elapsed:.2f}s[/dim]")
+
+
+@app.command()
+def plugin(
+    query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
+    limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    format_filter: Annotated[
+        str | None,
+        typer.Option("-f", "--format", help="Filter by format: vst3, au, clap"),
+    ] = None,
+    paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
+    verbose: VerboseOption = False,
+) -> None:
+    """Search for audio plugins (VST3, AU, CLAP).
+
+    Examples:
+        bitwig plugin kontakt
+        bitwig plugin "native instruments"
+        bitwig plugin surge --format clap
+        bitwig plugin compressor -n 10
+    """
+    import time
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    results = search_plugins(query, limit=limit, format_filter=format_filter)
+    elapsed = time.perf_counter() - start
+
+    if not results:
+        rprint(f"[yellow]No plugins found for '{query}'[/yellow]")
+        raise typer.Exit(0)
+
+    if paths:
+        for r in results:
+            print(r.file_path)
+    else:
+        columns = [
+            Column("Name", "name", min_width=15, max_width=30, priority=3),
+            Column("Format", "format", min_width=4, max_width=5, priority=3),
+            Column("Vendor", "vendor", min_width=10, max_width=20, priority=2),
+            Column("Version", "version", min_width=5, max_width=10, priority=1),
+            Column("Location", "location", min_width=4, max_width=6, priority=1),
+        ]
+        table = adaptive_table(results, columns)
+        wide_console = Console(width=300)
+        wide_console.print(table)
+        rprint(f"[dim]Found {len(results)} plugins in {elapsed:.2f}s[/dim]")
+
+
+@app.command()
+def kontakt(
+    query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
+    limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    library: Annotated[
+        str | None,
+        typer.Option("-l", "--library", help="Filter by library name"),
+    ] = None,
+    paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
+    verbose: VerboseOption = False,
+) -> None:
+    """Search for Kontakt instruments.
+
+    Examples:
+        bitwig kontakt piano
+        bitwig kontakt "electric sunburst"
+        bitwig kontakt bass --library "Session Guitarist"
+        bitwig kontakt strings -n 10
+    """
+    import time
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    results = search_kontakt(query, limit=limit, library_filter=library)
+    elapsed = time.perf_counter() - start
+
+    if not results:
+        rprint(f"[yellow]No Kontakt instruments found for '{query}'[/yellow]")
+        raise typer.Exit(0)
+
+    if paths:
+        for r in results:
+            print(r.file_path)
+    else:
+        columns = [
+            Column("Name", "name", min_width=15, max_width=35, priority=3),
+            Column("Library", "library", min_width=15, max_width=40, priority=2),
+            Column("Vendor", "vendor", min_width=10, max_width=20, priority=1),
+        ]
+        table = adaptive_table(results, columns)
+        wide_console = Console(width=300)
+        wide_console.print(table)
+        rprint(f"[dim]Found {len(results)} instruments in {elapsed:.2f}s[/dim]")
+
+
+@app.command()
+def mtron(
+    query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
+    limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    collection: Annotated[
+        str | None,
+        typer.Option("-c", "--collection", help="Filter by collection/tape bank"),
+    ] = None,
+    category: Annotated[
+        str | None,
+        typer.Option("--category", help="Filter by category (Strings, Brass, etc.)"),
+    ] = None,
+    paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
+    verbose: VerboseOption = False,
+) -> None:
+    """Search for M-Tron Pro IV patches.
+
+    Examples:
+        bitwig mtron violins
+        bitwig mtron flute --category Woodwind
+        bitwig mtron choir -c "Streetly Tapes"
+        bitwig mtron strings -n 10
+    """
+    import time
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    results = search_mtron(
+        query, limit=limit, collection_filter=collection, category_filter=category
+    )
+    elapsed = time.perf_counter() - start
+
+    if not results:
+        rprint(f"[yellow]No M-Tron patches found for '{query}'[/yellow]")
+        raise typer.Exit(0)
+
+    if paths:
+        for r in results:
+            print(r.file_path)
+    else:
+        columns = [
+            Column("Name", "name", min_width=15, max_width=35, priority=3),
+            Column("Collection", "collection", min_width=15, max_width=35, priority=2),
+            Column("Category", "category", min_width=8, max_width=15, priority=2),
+        ]
+        table = adaptive_table(results, columns)
+        wide_console = Console(width=300)
+        wide_console.print(table)
+        rprint(f"[dim]Found {len(results)} patches in {elapsed:.2f}s[/dim]")
 
 
 @app.command()
