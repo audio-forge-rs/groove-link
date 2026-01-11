@@ -428,6 +428,33 @@ Line numbers are provided for direct navigation.
 2. Define metadata in `ControllerExtensionDefinition` (line 18427)
 3. In `init()`, get `ControllerHost` to access Bitwig APIs
 
+### Critical: init() Constraints (line 18381)
+**ALL `host.create*()` methods MUST be called during `init()`**
+
+```java
+@Override
+public void init() {
+    // ALL create* calls MUST happen here
+    transport = host.createTransport();
+    trackBank = host.createTrackBank(8, 0, 0);
+    rpcSocket = host.createRemoteConnection("RPC", 8417);  // TCP server
+    // etc.
+}
+```
+
+If called from `scheduleTask()` or elsewhere: `Exception: Trying to create section outside of init()`
+
+**Includes:** createRemoteConnection, createTrackBank, createTransport, createApplication, createNoteInput (line 76563), all other create* methods.
+
+### Service Discovery
+Extension JAR must contain:
+```
+META-INF/services/com.bitwig.extension.ExtensionDefinition
+```
+Contents: fully qualified class name of your ExtensionDefinition
+
+**Wrong:** `com.bitwig.extension.controller.ControllerExtensionDefinition` (won't be discovered)
+
 ### Accessing Bitwig State
 ```
 ControllerHost host = getHost();
@@ -438,8 +465,19 @@ CursorTrack cursorTrack = host.createCursorTrack(0, 0);
 
 ### Observing Values
 All `Value` types support `.addValueObserver(callback)` to react to changes.
+Call `.markInterested()` on values you want to observe.
 
 ### Hardware Binding
 1. Create `HardwareSurface`
 2. Define hardware elements (buttons, knobs, sliders)
 3. Bind to Bitwig parameters or actions
+
+### Network I/O (lines 52383-52468, 92968-93119)
+| Method | Description |
+|--------|-------------|
+| `createRemoteConnection(name, port)` | TCP server socket (line 52383) |
+| `connectToRemoteHost(host, port, cb)` | TCP client connection (line 52412) |
+| `sendDatagramPacket(host, port, data)` | UDP send (line 52440) |
+| `addDatagramPacketObserver(...)` | UDP receive (line 52468) |
+
+`RemoteSocket.getPort()` returns actual port (-1 if failed, may differ from requested if busy)
