@@ -1,0 +1,63 @@
+# Morning Light - A jazz-influenced piano trio
+#
+# This example demonstrates groove-link capabilities:
+#   - Tempo and song metadata
+#   - Instrument tracks with presets
+#   - Note FX (humanization, arpeggio)
+#   - Audio FX chains
+#   - Shared FX via Audio Receiver routing
+#   - ABC notation parts auto-converted to MIDI
+#
+# Usage:
+#   bitwig track create examples/morning-light.yaml
+#   bitwig track create examples/morning-light.yaml --track piano
+
+song:
+  title: Morning Light
+  tempo: 72
+  key: Cmaj
+  time: 4/4
+
+tracks:
+  # Lead piano with humanization for natural feel
+  piano:
+    instrument: nektar piano
+    note_fx:
+      - Humanize x 3           # Subtle timing/velocity variation
+    fx:
+      - Transient Shaper       # Attack enhancement
+    part: morning-light-piano.abc
+
+  # Upright bass with warm processing
+  bass:
+    instrument: Acoustic Bass Long
+    fx:
+      - EQ-5                   # Shape the low end
+      - Compressor             # Even out dynamics
+    part: morning-light-bass.abc
+
+  # Brushed drums - using a drum machine preset
+  drums:
+    instrument: Drum Machine
+    fx:
+      - Transient Shaper
+    # No part - will be programmed manually or via separate MIDI
+
+  # Shared room reverb - receives from all instruments
+  # Creates cohesive space without per-track reverb
+  room:
+    receives:
+      - piano: pre             # Pre-fader: reverb independent of volume
+      - bass: pre
+      - drums: pre
+    fx:
+      - Room One               # Natural room ambience
+      - EQ-5                   # Roll off low frequencies from reverb
+
+  # Parallel compression bus for drums
+  drum_crush:
+    receives:
+      - drums: post            # Post-fader: follows drum volume
+    fx:
+      - Compressor             # Heavy compression
+      - Saturator              # Add harmonics

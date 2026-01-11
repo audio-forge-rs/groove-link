@@ -5,9 +5,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.bitwig.extension.callback.StringArrayValueChangedCallback;
 import com.bitwig.extension.controller.ControllerExtension;
 import com.bitwig.extension.controller.api.Application;
 import com.bitwig.extension.controller.api.ControllerHost;
+import com.bitwig.extension.controller.api.CursorDevice;
 import com.bitwig.extension.controller.api.CursorTrack;
 import com.bitwig.extension.controller.api.InsertionPoint;
 import com.bitwig.extension.controller.api.RemoteConnection;
@@ -31,13 +33,17 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.5.2";
+    public static final String VERSION = "0.5.7";
 
     private ControllerHost host;
     private Application application;
     private TrackBank trackBank;
     private CursorTrack cursorTrack;
+    private CursorDevice cursorDevice;
     private Transport transport;
+
+    // Device parameter IDs discovered from current device
+    private String[] currentDeviceParamIds = new String[0];
 
     // Connection to MCP server
     private RemoteConnection mcpConnection;
@@ -73,6 +79,19 @@ public class RPCControllerExtension extends ControllerExtension {
 
         host.println("[init] Creating cursorTrack...");
         cursorTrack = host.createCursorTrack(0, 0);
+
+        host.println("[init] Creating cursorDevice...");
+        cursorDevice = cursorTrack.createCursorDevice();
+
+        // Mark device properties as interested so we can get values
+        cursorDevice.name().markInterested();
+        cursorDevice.exists().markInterested();
+
+        // Observe device parameter IDs for the current device
+        cursorDevice.addDirectParameterIdObserver(ids -> {
+            currentDeviceParamIds = (String[]) ids;
+            host.println("[device] Parameter IDs updated: " + currentDeviceParamIds.length + " params");
+        });
 
         host.println("[init] Creating transport...");
         transport = host.createTransport();
@@ -221,6 +240,18 @@ public class RPCControllerExtension extends ControllerExtension {
         if (method.equals("clip.insertFile")) {
             return handleClipInsertFile(requestJson, idStr);
         }
+        if (method.equals("device.setParameter")) {
+            return handleDeviceSetParameter(requestJson, idStr);
+        }
+        if (method.equals("device.selectLast")) {
+            return handleDeviceSelectLast(requestJson, idStr);
+        }
+        if (method.equals("device.selectFirst")) {
+            return handleDeviceSelectFirst(requestJson, idStr);
+        }
+        if (method.equals("device.selectNext")) {
+            return handleDeviceSelectNext(requestJson, idStr);
+        }
 
         String result = dispatchMethod(method);
 
@@ -256,6 +287,8 @@ public class RPCControllerExtension extends ControllerExtension {
                 return listTracks();
             case "list.scenes":
                 return listScenes();
+            case "device.listParams":
+                return listDeviceParams();
             default:
                 return "{\"error\":{\"code\":-32601,\"message\":\"Method not found: " + method + "\"}}";
         }
@@ -616,6 +649,116 @@ public class RPCControllerExtension extends ControllerExtension {
     private String listScenes() {
         // For now return empty - scenes need SceneBank
         return "[]";
+    }
+
+    // ==================== Device Parameter Methods ====================
+
+    /**
+     * List parameter IDs for the currently selected device.
+     * Returns JSON array of parameter ID strings.
+     */
+    private String listDeviceParams() {
+        StringBuilder sb = new StringBuilder("[");
+        for (int i = 0; i < currentDeviceParamIds.length; i++) {
+            if (i > 0) sb.append(",");
+            sb.append("\"").append(escapeJson(currentDeviceParamIds[i])).append("\"");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    /**
+     * Handle device.selectLast - select the last device in the track's device chain.
+     * This is used after inserting a device to get access to its parameters.
+     */
+    private String handleDeviceSelectLast(String requestJson, String idStr) {
+        try {
+            // Navigate to last device - using selectLast() to go to end of chain
+            cursorDevice.selectLast();
+            host.println("[device.selectLast] Selected last device on track");
+
+            // Give Bitwig time to update parameter observers
+            return formatResult(idStr, "{\"status\":\"ok\"}");
+        } catch (Exception e) {
+            host.errorln("[device.selectLast] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error selecting last device: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Handle device.setParameter - set a device parameter by ID.
+     *
+     * Params:
+     *   parameterId: string - the parameter ID (from device.listParams)
+     *   value: number - normalized value (0.0 to 1.0)
+     */
+    private String handleDeviceSetParameter(String requestJson, String idStr) {
+        try {
+            String parameterId = extractString(requestJson, "parameterId");
+            double value = extractDouble(requestJson, "value");
+
+            if (parameterId.isEmpty()) {
+                return formatError(idStr, -32602, "Missing 'parameterId' parameter");
+            }
+
+            if (value < 0.0 || value > 1.0) {
+                return formatError(idStr, -32602, "Value must be between 0.0 and 1.0");
+            }
+
+            host.println("[device.setParameter] Setting " + parameterId + " = " + value);
+
+            // Set the parameter using the direct parameter API
+            // Third param is resolution (0.0 = immediate, no ramping)
+            cursorDevice.setDirectParameterValueNormalized(parameterId, value, 0.0);
+
+            return formatResult(idStr, String.format(
+                "{\"parameterId\":\"%s\",\"value\":%.4f}",
+                escapeJson(parameterId), value
+            ));
+        } catch (Exception e) {
+            host.errorln("[device.setParameter] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error setting parameter: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Handle device.selectFirst - select the first device in the track's device chain.
+     */
+    private String handleDeviceSelectFirst(String requestJson, String idStr) {
+        try {
+            cursorDevice.selectFirst();
+            String deviceName = cursorDevice.name().get();
+            boolean exists = cursorDevice.exists().get();
+            host.println("[device.selectFirst] Selected: " + deviceName + " (exists=" + exists + ")");
+
+            return formatResult(idStr, String.format(
+                "{\"status\":\"ok\",\"device\":\"%s\",\"exists\":%b}",
+                escapeJson(deviceName != null ? deviceName : ""), exists
+            ));
+        } catch (Exception e) {
+            host.errorln("[device.selectFirst] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error selecting first device: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Handle device.selectNext - select the next device in the track's device chain.
+     */
+    private String handleDeviceSelectNext(String requestJson, String idStr) {
+        try {
+            cursorDevice.selectNext();
+            String deviceName = cursorDevice.name().get();
+            boolean exists = cursorDevice.exists().get();
+            host.println("[device.selectNext] Selected: " + deviceName + " (exists=" + exists + ")");
+
+            return formatResult(idStr, String.format(
+                "{\"status\":\"ok\",\"device\":\"%s\",\"exists\":%b}",
+                escapeJson(deviceName != null ? deviceName : ""), exists
+            ));
+        } catch (Exception e) {
+            host.errorln("[device.selectNext] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error selecting next device: " + e.getMessage());
+        }
     }
 
     // ==================== JSON Helpers ====================

@@ -1,98 +1,14 @@
-//! MCP and CLI servers
+//! TCP proxy server
 //!
-//! - MCP server over stdio for Claude Code
-//! - JSON-RPC server over TCP for CLI
+//! JSON-RPC proxy between Python CLI and Bitwig controller extension.
+//! Claude Code uses the Python CLI via Bash - no MCP tools needed.
 
 use anyhow::Result;
-use rmcp::{
-    handler::server::tool::ToolRouter,
-    handler::server::ServerHandler,
-    model::*,
-    tool, tool_router, tool_handler,
-    ServiceExt,
-};
 use tokio::net::TcpListener;
 use tracing::{error, info};
 
 use crate::bitwig::BitwigManager;
-use crate::protocol::{self, RpcNotification, RpcResponse};
-
-/// MCP Server with Bitwig tools
-#[derive(Clone)]
-pub struct GrooveMcpServer {
-    bitwig: BitwigManager,
-    tool_router: ToolRouter<Self>,
-}
-
-#[tool_handler(router = self.tool_router)]
-impl ServerHandler for GrooveMcpServer {}
-
-#[tool_router]
-impl GrooveMcpServer {
-    pub fn new(bitwig: BitwigManager) -> Self {
-        Self {
-            bitwig,
-            tool_router: Self::tool_router(),
-        }
-    }
-
-    /// Get Bitwig and controller information
-    #[tool(description = "Get Bitwig Studio and controller extension information")]
-    async fn bitwig_info(&self) -> String {
-        match self.bitwig.call("info.get", serde_json::json!({})).await {
-            Ok(result) => {
-                serde_json::to_string_pretty(&result).unwrap_or_else(|_| result.to_string())
-            }
-            Err(e) => format!("Error: {}", e),
-        }
-    }
-
-    /// List tracks in Bitwig
-    #[tool(description = "List all tracks in the current Bitwig project")]
-    async fn bitwig_list_tracks(&self) -> String {
-        match self.bitwig.call("list.tracks", serde_json::json!({})).await {
-            Ok(result) => {
-                serde_json::to_string_pretty(&result).unwrap_or_else(|_| result.to_string())
-            }
-            Err(e) => format!("Error: {}", e),
-        }
-    }
-
-    /// Check if Bitwig is connected
-    #[tool(description = "Check if Bitwig Studio is connected to the MCP server")]
-    async fn bitwig_status(&self) -> String {
-        let connected = self.bitwig.is_connected().await;
-        format!("Bitwig connected: {}", connected)
-    }
-
-    // Note: For track creation with devices, use the Python CLI:
-    //   bitwig track create config.yaml
-    // This resolves device names and handles progress display.
-    //
-    // Search operations (presets, plugins, kontakt, mtron) are also local
-    // and handled by the Python CLI: bitwig preset "query", bitwig plugin "query", etc.
-}
-
-/// Run MCP server over stdio for Claude Code
-pub async fn run_mcp_stdio(bitwig: BitwigManager) -> Result<()> {
-    info!("Starting MCP server over stdio");
-
-    let server = GrooveMcpServer::new(bitwig);
-
-    // Create stdio transport
-    let stdin = tokio::io::stdin();
-    let stdout = tokio::io::stdout();
-    let transport = (stdin, stdout);
-
-    // Start the MCP server
-    let running_server = server.serve(transport).await?;
-
-    // Wait for the server to finish
-    let _quit_reason = running_server.waiting().await?;
-
-    info!("MCP server stopped");
-    Ok(())
-}
+use crate::protocol::{self, RpcResponse};
 
 /// Handle a single CLI connection
 async fn handle_cli_connection(

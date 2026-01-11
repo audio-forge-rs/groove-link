@@ -3,20 +3,24 @@
 Control Bitwig Studio from Claude Code or the command line.
 
 ```
-┌─────────────────┐     stdio      ┌─────────────────┐    TCP     ┌─────────────────┐
-│  Claude Code    │◄──────────────►│                 │◄──────────►│  Bitwig         │
-│                 │    MCP         │  Rust MCP       │   :8417    │  Extension      │
-└─────────────────┘                │  Server         │            │  (connects out) │
-                                   │                 │            └─────────────────┘
-┌─────────────────┐   TCP/JSON-RPC │                 │
-│  Python CLI     │◄──────────────►│                 │
-│  $ bitwig info  │    :8418       │                 │
-└─────────────────┘                └─────────────────┘
+┌─────────────────┐                ┌─────────────────┐    TCP     ┌─────────────────┐
+│  Claude Code    │──── Bash ─────►│  Python CLI     │◄──────────►│  Rust TCP       │
+│                 │                │  $ bitwig ...   │   :8418    │  Proxy          │
+└─────────────────┘                └─────────────────┘            │                 │
+                                                                  │                 │
+                                                                  │            :8417│
+                                                                  └────────▲────────┘
+                                                                           │
+                                                                  ┌────────┴────────┐
+                                                                  │  Bitwig         │
+                                                                  │  Extension      │
+                                                                  │  (connects out) │
+                                                                  └─────────────────┘
 ```
 
 ## Quick Start
 
-### 1. Build the MCP Server (Rust)
+### 1. Build the TCP Proxy (Rust)
 
 ```bash
 cd mcp-server
@@ -40,8 +44,8 @@ pip install -e ".[dev]"
 ### 4. Start Everything
 
 ```bash
-# Start the MCP server
-./mcp-server/target/release/groove_mcp &
+# Start the TCP proxy
+./mcp-server/target/release/groove_link &
 
 # Open Bitwig Studio (extension auto-connects)
 # Then:
@@ -51,21 +55,14 @@ bitwig list tracks
 
 ## Claude Code Integration
 
-Register the MCP server with Claude Code:
+Claude Code uses the Python CLI via Bash. No MCP server registration needed.
 
-```bash
-claude mcp add groove-link /path/to/groove-link/mcp-server/target/release/groove_mcp -- --stdio
+```
+Claude: "Create an instrument track with Polymer"
+→ runs: bitwig track create config.yaml
 ```
 
-Restart Claude Code. Now Claude has direct access to Bitwig tools:
-
-| Tool | Description |
-|------|-------------|
-| `bitwig_info` | Get Bitwig/controller version info |
-| `bitwig_list_tracks` | List all tracks in the project |
-| `bitwig_status` | Check if Bitwig is connected |
-
-**Startup order matters:** Start Claude Code first (spawns MCP server), then start/reload Bitwig.
+The CLI has all the domain knowledge: device resolution, search, track creation.
 
 ## CLI Commands
 
@@ -162,10 +159,10 @@ tracks:
 
 ## How It Works
 
-1. **Rust MCP Server** listens on port 8417 (Bitwig) and 8418 (CLI)
-2. **Bitwig Extension** connects OUT to MCP server as TCP client
-3. **Python CLI** sends JSON-RPC requests to MCP server
-4. **Claude Code** talks MCP over stdio to the server
+1. **Rust TCP Proxy** listens on port 8417 (Bitwig) and 8418 (CLI)
+2. **Bitwig Extension** connects OUT to proxy as TCP client
+3. **Python CLI** sends JSON-RPC requests to proxy
+4. **Claude Code** runs CLI commands via Bash
 
 Why this architecture? Bitwig's server-mode TCP receive callback is broken. Client mode works.
 
@@ -173,10 +170,10 @@ Why this architecture? Bitwig's server-mode TCP receive callback is broken. Clie
 
 ```
 groove-link/
-├── mcp-server/          # Rust MCP server
+├── mcp-server/          # Rust TCP proxy (misnamed, no MCP)
 │   └── src/
 │       ├── main.rs      # Entry point
-│       ├── server.rs    # MCP tools + CLI handler
+│       ├── server.rs    # CLI connection handler
 │       ├── bitwig.rs    # Bitwig connection manager
 │       └── protocol.rs  # Length-prefixed JSON-RPC framing
 ├── controller/          # Java Bitwig extension

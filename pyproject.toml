@@ -28,6 +28,7 @@ osc = [
 
 [project.scripts]
 bitwig = "bitwig_cli.main:app"
+groove-link = "bitwig_cli.groovelink:app"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/bitwig_cli"]

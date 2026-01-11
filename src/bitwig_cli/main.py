@@ -1,9 +1,10 @@
-"""Bitwig CLI - Main entry point."""
+"""Bitwig CLI - Workflow commands for Bitwig Studio.
+
+For direct control commands (device params, RPC calls), use `groove-link` instead.
+"""
 
 from __future__ import annotations
 
-import logging
-import sys
 from pathlib import Path
 from typing import Annotated, Optional
 
@@ -15,64 +16,33 @@ from rich.console import Console
 from rich.table import Table
 
 from . import __version__
-from .client import BitwigClient, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_TIMEOUT
+from .common import (
+    HostOption,
+    PortOption,
+    VerboseOption,
+    setup_logging,
+    get_client,
+    DEFAULT_HOST,
+    DEFAULT_PORT,
+    RPCException,
+)
 from .devices import search_devices
 from .kontakt import search_kontakt
 from .mtron import search_mtron
 from .plugins import search_plugins
 from .presets import search_presets
-from .protocol import RPCException
 from .resolve import resolve_device
 from .table import Column, adaptive_table
 
 # CLI app
 app = typer.Typer(
     name="bitwig",
-    help="Control Bitwig Studio from the command line.",
+    help="Workflow commands for Bitwig Studio. For direct control, use `groove-link`.",
     no_args_is_help=True,
 )
 
 # Rich console for formatted output
 console = Console()
-
-# Common options
-HostOption = Annotated[
-    str,
-    typer.Option("--host", "-h", help="Bitwig controller host", envvar="BITWIG_HOST"),
-]
-PortOption = Annotated[
-    int,
-    typer.Option("--port", "-p", help="Bitwig controller RPC port", envvar="BITWIG_RPC_PORT"),
-]
-VerboseOption = Annotated[
-    bool,
-    typer.Option("--verbose", "-v", help="Enable verbose output"),
-]
-
-
-def setup_logging(verbose: bool) -> None:
-    """Configure logging based on verbosity."""
-    level = logging.DEBUG if verbose else logging.WARNING
-    logging.basicConfig(
-        level=level,
-        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-        datefmt="%H:%M:%S",
-    )
-
-
-def get_client(host: str, port: int) -> BitwigClient:
-    """Create and connect a client, handling connection errors."""
-    client = BitwigClient(host=host, port=port)
-    try:
-        client.connect()
-    except ConnectionRefusedError:
-        rprint(f"[red]Error:[/red] Cannot connect to Bitwig controller at {host}:{port}")
-        rprint("[dim]Is Bitwig Studio running with the controller extension enabled?[/dim]")
-        raise typer.Exit(1)
-    except Exception as e:
-        rprint(f"[red]Error:[/red] Connection failed: {e}")
-        raise typer.Exit(1)
-    return client
 
 
 @app.command()
@@ -782,7 +752,7 @@ def _insert_midi(
 @app.command()
 def version() -> None:
     """Show version information."""
-    rprint(f"bitwig-cli {__version__}")
+    rprint(f"bitwig {__version__}")
 
 
 @app.callback()
@@ -792,9 +762,12 @@ def main(
         typer.Option("--version", "-V", help="Show version and exit", is_eager=True),
     ] = None,
 ) -> None:
-    """Control Bitwig Studio from the command line."""
+    """Workflow commands for Bitwig Studio.
+
+    For direct control (device params, RPC calls), use `groove-link` instead.
+    """
     if version:
-        rprint(f"bitwig-cli {__version__}")
+        rprint(f"bitwig {__version__}")
         raise typer.Exit()
 
 

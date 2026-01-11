@@ -104,35 +104,39 @@ com.bitwig.extensions.rpc.RPCControllerExtensionDefinition
 
 ## Architecture
 
-### Current Design: MCP Server with Inverted TCP
+### Current Design: TCP Proxy with Inverted Connection
 
 Bitwig's `RemoteSocket` API has a bug: the receive callback doesn't fire when acting as server.
 However, `connectToRemoteHost()` works correctly in client mode (send AND receive).
 
-**Solution:** Bitwig connects OUT to our MCP server as a TCP client.
+**Solution:** Bitwig connects OUT to our TCP proxy as a client.
 
 ```
-┌─────────────────┐     stdio      ┌─────────────────┐    TCP     ┌─────────────────┐
-│  Claude Code    │◄──────────────►│                 │◄──────────►│  Bitwig         │
-│                 │    MCP         │  Rust MCP       │   :8417    │  Extension      │
-└─────────────────┘                │  Server         │            │  (connects out) │
-                                   │                 │            └─────────────────┘
-┌─────────────────┐   TCP/JSON-RPC │  - Bitwig pool  │
-│  Python CLI     │◄──────────────►│  - Tool dispatch│
-│  $ bitwig info  │    :8418       │                 │
-└─────────────────┘                └─────────────────┘
+┌─────────────────┐                ┌─────────────────┐    TCP     ┌─────────────────┐
+│  Claude Code    │──── Bash ─────►│  Python CLI     │◄──────────►│  Rust TCP       │
+│                 │                │  $ bitwig ...   │   :8418    │  Proxy          │
+└─────────────────┘                └─────────────────┘            │                 │
+                                                                  │            :8417│
+                                                                  └────────▲────────┘
+                                                                           │
+                                                                  ┌────────┴────────┐
+                                                                  │  Bitwig         │
+                                                                  │  Extension      │
+                                                                  │  (connects out) │
+                                                                  └─────────────────┘
 ```
 
 **Components:**
-1. **Rust MCP Server** - Listens for Bitwig connections, exposes MCP tools to Claude
-2. **Bitwig Extension** - Connects to MCP server on startup, handles commands
-3. **Python CLI** - Talks JSON-RPC to MCP server for human use
+1. **Rust TCP Proxy** - Listens for Bitwig (8417) and CLI (8418) connections
+2. **Bitwig Extension** - Connects to proxy on startup, handles commands
+3. **Python CLI** - `bitwig` (workflow) and `groove-link` (direct control)
+4. **Claude Code** - Uses Python CLI via Bash
 
 **Why this design:**
 - Bitwig's client-mode TCP works (tested: send AND receive)
 - Bitwig's server-mode TCP is broken (send works, receive callback never fires)
-- MCP gives Claude Code native tool access
-- Single server handles both Claude and CLI clients
+- Python CLI has all domain knowledge (search, resolution, track creation)
+- Claude uses CLI via Bash - no MCP complexity needed
 
 ### Wire Protocol
 
@@ -149,8 +153,8 @@ All connections use **length-prefixed JSON-RPC 2.0 frames**:
 
 | Service | Port | Direction |
 |---------|------|-----------|
-| MCP Server (Bitwig) | 8417 | Bitwig connects IN |
-| MCP Server (CLI) | 8418 | CLI connects IN |
+| TCP Proxy (Bitwig) | 8417 | Bitwig connects IN |
+| TCP Proxy (CLI) | 8418 | CLI connects IN |
 
 ### Legacy: OSC over UDP (retained for real-time)
 
@@ -604,10 +608,13 @@ tracks:
 src/bitwig_cli/
 ├── __init__.py      # Package version
 ├── __main__.py      # python -m bitwig_cli entry
-├── main.py          # CLI commands (typer)
+├── main.py          # bitwig CLI - end-user workflow commands
+├── groovelink.py    # groove-link CLI - internal direct control
+├── common.py        # Shared utilities (connection, options)
 ├── client.py        # JSON-RPC client (with progress support)
 ├── protocol.py      # Framing + JSON-RPC types + notifications
 ├── resolve.py       # Device name resolution (fuzzy search)
+├── devices.py       # Bitwig base device search
 ├── presets.py       # Bitwig preset search (Spotlight)
 ├── plugins.py       # Plugin search (VST3, AU, CLAP)
 ├── kontakt.py       # Kontakt instrument search
@@ -616,11 +623,19 @@ src/bitwig_cli/
 └── table.py         # Adaptive table display
 ```
 
+### Two CLIs
+
+| CLI | Purpose | Users |
+|-----|---------|-------|
+| `bitwig` | Workflow commands (track create, search, info) | End users |
+| `groove-link` | Direct control (device params, RPC calls) | Internal/debugging |
+
 ### Adding New Commands
 
-1. Add CLI command in `main.py`
-2. Implement RPC method in Bitwig extension
-3. Test against real Bitwig
+- Workflow commands → `main.py` (bitwig CLI)
+- Direct control commands → `groovelink.py` (groove-link CLI)
+- Implement RPC method in Bitwig extension
+- Test against real Bitwig
 
 ---
 
@@ -741,53 +756,33 @@ Base devices are in: `/Applications/Bitwig Studio.app/Contents/Resources/Library
 
 ---
 
-## Claude Code MCP Integration
+## Claude Code Integration
 
-The MCP server exposes Bitwig tools directly to Claude Code.
+Claude Code uses the Python CLI via Bash. No MCP server registration needed.
 
-### Setup
+### How Claude Uses Bitwig
 
-```bash
-# Register the MCP server with Claude Code
-claude mcp add groove-link /path/to/groove-link/mcp-server/target/release/groove_mcp -- --stdio
 ```
-
-This adds the server to `~/.claude.json`. Restart Claude Code to activate.
-
-### Available Tools
-
-| Tool | Description |
-|------|-------------|
-| `bitwig_info` | Get Bitwig Studio and controller extension information |
-| `bitwig_list_tracks` | List all tracks in the current Bitwig project |
-| `bitwig_status` | Check if Bitwig Studio is connected to the MCP server |
+Claude Code ──── Bash ────► bitwig track create song.yaml
+                           bitwig list tracks
+                           bitwig preset "query"
+                           groove-link device list-params  # debugging
+```
 
 ### Startup Order
 
-The MCP server must be running BEFORE Bitwig tries to connect:
+1. **Start TCP proxy** - `./mcp-server/target/release/groove_link &`
+2. **Start Bitwig** - Extension auto-connects to proxy on port 8417
+3. **Use CLI** - `bitwig info` to verify connection
 
-1. **Start Claude Code** - This spawns `groove_mcp --stdio` which listens on port 8417
-2. **Start/restart Bitwig** - Or reload the extension in Settings → Controllers
-3. **Extension connects** - Look for "Connected to MCP server" in Bitwig's console
-4. **Use tools** - Now `bitwig_info`, etc. will work
+### Example Workflow
 
-If you see "Bitwig not connected", it means the extension hasn't connected yet.
-The extension auto-reconnects every 5 seconds, so you can also just wait.
+```bash
+# Claude creates a song config
+# Then runs:
+bitwig track create examples/morning-light.yaml
 
-### Prerequisites
-
-Before using MCP tools, ensure:
-1. Claude Code is running (starts the MCP server)
-2. Bitwig Studio is running
-3. The RPC Controller extension is loaded and connected
-
-### How It Works
-
+# To debug device parameters:
+groove-link device select-first
+groove-link device list-params
 ```
-Claude Code ←── stdio/MCP ──→ groove_mcp ←── TCP:8417 ──→ Bitwig Extension
-```
-
-1. Claude Code spawns `groove_mcp --stdio` as a subprocess
-2. MCP protocol over stdin/stdout for tool calls
-3. MCP server maintains TCP connection to Bitwig extension
-4. Tool calls are forwarded as JSON-RPC to Bitwig

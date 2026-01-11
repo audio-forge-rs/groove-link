@@ -1,13 +1,10 @@
 [package]
-name = "groove_mcp"
+name = "groove_link"
 version = "0.1.0"
 edition = "2021"
-description = "MCP server for Bitwig Studio control"
+description = "TCP proxy for Bitwig Studio CLI control"
 
 [dependencies]
-# MCP protocol
-rmcp = { version = "0.12", features = ["server", "transport-io"] }
-
 # Async runtime
 tokio = { version = "1", features = ["full"] }
 
