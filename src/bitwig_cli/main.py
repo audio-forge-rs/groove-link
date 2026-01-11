@@ -16,6 +16,7 @@ from rich.table import Table
 
 from . import __version__
 from .client import BitwigClient, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_TIMEOUT
+from .devices import search_devices
 from .kontakt import search_kontakt
 from .mtron import search_mtron
 from .plugins import search_plugins
@@ -348,6 +349,63 @@ def mtron(
         wide_console = Console(width=300)
         wide_console.print(table)
         rprint(f"[dim]Found {len(results)} patches in {elapsed:.2f}s[/dim]")
+
+
+@app.command()
+def device(
+    query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
+    limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    category: Annotated[
+        str | None,
+        typer.Option("-c", "--category", help="Filter by category: inst, note, fx, routing, mod, util"),
+    ] = None,
+    paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
+    verbose: VerboseOption = False,
+) -> None:
+    """Search for Bitwig base devices.
+
+    Base devices are the core Bitwig devices like Audio Receiver, Compressor,
+    Polymer, etc. (not presets or plugins).
+
+    Examples:
+        bitwig device receiver
+        bitwig device "audio receiver"
+        bitwig device compressor -c fx
+        bitwig device polymer --category inst
+        bitwig device note -c note
+    """
+    import time
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    # Validate category filter
+    valid_categories = {"inst", "note", "fx", "routing", "mod", "util"}
+    if category and category not in valid_categories:
+        rprint(f"[red]Error:[/red] Invalid category '{category}'")
+        rprint(f"[dim]Valid categories: {', '.join(sorted(valid_categories))}[/dim]")
+        raise typer.Exit(1)
+
+    results = search_devices(query, limit=limit, category_filter=category)
+    elapsed = time.perf_counter() - start
+
+    if not results:
+        rprint(f"[yellow]No devices found for '{query}'[/yellow]")
+        raise typer.Exit(0)
+
+    if paths:
+        for r in results:
+            print(r.file_path)
+    else:
+        columns = [
+            Column("Name", "name", min_width=15, max_width=30, priority=3),
+            Column("Load", "load_type", min_width=6, max_width=6, priority=3),
+            Column("Category", "category", min_width=7, max_width=10, priority=2),
+        ]
+        table = adaptive_table(results, columns)
+        wide_console = Console(width=300)
+        wide_console.print(table)
+        rprint(f"[dim]Found {len(results)} devices in {elapsed:.2f}s[/dim]")
 
 
 # Track subcommand group

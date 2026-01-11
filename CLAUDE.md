@@ -715,15 +715,30 @@ Settings: `~/Library/Application Support/GForce/M-Tron Pro IV/`
 
 ---
 
-## Planned CLI Commands
-
-See `docs/CLI_SEARCH_SPEC.md` for full specification.
+## CLI Search Commands
 
 | Command | Description |
 |---------|-------------|
+| `bitwig preset` | Search Bitwig presets (.bwpreset files) |
+| `bitwig device` | Search Bitwig base devices (Audio Receiver, Compressor, etc.) |
 | `bitwig plugin` | Search VST3/AU/CLAP plugins |
 | `bitwig kontakt` | Search Kontakt libraries/instruments |
-| `bitwig m-tron` | Search M-Tron Pro IV tapes |
+| `bitwig mtron` | Search M-Tron Pro IV tapes |
+
+### Device Search
+
+Search Bitwig's core devices (not presets):
+
+```bash
+bitwig device receiver           # Find Audio Receiver, Note Receiver
+bitwig device compressor         # Find Compressor, Compressor+
+bitwig device polymer            # Find Polymer instrument
+bitwig device delay -c fx        # Filter to audio effects only
+```
+
+**Categories:** `inst`, `note`, `fx`, `routing`, `mod`, `util`
+
+Base devices are in: `/Applications/Bitwig Studio.app/Contents/Resources/Library/devices/`
 
 ---
 

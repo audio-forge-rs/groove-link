@@ -87,6 +87,11 @@ bitwig preset reverb                # Search for reverb presets
 bitwig preset delay --type fx       # Filter audio effects only
 bitwig preset arp -t note           # Filter note effects only
 
+# Bitwig base devices (core devices, not presets)
+bitwig device receiver              # Find Audio Receiver, Note Receiver
+bitwig device compressor            # Find Compressor, Compressor+
+bitwig device delay -c fx           # Filter to audio effects only
+
 # Audio plugins (VST3, AU, CLAP)
 bitwig plugin kontakt               # Find Kontakt plugins
 bitwig plugin surge --format clap   # Filter by format
@@ -104,6 +109,14 @@ bitwig mtron choir --category Voices # Filter by category
 - `inst` - Instruments (Polymer, Phase-4, Sampler)
 - `note` - Note effects (Note Delay, Arpeggiator)
 - `fx` - Audio effects (Delay+, Reverb, Compressor)
+
+**Device category filters:**
+- `inst` - Instruments (Polymer, Drum Machine)
+- `note` - Note effects (Note Receiver, Arpeggiator)
+- `fx` - Audio effects (Compressor, Delay+)
+- `routing` - Routing devices (Audio Receiver, Note Receiver)
+- `mod` - Modulators (LFO, ADSR)
+- `util` - Utilities (Test Tone, DC Offset)
 
 ### Track Creation
 
