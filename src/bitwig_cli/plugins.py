@@ -21,6 +21,7 @@ class PluginMatch:
     vendor: str
     version: str | None
     location: str  # "user" or "system"
+    bundle_id: str | None = None
     score: float = field(default=0.0)
 
     def to_dict(self) -> dict:
@@ -32,6 +33,35 @@ class PluginMatch:
             "version": self.version,
             "location": self.location,
         }
+
+
+# Known plugin abbreviations -> full searchable names
+# Many vendors use abbreviations for plugin filenames
+PLUGIN_ABBREVIATIONS: dict[str, str] = {
+    # Ample Sound instruments (A = Ample, letter codes for instrument)
+    "AEBJ": "Ample Ethno Banjo",
+    "AEUJ": "Ample Ethno Ukulele",
+    "AGML": "Ample Guitar Martin",
+    "AGMJ": "Ample Guitar Martin Jumbo",
+    "AGLP": "Ample Guitar Les Paul",
+    "AGSC": "Ample Guitar Stratocaster",
+    "AGTC": "Ample Guitar Telecaster",
+    "AGPF": "Ample Guitar PF",
+    "AGTS": "Ample Guitar Taylor",
+    "AGTH": "Ample Guitar Hellrazer",
+    "AGVN": "Ample Guitar Van Halen",
+    "AGFV": "Ample Guitar Flame Vintage",
+    "ABPJ": "Ample Bass P",
+    "ABJJ": "Ample Bass J",
+    "ABUJ": "Ample Bass Upright",
+    "ABYJ": "Ample Bass Yinyang",
+    "ABAJ": "Ample Bass Acoustic",
+    "AME": "Ample Metal Eclipse",
+    "AMR": "Ample Metal Ray",
+    "ABSS": "Ample Bass Steinberger",
+    "ABSJ": "Ample Bass Stingray",
+    # Add more as discovered
+}
 
 
 # Plugin format extensions
@@ -58,35 +88,36 @@ SYSTEM_PLUGIN_PATHS = [
 ]
 
 
-def _parse_info_plist(bundle_path: Path) -> tuple[str | None, str | None]:
-    """Extract vendor and version from plugin's Info.plist.
+def _parse_info_plist(bundle_path: Path) -> tuple[str | None, str | None, str | None]:
+    """Extract vendor, version, and bundle ID from plugin's Info.plist.
 
     Returns:
-        (vendor, version) tuple
+        (vendor, version, bundle_id) tuple
     """
     plist_path = bundle_path / "Contents" / "Info.plist"
     if not plist_path.exists():
-        return None, None
+        return None, None, None
 
     try:
         with open(plist_path, "rb") as f:
             plist = plistlib.load(f)
 
+        bundle_id = plist.get("CFBundleIdentifier", "")
+
         # Try various keys for vendor/manufacturer
-        vendor = (
-            plist.get("CFBundleIdentifier", "").split(".")[1]
-            if "." in plist.get("CFBundleIdentifier", "")
-            else None
-        )
-        # Capitalize first letter
-        if vendor:
-            vendor = vendor.title()
+        vendor = None
+        if "." in bundle_id:
+            parts = bundle_id.split(".")
+            if len(parts) >= 2:
+                vendor = parts[1]  # com.VENDOR.plugin
+                # Clean up common vendor names
+                vendor = vendor.replace("-", " ").replace("_", " ").title()
 
         version = plist.get("CFBundleShortVersionString") or plist.get("CFBundleVersion")
 
-        return vendor, version
+        return vendor, version, bundle_id
     except Exception:
-        return None, None
+        return None, None, None
 
 
 def _extract_plugin_name(path: Path) -> str:
@@ -172,7 +203,7 @@ def get_all_plugins() -> list[PluginMatch]:
             continue
 
         name = _extract_plugin_name(path)
-        vendor, version = _parse_info_plist(path)
+        vendor, version, bundle_id = _parse_info_plist(path)
         fmt = _get_format(path)
         location = _get_location(path)
 
@@ -184,6 +215,7 @@ def get_all_plugins() -> list[PluginMatch]:
                 vendor=vendor or "Unknown",
                 version=version,
                 location=location,
+                bundle_id=bundle_id,
             )
         )
 
@@ -215,8 +247,16 @@ def search_plugins(
         if format_filter and plugin.format != format_filter:
             continue
 
+        # Look up expanded name from abbreviation mapping
+        expanded_name = PLUGIN_ABBREVIATIONS.get(plugin.name.upper(), "")
+
         # Score based on name and vendor
         score = fuzzy_match(query, plugin.name, plugin.vendor)
+
+        # Also try matching against expanded name if available
+        if expanded_name:
+            expanded_score = fuzzy_match(query, expanded_name, plugin.vendor)
+            score = max(score, expanded_score)
 
         if score >= min_score:
             plugin.score = score
