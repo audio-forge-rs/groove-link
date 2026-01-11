@@ -13,6 +13,7 @@ from rich.table import Table
 
 from . import __version__
 from .client import BitwigClient, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_TIMEOUT
+from .presets import search_presets
 from .protocol import RPCException
 
 # CLI app
@@ -130,6 +131,54 @@ def list_cmd(
 
     # For now, just print the result - we'll format better once we know the structure
     rprint(result)
+
+
+@app.command()
+def preset(
+    query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
+    limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
+    verbose: VerboseOption = False,
+) -> None:
+    """Search for Bitwig presets by name.
+
+    Examples:
+        bitwig preset nektar
+        bitwig preset "warm pad"
+        bitwig preset bass -n 10
+    """
+    import time
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    results = search_presets(query, limit=limit)
+    elapsed = time.perf_counter() - start
+
+    if not results:
+        rprint(f"[yellow]No presets found for '{query}'[/yellow]")
+        raise typer.Exit(0)
+
+    if paths:
+        for r in results:
+            print(r.file_path)
+    else:
+        table = Table(show_header=True, header_style="bold")
+        table.add_column("Name", width=35)
+        table.add_column("Package", width=12)
+        table.add_column("Pack", width=20)
+        table.add_column("Category", width=15)
+
+        for r in results:
+            table.add_row(
+                r.name[:35],
+                r.package[:12],
+                r.pack[:20],
+                (r.category or "")[:15],
+            )
+
+        console.print(table)
+        rprint(f"[dim]Found {len(results)} presets in {elapsed:.2f}s[/dim]")
 
 
 @app.command()
