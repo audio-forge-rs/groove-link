@@ -89,55 +89,74 @@ def _parse_preset_path(path: str) -> tuple[str, str, str, str | None, str | None
 
 
 def _fuzzy_match(query: str, name: str, device: str | None) -> float:
-    """Fuzzy match score with device weighting. Returns 0-1, higher is better.
+    """Fuzzy match score with device weighting and granular scoring.
 
-    Scoring (device match is weighted heavily):
-    - Device exact match: +0.5 bonus
-    - Device partial match: +0.3 bonus
-    - Name exact match: 1.0
-    - Name substring: 0.7
-    - Name word match: 0.5
-    - Name partial word: 0.3
+    Scoring is designed to minimize ties:
+    - Device exact match: +0.50
+    - Device partial match: +0.30
+    - Name exact match: +1.00
+    - Name substring at word boundary: +0.60 + position bonus
+    - Name substring anywhere: +0.40 + position bonus
+    - Name word match: +0.30 + coverage bonus
+    - Name partial word: +0.15 + coverage bonus
+    - Length similarity bonus: up to +0.05
     """
+    import random
+
     query_lower = query.lower()
     name_lower = name.lower()
     device_lower = (device or "").lower()
 
     score = 0.0
 
-    # Device matching (high weight - this is what the user often wants)
+    # Device matching (high weight)
     if device_lower:
         if query_lower == device_lower:
-            score += 0.5  # Exact device match
+            score += 0.50
         elif query_lower in device_lower or device_lower in query_lower:
-            score += 0.3  # Partial device match (e.g., "delay" matches "Delay-2")
+            score += 0.30
 
-    # Name matching
+    # Name matching with position-based bonuses for variety
     if query_lower == name_lower:
-        score += 1.0
+        score += 1.00
     elif query_lower in name_lower:
-        # Boost if at word boundary
+        pos = name_lower.find(query_lower)
+        # Earlier position = slightly higher score
+        position_bonus = 0.05 * (1 - pos / max(len(name_lower), 1))
+
         if re.search(rf"\b{re.escape(query_lower)}", name_lower):
-            score += 0.7
+            score += 0.60 + position_bonus
         else:
-            score += 0.5
+            score += 0.40 + position_bonus
     else:
-        # Word matching in name
+        # Word matching
         query_words = query_lower.split()
-        name_words = set(re.findall(r"\w+", name_lower))
+        name_words = list(re.findall(r"\w+", name_lower))
+        name_word_set = set(name_words)
 
-        matches = sum(1 for qw in query_words if qw in name_words)
-        if matches == len(query_words):
-            score += 0.5
-        else:
-            # Partial word matching
-            partial_matches = sum(
-                1 for qw in query_words if any(qw in nw for nw in name_words)
-            )
-            if partial_matches > 0:
-                score += 0.3 * (partial_matches / len(query_words))
+        exact_matches = sum(1 for qw in query_words if qw in name_word_set)
+        if exact_matches > 0:
+            # Coverage bonus: what fraction of query words matched
+            coverage = exact_matches / len(query_words)
+            score += 0.30 * coverage
 
-    return min(score, 1.5)  # Cap at 1.5 (device + name match)
+        # Partial word matching
+        partial_matches = sum(
+            1 for qw in query_words
+            if any(qw in nw for nw in name_word_set) and qw not in name_word_set
+        )
+        if partial_matches > 0:
+            coverage = partial_matches / len(query_words)
+            score += 0.15 * coverage
+
+    # Small length similarity bonus to break ties
+    len_ratio = min(len(query), len(name)) / max(len(query), len(name), 1)
+    score += 0.02 * len_ratio
+
+    # Tiny random jitter to randomize ties (±0.001)
+    score += random.uniform(-0.001, 0.001)
+
+    return min(score, 1.5)
 
 
 def find_presets_spotlight() -> Iterator[str]:

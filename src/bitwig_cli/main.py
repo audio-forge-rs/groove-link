@@ -15,6 +15,7 @@ from . import __version__
 from .client import BitwigClient, DEFAULT_HOST, DEFAULT_PORT, DEFAULT_TIMEOUT
 from .presets import search_presets
 from .protocol import RPCException
+from .table import Column, adaptive_table
 
 # CLI app
 app = typer.Typer(
@@ -163,22 +164,14 @@ def preset(
         for r in results:
             print(r.file_path)
     else:
-        table = Table(show_header=True, header_style="bold")
-        table.add_column("Name", width=22, no_wrap=True)
-        table.add_column("Device", width=10)
-        table.add_column("Category", width=12)
-        table.add_column("Pack", width=20)
-        table.add_column("Package", width=10)
-
-        for r in results:
-            table.add_row(
-                r.name[:22],
-                (r.device or "")[:10],
-                (r.category or "")[:12],
-                r.pack[:20],
-                r.package[:10],
-            )
-
+        columns = [
+            Column("Name", "name", min_width=15, max_width=28, priority=3),
+            Column("Device", "device", min_width=8, max_width=12, priority=3),
+            Column("Category", "category", min_width=6, max_width=14, priority=1),
+            Column("Pack", "pack", min_width=10, max_width=24, priority=2),
+            Column("Package", "package", min_width=6, max_width=12, priority=1),
+        ]
+        table = adaptive_table(results, columns, max_total_width=120)
         console.print(table)
         rprint(f"[dim]Found {len(results)} presets in {elapsed:.2f}s[/dim]")
 
