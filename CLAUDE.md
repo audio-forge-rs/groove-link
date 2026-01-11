@@ -435,6 +435,21 @@ liblo.send(target, '/clip/0/0/launch')
 
 ## Development Philosophy
 
+**DO NOT REGRESS. DO NOT REMOVE FUNCTIONALITY. DO NOT OVERSIMPLIFY.**
+
+This is the cardinal rule. When making changes:
+- Never remove a feature that was working
+- Never remove a column, field, or option without explicit request
+- Never "simplify" by reducing functionality
+- If refactoring, ensure ALL existing behavior is preserved
+- Test that previous functionality still works after changes
+
+**DRY, SOLID, APIE.**
+
+- **DRY** - Don't Repeat Yourself. Extract shared code (fuzzy matching, table display).
+- **SOLID** - Single responsibility per module. Open for extension.
+- **APIE** - Abstraction, Polymorphism, Inheritance, Encapsulation.
+
 **No mocks. No fakes. Fail fast and ugly.**
 
 - If Bitwig isn't running, the CLI fails immediately with a clear error
@@ -527,6 +542,108 @@ src/bitwig_cli/
 1. Add CLI command in `main.py`
 2. Implement RPC method in Bitwig extension
 3. Test against real Bitwig
+
+---
+
+## CLI Preset Search
+
+### Design Principles
+
+**NEVER truncate content.** Tables must show ALL characters. Use wide console (width=300) to allow horizontal scrolling rather than cutting off text.
+
+**Randomize ties.** When fuzzy scores are similar, add random jitter (±0.03) so results shuffle each run.
+
+**Weight device matches higher.** For preset search, device name matches are more valuable than just name matches.
+
+**Fast.** Use macOS Spotlight (`mdfind`) for enumeration. Target < 2 seconds.
+
+### Preset Search Implementation
+
+Uses Spotlight to find `.bwpreset` files, extracts metadata from path structure:
+```
+installed-packages/5.0/{Package}/{Pack}/Presets/{Device}/{Name}.bwpreset
+```
+
+**Columns:** Name, Type, Device, Pack, Package
+
+**Type classification:**
+- `inst` - Instruments (Polymer, Phase-4, Sampler, etc.)
+- `note` - Note effects (Note Delay, Arpeggiator, etc.)
+- `fx` - Audio effects (Delay+, Reverb, Compressor, etc.)
+
+### Usage
+
+```bash
+bitwig preset nektar           # Fuzzy search
+bitwig preset delay --type fx  # Filter audio effects only
+bitwig preset arp -t note      # Filter note effects only
+bitwig preset bass -n 10       # Limit results
+bitwig preset "warm pad"       # Multi-word query
+```
+
+### Fuzzy Match Algorithm
+
+Scoring with position bonus and tie-breaking:
+- Device exact match: +0.50
+- Device partial match: +0.30
+- Name exact match: +1.00
+- Name substring at word boundary: +0.60 + position bonus
+- Name substring anywhere: +0.40 + position bonus
+- Word match: +0.30 × coverage
+- Random jitter: ±0.03 (to shuffle ties)
+
+---
+
+## Filesystem Locations (macOS)
+
+### Bitwig Content
+
+```
+~/Documents/Bitwig Studio/
+├── Library/Presets/          # User presets
+├── Projects/                 # Projects
+└── Extensions/               # .bwextension files
+
+~/Library/Application Support/Bitwig/Bitwig Studio/
+├── installed-packages/5.0/   # Sound packs by vendor
+├── library/                  # Browser index, favorites
+└── prefs/                    # Preferences
+```
+
+### Audio Plugins
+
+```
+# User plugins
+~/Library/Audio/Plug-Ins/{VST3,VST,CLAP,Components}/
+
+# System plugins
+/Library/Audio/Plug-Ins/{VST3,VST,CLAP,Components}/
+```
+
+### Kontakt Libraries
+
+Database: `~/Library/Application Support/Native Instruments/Kontakt 8/komplete.db3`
+
+Common library paths:
+- `/Library/Application Support/Native Instruments/Kontakt 8/Content/`
+- `/Users/Shared/*Library/`
+- `/Volumes/External/kontakt_libraries/`
+
+### M-Tron Pro IV
+
+Settings: `~/Library/Application Support/GForce/M-Tron Pro IV/`
+
+---
+
+## Planned CLI Commands
+
+See `docs/CLI_SEARCH_SPEC.md` for full specification.
+
+| Command | Description |
+|---------|-------------|
+| `bitwig plugin` | Search VST3/AU/CLAP plugins |
+| `bitwig kontakt` | Search Kontakt libraries/instruments |
+| `bitwig m-tron` | Search M-Tron Pro IV tapes |
 
 ---
 

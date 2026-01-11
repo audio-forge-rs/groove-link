@@ -72,8 +72,27 @@ Restart Claude Code. Now Claude has direct access to Bitwig tools:
 ```bash
 bitwig info              # Show version info
 bitwig list tracks       # List all tracks
+bitwig preset <query>    # Search Bitwig presets
 bitwig --help            # Show all commands
 ```
+
+### Preset Search
+
+Fast fuzzy search across all installed Bitwig presets:
+
+```bash
+bitwig preset reverb                # Search for reverb presets
+bitwig preset "warm pad"            # Multi-word search
+bitwig preset delay --type fx       # Filter audio effects only
+bitwig preset arp -t note           # Filter note effects only
+bitwig preset polymer -n 10         # Limit to 10 results
+bitwig preset bass --paths          # Output file paths only
+```
+
+**Type filters:**
+- `inst` - Instruments (Polymer, Phase-4, Sampler)
+- `note` - Note effects (Note Delay, Arpeggiator)
+- `fx` - Audio effects (Delay+, Reverb, Compressor)
 
 ## How It Works
 
@@ -101,7 +120,11 @@ groove-link/
 ├── src/bitwig_cli/      # Python CLI
 │   ├── main.py          # CLI commands
 │   ├── client.py        # JSON-RPC client
-│   └── protocol.py      # Framing
+│   ├── protocol.py      # Framing
+│   ├── presets.py       # Preset search (Spotlight-based)
+│   └── table.py         # Adaptive table display
+├── docs/                # Documentation
+│   └── CLI_SEARCH_SPEC.md  # Search commands spec
 └── CLAUDE.md            # Detailed docs for Claude Code
 ```
 
