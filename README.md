@@ -76,20 +76,30 @@ bitwig preset <query>    # Search Bitwig presets
 bitwig --help            # Show all commands
 ```
 
-### Preset Search
+### Search Commands
 
-Fast fuzzy search across all installed Bitwig presets:
+Fast fuzzy search across all installed content:
 
 ```bash
+# Bitwig presets
 bitwig preset reverb                # Search for reverb presets
-bitwig preset "warm pad"            # Multi-word search
 bitwig preset delay --type fx       # Filter audio effects only
 bitwig preset arp -t note           # Filter note effects only
-bitwig preset polymer -n 10         # Limit to 10 results
-bitwig preset bass --paths          # Output file paths only
+
+# Audio plugins (VST3, AU, CLAP)
+bitwig plugin kontakt               # Find Kontakt plugins
+bitwig plugin surge --format clap   # Filter by format
+
+# Kontakt instruments
+bitwig kontakt piano                # Search Kontakt library
+bitwig kontakt bass -l "Session"    # Filter by library
+
+# M-Tron Pro IV patches
+bitwig mtron violins                # Search M-Tron patches
+bitwig mtron choir --category Voices # Filter by category
 ```
 
-**Type filters:**
+**Preset type filters:**
 - `inst` - Instruments (Polymer, Phase-4, Sampler)
 - `note` - Note effects (Note Delay, Arpeggiator)
 - `fx` - Audio effects (Delay+, Reverb, Compressor)
