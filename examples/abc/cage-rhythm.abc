@@ -1,0 +1,25 @@
+X:1
+T:Heart Cage Rhythm Guitar
+M:4/4
+L:1/8
+Q:1/4=140
+K:Am
+%%MIDI program 27
+% Part 1: Intro - builds in
+z8 | z8 | z8 | z8 |
+[A,E]4 z4 | z8 | [A,E]4 z4 | [E,B,]4 z4 |
+% Part 2: Main riff - power chords driving
+|: [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 :|
+% Part 3: Variation with movement
+|: [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 :|
+% Part 4: Breakdown - let it breathe
+[A,EA]4 z4 | z4 [A,EA]4 | [GDG]4 z4 | z4 [EBe]4 |
+[FCF]4 z4 | z4 [GDG]4 | [A,EA]4 z4 | [EBe]4 [A,EA]4 |
+% Part 5: Full intensity
+|: [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 :|
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+[A,EA]8 |]

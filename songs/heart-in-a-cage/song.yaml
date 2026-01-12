@@ -1,0 +1,1086 @@
+# ============================================================================
+# SINGLE SOURCE OF TRUTH FOR: Heart in a Cage (Epic Instrumental)
+# ============================================================================
+# Inspired by The Strokes - 140 BPM, 7-8 minute epic with 11 distinct parts
+# Generate with: python -m bitwig_cli.generate_midi songs/heart-in-a-cage/
+# ============================================================================
+
+song:
+  title: "Heart in a Cage"
+  composer: "Groove-Link"
+  tempo: 140
+  time: "4/4"
+  key: "Am"
+
+  # 11 distinct parts - minimal repetition, 7+ minute epic
+  # Total: 256 bars = ~7.3 minutes at 140 BPM
+  structure:
+    - intro           # 16 bars - tension build
+    - riff_a          # 24 bars - main theme
+    - verse_1         # 24 bars - driving rhythm
+    - breakdown_1     # 16 bars - half-time
+    - riff_b          # 24 bars - new melodic theme
+    - verse_2         # 24 bars - variation
+    - breakdown_2     # 16 bars - stripped back
+    - bridge          # 24 bars - atmospheric build
+    - riff_c          # 24 bars - climax theme
+    - peak            # 32 bars - full intensity
+    - outro           # 32 bars - resolve
+
+# ============================================================================
+# SECTION DEFINITIONS - Each section has specific bar count and ABC content
+# ============================================================================
+
+sections:
+  # --------------------------------------------------------------------------
+  # INTRO (16 bars) - Sparse tension, drums establish groove
+  # --------------------------------------------------------------------------
+  intro:
+    bars: 16
+    instruments:
+      guitar-rhythm:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          [A,E]4 z4 | z8 | [A,E]4 z4 | z8 |
+          [A,E]4 z4 | [E,B,]4 z4 | [A,E]4 z4 | z8 |
+          [A,E]2[A,E]2 z4 | z8 | [A,E]2[A,E]2 z4 | [E,B,]4 z4 |
+      guitar-lead:
+        abc: |
+          e4 z4 | z8 | e4 d4 | c4 z4 |
+          e4 z4 | d4 z4 | e4 d4 | e8 |
+          z8 | z8 | e4 z4 | z8 |
+          e4 d4 | c4 z4 | e8 | z8 |
+      bass:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          A,,4 z4 | z8 | A,,4 z4 | E,,4 z4 |
+          A,,4 z4 | z8 | A,,4 z4 | z8 |
+          A,,4 z4 | z4 E,,4 | A,,4 z4 | E,,4 z4 |
+      synth:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          [A,E]8 | [A,E]8 | [A,E]8 | [A,E]8 |
+          [A,E]8 | [A,E]8 | [A,E]8 | [A,E]8 |
+      drums:
+        kick: |
+          z8 | z8 | z8 | z8 |
+          C4 z4 | z8 | C4 z4 | z8 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+        snare: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z4 C4 | z4 C4 | z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 | z4 C4 | z4 C4 |
+        hihat: |
+          z8 | z8 | z8 | z8 |
+          C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 |
+
+  # --------------------------------------------------------------------------
+  # RIFF A (24 bars) - Main driving riff, full band
+  # --------------------------------------------------------------------------
+  riff_a:
+    bars: 24
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+          [A,EA]2[A,EA]2 [GDG]2[GDG]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          e2e2 e2d2 | c2d2 e4 |
+          g2g2 g2e2 | d2c2 d4 |
+          e2e2 e2d2 | c2d2 e4 |
+          g2g2 g2e2 | d2c2 d4 |
+          a2g2 e2c2 | d2e2 g4 |
+          a2g2 e2d2 | e8 |
+          e2e2 e2d2 | c2d2 e4 |
+          g2g2 g2e2 | d2c2 d4 |
+          e2e2 e2d2 | c2d2 e4 |
+          g2g2 g2e2 | d2c2 d4 |
+          a2a2 a2g2 | g2g2 g2e2 |
+          e2e2 d2d2 | e8 |
+      bass:
+        abc: |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+          F,,F,,F,,F,, F,,F,,F,,F,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+          F,,F,,F,,F,, F,,F,,F,,F,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+          A,,A,,A,,A,, G,,G,,G,,G,, | A,,4 z4 |
+      synth:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+      drums:
+        kick: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+        hihat: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+
+  # --------------------------------------------------------------------------
+  # VERSE 1 (24 bars) - Rhythmic variation, more syncopation
+  # --------------------------------------------------------------------------
+  verse_1:
+    bars: 24
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+          [FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+          [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+          [FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+          [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+          [FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+          [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+          [FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+          [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+          [FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+          [A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+          [FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          a2g2 e2c2 | d2e2 g4 |
+          a2g2 e2d2 | c2d2 e4 |
+          a2g2 e2c2 | d2e2 g4 |
+          a2g2 e2d2 | c2d2 e4 |
+          e2e2 g2g2 | a2a2 g2e2 |
+          d2d2 e2e2 | g2a2 g4 |
+          a2g2 e2c2 | d2e2 g4 |
+          a2g2 e2d2 | c2d2 e4 |
+          a2g2 e2c2 | d2e2 g4 |
+          a2g2 e2d2 | c2d2 e4 |
+          a2a2 a2g2 | g2g2 g2e2 |
+          e2e2 e2d2 | e8 |
+      bass:
+        abc: |
+          A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+          F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+          A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+          F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+          A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+          F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+          A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+          F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, G,,G,,G,,G,, | F,,F,,F,,F,, E,,E,,E,,E,, |
+          A,,4 z4 | A,,8 |
+      synth:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          [A,E]8 | [A,E]8 | [A,E]8 | [A,E]8 |
+          z8 | z8 | z8 | z8 |
+          [A,E]8 | [G,D]8 | [F,C]8 | [A,E]8 |
+          z8 | z8 | z8 | z8 |
+      drums:
+        kick: |
+          C2z C2z C2 | C2z C2z C2 |
+          C2C2 C2C2 | C4 C4 |
+          C2z C2z C2 | C2z C2z C2 |
+          C2C2 C2C2 | C4 C4 |
+          C2z C2z C2 | C2z C2z C2 |
+          C2C2 C2C2 | C4 C4 |
+          C2z C2z C2 | C2z C2z C2 |
+          C2C2 C2C2 | C4 C4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C4 z4 | C8 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          C2C2 C4 | z8 |
+        hihat: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C4 z4 | z8 |
+
+  # --------------------------------------------------------------------------
+  # BREAKDOWN 1 (16 bars) - Half-time, stripped back
+  # --------------------------------------------------------------------------
+  breakdown_1:
+    bars: 16
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]4 z4 | z4 [A,EA]4 | [GDG]4 z4 | z4 [EBe]4 |
+          [FCF]4 z4 | z4 [GDG]4 | [A,EA]4 z4 | [EBe]4 [A,EA]4 |
+          [A,EA]4 z4 | z4 [A,EA]4 | [GDG]4 z4 | z4 [EBe]4 |
+          [FCF]4 z4 | z4 [GDG]4 | [A,EA]4 z4 | [A,EA]8 |
+      guitar-lead:
+        abc: |
+          e4 z4 | z4 g4 | a4 z4 | z4 e4 |
+          c4 z4 | z4 d4 | e4 z4 | z4 e4 |
+          e4 z4 | z4 g4 | a4 z4 | z4 e4 |
+          c4 z4 | z4 d4 | e8 | e8 |
+      bass:
+        abc: |
+          A,,4 z4 | z4 A,,4 | G,,4 z4 | z4 E,,4 |
+          F,,4 z4 | z4 G,,4 | A,,4 z4 | E,,4 A,,4 |
+          A,,4 z4 | z4 A,,4 | G,,4 z4 | z4 E,,4 |
+          F,,4 z4 | z4 G,,4 | A,,4 z4 | A,,8 |
+      synth:
+        abc: |
+          [A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+          [GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+          [FCF]4 [FCF]4 | [FCF]4 [FCF]4 |
+          [A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+          [A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+          [GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+          [FCF]4 [FCF]4 | [EBe]4 [EBe]4 |
+          [A,EA]4 [A,EA]4 | [A,EA]8 |
+      drums:
+        kick: |
+          C4 z4 | z4 C4 | C4 z4 | z4 C4 |
+          C4 z4 | z4 C4 | C4 z4 | C4 C4 |
+          C4 z4 | z4 C4 | C4 z4 | z4 C4 |
+          C4 z4 | z4 C4 | C4 z4 | C8 |
+        snare: |
+          z8 | z4 C4 | z8 | z4 C4 |
+          z8 | z4 C4 | z8 | z4 C4 |
+          z8 | z4 C4 | z8 | z4 C4 |
+          z8 | z4 C4 | z4 C4 | z8 |
+        hihat: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 | C4 C4 | C8 |
+
+  # --------------------------------------------------------------------------
+  # RIFF B (24 bars) - New melodic theme
+  # --------------------------------------------------------------------------
+  riff_b:
+    bars: 24
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+          [A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+          [CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+          [A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+          [CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+          [A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+          [CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+          [A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          c2d2 e2g2 | a2g2 e2d2 |
+          c2c2 c2e2 | g2e2 d4 |
+          c2d2 e2g2 | a2g2 e2d2 |
+          c2c2 c2e2 | g2e2 d4 |
+          f2g2 a2c'2 | b2a2 g2f2 |
+          e2e2 e2g2 | e8 |
+          c2d2 e2g2 | a2g2 e2d2 |
+          c2c2 c2e2 | g2e2 d4 |
+          c2d2 e2g2 | a2g2 e2d2 |
+          c2c2 c2e2 | g2e2 d4 |
+          f2g2 a2c'2 | b2a2 g2f2 |
+          e2e2 d2d2 | e8 |
+      bass:
+        abc: |
+          C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+          C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+          F,,F,,F,,F,, F,,F,,F,,F,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+          C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+          C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+          F,,F,,F,,F,, F,,F,,F,,F,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+      synth:
+        abc: |
+          [CEG]8 | [DFA]8 | [A,CE]8 | [EGB]8 |
+          [CEG]8 | [DFA]8 | [A,CE]8 | [EGB]8 |
+          [FCF]8 | [GDG]8 | [A,EA]8 | [A,EA]8 |
+          [CEG]8 | [DFA]8 | [A,CE]8 | [EGB]8 |
+          [CEG]8 | [DFA]8 | [A,CE]8 | [EGB]8 |
+          [FCF]8 | [GDG]8 | [A,EA]8 | [A,EA]8 |
+      drums:
+        kick: |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 z4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 z4 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C4 z4 |
+        hihat: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+
+  # --------------------------------------------------------------------------
+  # VERSE 2 (24 bars) - Variation on verse 1
+  # --------------------------------------------------------------------------
+  verse_2:
+    bars: 24
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]2[A,EA]2 z4 | [GDG]2[GDG]2 z4 |
+          [FCF]2[FCF]2 z4 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 z4 | [GDG]2[GDG]2 z4 |
+          [FCF]2[FCF]2 z4 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 z4 | [GDG]2[GDG]2 z4 |
+          [FCF]2[FCF]2 z4 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          e2g2 a4 | g2e2 d4 |
+          c2d2 e4 | e8 |
+          e2g2 a4 | g2e2 d4 |
+          c2d2 e4 | e8 |
+          e2g2 a4 | g2e2 d4 |
+          c2d2 e4 | e8 |
+          a2a2 g2g2 | f2f2 e2e2 |
+          d2d2 c2c2 | e8 |
+          a2g2 e2c2 | d2e2 g4 |
+          a2g2 e2d2 | c2d2 e4 |
+          e2e2 e2e2 | g2g2 g2g2 |
+          a2a2 g2g2 | e8 |
+      bass:
+        abc: |
+          A,,2A,,2 z4 | G,,2G,,2 z4 |
+          F,,2F,,2 z4 | A,,4 z4 |
+          A,,2A,,2 z4 | G,,2G,,2 z4 |
+          F,,2F,,2 z4 | A,,4 z4 |
+          A,,2A,,2 z4 | G,,2G,,2 z4 |
+          F,,2F,,2 z4 | A,,4 z4 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, F,,F,,F,,F,, | A,,4 z4 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, F,,F,,F,,F,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+      synth:
+        abc: |
+          [A,E]8 | [G,D]8 | [F,C]8 | [A,E]8 |
+          [A,E]8 | [G,D]8 | [F,C]8 | [A,E]8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          [A,EA]8 | [GDG]8 | [FCF]8 | [EBe]8 |
+          [A,EA]8 | [A,EA]8 | [A,EA]8 | [A,EA]8 |
+      drums:
+        kick: |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C4 z4 |
+        hihat: |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+
+  # --------------------------------------------------------------------------
+  # BREAKDOWN 2 (16 bars) - Stripped, just bass and drums
+  # --------------------------------------------------------------------------
+  breakdown_2:
+    bars: 16
+    instruments:
+      guitar-rhythm:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          [A,EA]4 z4 | [A,EA]4 z4 | [A,EA]4 z4 | [A,EA]8 |
+      guitar-lead:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | e4 z4 | e4 z4 |
+          e4 d4 | c4 d4 | e4 z4 | e8 |
+      bass:
+        abc: |
+          A,,A,,A,,A,, z4 | A,,A,,A,,A,, z4 |
+          G,,G,,G,,G,, z4 | E,,E,,E,,E,, z4 |
+          A,,A,,A,,A,, z4 | A,,A,,A,,A,, z4 |
+          G,,G,,G,,G,, z4 | E,,E,,E,,E,, z4 |
+          A,,A,,A,,A,, z4 | A,,A,,A,,A,, z4 |
+          G,,G,,G,,G,, z4 | E,,E,,E,,E,, z4 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,8 |
+      synth:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          [A,E]4 z4 | [A,E]4 z4 | [A,E]4 z4 | [A,E]8 |
+      drums:
+        kick: |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C8 |
+        snare: |
+          z8 | z4 C4 |
+          z8 | z4 C4 |
+          z8 | z4 C4 |
+          z8 | z4 C4 |
+          z8 | z4 C4 |
+          z8 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z8 |
+        hihat: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C2C2 C2C2 | C2C2 C2C2 | C2C2 C2C2 | C8 |
+
+  # --------------------------------------------------------------------------
+  # BRIDGE (24 bars) - Atmospheric build
+  # --------------------------------------------------------------------------
+  bridge:
+    bars: 24
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [FCF]4 [FCF]4 | [FCF]4 [FCF]4 |
+          [GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+          [A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+          [EBe]4 [EBe]4 | [EBe]4 [EBe]4 |
+          [FCF]4 [FCF]4 | [FCF]4 [FCF]4 |
+          [GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+          [A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+          [EBe]4 [EBe]4 | [EBe]4 [EBe]4 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          f4 g4 | a4 z4 |
+          g4 a4 | b4 z4 |
+          a4 g4 | e4 z4 |
+          e4 d4 | e4 z4 |
+          f4 g4 | a4 z4 |
+          g4 a4 | b4 z4 |
+          a4 g4 | e4 z4 |
+          e4 d4 | e4 z4 |
+          f2g2 a2b2 | c'2b2 a2g2 |
+          g2a2 b2c'2 | d'2c'2 b2a2 |
+          a2g2 e2d2 | c2d2 e2g2 |
+          e2e2 e2e2 | e8 |
+      bass:
+        abc: |
+          F,,4 F,,4 | F,,4 F,,4 |
+          G,,4 G,,4 | G,,4 G,,4 |
+          A,,4 A,,4 | A,,4 A,,4 |
+          E,,4 E,,4 | E,,4 E,,4 |
+          F,,4 F,,4 | F,,4 F,,4 |
+          G,,4 G,,4 | G,,4 G,,4 |
+          A,,4 A,,4 | A,,4 A,,4 |
+          E,,4 E,,4 | E,,4 E,,4 |
+          F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+      synth:
+        abc: |
+          [FCF]8 | [FCF]8 |
+          [GDG]8 | [GDG]8 |
+          [A,EA]8 | [A,EA]8 |
+          [EBe]8 | [EBe]8 |
+          [FCF]8 | [FCF]8 |
+          [GDG]8 | [GDG]8 |
+          [A,EA]8 | [A,EA]8 |
+          [EBe]8 | [EBe]8 |
+          [FCF]8 | [FCF]8 |
+          [GDG]8 | [GDG]8 |
+          [A,EA]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+      drums:
+        kick: |
+          C8 | C8 | C8 | C8 |
+          C8 | C8 | C8 | C8 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+        snare: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z4 C4 | z4 C4 | z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 | z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C4 z4 |
+        hihat: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 | C4 C4 | C4 C4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+
+  # --------------------------------------------------------------------------
+  # RIFF C (24 bars) - Climax theme, most intense
+  # --------------------------------------------------------------------------
+  riff_c:
+    bars: 24
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [EBe]2[EBe]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          e2e2 g2g2 | a2a2 g2e2 |
+          f2g2 a2b2 | e2e2 e2e2 |
+          e2e2 g2g2 | a2a2 g2e2 |
+          f2g2 a2b2 | e2e2 e2e2 |
+          e2e2 g2g2 | a2a2 g2e2 |
+          f2g2 a2b2 | e8 |
+          a2a2 a2g2 | g2g2 g2e2 |
+          f2f2 g2g2 | a2a2 a2a2 |
+          e2g2 a2g2 | e2d2 c2d2 |
+          e2g2 a2g2 | e2d2 c2d2 |
+          e2e2 e2e2 | e2e2 d2d2 |
+          c2c2 d2d2 | e8 |
+      bass:
+        abc: |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, G,,G,,G,,G,, | A,,4 z4 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, E,,E,,E,,E,, | A,,4 z4 |
+      synth:
+        abc: |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+      drums:
+        kick: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+        hihat: |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | C4 z4 |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | C4 z4 |
+
+  # --------------------------------------------------------------------------
+  # PEAK (32 bars) - Full intensity, everything unleashed
+  # --------------------------------------------------------------------------
+  peak:
+    bars: 32
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+          [EBe]2[EBe]2 [EBe]2[EBe]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+          [EBe]2[EBe]2 [EBe]2[EBe]2 | [A,EA]4 z4 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+          [EBe]2[EBe]2 [EBe]2[EBe]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+      guitar-lead:
+        abc: |
+          a2a2 a2a2 | a2g2 g2e2 |
+          g2g2 g2g2 | g2f2 f2d2 |
+          f2f2 f2f2 | f2e2 e2c2 |
+          e2e2 e2e2 | e2d2 d2c2 |
+          a2a2 a2a2 | a2g2 g2e2 |
+          g2g2 g2g2 | g2f2 f2d2 |
+          f2f2 f2f2 | f2e2 e2c2 |
+          e2e2 e2e2 | e8 |
+          e2g2 a2b2 | c'2b2 a2g2 |
+          g2a2 b2c'2 | d'2c'2 b2a2 |
+          f2g2 a2b2 | c'2b2 a2g2 |
+          e2e2 e2e2 | g2g2 g2g2 |
+          a2g2 e2d2 | c2d2 e2g2 |
+          a2g2 e2d2 | c2d2 e4 |
+          e2e2 e2e2 | e2e2 e2e2 |
+          e2e2 e2e2 | e8 |
+      bass:
+        abc: |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+          E,,E,,E,,E,, E,,E,,E,,E,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+          E,,E,,E,,E,, E,,E,,E,,E,, | A,,4 z4 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+          E,,E,,E,,E,, E,,E,,E,,E,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+      synth:
+        abc: |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [GDG]8 |
+          [FCF]8 | [FCF]8 |
+          [EBe]8 | [EBe]8 |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [GDG]8 |
+          [FCF]8 | [FCF]8 |
+          [EBe]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [GDG]8 |
+          [FCF]8 | [FCF]8 |
+          [EBe]8 | [EBe]8 |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [GDG]8 |
+          [A,EA]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+      drums:
+        kick: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+        hihat: |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | C4 z4 |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | CCCC CCCC |
+          CCCC CCCC | C4 z4 |
+
+  # --------------------------------------------------------------------------
+  # OUTRO (32 bars) - Resolve, fade or crash ending
+  # --------------------------------------------------------------------------
+  outro:
+    bars: 32
+    instruments:
+      guitar-rhythm:
+        abc: |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+          [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+          [GDG]2[GDG]2 [GDG]2[GDG]2 | [A,EA]4 z4 |
+          [A,EA]4 z4 | [A,EA]4 z4 |
+          [GDG]4 z4 | [GDG]4 z4 |
+          [A,EA]4 z4 | [A,EA]4 z4 |
+          [GDG]4 z4 | [A,EA]4 z4 |
+          [A,EA]8 | z8 |
+          [A,EA]8 | z8 |
+          [A,EA]8 | z8 |
+          [A,EA]8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | [A,EA]8 |
+      guitar-lead:
+        abc: |
+          e2e2 e2d2 | c2d2 e4 |
+          g2g2 g2e2 | d2c2 d4 |
+          e2e2 e2d2 | c2d2 e4 |
+          g2g2 g2e2 | e8 |
+          e4 z4 | e4 z4 |
+          d4 z4 | d4 z4 |
+          e4 z4 | e4 z4 |
+          d4 z4 | e4 z4 |
+          e8 | z8 |
+          e8 | z8 |
+          e8 | z8 |
+          e8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | e8 |
+      bass:
+        abc: |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+          A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+          G,,G,,G,,G,, G,,G,,G,,G,, | A,,4 z4 |
+          A,,4 z4 | A,,4 z4 |
+          G,,4 z4 | G,,4 z4 |
+          A,,4 z4 | A,,4 z4 |
+          G,,4 z4 | A,,4 z4 |
+          A,,8 | z8 |
+          A,,8 | z8 |
+          A,,8 | z8 |
+          A,,8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | A,,8 |
+      synth:
+        abc: |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [GDG]8 |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [GDG]8 |
+          [A,EA]8 | [A,EA]8 |
+          [GDG]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+          [A,EA]8 | [A,EA]8 |
+          [A,E]8 | [A,E]8 | [A,E]8 | [A,E]8 |
+          [A,E]8 | [A,E]8 | [A,E]8 | [A,E]8 |
+      drums:
+        kick: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C4 z4 | C4 z4 |
+          C8 | z8 |
+          C8 | z8 |
+          C8 | z8 |
+          C8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | C8 |
+        snare: |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | C2C2 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z4 C4 | z4 C4 |
+          z8 | z8 |
+          z8 | z8 |
+          z8 | z8 |
+          z8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | C8 |
+        hihat: |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C2C2 C2C2 |
+          C2C2 C2C2 | C4 z4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C4 C4 | C4 C4 |
+          C8 | z8 |
+          C8 | z8 |
+          C8 | z8 |
+          C8 | z8 |
+          z8 | z8 | z8 | z8 |
+          z8 | z8 | z8 | z8 |
+
+# ============================================================================
+# INSTRUMENT DEFINITIONS
+# ============================================================================
+instruments:
+  guitar-rhythm:
+    program: 29  # Electric Guitar (clean)
+    name: "Rhythm Guitar"
+
+  guitar-lead:
+    program: 26  # Electric Guitar (jazz)
+    name: "Lead Guitar"
+
+  bass:
+    program: 33  # Electric Bass (finger)
+    name: "Bass"
+
+  synth:
+    program: 81  # Lead 1 (square)
+    name: "Synth Pad"
+
+  drums:
+    percussion: true
+    name: "Drums"
+
+# ============================================================================
+# ARRANGEMENT NOTES
+# ============================================================================
+arrangement:
+  intro: |
+    Sparse tension build. Drums establish pulse, bass enters bar 5.
+    Lead guitar plays single notes. Synth swells in second half.
+
+  riff_a: |
+    Main theme. Full band, driving 8th note power chords.
+    Lead plays melodic counter. Bass locks with kick.
+
+  verse_1: |
+    Syncopated variation. Guitars stab on and-beats.
+    Lead soars above. Energy sustains but texture lightens.
+
+  breakdown_1: |
+    Half-time feel. Guitars breathe. Synth pads fill space.
+    Lead sparse, emotional single notes.
+
+  riff_b: |
+    New melodic theme - C major color over Am.
+    Brighter feel, lifting energy.
+
+  verse_2: |
+    Variation on verse 1. Starts sparse, builds intensity.
+    Second half ramps up to full band.
+
+  breakdown_2: |
+    Stripped back - just bass and drums.
+    Creates tension before bridge.
+
+  bridge: |
+    Atmospheric build. Long chords, swelling synths.
+    Lead climbs register. Preparing for climax.
+
+  riff_c: |
+    Climax theme. Most intense. 16th note hihats.
+    Everything at maximum intensity.
+
+  peak: |
+    32 bars of full blast. No holds barred.
+    Soaring lead, wall of guitars, pounding drums.
+
+  outro: |
+    Gradual breakdown. Instruments drop out.
+    Final chord - let ring, cut dead.

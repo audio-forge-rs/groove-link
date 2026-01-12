@@ -1,0 +1,23 @@
+X:1
+T:Heart Cage Lead Guitar
+M:4/4
+L:1/8
+Q:1/4=140
+K:Am
+%%MIDI program 26
+% Part 1: Intro - single note tension
+e4 z4 | z8 | e4 d4 | c4 z4 |
+e4 z4 | d4 z4 | e4 d4 | e8 |
+% Part 2: Main melody over riff
+|: e2e2 e2d2 | c2d2 e4 | g2g2 g2e2 | d2c2 d4 :|
+% Part 3: Counter melody
+|: a2g2 e2c2 | d2e2 g4 | a2g2 e2d2 | c2d2 e4 :|
+% Part 4: Breakdown - sparse, emotional
+e4 z4 | z4 g4 | a4 z4 | z4 e4 |
+c4 z4 | z4 d4 | e4 z4 | z4 e4 |
+% Part 5: Soaring climax
+|: e2e2 g2g2 | a2a2 g2e2 | d2d2 e2e2 | g2a2 g4 :|
+a2a2 a2g2 | g2g2 g2e2 | e2e2 e2d2 | d2d2 d2c2 |
+e2g2 a2g2 | e2d2 c2d2 | e2e2 e2e2 | e8 |
+% Final sustain
+e8 | e8 |]

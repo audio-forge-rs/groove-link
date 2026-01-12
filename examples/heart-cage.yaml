@@ -1,0 +1,52 @@
+song:
+  title: Heart in a Cage (Epic Cover)
+  tempo: 140
+  key: Am
+  time: 4/4
+
+tracks:
+  # Driving rock drums - the backbone
+  drums:
+    instrument: Organic Rock Drums
+    part: cage-drums.abc
+
+  # Punchy Rickenbacker bass - Nikolai Fraiture style
+  bass:
+    instrument:
+      query: Scarbee Rickenbacker Bass
+      hint: kontakt
+    fx:
+      - Bass Driver
+    part: cage-bass.abc
+
+  # Rhythm guitar - crunchy, driving
+  guitar_rhythm:
+    instrument: Seven String Electric Guitar w Amp 1
+    part: cage-rhythm.abc
+
+  # Lead guitar - cleaner, melodic lines
+  guitar_lead:
+    instrument: Seven String Electric Guitar Clean
+    fx:
+      - Slapback Delay
+    part: cage-lead.abc
+
+  # Synth texture - subtle atmosphere
+  synth:
+    instrument: 80s Dystopy
+    part: cage-synth.abc
+
+  # Room for the band to breathe
+  room:
+    receives:
+      - drums: post
+      - guitar_rhythm: post
+      - guitar_lead: post
+    fx:
+      - Room One
+
+  master:
+    fx:
+      - Solid State Glue
+      - query: Peak Limiter
+        hint: device

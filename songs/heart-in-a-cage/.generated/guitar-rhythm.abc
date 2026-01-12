@@ -1,0 +1,122 @@
+X:1
+T:Heart in a Cage - guitar-rhythm
+C:Groove-Link
+M:4/4
+L:1/8
+Q:1/4=140
+K:Am
+%%MIDI program 29
+z8 | z8 | z8 | z8 |
+[A,E]4 z4 | z8 | [A,E]4 z4 | z8 |
+[A,E]4 z4 | [E,B,]4 z4 | [A,E]4 z4 | z8 |
+[A,E]2[A,E]2 z4 | z8 | [A,E]2[A,E]2 z4 | [E,B,]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+[A,EA]2[A,EA]2 [GDG]2[GDG]2 | [A,EA]4 z4 |
+[A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+[A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+[A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+[A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+[A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]4 |
+[A,EA]2z[A,EA] [A,EA]2z[A,EA] | [GDG]2z[GDG] [GDG]2z[EBe] |
+[FCF]2[FCF]2 [FCF]2[GDG]2 | [A,EA]4 z4 |
+[A,EA]4 z4 | z4 [A,EA]4 | [GDG]4 z4 | z4 [EBe]4 |
+[FCF]4 z4 | z4 [GDG]4 | [A,EA]4 z4 | [EBe]4 [A,EA]4 |
+[A,EA]4 z4 | z4 [A,EA]4 | [GDG]4 z4 | z4 [EBe]4 |
+[FCF]4 z4 | z4 [GDG]4 | [A,EA]4 z4 | [A,EA]8 |
+[CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+[A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+[CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+[A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+[CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+[A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+[CEG]2[CEG]2 [CEG]2[CEG]2 | [DFA]2[DFA]2 [DFA]2[DFA]2 |
+[A,CE]2[A,CE]2 [A,CE]2[A,CE]2 | [EGB]2[EGB]2 [EGB]4 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 z4 | [GDG]2[GDG]2 z4 |
+[FCF]2[FCF]2 z4 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 z4 | [GDG]2[GDG]2 z4 |
+[FCF]2[FCF]2 z4 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 z4 | [GDG]2[GDG]2 z4 |
+[FCF]2[FCF]2 z4 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+[A,EA]4 z4 | [A,EA]4 z4 | [A,EA]4 z4 | [A,EA]8 |
+[FCF]4 [FCF]4 | [FCF]4 [FCF]4 |
+[GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+[A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+[EBe]4 [EBe]4 | [EBe]4 [EBe]4 |
+[FCF]4 [FCF]4 | [FCF]4 [FCF]4 |
+[GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+[A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+[EBe]4 [EBe]4 | [EBe]4 [EBe]4 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [GDG]2[GDG]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [EBe]2[EBe]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+[EBe]2[EBe]2 [EBe]2[EBe]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+[EBe]2[EBe]2 [EBe]2[EBe]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[FCF]2[FCF]2 [FCF]2[FCF]2 | [FCF]2[FCF]2 [FCF]2[FCF]2 |
+[EBe]2[EBe]2 [EBe]2[EBe]2 | [EBe]2[EBe]2 [EBe]2[EBe]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [GDG]2[GDG]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2[A,EA]2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]4 z4 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [GDG]2[GDG]2 [A,EA]2z2 |
+[A,EA]2[A,EA]2 [A,EA]2[A,EA]2 | [A,EA]2[A,EA]2 [A,EA]2z2 |
+[GDG]2[GDG]2 [GDG]2[GDG]2 | [A,EA]4 z4 |
+[A,EA]4 z4 | [A,EA]4 z4 |
+[GDG]4 z4 | [GDG]4 z4 |
+[A,EA]4 z4 | [A,EA]4 z4 |
+[GDG]4 z4 | [A,EA]4 z4 |
+[A,EA]8 | z8 |
+[A,EA]8 | z8 |
+[A,EA]8 | z8 |
+[A,EA]8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | [A,EA]8 |

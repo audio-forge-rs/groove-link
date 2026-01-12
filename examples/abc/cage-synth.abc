@@ -1,0 +1,20 @@
+X:1
+T:Heart Cage Synth
+M:4/4
+L:1/1
+Q:1/4=140
+K:Am
+%%MIDI program 81
+% Part 1-2: Silent, let band establish
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+% Part 3: Subtle drone enters
+[A,E]8 | [A,E]8 | [A,E]8 | [A,E]8 |
+% Part 4: Breakdown - more present
+[A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+[GDG]4 [GDG]4 | [GDG]4 [GDG]4 |
+% Part 5: Building tension
+[A,EA]4 [A,EA]4 | [A,EC]4 [A,EC]4 |
+[F,CF]4 [F,CF]4 | [E,BE]4 [E,BE]4 |
+[A,EA]4 [A,EA]4 | [A,EA]4 [A,EA]4 |
+[A,EA]4 [GDG]4 | [F,CF]4 [E,BE]4 |

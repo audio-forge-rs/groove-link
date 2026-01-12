@@ -1,0 +1,126 @@
+X:1
+T:Heart in a Cage - bass
+C:Groove-Link
+M:4/4
+L:1/8
+Q:1/4=140
+K:Am
+%%MIDI program 33
+z8 | z8 | z8 | z8 |
+A,,4 z4 | z8 | A,,4 z4 | E,,4 z4 |
+A,,4 z4 | z8 | A,,4 z4 | z8 |
+A,,4 z4 | z4 E,,4 | A,,4 z4 | E,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+F,,F,,F,,F,, F,,F,,F,,F,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+F,,F,,F,,F,, F,,F,,F,,F,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+A,,A,,A,,A,, G,,G,,G,,G,, | A,,4 z4 |
+A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+A,,2z A,,2z A,,2 | G,,2z G,,2z G,,2 |
+F,,2z F,,2z G,,2 | A,,2A,,2 A,,2A,,2 |
+A,,A,,A,,A,, A,,A,,A,,A,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, G,,G,,G,,G,, | F,,F,,F,,F,, E,,E,,E,,E,, |
+A,,4 z4 | A,,8 |
+A,,4 z4 | z4 A,,4 | G,,4 z4 | z4 E,,4 |
+F,,4 z4 | z4 G,,4 | A,,4 z4 | E,,4 A,,4 |
+A,,4 z4 | z4 A,,4 | G,,4 z4 | z4 E,,4 |
+F,,4 z4 | z4 G,,4 | A,,4 z4 | A,,8 |
+C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+F,,F,,F,,F,, F,,F,,F,,F,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+C,C,C,C, C,C,C,C, | D,D,D,D, D,D,D,D, |
+A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,4 |
+F,,F,,F,,F,, F,,F,,F,,F,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+A,,2A,,2 z4 | G,,2G,,2 z4 |
+F,,2F,,2 z4 | A,,4 z4 |
+A,,2A,,2 z4 | G,,2G,,2 z4 |
+F,,2F,,2 z4 | A,,4 z4 |
+A,,2A,,2 z4 | G,,2G,,2 z4 |
+F,,2F,,2 z4 | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+F,,F,,F,,F,, F,,F,,F,,F,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+F,,F,,F,,F,, F,,F,,F,,F,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+A,,A,,A,,A,, z4 | A,,A,,A,,A,, z4 |
+G,,G,,G,,G,, z4 | E,,E,,E,,E,, z4 |
+A,,A,,A,,A,, z4 | A,,A,,A,,A,, z4 |
+G,,G,,G,,G,, z4 | E,,E,,E,,E,, z4 |
+A,,A,,A,,A,, z4 | A,,A,,A,,A,, z4 |
+G,,G,,G,,G,, z4 | E,,E,,E,,E,, z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,8 |
+F,,4 F,,4 | F,,4 F,,4 |
+G,,4 G,,4 | G,,4 G,,4 |
+A,,4 A,,4 | A,,4 A,,4 |
+E,,4 E,,4 | E,,4 E,,4 |
+F,,4 F,,4 | F,,4 F,,4 |
+G,,4 G,,4 | G,,4 G,,4 |
+A,,4 A,,4 | A,,4 A,,4 |
+E,,4 E,,4 | E,,4 E,,4 |
+F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+F,,F,,F,,F,, G,,G,,G,,G,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+F,,F,,F,,F,, G,,G,,G,,G,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, G,,G,,G,,G,, |
+F,,F,,F,,F,, E,,E,,E,,E,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+E,,E,,E,,E,, E,,E,,E,,E,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+E,,E,,E,,E,, E,,E,,E,,E,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+F,,F,,F,,F,, F,,F,,F,,F,, | F,,F,,F,,F,, F,,F,,F,,F,, |
+E,,E,,E,,E,, E,,E,,E,,E,, | E,,E,,E,,E,, E,,E,,E,,E,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, G,,G,,G,,G,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,4 z4 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | G,,G,,G,,G,, A,,A,,z2 |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,E,,E,, |
+G,,G,,G,,G,, G,,G,,G,,G,, | A,,4 z4 |
+A,,4 z4 | A,,4 z4 |
+G,,4 z4 | G,,4 z4 |
+A,,4 z4 | A,,4 z4 |
+G,,4 z4 | A,,4 z4 |
+A,,8 | z8 |
+A,,8 | z8 |
+A,,8 | z8 |
+A,,8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | A,,8 |
