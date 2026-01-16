@@ -1,0 +1,117 @@
+X:1
+T:Jazz History - Drum Snare
+M:4/4
+L:1/8
+K:C
+%%
+%% NEW ORLEANS (48 bars, 96 BPM)
+%%
+Q:1/4=96
+K:Bb
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+%%
+%% STRIDE (48 bars, 112 BPM)
+%%
+Q:1/4=112
+K:F
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+%%
+%% SWING (64 bars, 144 BPM)
+%%
+Q:1/4=144
+K:Bb
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+%%
+%% BEBOP (64 bars, 200 BPM)
+%%
+Q:1/4=200
+K:Bb
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+%%
+%% COOL (48 bars, 80 BPM)
+%%
+Q:1/4=80
+K:C
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+%%
+%% HARD BOP (48 bars, 130 BPM)
+%%
+Q:1/4=130
+K:Fm
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+%%
+%% MODAL (48 bars, 68 BPM)
+%%
+Q:1/4=68
+K:Dm
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+z8|z8|z8|z8|z8|z8|z8|z8|
+%%
+%% FREE (32 bars, 160 BPM)
+%%
+Q:1/4=160
+K:Ab
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+%%
+%% FUSION (48 bars, 108 BPM)
+%%
+Q:1/4=108
+K:Em
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|z4C4|
+%%
+%% CONTEMPORARY (48 bars, 100 BPM)
+%%
+Q:1/4=100
+K:C
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|
+z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|z4z2C2|

@@ -1,0 +1,43 @@
+song:
+  title: "A Walk Through Jazz History"
+  tempo: 96
+  key: Bb
+  time: 4/4
+
+tracks:
+  piano:
+    instrument: Upright Piano
+    part: midi/piano.mid
+
+  bass:
+    instrument: Acoustic Bass
+    part: midi/bass.mid
+
+  trumpet:
+    instrument: Trumpet
+    part: midi/trumpet.mid
+
+  trombone:
+    instrument: Trombone
+    part: midi/trombone.mid
+
+  clarinet:
+    instrument: Clarinet
+    part: midi/clarinet.mid
+
+  kick:
+    instrument: Jazz Kick
+    part: midi/drum-kick.mid
+
+  snare:
+    instrument: Jazz Snare
+    part: midi/drum-snare.mid
+
+  ride:
+    instrument: Jazz Ride
+    part: midi/drum-ride.mid
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

@@ -1,0 +1,74 @@
+song:
+  title: Blue Wind Blew
+  tempo: 133
+  key: Bb
+  time: 4/4
+
+tracks:
+  guitar:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/guitar.mid
+
+  bass:
+    note_fx:
+      - Humanize x 3
+    instrument: Acoustic Bass
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/bass.mid
+
+  piano:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Rhodes
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/piano.mid
+
+  drums:
+    note_fx:
+      - Humanize x 3
+    instrument: Acoustic Drums Kit Brushed Clean
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/drum-kick.mid
+
+  drums-snare:
+    note_fx:
+      - Humanize x 3
+    instrument: Acoustic Drums Kit Brushed Clean
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/drum-snare.mid
+
+  drums-hihat:
+    note_fx:
+      - Humanize x 3
+    instrument: Acoustic Drums Kit Brushed Clean
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/drum-hihat.mid

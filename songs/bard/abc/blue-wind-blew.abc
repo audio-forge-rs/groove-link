@@ -1,0 +1,14 @@
+X:1
+T:from /Users/bedwards/groove-link/songs/bard/human-source/Samplab_Blue Wind Blew.mid
+%***Missing time signature meta command in MIDI file
+M:4/4
+L:1/8
+Q:1/4=133
+K:Bbmaj% 0 sharps
+V:1
+z3z/2E,/2- [E,B,,-]/2[C,B,,-F,,-][B,,-F,,-]/2 [^C,B,,-F,,-]/2[D,-B,,-F,,-]3/2| \
+[F,-D,-B,,F,,-]2 [F,-D,-B,,F,,-]2 [F,-D,-B,,-F,,]/2[F,-D,C,-B,,-F,,-]/2[F,-C,-B,,-F,,-]/2[F,-^C,-=C,B,,-F,,-]/2 [F,-^C,-B,,-F,,]/2[F,-D,-C,B,,-F,,-][F,D,-B,,-F,,-]/2| \
+[F,-D,-B,,-F,,]/2[F,-D,-B,,]3/2 [F,-D,B,,-]2 [F,E,-B,,-]/2[F,E,-B,,-][E,-B,,-]/2 [^F,E,-B,,-]/2[G,-E,-B,,-]3/2| \
+[B,-G,-E,B,,-]2 [B,-G,-E,B,,-]2 [B,G,E,-B,,-]/2[F,E,-B,,-]3/2 [^F,E,-B,,-]/2[G,-E,-B,,-]3/2|
+[B,-G,-E,-B,,]3/2[B,-G,-E,]/2 [B,-G,-E,-]2 [B,-G,E,-B,,-]/2[B,-E,C,B,,-F,,-][B,B,,-F,,-]/2 [^C,B,,-F,,]/2[D,-B,,-F,,-]3/2| \
+[F,-D,-B,,F,,-]2 [F,-D,B,,-F,,]2 
