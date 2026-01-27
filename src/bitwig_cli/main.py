@@ -478,6 +478,10 @@ def track_create(
     if tempo:
         _set_tempo(tempo, host, port)
 
+    # Set time signature (default to 4/4 if not specified)
+    time_sig = song_meta.get("time") or config.get("time") or "4/4"
+    _set_time_signature(time_sig, host, port)
+
     # Filter to specific track if requested
     if track_name:
         if track_name not in tracks_config:
@@ -727,6 +731,46 @@ def _set_tempo(bpm: float, host: str, port: int) -> bool:
             return True
         except RPCException as e:
             rprint(f"[red]Error setting tempo:[/red] {e}")
+            return False
+
+
+def _set_time_signature(time_sig: str, host: str, port: int) -> bool:
+    """Set the project time signature.
+
+    Args:
+        time_sig: Time signature string like "4/4", "3/4", "6/8"
+        host: Controller host
+        port: Controller port
+
+    Returns True on success, False on failure.
+    """
+    # Parse time signature
+    try:
+        parts = time_sig.split("/")
+        if len(parts) != 2:
+            rprint(f"[red]Invalid time signature format:[/red] {time_sig}")
+            return False
+        numerator = int(parts[0])
+        denominator = int(parts[1])
+    except ValueError:
+        rprint(f"[red]Invalid time signature:[/red] {time_sig}")
+        return False
+
+    rprint(f"[cyan]Setting time signature:[/cyan] {numerator}/{denominator}")
+
+    with get_client(host, port) as client:
+        try:
+            result = client.call(
+                "transport.setTimeSignature",
+                {"numerator": numerator, "denominator": denominator},
+            )
+            rprint(
+                f"[green]✓[/green] Time signature set to "
+                f"{result.get('numerator', numerator)}/{result.get('denominator', denominator)}"
+            )
+            return True
+        except RPCException as e:
+            rprint(f"[red]Error setting time signature:[/red] {e}")
             return False
 
 

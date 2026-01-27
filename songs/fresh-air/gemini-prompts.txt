@@ -1,0 +1,122 @@
+GEMINI IMAGE GENERATION PROMPTS
+================================
+For: essay-illustrated.html
+Generated: January 21, 2026
+
+Instructions: Use these prompts with Google Gemini to generate images.
+Save each image with the filename indicated to the images/ directory.
+
+================================================================================
+1. abc_notation.png
+================================================================================
+Create an artistic visualization of ABC music notation transforming into sound waves. Show text characters like 'C D E F G A B' morphing into musical staff notation, then into colorful flowing sound waves. Digital art style with deep blue and gold colors, ethereal atmosphere.
+
+================================================================================
+2. melodic_contour.png
+================================================================================
+Illustrate melodic contour as a glowing line tracing through three-dimensional space. Show the line rising and falling like a mountain range made of light, with peaks representing high notes and valleys representing low notes. Purple and cyan neon colors against black background, cinematic style.
+
+================================================================================
+3. irish_jig.png
+================================================================================
+Create a dynamic visualization of an Irish jig's 6/8 rhythm. Show dancers' feet leaving trails of green and gold light that form the pattern of two groups of three beats. Include Celtic knot patterns emerging from the rhythm. Energetic, festive atmosphere with emerald green dominant color.
+
+================================================================================
+4. slip_jig.png
+================================================================================
+Visualize a slip jig's 9/8 rhythm as three interlocking spirals of light, each spiral containing three pulses. Show the asymmetric beauty of three groups of three. Soft lavender and silver colors, dreamy and flowing movement, like watching dancers through morning mist.
+
+================================================================================
+5. reel.png
+================================================================================
+Illustrate a reel's continuous eighth-note pattern as an endless stream of golden light particles flowing forward at high speed. Show the particles organizing into regular pulses of four, like a river of music rushing through the night. Warm amber and copper tones, sense of momentum and excitement.
+
+================================================================================
+6. hymn_harmony.png
+================================================================================
+Create a visualization of four-part hymn harmony as four interweaving ribbons of light in a church setting. Soprano in gold, alto in rose, tenor in blue, bass in deep purple. Show the ribbons moving together in parallel and contrary motion, creating moments of consonance where they align. Stained glass window aesthetic, reverent atmosphere.
+
+================================================================================
+7. diatonic_harmony.png
+================================================================================
+Visualize diatonic harmony as a cozy village with seven houses arranged in a circle, each house representing a scale degree (I through VII). Show glowing paths connecting the houses, with the brightest paths going from house I to IV to V and back to I. Warm, inviting colors, sense of home and belonging.
+
+================================================================================
+8. harmonic_progression.png
+================================================================================
+Create an abstract visualization of the I-IV-V-I chord progression as a journey through colored spaces. Start in a blue room (I/tonic), move to a green room (IV/subdominant), then to a red room with visible tension (V/dominant), finally returning to the blue room with a sense of resolution. Architectural spaces with emotional lighting.
+
+================================================================================
+9. modulation.png
+================================================================================
+Illustrate key modulation as a landscape shifting colors. Show a traveler walking from a blue-tinted forest (original key) through a shimmering portal into a gold-tinted forest (new key). The trees and sky smoothly transition color. Magical realism style, sense of transformation and new perspective.
+
+================================================================================
+10. metrical_structure.png
+================================================================================
+Visualize metrical hierarchy as concentric ripples in water, with the largest ripple representing the downbeat (beat 1), medium ripples for secondary strong beats, and small ripples for weak beats. Show 4/4 time with ripples emanating from beat 1, smaller from beat 3, smallest from beats 2 and 4. Peaceful blue water, contemplative mood.
+
+================================================================================
+11. phrase_structure.png
+================================================================================
+Show phrase structure as breathing: a glowing figure inhaling for 4 bars (antecedent phrase) and exhaling for 4 bars (consequent phrase). Visualize the musical tension rising during inhalation and releasing during exhalation. Soft, organic shapes, breath visible as colored light, meditative atmosphere.
+
+================================================================================
+12. polyrhythm.png
+================================================================================
+Create a visualization of polyrhythm as two interlocking gear systems of different sizes, one with 5 teeth and one with 7 teeth, turning simultaneously. Show the moments where teeth align as bright flashes. Mechanical yet organic, steampunk aesthetic with brass and copper colors, complex but beautiful.
+
+================================================================================
+13. time_sig_simple.png
+================================================================================
+Visualize simple time signatures (4/4, 2/4) as square, stable geometric shapes pulsing in groups of 2 and 4. Show how simple time divides beats in two. Clean lines, solid colors, sense of stability and regularity. Blue and white color scheme.
+
+================================================================================
+14. time_sig_compound.png
+================================================================================
+Visualize compound time signatures (6/8, 9/8) as triangular, flowing shapes pulsing in groups of 3. Show how compound time divides beats in three. Curved lines, flowing motion, sense of lilting movement. Orange and gold color scheme.
+
+================================================================================
+15. grace_notes.png
+================================================================================
+Visualize grace notes as small fireflies orbiting around larger glowing orbs (main notes). Show the fireflies quickly darting to the main note and immediately flying away. Delicate, ephemeral, magical forest at twilight. Green and gold bioluminescence, sense of fleeting beauty.
+
+================================================================================
+16. chromaticism.png
+================================================================================
+Illustrate chromaticism as a prism splitting white light into a continuous rainbow of 12 distinct colors representing the 12 chromatic notes. Show some colors bleeding into each other (chromatic movement) versus discrete bands (diatonic). Prismatic, refractive quality, both beautiful and slightly disorienting.
+
+================================================================================
+17. tritone.png
+================================================================================
+Visualize the tritone as two notes exactly opposite each other on a circular piano keyboard, connected by a lightning bolt that transforms from red (dissonance) to blue (resolution). Show how swapping one tritone for another creates unexpected harmonic color. Dramatic lighting, jazz club atmosphere, mysterious and sophisticated.
+
+================================================================================
+18. extended_tonality.png
+================================================================================
+Show extended tonality as a rubber band being stretched between two points (tonic and dominant), with colorful harmonic detours pulling the band in unexpected directions without breaking it. The band glows with tension at maximum stretch before snapping back to rest. Dynamic, tensile, sense of exploration within limits.
+
+================================================================================
+19. parallel_fifths.png
+================================================================================
+Visualize parallel fifths as two parallel train tracks moving together up and down hills, with a red X marking this as 'forbidden' in classical harmony. Show how the parallel motion creates a hollow, medieval sound. Split image: left side shows the forbidden parallels with warning signs, right side shows proper contrary motion with green checkmarks. Educational but dramatic.
+
+================================================================================
+20. voice_crossing.png
+================================================================================
+Illustrate voice crossing as two colored threads (blue for tenor, red for alto) that should stay separate but accidentally cross and tangle. Show the moment of crossing as a knot that creates confusion. Before and after images showing clean separation versus tangled mess. Textile/weaving aesthetic, sense of order versus disorder.
+
+================================================================================
+21. unresolved_dissonance.png
+================================================================================
+Visualize unresolved dissonance as a coiled spring that never releases, or a breath held indefinitely. Show the tension as visible energy between two clashing notes, with arrows pointing toward resolution that never comes. Anxious, suspended, modernist color palette of grays and sharp accents.
+
+================================================================================
+22. sparse_texture.png
+================================================================================
+Visualize sparse musical texture as a vast dark space with occasional stars (notes) appearing and fading. Show how the emptiness between notes becomes as important as the notes themselves. Influenced by Japanese ma (negative space) concept. Minimalist, contemplative, deep blacks with rare points of light.
+
+================================================================================
+23. random_pitch.png
+================================================================================
+Visualize random pitch selection as dice rolling to determine notes, or balls bouncing chaotically through a Galton board/pinball machine, each landing position becoming a note. Show the contrast between the orderly process and chaotic result. Mechanical randomness, primary colors, playful yet unsettling.

@@ -1,0 +1,82 @@
+X:1
+T:Voltage Cathedral - Grand Piano
+M:4/4
+L:1/8
+Q:1/4=110
+K:E
+%% Acoustic grand piano for cinematic sections
+%% Section 1-4: tacet (bars 1-128)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - Mothersbaugh piano enters
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+E,^G,B,E z2 z2 | z8 | ^G,B,E^G z2 z2 | z8 |
+B,,^D,F,B, z2 z2 | z8 | ^D,F,B,^D z2 z2 | z8 |
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | E,^G,B,E ^G,B,E^G | B,E^GB E^GBe |
+^C,^G,^C^G ^G,^C^G^c | ^C^G^c^g ^G^c^ge | ^C,^G,^C^G ^G,^C^G^c | ^C^G^c^g ^G^c^ge |
+A,,E,A,E A,EA,e | EAea Aea'e | A,,E,A,E A,EA,e | EAea Aea'e |
+B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb | B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb |
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | ^G,^D,^G^D ^D^G^d^g | ^G^d^gb ^d^gbe' |
+A,,E,A,E A,EA,e | EAea Aea'e | ^F,^C,^F^C ^C^F^c^f | ^F^c^fa ^c^fa'^f' |
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | E,^G,B,E ^G,B,E^G | B,E^GB E^GBe |
+B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb | B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb |
+%% Section 6: Collision (bars 177-208) - piano with all
+E,^G,B,E z2 z2 | D,A,DA z2 z2 | A,,E,AE z2 z2 | E,^G,B,E z2 z2 |
+E,^G,B,E z2 z2 | ^D,^A,^D^A z2 z2 | A,,E,AE z2 z2 | B,,F,B,F z2 z2 |
+E,^G,B,E z2 z2 | D,A,DA z2 z2 | ^C,^G,^C^G z2 z2 | E,^G,B,E z2 z2 |
+A,,E,AE z2 z2 | ^G,^D,^G^D z2 z2 | B,,F,B,F z2 z2 | E,^G,B,E z2 z2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+E,^G,B,E z2 z2 | D,A,DA z2 z2 | ^C,^G,^C^G z2 z2 | B,,F,B,F z2 z2 |
+A,,E,AE z2 z2 | ^G,^D,^G^D z2 z2 | B,,F,B,F z2 z2 | E,^G,B,E z2 z2 |
+%% Section 7-9: tacet (bars 209-336)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 11: Cathedral (bars 369-400) - epic piano
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | E,^G,B,E ^G,B,E^G | B,E^GB E^GBe |
+D,A,DA A,DAd | AdaD daDa | ^C,^G,^C^G ^G,^C^G^c | ^C^G^c^g ^G^c^ge |
+A,,E,A,E A,EA,e | EAea Aea'e | ^G,^D,^G^D ^D^G^d^g | ^G^d^gb ^d^gbe' |
+B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb | B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb |
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | ^D,^A,^D^A ^A,^D^A^d | ^D^A^d^a ^A^d^a^d' |
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | D,A,DA A,DAd | AdaD daDa |
+A,,E,A,E A,EA,e | EAea Aea'e | B,,^D,F,B, ^D,F,B,^d | F,B,^df B,^dfb |
+E,^G,B,E ^G,B,E^G | B,E^GB E^GBe | E,^G,B,E ^G,B,E^G | [E,^G,B,E]8 |
+%% Section 12: Fade to Static (bars 401-416)
+E,^G,B,E ^G,B,E^G | B,E^GB z4 | E,^G,B,E z4 | z8 |
+E,^G,B,E z4 | z8 | z8 | z8 |
+E,4 z4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

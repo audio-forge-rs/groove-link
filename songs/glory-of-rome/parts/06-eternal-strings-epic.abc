@@ -1,0 +1,19 @@
+X:1
+T:Eternal Empire - Epic Strings
+M:4/4
+L:1/2
+Q:1/4=95
+K:Dm
+%%MIDI program 48
+% Bars 126-150: Majestic resolution, D minor to D major
+% Soaring melody, warm conclusion
+[D,A,D]4 | [D,A,D]2 [D,A,F]2 | [G,,D,G,]4 | [A,,E,A,]4 |
+[D,A,D]4 | [D,A,F]4 | [G,,D,B,]4 | [A,,E,C]4 |
+[D,A,D]4 | [D,A,D]2 [D,A,F]2 | [G,,D,G,]4 | [A,,E,A,]2 [A,,E,^C]2 |
+% Shift towards major
+[D,A,D]4 | [D,A,^F]4 | [G,,D,B,]4 | [A,,E,^C]4 |
+% Full D major
+K:D
+[D,A,D]4 | [D,A,^F]4 | [G,,D,B,]4 | [A,,E,^C]4 |
+[D,A,D]4 | [D,A,^F]2 [G,,D,B,]2 | [A,,E,^C]4 | [D,A,D]4 |
+[D,A,D]4 |

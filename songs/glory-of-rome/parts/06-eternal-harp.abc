@@ -1,0 +1,18 @@
+X:1
+T:Eternal Empire - Harp
+M:4/4
+L:1/16
+Q:1/4=95
+K:Dm
+%%MIDI program 46
+% Bars 126-150: Gentle arpeggios, golden sunset
+D,A,DFA,DFA z8 | z4 D,A,DFA,DFA | G,DGB,DGB, z8 | A,EAcEAc z8 |
+D,A,DFA,DFA z8 | z4 D,A,DFA,DFA | G,DGB,DGB, z8 | A,EAcEAc z8 |
+D,A,DFA,DFA z8 | z4 D,A,DFA,DFA | G,DGB,DGB, z8 | A,EAcEAc z4 A,E^Ac |
+% Moving to major
+D,A,DFA,DFA z8 | D,A,D^FA,D^FA z8 | G,DGB,DGB, z8 | A,E^AcE^Ac z8 |
+% D major warmth
+K:D
+D,A,D^FA,D^FA z8 | z4 D,A,D^FA,D^FA | G,DGB,DGB, z8 | A,E^AcE^Ac z8 |
+D,A,D^FA,D^FA z8 | z4 D,A,D^FA,D^FA | A,E^AcE^Ac z8 | D,A,D^FA,D^FA z8 |
+D,A,D^F z4 z8 |

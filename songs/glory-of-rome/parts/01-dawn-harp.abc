@@ -1,0 +1,15 @@
+X:1
+T:Dawn Over the Tiber - Harp
+M:4/4
+L:1/8
+Q:1/4=95
+K:Dm
+%%MIDI program 46
+% Bars 1-25: Gentle arpeggios, like water rippling
+z8 | z8 | D,A,DF z4 | z8 |
+z8 | D,A,DF A4 | z8 | z4 D,A,DF |
+z8 | z4 G,DGB, | z8 | C,G,CE z4 |
+z8 | D,A,DF z4 | z8 | z4 D,A,DA |
+G,DGB, z4 | z8 | A,EAc z4 | z8 |
+D,A,DF z4 | z8 | D,A,DF A4 | z8 |
+D,A,D2 z4 |

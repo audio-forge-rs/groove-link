@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Feedback Guitar
+M:4/4
+L:1/1
+Q:1/4=110
+K:E
+%% Ambient feedback swells, sustained tones
+%% Section 1: Ignition (bars 1-32) - tacet
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+%% Section 2: Nerve Endings (bars 33-64) - tacet
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+%% Section 3: Strut (bars 65-96) - tacet
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+%% Section 4: Dissolve (bars 97-128) - feedback swells begin
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+E | E | E | E |
+^G | ^G | ^G | ^G |
+B | B | B | B |
+E | E | E | E |
+%% Section 5: Ping Island (bars 129-176) - cinematic feedback
+E | E | E | E |
+E | E | ^G | ^G |
+B | B | B | B |
+E | E | E | E |
+E | E | E | E |
+^C | ^C | ^C | ^C |
+A | A | A | A |
+B | B | B | B |
+E | E | ^G | ^G |
+A | A | ^F | ^F |
+E | E | E | E |
+B | B | B | B |
+%% Section 6: Collision (bars 177-208) - intense feedback
+E | D | A | E |
+E | ^D | A | B |
+E | D | ^C | E |
+A | ^G | B | E |
+E | A | E | E |
+E | ^C | A | E |
+E | D | ^C | B |
+A | ^G | B | E |
+%% Section 7: Spasm (bars 209-256) - tacet
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+%% Section 8: Void (bars 257-288) - sparse feedback returns
+z | z | E | z |
+z | z | E | z |
+z | ^C | z | z |
+z | A | z | z |
+E | z | z | z |
+z | ^C | z | z |
+z | z | A | z |
+z | z | B | z |
+%% Section 9: Night Drive (bars 289-336) - sustained drones
+E | E | E | E |
+E | E | E | E |
+E | E | E | E |
+E | E | A | A |
+E | E | E | E |
+E | E | B | B |
+E | E | E | E |
+E | E | E | E |
+E | E | A | A |
+E | E | E | E |
+E | E | B | B |
+E | E | E | E |
+%% Section 10: Peacock (bars 337-368) - tacet
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+%% Section 11: Cathedral (bars 369-400) - epic swells
+E | E | E | E |
+D | D | ^C | ^C |
+A | A | ^G | ^G |
+B | B | B | B |
+E | E | ^D | ^D |
+E | E | D | D |
+A | A | B | B |
+E | E | E | E |
+%% Section 12: Fade to Static (bars 401-416)
+E | E | E | E |
+E | z | z | z |
+E | z | z | z |
+z | z | z | z |

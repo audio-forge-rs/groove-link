@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Hi-Hat
+M:4/4
+L:1/8
+Q:1/4=110
+K:C
+%% Uses F# for closed hi-hat
+%% Section 1: Ignition (bars 1-32) - steady 8ths motorik
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 2: Nerve Endings (bars 33-64) - 16ths tension
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 3: Strut (bars 65-96) - glam shuffle feel
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 4: Dissolve (bars 97-128) - opening up
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 |
+^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 |
+^F4 ^F4 | ^F4 ^F4 | ^F4 ^F4 | ^F4 ^F4 |
+^F4 z4 | ^F4 z4 | ^F4 z4 | ^F4 z4 |
+z8 | z8 | ^F4 z4 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - sparse, cinematic
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+^F4 z4 | z8 | ^F4 z4 | z8 |
+^F4 z4 | z8 | ^F4 z4 | z8 |
+^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 |
+^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 6: Collision (bars 177-208)
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 7: Spasm (bars 209-256) - erratic
+^F^F z2 ^F^F z2 | ^F z ^F z ^F z ^F z | ^F^F z2 ^F^F z2 | ^F z ^F z ^F z ^F z |
+^F z z ^F ^F z z ^F | ^F z z ^F ^F z z ^F | ^F^F z2 ^F^F z2 | ^F^F^F^F ^F^F^F^F |
+^F^F z2 ^F^F z2 | ^F z ^F z ^F z ^F z | ^F^F z2 ^F^F z2 | ^F z ^F z ^F z ^F z |
+^F z z ^F ^F z z ^F | ^F z z ^F ^F z z ^F | ^F^F z2 ^F^F z2 | ^F^F^F^F ^F^F^F^F |
+^F z z2 z ^F z2 | z ^F z2 z ^F z2 | ^F z z2 z ^F z2 | z ^F^F^F z4 |
+^F z z2 z ^F z2 | z ^F z2 z ^F z2 | ^F z z2 z ^F z2 | z ^F^F^F z4 |
+^F z ^F z z ^F z2 | ^F z z ^F z ^F ^F z | z ^F z ^F z2 z2 | ^F^F^F^F z4 |
+^F z ^F z z ^F z2 | ^F z z ^F z ^F ^F z | z ^F z ^F z2 z2 | ^F^F^F^F z4 |
+^F^F z2 ^F^F z2 | ^F z ^F z ^F z ^F z | ^F^F z2 ^F^F z2 | ^F^F z2 ^F^F z2 |
+^F^F z2 ^F^F z2 | ^F z ^F z ^F z ^F z | ^F^F z2 ^F^F z2 | ^F^F z2 ^F^F z2 |
+^F z z ^F ^F z z ^F | ^F z z ^F ^F z z ^F | ^F z z ^F ^F z z ^F | ^F^F z z z4 |
+^F z z ^F ^F z z ^F | ^F z z ^F ^F z z ^F | ^F z z ^F ^F z z ^F | ^F^F^F^F z4 |
+%% Section 8: Void (bars 257-288) - minimal
+z8 | z8 | ^F4 z4 | z8 |
+z8 | z8 | ^F4 z4 | z8 |
+z8 | ^F4 z4 | z8 | z8 |
+z8 | ^F4 z4 | z8 | z8 |
+^F4 z4 | z8 | z8 | z8 |
+z8 | ^F4 z4 | z8 | z8 |
+z8 | z8 | ^F4 z4 | z8 |
+z8 | z8 | ^F2^F2 z4 | z8 |
+%% Section 9: Night Drive (bars 289-336) - steady motorik
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 10: Peacock (bars 337-368) - glam
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 11: Cathedral (bars 369-400)
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Section 12: Fade to Static (bars 401-416)
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F2^F2 ^F2^F2 | ^F2^F2 ^F2^F2 |
+^F4 ^F4 | ^F4 z4 | z8 | z8 |
+^F4 z4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

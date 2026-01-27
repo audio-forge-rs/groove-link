@@ -1,0 +1,16 @@
+X:1
+T:Dawn Over the Tiber - Pad
+M:4/4
+L:1/1
+Q:1/4=95
+K:Dm
+%%MIDI program 92
+% Bars 1-25: Mysterious, ancient atmosphere
+% Long sustained D minor chords, very sparse
+[D,A,D]4 | [D,A,D]4 | [D,A,D]4 | [D,A,D]4 |
+[D,A,F]4 | [D,A,F]4 | [D,A,F]4 | [D,A,F]4 |
+[D,B,D]4 | [D,B,D]4 | [C,G,E]4 | [C,G,E]4 |
+[D,A,D]4 | [D,A,D]4 | [D,A,F]4 | [D,A,F]4 |
+[G,,D,B,]4 | [G,,D,B,]4 | [A,,E,C]4 | [A,,E,C]4 |
+[D,A,D]4 | [D,A,D]4 | [D,A,F]4 | [D,A,F]4 |
+[D,A,D]4 |

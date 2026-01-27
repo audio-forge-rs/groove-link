@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Synth Arp
+M:4/4
+L:1/16
+Q:1/4=110
+K:E
+%% Arpeggiated synth patterns
+%% Section 1: Ignition (bars 1-32) - tacet
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+%% Section 2: Nerve Endings (bars 33-64) - angular arp enters
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+E^GBe ^GBeB | E^GBe ^GBeB | E^GBe ^GBeB | E^GBe ^GBeB |
+E^GBe ^GBeB | E^GBe ^GBeB | AEAe EAeA | E^GBe ^GBeB |
+E^GBe DAda | E^GBe DAda | E^GBe DAda | AEAe EAeA |
+E^GBe DAda | E^GBe DAda | E^GBe DAda | AEAe EAeA |
+E^GDA Be^GB | DAE^G Be^GB | AEAe EAeA | B,FBf FBfB |
+E^GDA Be^GB | DAE^G Be^GB | AEAe EAeA | B,FBf FBfB |
+%% Section 3: Strut (bars 65-96) - glam arp
+E^GBe ^GBe^G | BeE^G Be^GB | AEAe EAeA | EaEA eAEa |
+B,FBf FBfB | FbFB fbFB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | AEAe EAeA | EaEA eAEa |
+B,FBf FBfB | FbFB fbFB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A |
+A^GA^D ^GA^DA | ^GA^DA ^GA^DA | AEAe EAeA | B,FBf FBfB |
+E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A |
+A^GA^D ^GA^DA | ^GA^DA ^GA^DA | B,FBf FBfB | B,FBf B,FBf |
+%% Section 4: Dissolve (bars 97-128) - fading
+E^GBe ^GBe^G | z4 E^GBe ^GBe | z8 E^GBe | z12 E^GB |
+^C^G^Ce ^G^Ce^C | z4 ^C^G^Ce ^G^Ce | z8 ^C^G^Ce | z12 ^C^G^C |
+AEAe EAeA | z4 AEAe z4 | z16 | z16 |
+B,FBf z12 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+%% Section 5: Ping Island (bars 129-176) - cinematic arp
+z16 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |
+E^GBe z12 | z16 | E^GBe z12 | z16 |
+B,FBf z12 | z16 | B,FBf z12 | z16 |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+^C^G^Ce ^G^Ce^C | ^Ce^C^G ^Ce^C^G | ^C^G^Ce ^G^Ce^C | ^Ce^C^G ^Ce^C^G |
+AEAe EAeA | EaEA eAEa | AEAe EAeA | EaEA eAEa |
+B,FBf FBfB | FbFB fbFB | B,FBf FBfB | FbFB fbFB |
+E^GBe ^GBe^G | BeE^G Be^GB | ^G^DBe B^D^GB | e^GBe B^D^GB |
+AEAe EAeA | EaEA eAEa | ^F^CA^c ^CA^c^C | A^c^FA ^c^FA^c |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+B,FBf FBfB | FbFB fbFB | B,FBf FBfB | FbFB fbFB |
+%% Section 6: Collision (bars 177-208) - all styles
+E^GBe DAda | DAda E^GBe | AEAe EAeA | E^GBe ^GBe^G |
+E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | AEAe EAeA | B,FBf FBfB |
+E^GBe DAda | DAda E^GBe | ^C^G^Ce ^G^Ce^C | E^GBe ^GBe^G |
+A^GA^D ^GA^DA | ^GA^DA ^GA^DA | B,FBf FBfB | E^GBe ^GBe^G |
+E^GDA Be^GB | AEBf EBeE | E^G^D^A E^G^D^A | E^GBe ^GBe^G |
+E^GDA ^C^GBf | ^C^GBf E^GDA | A^GA^D ^GA^DA | E^GBe ^GBe^G |
+E^GBe DAda | DAda ^C^G^Ce | ^C^G^Ce ^G^Ce^C | B,FBf FBfB |
+AEAe ^G^D^G^d | ^G^D^G^d AEAe | B,FBf FBfB | E^GBe ^GBe^G |
+%% Section 7: Spasm (bars 209-256) - jerky arp
+E^GB z4 z8 | z4 ^GBe z4 z4 | E^GB z4 z8 | z4 ^GBe z4 z4 |
+E z2 E z2 z8 | E z2 E z2 z8 | A z2 z12 | E^GB z4 z8 |
+E^GB z4 z8 | z4 ^GBe z4 z4 | E^GB z4 z8 | z4 ^GBe z4 z4 |
+E z2 E z2 z8 | E z2 E z2 z8 | B, z2 z12 | E^GB z4 z8 |
+E z4 z4 ^G z4 | z E z4 z4 B z2 | E z4 z4 ^G z4 | z A8 z4 z2 |
+E z4 z4 ^G z4 | z E z4 z4 B z2 | E z4 z4 ^G z4 | z B,8 z4 z2 |
+E z ^G z2 E z4 | ^G z2 E z4 B z2 | z E z ^G z4 z4 | A8 z8 |
+E z ^G z2 E z4 | ^G z2 E z4 B z2 | z E z ^G z4 z4 | B,8 z8 |
+E^GB^G E^GB^G | ^GBe^G Be^GB | E^GB^G E^GB^G | A8 z8 |
+E^GB^G E^GB^G | ^GBe^G Be^GB | E^GB^G E^GB^G | B,8 z8 |
+E z2 E z2 ^G z2 ^G z2 | B z2 B z2 e z2 e z2 | ^G z2 ^G z2 B z2 B z2 | A z2 z12 |
+E z2 E z2 ^G z2 ^G z2 | B z2 B z2 e z2 e z2 | ^G z2 ^G z2 B z2 B z2 | E8 z8 |
+%% Section 8: Void (bars 257-288) - sparse
+z16 | z16 | E^GBe z12 | z16 |
+z16 | z16 | E^GBe z12 | z16 |
+z16 | ^C^G^Ce z12 | z16 | z16 |
+z16 | AEAe z12 | z16 | z16 |
+E^GBe z12 | z16 | z16 | z16 |
+z16 | ^C^G^Ce z12 | z16 | z16 |
+z16 | z16 | AEAe z12 | z16 |
+z16 | z16 | B,FBf z12 | z16 |
+%% Section 9: Night Drive (bars 289-336) - motorik arp
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | AEAe EAeA | EaEA eAEa |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | B,FBf FBfB | FbFB fbFB |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | AEAe EAeA | EaEA eAEa |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^GBe ^GBe^G | BeE^G Be^GB | B,FBf FBfB | FbFB fbFB |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+%% Section 10: Peacock (bars 337-368) - glam arp
+E^GBe ^GBe^G | BeE^G Be^GB | AEAe EAeA | EaEA eAEa |
+B,FBf FBfB | FbFB fbFB | E^GBe ^GBe^G | BeE^G Be^GB |
+E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A |
+A^GA^D ^GA^DA | ^GA^DA ^GA^DA | B,FBf FBfB | E^GBe ^GBe^G |
+E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A |
+E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A | E^G^D^A E^G^D^A |
+A^GA^D ^GA^DA | ^GA^DA ^GA^DA | A^GA^D ^GA^DA | ^GA^DA ^GA^DA |
+B,FBf FBfB | B,FBf FBfB | B,FBf FBfB | B,FBf FBfB |
+%% Section 11: Cathedral (bars 369-400) - epic arp
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+DAda AdaD | adDA adDA | ^C^G^Ce ^G^Ce^C | ^Ce^C^G ^Ce^C^G |
+AEAe EAeA | EaEA eAEa | ^G^D^G^d ^D^G^d^G | ^d^G^D^G ^d^G^D^G |
+B,FBf FBfB | FbFB fbFB | B,FBf FBfB | FbFB fbFB |
+E^GBe ^GBe^G | BeE^G Be^GB | ^D^A^D^a ^A^D^a^D | ^a^D^A^D ^a^D^A^D |
+E^GBe ^GBe^G | BeE^G Be^GB | DAda AdaD | adDA adDA |
+AEAe EAeA | EaEA eAEa | B,FBf FBfB | FbFB fbFB |
+E^GBe ^GBe^G | BeE^G Be^GB | E^GBe ^GBe^G | BeE^G Be^GB |
+%% Section 12: Fade to Static (bars 401-416)
+E^GBe ^GBe^G | BeE^G z8 | E^GBe z12 | z16 |
+E^GB z12 | z16 | z16 | z16 |
+E z4 z12 | z16 | z16 | z16 |
+z16 | z16 | z16 | z16 |

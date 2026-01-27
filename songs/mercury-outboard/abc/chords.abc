@@ -1,0 +1,31 @@
+X:1
+T:Mercury Outboard - Chords
+C:Brian Edwards
+M:4/4
+L:1/8
+Q:1/4=78
+K:G
+%%MIDI program 0
+% Chord reference track - MUTE when playing
+% G = G,B,D  |  C = C,E,G  |  Em = E,G,B  |  D = D,^F,A
+%
+% INTRO (8 bars) - G C Em D, 2 bars each
+[G,B,D]8 | [G,B,D]8 | [CEG]8 | [CEG]8 | [EGB]8 | [EGB]8 | [D^FA]8 | [D^FA]8 |
+%
+% VERSE 1 (12 bars) - G G C C Em D G G C G z z
+[G,B,D]8 | [G,B,D]8 | [CEG]8 | [CEG]8 | [EGB]8 | [D^FA]8 | [G,B,D]8 | [G,B,D]8 | [CEG]8 | [G,B,D]8 | z8 | z8 |
+%
+% VERSE 2 (12 bars)
+[G,B,D]8 | [G,B,D]8 | [CEG]8 | [CEG]8 | [EGB]8 | [D^FA]8 | [G,B,D]8 | [G,B,D]8 | [CEG]8 | [G,B,D]8 | z8 | z8 |
+%
+% CHORUS 1 (8 bars) - G C Em D G C D G
+[G,B,D]8 | [CEG]8 | [EGB]8 | [D^FA]8 | [G,B,D]8 | [CEG]8 | [D^FA]8 | [G,B,D]8 |
+%
+% VERSE 3 (12 bars)
+[G,B,D]8 | [G,B,D]8 | [CEG]8 | [CEG]8 | [EGB]8 | [D^FA]8 | [G,B,D]8 | [G,B,D]8 | [CEG]8 | [G,B,D]8 | z8 | z8 |
+%
+% CHORUS 2 (8 bars)
+[G,B,D]8 | [CEG]8 | [EGB]8 | [D^FA]8 | [G,B,D]8 | [CEG]8 | [D^FA]8 | [G,B,D]8 |
+%
+% OUTRO (8 bars) - G G C C G G z G
+[G,B,D]8 | [G,B,D]8 | [CEG]8 | [CEG]8 | [G,B,D]8 | [G,B,D]8 | z8 | [G,B,D]8 |

@@ -1,0 +1,18 @@
+X:1
+T:Eternal Empire - Choir
+M:4/4
+L:1/2
+Q:1/4=95
+K:Dm
+%%MIDI program 52
+% Bars 126-150: Choir fading to warm resolution
+[D,A,DF]4 | [D,A,DF]2 [D,A,FA]2 | [G,B,DG]4 | [A,CEA]4 |
+[D,A,DF]4 | [D,A,FA]4 | [G,B,DG]4 | [A,CEc]4 |
+[D,A,DF]4 | [D,A,DF]2 [D,A,FA]2 | [G,B,DG]4 | [A,CEA]2 [A,^CEA]2 |
+% Modulating to major
+[D,A,DF]4 | [D,A,^FA]4 | [G,B,DG]4 | [A,^CEA]4 |
+% D major - eternal glory
+K:D
+[D,A,D^F]4 | [D,A,^FA]4 | [G,B,DG]4 | [A,^CEA]4 |
+[D,A,D^F]4 | [D,A,^FA]2 [G,B,DG]2 | [A,^CEA]4 | [D,A,D^F]4 |
+[D,A,D^F]4 |

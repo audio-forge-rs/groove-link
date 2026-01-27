@@ -1,0 +1,36 @@
+X:1
+T:Porch Light - Fingerpicked Guitar
+M:4/4
+L:1/8
+Q:1/4=95
+K:G
+% Travis-style fingerpicking pattern
+% Intro (4 bars)
+G,,DG,DG,,DG,D | G,,DG,DG,,DB,D | C,,EG,EC,,EG,E | D,,AF,AD,,AF,A |
+% Verse 1 (16 bars)
+G,,DG,DG,,DB,D | G,,DG,DG,,DG,D | C,,EG,EC,,EG,E | C,,GE,GC,,EG,E |
+G,,DG,DG,,DB,D | G,,BG,DG,,DG,D | D,,AF,AD,,AF,A | D,,F,AD,D,,AF,A |
+G,,DG,DG,,DG,D | G,,DB,DG,,DG,D | C,,EG,EC,,GE,G | C,,EG,EC,,EG,E |
+G,,DG,DG,,DB,D | G,,DG,DG,,DG,D | D,,AF,AD,,F,AD, | D,,AF,AD,,AF,A |
+% Chorus 1 (8 bars)
+C,,EG,EC,,GE,G | G,,DG,BG,,DG,D | D,,AF,AD,,AF,A | G,,DG,DG,,DB,D |
+C,,EG,EC,,EG,E | G,,DG,DG,,DG,D | D,,AF,AD,,AF,A | G,,DG,DG,,DG,D |
+% Verse 2 (16 bars)
+G,,DG,DG,,DB,D | G,,DG,DG,,DG,D | C,,EG,EC,,EG,E | C,,GE,GC,,EG,E |
+G,,DG,DG,,DB,D | G,,BG,DG,,DG,D | D,,AF,AD,,AF,A | D,,F,AD,D,,AF,A |
+G,,DG,DG,,DG,D | G,,DB,DG,,DG,D | C,,EG,EC,,GE,G | C,,EG,EC,,EG,E |
+G,,DG,DG,,DB,D | G,,DG,DG,,DG,D | D,,AF,AD,,F,AD, | D,,AF,AD,,AF,A |
+% Chorus 2 (8 bars)
+C,,EG,EC,,GE,G | G,,DG,BG,,DG,D | D,,AF,AD,,AF,A | G,,DG,DG,,DB,D |
+C,,EG,EC,,EG,E | G,,DG,DG,,DG,D | D,,AF,AD,,AF,A | G,,DG,DG,,DG,D |
+% Bridge (8 bars)
+E,,BG,BE,,GB,G | C,,EG,EC,,EG,E | G,,DG,DG,,DG,D | D,,AF,AD,,AF,A |
+E,,GB,GE,,BG,B | C,,GE,GC,,EG,E | D,,AF,AD,,AF,A | D,,F,AD,D,,AF,A |
+% Verse 3 short (8 bars)
+G,,DG,DG,,DB,D | G,,DG,DG,,DG,D | C,,EG,EC,,EG,E | C,,GE,GC,,EG,E |
+G,,DG,DG,,DB,D | G,,BG,DG,,DG,D | D,,AF,AD,,AF,A | D,,F,AD,D,,AF,A |
+% Chorus 3 (8 bars)
+C,,EG,EC,,GE,G | G,,DG,BG,,DG,D | D,,AF,AD,,AF,A | G,,DG,DG,,DB,D |
+C,,EG,EC,,EG,E | G,,DG,DG,,DG,D | D,,AF,AD,,AF,A | G,,DG,DG,,DG,D |
+% Outro (4 bars) - slowing, sparse
+C,,EG,EC,,z2 | D,,AF,Az2z2 | G,,DG,Dz2z2 | G,,2D2G,4 |

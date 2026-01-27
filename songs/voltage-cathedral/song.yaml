@@ -1,0 +1,542 @@
+song:
+  title: Voltage Cathedral
+  tempo: 110
+  key: E
+  time: 4/4
+  # 15-minute epic (416 bars) blending:
+  # - Iggy Pop "Passenger" (motorik hypnotic pulse)
+  # - DEVO "Gut Feeling" (angular new wave tension)
+  # - Mothersbaugh "Ping Island" (cinematic nostalgic synths)
+  # - Bowie "Queen Bitch" (glam rock swagger)
+  #
+  # Structure:
+  # 1-32:    Ignition - motorik pulse begins
+  # 33-64:   Nerve Endings - DEVO angular tension
+  # 65-96:   Strut - Queen Bitch glam swagger
+  # 97-128:  Dissolve - strip to cinematic synths
+  # 129-176: Ping Island - Mothersbaugh cinematic peak
+  # 177-208: Collision - all influences blend
+  # 209-256: Spasm - DEVO dominant, jerky
+  # 257-288: Void - sparse breakdown
+  # 289-336: Night Drive - Passenger returns darker
+  # 337-368: Peacock - glam swagger peak
+  # 369-400: Cathedral - epic convergence
+  # 401-416: Fade to Static - outro decay
+
+tracks:
+  # === REFERENCE (MUTE) ===
+  chords:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: nektar piano
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/chords.abc
+
+  # === DRUMS ===
+  kick:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/kick.abc
+
+  snare:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/snare.abc
+
+  hihat:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/hihat.abc
+
+  toms:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/toms.abc
+
+  claps:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/claps.abc
+
+  # === BASS ===
+  bass_synth:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/bass_synth.abc
+
+  bass_pick:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Physical-Bass
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/bass_pick.abc
+
+  bass_sub:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/bass_sub.abc
+
+  # === GUITARS ===
+  guitar_motorik:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar_motorik.abc
+
+  guitar_angular:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar_angular.abc
+
+  guitar_glam:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar_glam.abc
+
+  guitar_feedback:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar_feedback.abc
+
+  guitar_lead:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar_lead.abc
+
+  # === SYNTHS ===
+  synth_pad:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_pad.abc
+
+  synth_arp:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_arp.abc
+
+  synth_lead:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Phase-4
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_lead.abc
+
+  synth_strings:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_strings.abc
+
+  synth_brass:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_brass.abc
+
+  synth_sequence:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Phase-4
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_sequence.abc
+
+  synth_bells:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: FM-4
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_bells.abc
+
+  synth_noise:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/synth_noise.abc
+
+  # === KEYBOARDS ===
+  piano_electric:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: FM-4
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/piano_electric.abc
+
+  piano_grand:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: nektar piano
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/piano_grand.abc
+
+  organ:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/organ.abc
+
+  mellotron:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Polymer
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/mellotron.abc
+
+  # === PERCUSSION ===
+  perc_shaker:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/perc_shaker.abc
+
+  perc_tamb:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/perc_tamb.abc
+
+  perc_conga:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/perc_conga.abc
+
+  perc_cowbell:
+    note_fx:
+      - Note Transpose
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+      - Note Filter
+    instrument: Drum Machine
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/perc_cowbell.abc

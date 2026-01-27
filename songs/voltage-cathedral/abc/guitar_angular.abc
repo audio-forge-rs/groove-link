@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Angular Guitar
+M:4/4
+L:1/8
+Q:1/4=110
+K:E
+%% DEVO-style angular, jerky guitar
+%% Section 1: Ignition (bars 1-32) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 2: Nerve Endings (bars 33-64) - angular stabs enter
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | E2 z2 ^G2 z2 | E2 z2 B2 z2 |
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | A,2 z2 E2 z2 | E2 z2 B2 z2 |
+Ez Ez ^Gz z2 | Ez Ez Bz z2 | Ez Ez ^Gz z2 | A,2 z2 E2 z2 |
+Ez Ez ^Gz z2 | Ez Ez Bz z2 | Ez Ez ^Gz z2 | A,2 z2 E2 z2 |
+EE^GE BEBE | EE^GE BEBE | A,A,EA, EA,E z | B,B,FB, FB,F z |
+EE^GE BEBE | EE^GE BEBE | A,A,EA, EA,E z | B,B,FB, B,B,FB, |
+%% Section 3: Strut (bars 65-96) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 4: Dissolve (bars 97-128) - sparse angular
+E2 z2 z4 | z8 | E2 z2 z4 | z8 |
+^C2 z2 z4 | z8 | ^C2 z2 z4 | z8 |
+A,2 z2 z4 | z8 | z8 | z8 |
+B,2 z2 z4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 6: Collision (bars 177-208) - with others
+E2 z2 ^G2 z2 | D2 z2 A2 z2 | A,2 z2 E2 z2 | E2 z2 B2 z2 |
+E2 z2 ^D2 z2 | E2 z2 ^D2 z2 | A,2 z2 E2 z2 | B,2 z2 F2 z2 |
+E2 z2 ^G2 z2 | D2 z2 A2 z2 | ^C2 z2 ^G2 z2 | E2 z2 B2 z2 |
+A,2 z2 ^G,2 z2 | A,2 z2 ^G,2 z2 | B,2 z2 F2 z2 | E2 z2 B2 z2 |
+Ez Ez Dz z2 | A,z z2 B,z z2 | Ez z2 ^Dz z2 | E2 z2 z4 |
+Ez Ez Dz z2 | ^Cz z2 B,z z2 | A,z z2 ^G,z z2 | E2 z2 z4 |
+E2 z2 ^G2 z2 | D2 z2 A2 z2 | ^C2 z2 ^G2 z2 | B,2 z2 F2 z2 |
+A,2 z2 E2 z2 | ^G,2 z2 ^D2 z2 | B,B,FB, FB,Fz | Ez z2 Bz z2 |
+%% Section 7: Spasm (bars 209-256) - full DEVO mode
+Ez z2 z4 | ^Gz z2 Bz z2 | Ez z2 z4 | ^Gz z2 Bz z2 |
+Ez z Ez z2 z2 | Ez z Ez z2 z2 | A,z z2 z4 | Ez z2 z4 |
+Ez z2 z4 | ^Gz z2 Bz z2 | Ez z2 z4 | ^Gz z2 Bz z2 |
+Ez z Ez z2 z2 | Ez z Ez z2 z2 | B,z z2 z4 | Ez z2 z4 |
+Ez z2 z2 ^Gz | z Ez z2 z2 Bz | Ez z2 z2 ^Gz | z A,4 z z2 |
+Ez z2 z2 ^Gz | z Ez z2 z2 Bz | Ez z2 z2 ^Gz | z B,4 z z2 |
+Ez ^Gz z Ez z2 | ^Gz z Ez z2 Bz | z Ez ^Gz z2 z2 | A,4 z4 |
+Ez ^Gz z Ez z2 | ^Gz z Ez z2 Bz | z Ez ^Gz z2 z2 | B,4 z4 |
+EE^G^G BBEE | ^G^GBB EE^G^G | BBEE ^G^GBB | A,A,EE A,A,EE |
+EE^G^G BBEE | ^G^GBB EE^G^G | BBEE ^G^GBB | B,B,FF B,B,FF |
+EEzz ^G^Gzz | BBzz EEzz | ^G^Gzz BBzz | A,A,Ez z4 |
+EEzz ^G^Gzz | BBzz EEzz | ^G^Gzz BBzz | E4 z4 |
+%% Section 8: Void (bars 257-288) - sparse
+z8 | z8 | E4 z4 | z8 |
+z8 | z8 | E4 z4 | z8 |
+z8 | ^C4 z4 | z8 | z8 |
+z8 | A,4 z4 | z8 | z8 |
+E4 z4 | z8 | z8 | z8 |
+z8 | ^C4 z4 | z8 | z8 |
+z8 | z8 | A,4 z4 | z8 |
+z8 | z8 | B,4 z4 | z8 |
+%% Section 9: Night Drive (bars 289-336) - tacet (motorik guitar)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 11: Cathedral (bars 369-400) - angular returns
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | E2 z2 ^G2 z2 | E2 z2 B2 z2 |
+D2 z2 A2 z2 | D2 z2 A2 z2 | ^C2 z2 ^G2 z2 | ^C2 z2 ^G2 z2 |
+A,2 z2 E2 z2 | A,2 z2 E2 z2 | ^G,2 z2 ^D2 z2 | ^G,2 z2 ^D2 z2 |
+B,2 z2 F2 z2 | B,2 z2 F2 z2 | B,2 z2 F2 z2 | B,2 z2 F2 z2 |
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | ^D2 z2 ^A2 z2 | ^D2 z2 ^A2 z2 |
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | D2 z2 A2 z2 | D2 z2 A2 z2 |
+A,2 z2 E2 z2 | A,2 z2 E2 z2 | B,2 z2 F2 z2 | B,2 z2 F2 z2 |
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | E2 z2 ^G2 z2 | E2 z2 B2 z2 |
+%% Section 12: Fade to Static (bars 401-416)
+E2 z2 ^G2 z2 | E2 z2 B2 z2 | E4 z4 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

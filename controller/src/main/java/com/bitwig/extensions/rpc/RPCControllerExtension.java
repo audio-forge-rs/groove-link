@@ -34,7 +34,7 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.5.9";
+    public static final String VERSION = "0.5.12";
 
     private ControllerHost host;
     private Application application;
@@ -101,6 +101,12 @@ public class RPCControllerExtension extends ControllerExtension {
 
         host.println("[init] Creating transport...");
         transport = host.createTransport();
+
+        // Mark time signature as interested so we can set it
+        transport.timeSignature().markInterested();
+        transport.timeSignature().numerator().markInterested();
+        transport.timeSignature().denominator().markInterested();
+        transport.timeSignature().ticks().markInterested();
 
         // Mark project name as interested
         host.println("[init] Marking interests...");
@@ -243,6 +249,9 @@ public class RPCControllerExtension extends ControllerExtension {
         if (method.equals("transport.setTempo")) {
             return handleSetTempo(requestJson, idStr);
         }
+        if (method.equals("transport.setTimeSignature")) {
+            return handleSetTimeSignature(requestJson, idStr);
+        }
         if (method.equals("clip.insertFile")) {
             return handleClipInsertFile(requestJson, idStr);
         }
@@ -322,6 +331,37 @@ public class RPCControllerExtension extends ControllerExtension {
         } catch (Exception e) {
             host.errorln("[transport.setTempo] Error: " + e.getMessage());
             return formatError(idStr, -32603, "Error setting tempo: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Handle transport.setTimeSignature method.
+     *
+     * Params:
+     *   numerator: int - time signature numerator (e.g., 4 for 4/4)
+     *   denominator: int - time signature denominator (e.g., 4 for 4/4)
+     */
+    private String handleSetTimeSignature(String requestJson, String idStr) {
+        try {
+            int numerator = extractInt(requestJson, "numerator");
+            int denominator = extractInt(requestJson, "denominator");
+
+            if (numerator < 1 || numerator > 32) {
+                return formatError(idStr, -32602, "Numerator must be between 1 and 32");
+            }
+            if (denominator != 1 && denominator != 2 && denominator != 4 &&
+                denominator != 8 && denominator != 16 && denominator != 32) {
+                return formatError(idStr, -32602, "Denominator must be 1, 2, 4, 8, 16, or 32");
+            }
+
+            host.println("[transport.setTimeSignature] Setting time signature to " + numerator + "/" + denominator);
+            transport.timeSignature().numerator().set(numerator);
+            transport.timeSignature().denominator().set(denominator);
+
+            return formatResult(idStr, String.format("{\"numerator\":%d,\"denominator\":%d}", numerator, denominator));
+        } catch (Exception e) {
+            host.errorln("[transport.setTimeSignature] Error: " + e.getMessage());
+            return formatError(idStr, -32603, "Error setting time signature: " + e.getMessage());
         }
     }
 

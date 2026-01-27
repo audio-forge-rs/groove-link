@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Synth Pad
+M:4/4
+L:1/1
+Q:1/4=110
+K:E
+%% Atmospheric pad swells
+%% Section 1: Ignition (bars 1-32) - subtle pad enters
+z | z | z | z |
+z | z | z | z |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [AE] | [AE] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [BF] | [BF] |
+[EB] | [EB] | [EB] | [EB] |
+%% Section 2: Nerve Endings (bars 33-64) - angular pad
+[EB] | [DA] | [EB] | [DA] |
+[EB] | [DA] | [AE] | [EB] |
+[EB] | [DA] | [EB] | [DA] |
+[EB] | [DA] | [AE] | [EB] |
+[EB] | [DA] | [EB] | [AE] |
+[EB] | [DA] | [EB] | [AE] |
+[EB] | [DA] | [AE] | [BF] |
+[EB] | [DA] | [AE] | [BF] |
+%% Section 3: Strut (bars 65-96) - glam pad
+[EB] | [EB] | [AE] | [AE] |
+[BF] | [BF] | [EB] | [EB] |
+[EB] | [EB] | [AE] | [AE] |
+[BF] | [BF] | [EB] | [EB] |
+[EB] | [^D^A] | [EB] | [^D^A] |
+[AE] | [^G^D] | [AE] | [BF] |
+[EB] | [^D^A] | [EB] | [^D^A] |
+[AE] | [^G^D] | [BF] | [BF] |
+%% Section 4: Dissolve (bars 97-128) - cinematic transition
+[EB] | [EB] | [EB] | [EB] |
+[^C^G] | [^C^G] | [^C^G] | [^C^G] |
+[AE] | [AE] | [AE] | [AE] |
+[BF] | [BF] | [BF] | [BF] |
+[EB] | [EB] | [EB] | [EB] |
+[^C^G] | [^C^G] | [^C^G] | [^C^G] |
+[AE] | [AE] | [^F^C] | [^F^C] |
+[BF] | [BF] | [BF] | [BF] |
+%% Section 5: Ping Island (bars 129-176) - full Mothersbaugh cinematic
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [^G^D] | [^G^D] |
+[AE] | [AE] | [AE] | [AE] |
+[BF] | [BF] | [BF] | [BF] |
+[EB] | [EB] | [EB] | [EB] |
+[^C^G] | [^C^G] | [^C^G] | [^C^G] |
+[AE] | [AE] | [AE] | [AE] |
+[BF] | [BF] | [BF] | [BF] |
+[EB] | [EB] | [^G^D] | [^G^D] |
+[AE] | [AE] | [^F^C] | [^F^C] |
+[EB] | [EB] | [EB] | [EB] |
+[BF] | [BF] | [BF] | [BF] |
+%% Section 6: Collision (bars 177-208) - all blend
+[EB] | [DA] | [AE] | [EB] |
+[EB] | [^D^A] | [AE] | [BF] |
+[EB] | [DA] | [^C^G] | [EB] |
+[AE] | [^G^D] | [BF] | [EB] |
+[EB] | [AE] | [EB] | [EB] |
+[EB] | [^C^G] | [AE] | [EB] |
+[EB] | [DA] | [^C^G] | [BF] |
+[AE] | [^G^D] | [BF] | [EB] |
+%% Section 7: Spasm (bars 209-256) - minimal pad
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+%% Section 8: Void (bars 257-288) - sparse pad
+z | z | [EB] | z |
+z | z | [EB] | z |
+z | [^C^G] | z | z |
+z | [AE] | z | z |
+[EB] | z | z | z |
+z | [^C^G] | z | z |
+z | z | [AE] | z |
+z | z | [BF] | z |
+%% Section 9: Night Drive (bars 289-336) - motorik pad
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [AE] | [AE] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [BF] | [BF] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [AE] | [AE] |
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | [BF] | [BF] |
+[EB] | [EB] | [EB] | [EB] |
+%% Section 10: Peacock (bars 337-368) - glam pad
+[EB] | [EB] | [AE] | [AE] |
+[BF] | [BF] | [EB] | [EB] |
+[EB] | [^D^A] | [EB] | [^D^A] |
+[AE] | [^G^D] | [BF] | [EB] |
+[EB] | [^D^A] | [EB] | [^D^A] |
+[EB] | [^D^A] | [EB] | [^D^A] |
+[AE] | [^G^D] | [AE] | [^G^D] |
+[BF] | [BF] | [BF] | [BF] |
+%% Section 11: Cathedral (bars 369-400) - epic pad
+[EB] | [EB] | [EB] | [EB] |
+[DA] | [DA] | [^C^G] | [^C^G] |
+[AE] | [AE] | [^G^D] | [^G^D] |
+[BF] | [BF] | [BF] | [BF] |
+[EB] | [EB] | [^D^A] | [^D^A] |
+[EB] | [EB] | [DA] | [DA] |
+[AE] | [AE] | [BF] | [BF] |
+[EB] | [EB] | [EB] | [EB] |
+%% Section 12: Fade to Static (bars 401-416)
+[EB] | [EB] | [EB] | [EB] |
+[EB] | [EB] | z | z |
+[EB] | z | z | z |
+z | z | z | z |

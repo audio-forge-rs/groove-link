@@ -1,0 +1,86 @@
+X:1
+T:Voltage Cathedral - Tambourine
+M:4/4
+L:1/8
+Q:1/4=110
+K:C
+%% Uses A for tambourine trigger - backbeat hits
+%% Section 1-2: tacet (bars 1-64)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 3: Strut (bars 65-96) - glam tambourine on backbeat
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 A z |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 z2 |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 A z |
+z4 A2 A z | z4 A2 A z | z4 A2 z2 | A2A2A2A2 |
+%% Section 4-5: tacet (bars 97-176)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 6: Collision (bars 177-208) - tambourine returns
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 A z | z4 A2 A z | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 A z | z4 A2 A z | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 A z | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 A z | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | A2A2A2A2 | z4 A2 z2 |
+%% Section 7-8: tacet (bars 209-288)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 9: Night Drive (bars 289-336) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - glam tambourine
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 A z |
+z4 A2 A z | z4 A2 A z | z4 A2 z2 | z4 A2 z2 |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 A z |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 A z |
+z4 A2 A z | z4 A2 A z | z4 A2 A z | z4 A2 A z |
+A2A2A2A2 | A2A2A2A2 | A2A2A2A2 | A2A2A2A2 |
+%% Section 11: Cathedral (bars 369-400) - epic tambourine
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+z4 A2 z2 | z4 A2 z2 | z4 A2 z2 | z4 A2 z2 |
+%% Section 12: Fade to Static (bars 401-416)
+z4 A2 z2 | z4 A2 z2 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

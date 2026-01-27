@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Language of Music: A Visual Journey Through Musical Concepts</title>
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #e94560;
+            --text-color: #eee;
+            --bg-color: #0f0f1a;
+            --card-bg: #1a1a2e;
+            --border-color: #2a2a4a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.9;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            text-align: center;
+            background: linear-gradient(135deg, #e94560, #0f3460);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #e94560;
+            margin-top: 3rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        .metadata {
+            font-size: 0.95rem;
+            color: #aaa;
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .concept-section {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #0f3460 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .concept-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 1rem 0;
+            background: linear-gradient(45deg, #1a1a2e, #16213e);
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--border-color);
+        }
+
+        .concept-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .image-placeholder {
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .gemini-prompt {
+            background-color: #0a0a14;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: #0f9;
+            margin: 0.5rem 0;
+            border-left: 3px solid #0f9;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #bbb;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 700px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-break {
+            text-align: center;
+            margin: 3rem 0;
+            color: #444;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: #888;
+            text-align: center;
+        }
+
+        a {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Language of Music: A Visual Journey Through Musical Concepts</h1>
+        <div class="metadata">
+            <span><strong>Author:</strong> Brian Edwards</span> |
+            <span><strong>Date:</strong> January 21, 2026</span> |
+            <span><strong>Images:</strong> Generated with Google Gemini</span>
+        </div>
+    </header>
+
+    <main>
+        <p>
+            Music is a language that transcends words, communicating through patterns of pitch, rhythm,
+            and structure that humans have refined over millennia. This visual essay explores the
+            fundamental concepts that make music work, from the simplest folk melody to the most
+            complex avant-garde composition. Each concept is illustrated to help bridge the gap
+            between abstract musical theory and intuitive understanding.
+        </p>
+
+        <h2>I. The Building Blocks: Notation and Melody</h2>
+
+        <div class="concept-section">
+            <h3>ABC Notation: Music as Text</h3>
+            <div class="concept-image">
+                <img src="images/abc_notation.png" alt="ABC Notation visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Create an artistic visualization of ABC music notation transforming into sound waves. Show text characters like 'C D E F G A B' morphing into musical staff notation, then into colorful flowing sound waves. Digital art style with deep blue and gold colors, ethereal atmosphere."
+            </div>
+            <p>
+                ABC notation represents music as plain text, making it accessible to computers and
+                humans alike. A simple letter 'C' becomes middle C, 'D' the note above it. Numbers
+                indicate duration, vertical bars mark measure boundaries. This seemingly crude
+                representation captures the essence of melody in a form that can be transmitted,
+                searched, and analyzed as easily as any email.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Melodic Contour: The Shape of Sound</h3>
+            <div class="concept-image">
+                <img src="images/melodic_contour.png" alt="Melodic contour visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Illustrate melodic contour as a glowing line tracing through three-dimensional space. Show the line rising and falling like a mountain range made of light, with peaks representing high notes and valleys representing low notes. Purple and cyan neon colors against black background, cinematic style."
+            </div>
+            <p>
+                Before we perceive individual notes, we sense the shape of a melody. Does it
+                rise hopefully? Fall dramatically? Arch gracefully? Melodic contour is this
+                fundamental shape, the gestalt that remains even when we forget specific pitches.
+                A lullaby descends gently; a fanfare ascends boldly. The contour tells us what
+                the music means before we analyze a single note.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>II. Traditional Forms: The Folk Heritage</h2>
+
+        <div class="concept-section">
+            <h3>The Irish Jig: Compound Duple Meter (6/8)</h3>
+            <div class="concept-image">
+                <img src="images/irish_jig.png" alt="Irish jig rhythm visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Create a dynamic visualization of an Irish jig's 6/8 rhythm. Show dancers' feet leaving trails of green and gold light that form the pattern of two groups of three beats. Include Celtic knot patterns emerging from the rhythm. Energetic, festive atmosphere with emerald green dominant color."
+            </div>
+            <p>
+                The Irish jig bounces with infectious energy, its 6/8 time signature grouping
+                six eighth notes into two sets of three. This compound duple meter creates the
+                characteristic "ONE-two-three-FOUR-five-six" feel that makes feet move
+                involuntarily. Traditional jigs follow predictable eight-bar phrases, making
+                them ideal for dancing and easy for the ear to follow.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>The Slip Jig: Compound Triple Meter (9/8)</h3>
+            <div class="concept-image">
+                <img src="images/slip_jig.png" alt="Slip jig rhythm visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize a slip jig's 9/8 rhythm as three interlocking spirals of light, each spiral containing three pulses. Show the asymmetric beauty of three groups of three. Soft lavender and silver colors, dreamy and flowing movement, like watching dancers through morning mist."
+            </div>
+            <p>
+                The slip jig adds another layer of three, creating 9/8 time with its lilting,
+                slightly off-balance feel. Three groups of three eighth notes produce a rhythm
+                that seems to float rather than drive. It's the graceful cousin of the robust jig,
+                favored for its elegant, flowing quality.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>The Reel: Relentless Forward Motion (4/4)</h3>
+            <div class="concept-image">
+                <img src="images/reel.png" alt="Reel rhythm visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Illustrate a reel's continuous eighth-note pattern as an endless stream of golden light particles flowing forward at high speed. Show the particles organizing into regular pulses of four, like a river of music rushing through the night. Warm amber and copper tones, sense of momentum and excitement."
+            </div>
+            <p>
+                Where the jig bounces, the reel drives. Continuous streams of eighth notes in
+                4/4 time create unstoppable forward momentum. The reel is the sprinter of
+                traditional dance music, demanding nimble fingers and quick feet. Its regularity
+                makes it predictable; its speed makes it exhilarating.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>The Hymn: Four-Part Harmony</h3>
+            <div class="concept-image">
+                <img src="images/hymn_harmony.png" alt="Four-part hymn harmony">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Create a visualization of four-part hymn harmony as four interweaving ribbons of light in a church setting. Soprano in gold, alto in rose, tenor in blue, bass in deep purple. Show the ribbons moving together in parallel and contrary motion, creating moments of consonance where they align. Stained glass window aesthetic, reverent atmosphere."
+            </div>
+            <p>
+                The four-part hymn represents the foundational model of Western harmony. Four
+                voices move together according to centuries-old rules: soprano carries the melody,
+                bass provides the foundation, alto and tenor fill the harmonic space between.
+                This is the laboratory where voice-leading principles were codified, where
+                parallel fifths became forbidden and resolutions became obligatory.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>III. The Harmonic Language</h2>
+
+        <div class="concept-section">
+            <h3>Diatonic Harmony: Home and Away</h3>
+            <div class="concept-image">
+                <img src="images/diatonic_harmony.png" alt="Diatonic harmony visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize diatonic harmony as a cozy village with seven houses arranged in a circle, each house representing a scale degree (I through VII). Show glowing paths connecting the houses, with the brightest paths going from house I to IV to V and back to I. Warm, inviting colors, sense of home and belonging."
+            </div>
+            <p>
+                Diatonic harmony is the grammar of tonal music. The seven notes of a major or
+                minor scale create a family of chords, each with its role: tonic feels like
+                home, dominant creates tension that demands resolution, subdominant provides
+                gentle departure. This system has governed Western music for centuries, creating
+                the expectations that make music feel coherent.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>The Harmonic Progression: I - IV - V - I</h3>
+            <div class="concept-image">
+                <img src="images/harmonic_progression.png" alt="Harmonic progression visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Create an abstract visualization of the I-IV-V-I chord progression as a journey through colored spaces. Start in a blue room (I/tonic), move to a green room (IV/subdominant), then to a red room with visible tension (V/dominant), finally returning to the blue room with a sense of resolution. Architectural spaces with emotional lighting."
+            </div>
+            <p>
+                The progression from tonic to subdominant to dominant and back is the most
+                fundamental journey in tonal music. It's the skeleton beneath countless songs,
+                from Bach chorales to pop hits. Each chord serves a function: departure,
+                intensification, return. Understanding this progression unlocks the logic of
+                an entire musical tradition.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Modulation: Changing Keys</h3>
+            <div class="concept-image">
+                <img src="images/modulation.png" alt="Modulation visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Illustrate key modulation as a landscape shifting colors. Show a traveler walking from a blue-tinted forest (original key) through a shimmering portal into a gold-tinted forest (new key). The trees and sky smoothly transition color. Magical realism style, sense of transformation and new perspective."
+            </div>
+            <p>
+                Modulation is the art of changing tonal centers, of moving "home" from one
+                key to another. Done well, it creates dramatic effect, lifting a song to new
+                emotional heights or shifting its mood entirely. The pivot chord that enables
+                smooth modulation belongs to both keys simultaneously, bridging two worlds.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>IV. Rhythm and Meter</h2>
+
+        <div class="concept-section">
+            <h3>Metrical Structure: The Hierarchy of Beats</h3>
+            <div class="concept-image">
+                <img src="images/metrical_structure.png" alt="Metrical structure visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize metrical hierarchy as concentric ripples in water, with the largest ripple representing the downbeat (beat 1), medium ripples for secondary strong beats, and small ripples for weak beats. Show 4/4 time with ripples emanating from beat 1, smaller from beat 3, smallest from beats 2 and 4. Peaceful blue water, contemplative mood."
+            </div>
+            <p>
+                Not all beats are created equal. The downbeat carries the most weight,
+                anchoring each measure. Secondary beats provide intermediate structure.
+                Weak beats fill the spaces between. This hierarchy creates the pulse that
+                makes music feel alive, the invisible scaffolding that supports melody and harmony.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Phrase Structure: Musical Sentences</h3>
+            <div class="concept-image">
+                <img src="images/phrase_structure.png" alt="Phrase structure visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Show phrase structure as breathing: a glowing figure inhaling for 4 bars (antecedent phrase) and exhaling for 4 bars (consequent phrase). Visualize the musical tension rising during inhalation and releasing during exhalation. Soft, organic shapes, breath visible as colored light, meditative atmosphere."
+            </div>
+            <p>
+                Music breathes in phrases. The eight-bar phrase, divisible into two four-bar
+                halves, is the standard unit of musical thought. The first half (antecedent)
+                asks a question; the second half (consequent) answers. This call-and-response
+                structure mirrors the patterns of human speech and breathing, making music
+                feel natural and comprehensible.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Polyrhythms: Multiple Streams of Time</h3>
+            <div class="concept-image">
+                <img src="images/polyrhythm.png" alt="Polyrhythm visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Create a visualization of polyrhythm as two interlocking gear systems of different sizes, one with 5 teeth and one with 7 teeth, turning simultaneously. Show the moments where teeth align as bright flashes. Mechanical yet organic, steampunk aesthetic with brass and copper colors, complex but beautiful."
+            </div>
+            <p>
+                Polyrhythm layers different metric patterns simultaneously. Five against seven,
+                three against four, seven against eleven, the possibilities multiply infinitely.
+                These patterns create complex textures where different voices cycle at different
+                rates, aligning periodically in moments of convergence before diverging again.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Time Signatures: Organizing Time</h3>
+            <div class="two-column">
+                <div class="concept-image">
+                    <img src="images/time_sig_simple.png" alt="Simple time signatures">
+                </div>
+                <div class="concept-image">
+                    <img src="images/time_sig_compound.png" alt="Compound time signatures">
+                </div>
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Create a split image comparing simple time (4/4, 2/4) versus compound time (6/8, 9/8). Left side: square, stable geometric shapes pulsing in groups of 2 and 4. Right side: triangular, flowing shapes pulsing in groups of 3. Show how simple time divides beats in two while compound time divides beats in three. Clean, educational but artistic."
+            </div>
+            <p>
+                Time signatures tell us how beats are grouped and divided. Simple time (4/4, 3/4)
+                divides beats into twos; compound time (6/8, 9/8) divides them into threes.
+                Odd meters (5/8, 7/8) create asymmetric grooves that feel perpetually off-balance
+                yet coherent. The choice of time signature shapes everything that follows.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>V. Ornamentation and Expression</h2>
+
+        <div class="concept-section">
+            <h3>Grace Notes: Fleeting Decorations</h3>
+            <div class="concept-image">
+                <img src="images/grace_notes.png" alt="Grace notes visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize grace notes as small fireflies orbiting around larger glowing orbs (main notes). Show the fireflies quickly darting to the main note and immediately flying away. Delicate, ephemeral, magical forest at twilight. Green and gold bioluminescence, sense of fleeting beauty."
+            </div>
+            <p>
+                Grace notes are the ornaments that embellish melody, brief flickers of pitch
+                that decorate the structural notes. They exist outside the metric framework,
+                stealing time from the notes around them. In folk traditions, grace notes are
+                the signature of individual style, the personal touch that makes each
+                performance unique.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>VI. Extended Techniques: Beyond Tradition</h2>
+
+        <div class="concept-section">
+            <h3>Chromaticism: All Twelve Notes</h3>
+            <div class="concept-image">
+                <img src="images/chromaticism.png" alt="Chromaticism visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Illustrate chromaticism as a prism splitting white light into a continuous rainbow of 12 distinct colors representing the 12 chromatic notes. Show some colors bleeding into each other (chromatic movement) versus discrete bands (diatonic). Prismatic, refractive quality, both beautiful and slightly disorienting."
+            </div>
+            <p>
+                Chromaticism introduces all twelve notes of the chromatic scale, not just the
+                seven of a diatonic key. Dense chromatic passages blur tonal center, creating
+                ambiguity and tension. Wagner made chromaticism a language of desire; Schoenberg
+                pushed it to its logical conclusion in atonality. Between these extremes lies
+                a spectrum of chromatic intensity.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Tritone Substitution: The Devil's Interval Transformed</h3>
+            <div class="concept-image">
+                <img src="images/tritone.png" alt="Tritone substitution visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize the tritone as two notes exactly opposite each other on a circular piano keyboard, connected by a lightning bolt that transforms from red (dissonance) to blue (resolution). Show how swapping one tritone for another creates unexpected harmonic color. Dramatic lighting, jazz club atmosphere, mysterious and sophisticated."
+            </div>
+            <p>
+                The tritone, the interval of three whole steps once called the "devil in music,"
+                becomes a tool for harmonic sophistication in jazz. Tritone substitution replaces
+                a dominant chord with another chord whose root is a tritone away, creating
+                smoother bass lines and richer colors. It's the sound of modern harmonic thinking.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Extended Tonality: Stretching Without Breaking</h3>
+            <div class="concept-image">
+                <img src="images/extended_tonality.png" alt="Extended tonality visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Show extended tonality as a rubber band being stretched between two points (tonic and dominant), with colorful harmonic detours pulling the band in unexpected directions without breaking it. The band glows with tension at maximum stretch before snapping back to rest. Dynamic, tensile, sense of exploration within limits."
+            </div>
+            <p>
+                Extended tonality maintains a tonal center while incorporating chromatic harmony,
+                distant modulations, and unresolved dissonances. It's the language of late
+                Romantic and early modern music, of Debussy and Ravel, of film scores that
+                evoke complex emotions. The home key exists but feels distant, glimpsed through fog.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>VII. Voice Leading: The Rules and Their Breaking</h2>
+
+        <div class="concept-section">
+            <h3>Parallel Fifths: The Forbidden Parallel</h3>
+            <div class="concept-image">
+                <img src="images/parallel_fifths.png" alt="Parallel fifths visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize parallel fifths as two parallel train tracks moving together up and down hills, with a red X marking this as 'forbidden' in classical harmony. Show how the parallel motion creates a hollow, medieval sound. Split image: left side shows the forbidden parallels with warning signs, right side shows proper contrary motion with green checkmarks. Educational but dramatic."
+            </div>
+            <p>
+                Classical voice-leading forbids parallel fifths and octaves, those moments when
+                two voices move in the same direction maintaining the same interval. The rule
+                exists because parallels weaken voice independence, making separate voices sound
+                like one. Yet parallels are common in medieval music, rock music, and countless
+                folk traditions. Rules exist to be broken purposefully.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Voice Crossing: Tangled Lines</h3>
+            <div class="concept-image">
+                <img src="images/voice_crossing.png" alt="Voice crossing visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Illustrate voice crossing as two colored threads (blue for tenor, red for alto) that should stay separate but accidentally cross and tangle. Show the moment of crossing as a knot that creates confusion. Before and after images showing clean separation versus tangled mess. Textile/weaving aesthetic, sense of order versus disorder."
+            </div>
+            <p>
+                Voice crossing occurs when a lower voice rises above a higher voice or vice versa.
+                Traditional pedagogy warns against it: voices should maintain their registral
+                positions for clarity. Yet composers from Bach to Beethoven crossed voices for
+                expressive effect, creating moments where expected order dissolves into expressive ambiguity.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Unresolved Dissonance: Tension Without Release</h3>
+            <div class="concept-image">
+                <img src="images/unresolved_dissonance.png" alt="Unresolved dissonance visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize unresolved dissonance as a coiled spring that never releases, or a breath held indefinitely. Show the tension as visible energy between two clashing notes, with arrows pointing toward resolution that never comes. Anxious, suspended, modernist color palette of grays and sharp accents."
+            </div>
+            <p>
+                Traditional harmony treats dissonance as a preparation for consonance, tension
+                that must resolve. Modern music often refuses this resolution, leaving dissonances
+                hanging in the air. This denial of expectation creates its own expressive power,
+                the musical equivalent of an unfinished sentence that haunts the listener.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>VIII. Texture and Silence</h2>
+
+        <div class="concept-section">
+            <h3>Sparse Textures: The Power of Empty Space</h3>
+            <div class="concept-image">
+                <img src="images/sparse_texture.png" alt="Sparse texture visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize sparse musical texture as a vast dark space with occasional stars (notes) appearing and fading. Show how the emptiness between notes becomes as important as the notes themselves. Influenced by Japanese ma (negative space) concept. Minimalist, contemplative, deep blacks with rare points of light."
+            </div>
+            <p>
+                Sparse textures use silence as a compositional element. Isolated notes emerge
+                from emptiness, hang suspended, and dissolve back into quiet. The rests between
+                events become as meaningful as the events themselves. This is the aesthetic of
+                Feldman and Cage, where music approaches the philosophical boundary of silence.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h3>Random Pitch: Organized Chaos</h3>
+            <div class="concept-image">
+                <img src="images/random_pitch.png" alt="Random pitch visualization">
+            </div>
+            <div class="gemini-prompt">
+                Gemini prompt: "Visualize random pitch selection as dice rolling to determine notes, or balls bouncing chaotically through a Galton board/pinball machine, each landing position becoming a note. Show the contrast between the orderly process and chaotic result. Mechanical randomness, primary colors, playful yet unsettling."
+            </div>
+            <p>
+                Random pitch sequences abandon the patterns that make music coherent. Each note
+                is equally likely, unconnected to what came before. This is the musical equivalent
+                of white noise, useful as a control condition for understanding what structure
+                actually contributes. Paradoxically, even randomness occasionally produces
+                patterns that sound musical, by pure chance.
+            </p>
+        </div>
+
+        <div class="section-break">* * *</div>
+
+        <h2>Conclusion: Music as Language</h2>
+
+        <p>
+            Music speaks through these concepts like language speaks through grammar and vocabulary.
+            The Irish jig tells stories of village celebrations; the chromatic passage evokes
+            uncertainty and longing; the resolved cadence brings us home. These are not arbitrary
+            associations but cultural conventions refined over generations.
+        </p>
+
+        <p>
+            When we ask whether a machine can understand music, we are really asking whether it
+            can learn this vocabulary of sound. The evidence suggests partial success: machines
+            can learn what notes tend to follow what notes. What they cannot learn, so far, is
+            what makes those sequences meaningful, why parallel fifths sound hollow, why
+            unresolved dissonances create tension.
+        </p>
+
+        <div class="highlight-box">
+            The gap between statistical competence and structural understanding may be the
+            defining challenge of artificial intelligence. Music, with its clear rules and
+            immediate perceptual feedback, offers a laboratory for exploring that gap.
+        </div>
+
+        <p>
+            These images attempt to bridge another gap: between technical musical concepts and
+            intuitive visual understanding. If a picture is worth a thousand words, perhaps
+            it can also be worth a thousand notes.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>
+            Built with <a href="https://claude.ai/claude-code">Claude Code</a> (Claude Opus 4.5)<br>
+            Images designed for generation with Google Gemini
+        </p>
+        <p>
+            Brian Edwards<br>
+            brian.mabry.edwards@gmail.com<br>
+            January 2026
+        </p>
+    </footer>
+</body>
+</html>

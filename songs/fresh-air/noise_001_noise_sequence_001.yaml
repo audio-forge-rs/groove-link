@@ -1,0 +1,10 @@
+song:
+  title: "Noise Sequence 001"
+  tempo: 120
+  time: 4/4
+  key: none
+
+tracks:
+  main:
+    instrument: Polymer
+    part: noise_001.abc

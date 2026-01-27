@@ -1,0 +1,89 @@
+X:1
+T:Voltage Cathedral - Mellotron
+M:4/4
+L:1/1
+Q:1/4=110
+K:E
+%% Vintage mellotron strings/choir texture
+%% Section 1-4: tacet (bars 1-128)
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 5: Ping Island (bars 129-176) - cinematic mellotron
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [^G^DB] | [^G^DB] |
+[AEa] | [AEa] | [AEa] | [AEa] |
+[B^Fb] | [B^Fb] | [B^Fb] | [B^Fb] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[^C^G^c] | [^C^G^c] | [^C^G^c] | [^C^G^c] |
+[AEa] | [AEa] | [AEa] | [AEa] |
+[B^Fb] | [B^Fb] | [B^Fb] | [B^Fb] |
+[E^GB] | [E^GB] | [^G^DB] | [^G^DB] |
+[AEa] | [AEa] | [^F^Ca] | [^F^Ca] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[B^Fb] | [B^Fb] | [B^Fb] | [B^Fb] |
+%% Section 6: Collision (bars 177-208) - with all
+[E^GB] | [DAd] | [AEa] | [E^GB] |
+[E^GB] | [^D^A^d] | [AEa] | [B^Fb] |
+[E^GB] | [DAd] | [^C^G^c] | [E^GB] |
+[AEa] | [^G^D^g] | [B^Fb] | [E^GB] |
+[E^GB] | [AEa] | [E^GB] | [E^GB] |
+[E^GB] | [^C^G^c] | [AEa] | [E^GB] |
+[E^GB] | [DAd] | [^C^G^c] | [B^Fb] |
+[AEa] | [^G^D^g] | [B^Fb] | [E^GB] |
+%% Section 7-8: tacet (bars 209-288)
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 9: Night Drive (bars 289-336) - subtle mellotron
+z | z | z | z |
+z | z | z | z |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [AEa] | [AEa] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [B^Fb] | [B^Fb] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [AEa] | [AEa] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [B^Fb] | [B^Fb] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+%% Section 10: Peacock (bars 337-368) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 11: Cathedral (bars 369-400) - epic mellotron
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[DAd] | [DAd] | [^C^G^c] | [^C^G^c] |
+[AEa] | [AEa] | [^G^D^g] | [^G^D^g] |
+[B^Fb] | [B^Fb] | [B^Fb] | [B^Fb] |
+[E^GB] | [E^GB] | [^D^A^d] | [^D^A^d] |
+[E^GB] | [E^GB] | [DAd] | [DAd] |
+[AEa] | [AEa] | [B^Fb] | [B^Fb] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+%% Section 12: Fade to Static (bars 401-416)
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | z | z | z |
+[E^GB] | z | z | z |
+z | z | z | z |

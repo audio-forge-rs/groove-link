@@ -1,0 +1,15 @@
+X:1
+T:Ave Caesar - Brass Sustained
+M:4/4
+L:1/2
+Q:1/4=95
+K:Dm
+%%MIDI program 61
+% Bars 101-125: Full brass power
+[D,A,D]4 | [D,A,D]4 | [D,A,F]2 [F,A,A]2 | [D,A,D]4 |
+[G,,D,G,]4 | [G,,D,B,]4 | [A,,E,A,]4 | [A,,E,C]4 |
+[D,A,D]4 | [D,A,D]4 | [D,A,F]2 [F,A,A]2 | [D,A,d]4 |
+[B,,D,F]4 | [C,E,G]4 | [D,A,D]4 | [D,A,F]4 |
+[D,A,D]4 | [G,,D,G,]4 | [A,,E,A,]4 | [D,A,D]4 |
+[D,A,D]4 | [D,A,F]2 [G,,D,G,]2 | [A,,E,A,]4 | [D,A,D]4 |
+[D,A,D]4 |

@@ -1,0 +1,87 @@
+X:1
+T:Voltage Cathedral - Organ
+M:4/4
+L:1/1
+Q:1/4=110
+K:E
+%% B3 style organ
+%% Section 1-2: tacet (bars 1-64)
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 3: Strut (bars 65-96) - glam organ
+[E,^G,B,E] | [E,^G,B,E] | [A,E,A] | [A,E,A] |
+[B,,^D,F,B,] | [B,,^D,F,B,] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [E,^G,B,E] | [A,E,A] | [A,E,A] |
+[B,,^D,F,B,] | [B,,^D,F,B,] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [^D,^A,^D] | [E,^G,B,E] | [^D,^A,^D] |
+[A,E,A] | [^G,^D,^G] | [A,E,A] | [B,,^D,F,B,] |
+[E,^G,B,E] | [^D,^A,^D] | [E,^G,B,E] | [^D,^A,^D] |
+[A,E,A] | [^G,^D,^G] | [B,,^D,F,B,] | [B,,^D,F,B,] |
+%% Section 4-7: tacet (bars 97-256)
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 8: Void (bars 257-288) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 9: Night Drive (bars 289-336) - subtle organ
+z | z | z | z |
+z | z | z | z |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [E,^G,B,E] | [A,E,A] | [A,E,A] |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [E,^G,B,E] | [B,,^D,F,B,] | [B,,^D,F,B,] |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [E,^G,B,E] | [A,E,A] | [A,E,A] |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [E,^G,B,E] | [B,,^D,F,B,] | [B,,^D,F,B,] |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+%% Section 10: Peacock (bars 337-368) - glam organ
+[E,^G,B,E] | [E,^G,B,E] | [A,E,A] | [A,E,A] |
+[B,,^D,F,B,] | [B,,^D,F,B,] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | [^D,^A,^D] | [E,^G,B,E] | [^D,^A,^D] |
+[A,E,A] | [^G,^D,^G] | [B,,^D,F,B,] | [E,^G,B,E] |
+[E,^G,B,E] | [^D,^A,^D] | [E,^G,B,E] | [^D,^A,^D] |
+[E,^G,B,E] | [^D,^A,^D] | [E,^G,B,E] | [^D,^A,^D] |
+[A,E,A] | [^G,^D,^G] | [A,E,A] | [^G,^D,^G] |
+[B,,^D,F,B,] | [B,,^D,F,B,] | [B,,^D,F,B,] | [B,,^D,F,B,] |
+%% Section 11: Cathedral (bars 369-400) - epic organ
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[D,A,D] | [D,A,D] | [^C,^G,^C] | [^C,^G,^C] |
+[A,E,A] | [A,E,A] | [^G,^D,^G] | [^G,^D,^G] |
+[B,,^D,F,B,] | [B,,^D,F,B,] | [B,,^D,F,B,] | [B,,^D,F,B,] |
+[E,^G,B,E] | [E,^G,B,E] | [^D,^A,^D] | [^D,^A,^D] |
+[E,^G,B,E] | [E,^G,B,E] | [D,A,D] | [D,A,D] |
+[A,E,A] | [A,E,A] | [B,,^D,F,B,] | [B,,^D,F,B,] |
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+%% Section 12: Fade to Static (bars 401-416)
+[E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] | [E,^G,B,E] |
+[E,^G,B,E] | z | z | z |
+[E,^G,B,E] | z | z | z |
+z | z | z | z |

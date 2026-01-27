@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Claps
+M:4/4
+L:1/8
+Q:1/4=110
+K:C
+%% Uses E for clap trigger
+%% Section 1: Ignition (bars 1-32) - no claps yet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 2: Nerve Endings (bars 33-64) - DEVO claps on 2 and 4
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | E2E2E2E2 |
+%% Section 3: Strut (bars 65-96) - glam claps
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 E z |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 z2 |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 E z |
+z4 E2 E z | z4 E2 E z | z4 E2 z2 | E2E2E2E2 |
+%% Section 4: Dissolve (bars 97-128) - fading
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z8 | z8 | z4 E2 z2 | z8 |
+z8 | z8 | z4 E2 z2 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - no claps (cinematic)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | E2E2E2E2 | E2E2E2E2 |
+%% Section 6: Collision (bars 177-208)
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 E z | z4 E2 E z | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 E z | z4 E2 E z | z4 E2 z2 | z4 E2 z2 |
+E z E z E2 z2 | z4 E2 z2 | E z E z E2 E z | z4 E2 z2 |
+E z E z E2 z2 | z4 E2 z2 | E z E z E2 E z | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | E2E2E2E2 | z4 E2 z2 |
+%% Section 7: Spasm (bars 209-256) - erratic
+z4 E2 z2 | E z z2 E z z2 | z4 E2 z2 | E z z2 E z z2 |
+E z z E z2 z2 | E z z E z2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | E z z2 E z z2 | z4 E2 z2 | E z z2 E z z2 |
+E z z E z2 z2 | E z z E z2 z2 | z4 E2 z2 | z4 E2 z2 |
+E z z2 z2 E z | z E z2 z2 E z | E z z2 z2 E z | z E4 z z2 |
+E z z2 z2 E z | z E z2 z2 E z | E z z2 z2 E z | z E4 z z2 |
+E z E z z E z2 | E z z E z2 E z | z E z E z2 z2 | E4 z4 |
+E z E z z E z2 | E z z E z2 E z | z E z E z2 z2 | E4 z4 |
+z4 E2 z2 | E z z2 E z z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | E z z2 E z z2 | z4 E2 z2 | z4 E2 z2 |
+E z z E z2 z2 | E z z E z2 z2 | E z z E z2 z2 | E2 z z z4 |
+E z z E z2 z2 | E z z E z2 z2 | E z z E z2 z2 | E4 z4 |
+%% Section 8: Void (bars 257-288) - silence
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 9: Night Drive (bars 289-336) - backbeat claps
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+%% Section 10: Peacock (bars 337-368) - glam claps
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 E z |
+z4 E2 E z | z4 E2 E z | z4 E2 z2 | z4 E2 z2 |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 E z |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 E z |
+z4 E2 E z | z4 E2 E z | z4 E2 E z | z4 E2 E z |
+E2E2E2E2 | E2E2E2E2 | E2E2E2E2 | E2E2E2E2 |
+%% Section 11: Cathedral (bars 369-400)
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+%% Section 12: Fade to Static (bars 401-416)
+z4 E2 z2 | z4 E2 z2 | z4 E2 z2 | z4 E2 z2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

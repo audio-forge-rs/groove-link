@@ -1,0 +1,68 @@
+song:
+  title: Porch Light
+  tempo: 95
+  key: G
+  time: 4/4
+
+tracks:
+  # Chord reference track - MUTE THIS when playing
+  # Shows chord changes as whole notes for reference
+  chords:
+    note_fx:
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: nektar piano
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/chords.abc
+
+  guitar:
+    note_fx:
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar.abc
+
+  bass:
+    note_fx:
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Acoustic Bass Long
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/bass.abc
+
+  piano:
+    note_fx:
+      - Superschnell Strum (4.20ms)
+      - Double-time on Fill
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: nektar piano
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/piano.abc

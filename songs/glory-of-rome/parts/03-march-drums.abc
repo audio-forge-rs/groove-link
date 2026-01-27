@@ -1,0 +1,16 @@
+X:1
+T:Legion's March - Marching Drums
+M:4/4
+L:1/16
+Q:1/4=95
+K:C
+%%MIDI program 115
+% Bars 51-75: Military march, steady relentless pulse
+% Using C36=kick, E36=snare pattern on drum machine
+C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 E4 |
+C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 z4 | C4 E4 C4 E4 |
+C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 E4 |
+C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 z4 | C4 E4 C4 E4 |
+C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 E4 |
+C4 z4 E4 z4 | C4 z4 E4 z4 | C4 z4 E4 z4 | C4 E4 C4 E4 |
+C4 E4 C4 E4 |

@@ -1,0 +1,84 @@
+song:
+  title: Glory of Rome
+  tempo: 95
+  key: D minor
+  time: 4/4
+  # 6 minutes, 6 sections - each morphs into the next
+  # 0:00 Dawn Over the Tiber - mysterious, ancient
+  # 1:00 The Forum Awakens - bustling, lively
+  # 2:00 Legion's March - military, powerful
+  # 3:00 Colosseum Gates - tense, anticipation
+  # 4:00 Ave Caesar - climactic glory
+  # 5:00 Eternal Empire - majestic resolution to D major
+
+tracks:
+  # === STRINGS ===
+  strings_epic:
+    instrument: Orchestral Strings–Velocity Sensitive
+    fx:
+      - Reverb
+
+  strings_pizz:
+    instrument: Orchestral Strings–Pizzicato
+    fx:
+      - Reverb
+
+  strings_spicc:
+    instrument: Orchestral Strings–Spiccato
+    fx:
+      - Reverb
+
+  # === BRASS ===
+  brass_sustained:
+    instrument: Orchestral Brass–Sustained
+    fx:
+      - Reverb
+
+  brass_staccato:
+    instrument: Orchestral Trumpet and Horn Ensemble–Staccato
+    fx:
+      - Reverb
+
+  horns:
+    instrument: Epic Horns
+    fx:
+      - Reverb
+
+  # === PERCUSSION ===
+  timpani:
+    instrument: Orchestral Percussion - Timpani Single Hits
+    fx:
+      - Reverb
+
+  perc_hits:
+    instrument: Orchestral Percussion - Single Hits
+    fx:
+      - Reverb
+
+  drums_march:
+    instrument: Marching Band Punch
+    fx:
+      - Reverb
+
+  # === CHOIR & ATMOSPHERE ===
+  choir:
+    instrument: Choirs Æternal
+    fx:
+      - Reverb
+
+  pad:
+    instrument: Heavy Cinematic Pad
+    fx:
+      - Reverb
+
+  # === MELODIC COLOR ===
+  flute:
+    instrument: Shaolin Flute
+    fx:
+      - Delay-2
+      - Reverb
+
+  harp:
+    instrument: Harp in Layers
+    fx:
+      - Reverb

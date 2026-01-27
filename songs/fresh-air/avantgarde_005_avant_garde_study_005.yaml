@@ -1,0 +1,10 @@
+song:
+  title: "Avant-garde Study 005"
+  tempo: 87
+  time: 11/8
+  key: Cmix
+
+tracks:
+  main:
+    instrument: Polymer
+    part: avantgarde_005.abc

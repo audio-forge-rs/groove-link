@@ -1,0 +1,15 @@
+X:1
+T:Legion's March - Brass Staccato
+M:4/4
+L:1/8
+Q:1/4=95
+K:Dm
+%%MIDI program 61
+% Bars 51-75: Punchy brass fanfare, military power
+[D,A,D]2 z2 [D,A,D]2 z2 | [D,A,D]2 z2 [F,A,F]2 z2 | [D,A,D]2 z2 [D,A,D]2 z2 | [D,A,D]4 [F,A,F]4 |
+[D,A,D]2 z2 [D,A,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [A,C,E]2 z2 [A,C,E]2 z2 | [A,C,E]4 z4 |
+[D,A,D]2 z2 [D,A,D]2 z2 | [D,A,D]2 z2 [F,A,F]2 z2 | [D,A,D]2 z2 [D,A,D]2 z2 | [D,A,D]4 [F,A,F]4 |
+[B,,D,F]2 z2 [B,,D,F]2 z2 | [C,E,G]2 z2 [C,E,G]2 z2 | [D,A,D]2 z2 [D,A,D]2 z2 | [D,A,D]4 z4 |
+[D,A,D]2 z2 [F,A,F]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [A,C,E]2 z2 [A,C,E]2 z2 | [D,A,D]4 z4 |
+[D,A,D]2 z2 [D,A,D]2 z2 | [D,A,D]2 z2 [F,A,F]2 z2 | [G,B,D]2 z2 [A,C,E]2 z2 | [D,A,D]4 [D,A,D]4 |
+[D,A,D]8 |

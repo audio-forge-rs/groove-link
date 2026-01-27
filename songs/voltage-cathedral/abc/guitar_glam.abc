@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Glam Guitar
+M:4/4
+L:1/8
+Q:1/4=110
+K:E
+%% Bowie Queen Bitch style swagger guitar
+%% Section 1: Ignition (bars 1-32) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 2: Nerve Endings (bars 33-64) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 3: Strut (bars 65-96) - glam strut enters
+[E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 | [A,E,A]4 z4 | [A,E,A]2 z2 [A,E,A]2 z2 |
+[B,,F,B,]4 z4 | [B,,F,B,]2 z2 [B,,F,B,]2 z2 | [E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 |
+[E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 | [A,E,A]4 z4 | [A,E,A]2 z2 [A,E,A]2 z2 |
+[B,,F,B,]4 z4 | [B,,F,B,]2 z2 [B,,F,B,]2 z2 | [E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 |
+[A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]4 z4 | [B,,F,B,]4 z4 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 |
+[A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [B,,F,B,]4 z4 | [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] |
+%% Section 4: Dissolve (bars 97-128) - fading glam
+[E,B,E]4 z4 | [E,B,E]4 z4 | [E,B,E]4 z4 | [E,B,E]4 z4 |
+[^C,^G,^C]4 z4 | [^C,^G,^C]4 z4 | [^C,^G,^C]4 z4 | [^C,^G,^C]4 z4 |
+[A,E,A]4 z4 | z8 | z8 | z8 |
+[B,,F,B,]4 z4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 6: Collision (bars 177-208) - with all styles
+[E,B,E]4 z4 | [D,A,D]4 z4 | [A,E,A]4 z4 | [E,B,E]4 z4 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [A,E,A]4 z4 | [B,,F,B,]4 z4 |
+[E,B,E]4 z4 | [D,A,D]4 z4 | [^C,^G,^C]4 z4 | [E,B,E]4 z4 |
+[A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [B,,F,B,]4 z4 | [E,B,E]4 z4 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+[E,B,E]4 z4 | [D,A,D]4 z4 | [^C,^G,^C]4 z4 | [B,,F,B,]4 z4 |
+[A,E,A]4 z4 | [^G,^D,^G]4 z4 | [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] | [E,B,E]4 z4 |
+%% Section 7: Spasm (bars 209-256) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 8: Void (bars 257-288) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 9: Night Drive (bars 289-336) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - full glam swagger
+[E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 | [A,E,A]4 z4 | [A,E,A]2 z2 [A,E,A]2 z2 |
+[B,,F,B,]4 z4 | [B,,F,B,]2 z2 [B,,F,B,]2 z2 | [E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 |
+[A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [B,,F,B,]4 z4 | [E,B,E]4 z4 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 |
+[A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 | [A,E,A]2 [^G,^D,^G]2 [A,E,A]2 [^G,^D,^G]2 |
+[B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] | [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] | [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] | [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] [B,,F,B,][B,,F,B,][B,,F,B,][B,,F,B,] |
+%% Section 11: Cathedral (bars 369-400) - epic glam
+[E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 | [E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 |
+[D,A,D]4 z4 | [D,A,D]2 z2 [D,A,D]2 z2 | [^C,^G,^C]4 z4 | [^C,^G,^C]2 z2 [^C,^G,^C]2 z2 |
+[A,E,A]4 z4 | [A,E,A]2 z2 [A,E,A]2 z2 | [^G,^D,^G]4 z4 | [^G,^D,^G]2 z2 [^G,^D,^G]2 z2 |
+[B,,F,B,]4 z4 | [B,,F,B,]2 z2 [B,,F,B,]2 z2 | [B,,F,B,]4 z4 | [B,,F,B,]2 z2 [B,,F,B,]2 z2 |
+[E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 | [E,B,E]2 [^D,^A,^D]2 [E,B,E]2 [^D,^A,^D]2 |
+[E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 | [D,A,D]4 z4 | [D,A,D]2 z2 [D,A,D]2 z2 |
+[A,E,A]4 z4 | [A,E,A]2 z2 [A,E,A]2 z2 | [B,,F,B,]4 z4 | [B,,F,B,]2 z2 [B,,F,B,]2 z2 |
+[E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 | [E,B,E]4 z4 | [E,B,E]2 z2 [E,B,E]2 z2 |
+%% Section 12: Fade to Static (bars 401-416)
+[E,B,E]4 z4 | [E,B,E]2 z2 z4 | [E,B,E]4 z4 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

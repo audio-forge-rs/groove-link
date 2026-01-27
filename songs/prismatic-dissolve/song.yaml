@@ -1,0 +1,86 @@
+song:
+  title: Prismatic Dissolve
+  tempo: 96
+  key: Em
+  time: 4/4
+
+tracks:
+  arp:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Shimmer
+    fx:
+      - Slow Stereo Phaser LFO
+      - Diffusing Delay
+      - Space Hall
+      - query: Tool
+        hint: device
+    part: midi/arp.mid
+
+  bass:
+    note_fx:
+      - Humanize x 3
+    instrument: Cosmic Swirl
+    fx:
+      - LFO Flanger Lo Slow
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/bass.mid
+
+  pad:
+    note_fx:
+      - Humanize x 3
+    instrument: Ghost Pad
+    fx:
+      - Slow Stereo Phaser LFO
+      - Shimmer Verb
+      - query: Tool
+        hint: device
+    part: midi/pad.mid
+
+  lead:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Space Oboe
+    fx:
+      - Lazer Phaser
+      - Steppa Delay
+      - Space Hall
+      - query: Tool
+        hint: device
+    part: midi/lead.mid
+
+  kick:
+    note_fx:
+      - Humanize x 3
+    instrument: v8 E-drums Kit 02
+    fx:
+      - Dynamic EQ
+      - Multiband Dynamics
+      - query: Tool
+        hint: device
+    part: midi/kick.mid
+
+  snare:
+    note_fx:
+      - Humanize x 3
+    instrument: v8 E-drums Kit 02
+    fx:
+      - Diffusing Delay
+      - query: Tool
+        hint: device
+    part: midi/snare.mid
+
+  hats:
+    note_fx:
+      - Humanize x 3
+    instrument: v8 E-drums Kit 02
+    fx:
+      - LFO Flanger Negative
+      - query: Tool
+        hint: device
+    part: midi/hats.mid

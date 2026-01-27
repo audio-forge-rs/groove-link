@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Snare
+M:4/4
+L:1/8
+Q:1/4=110
+K:C
+%% Uses D (above middle C) for snare trigger
+%% Section 1: Ignition (bars 1-32) - backbeat
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+%% Section 2: Nerve Endings (bars 33-64) - DEVO snaps
+z4 D2 z2 | z4 D z D z | z4 D2 z2 | z4 D z D z |
+z4 D2 z2 | z4 D z D z | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D z D z | z4 D2 z2 | z4 D z D z |
+z4 D2 z2 | z4 D z D z | z4 D2 z2 | z4 D2 z2 |
+z2 D z D2 z2 | z2 D z D2 z2 | z2 D z D2 z2 | z4 D2 z2 |
+z2 D z D2 z2 | z2 D z D2 z2 | z2 D z D2 z2 | z4 D2 z2 |
+D z D z D z D z | D z D z D z D z | z4 D2 z2 | z4 D2 z2 |
+D z D z D z D z | D z D z D z D z | z4 D2 z2 | D2 D2 D2 D2 |
+%% Section 3: Strut (bars 65-96) - glam swagger
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 D z |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 z2 |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 D z |
+z4 D2 D z | z4 D2 D z | z4 D2 z2 | D2 D2 D2 D2 |
+%% Section 4: Dissolve (bars 97-128) - fading out
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z8 | z8 | z4 D2 z2 | z8 |
+z8 | z8 | z4 D2 z2 | z8 |
+z8 | z8 | z4 D2 z2 | z8 |
+z8 | z4 D2 z2 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - cinematic, sparse snare
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z4 D4 | z8 | z4 D4 | z8 |
+z4 D4 | z8 | z4 D4 | z8 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | D2 D2 D2 D2 | D2 D2 D2 D2 |
+%% Section 6: Collision (bars 177-208) - all styles
+z4 D2 z2 | z4 D z D z | z4 D2 z2 | z4 D2 z2 |
+z4 D2 D z | z4 D2 D z | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D z D z | z4 D2 z2 | z4 D2 z2 |
+z4 D2 D z | z4 D2 D z | z4 D2 z2 | z4 D2 z2 |
+D z D z D2 z2 | z4 D2 z2 | D z D z D2 D z | z4 D2 z2 |
+D z D z D2 z2 | z4 D2 z2 | D z D z D2 D z | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | D2 D2 D2 D2 | z4 D2 z2 |
+%% Section 7: Spasm (bars 209-256) - jerky
+z4 D2 z2 | D z z2 D z z2 | z4 D2 z2 | D z z2 D z z2 |
+D z z D z2 z2 | D z z D z2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | D z z2 D z z2 | z4 D2 z2 | D z z2 D z z2 |
+D z z D z2 z2 | D z z D z2 z2 | z4 D2 z2 | z4 D2 z2 |
+D z z2 z2 D z | z D z2 z2 D z | D z z2 z2 D z | z D4 z z2 |
+D z z2 z2 D z | z D z2 z2 D z | D z z2 z2 D z | z D4 z z2 |
+D z D z z D z2 | D z z D z2 D z | z D z D z2 z2 | D4 z4 |
+D z D z z D z2 | D z z D z2 D z | z D z D z2 z2 | D4 z4 |
+z4 D2 z2 | D z z2 D z z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | D z z2 D z z2 | z4 D2 z2 | z4 D2 z2 |
+D z z D z2 z2 | D z z D z2 z2 | D z z D z2 z2 | D2 z z z4 |
+D z z D z2 z2 | D z z D z2 z2 | D z z D z2 z2 | D4 z4 |
+%% Section 8: Void (bars 257-288) - almost silent
+z8 | z8 | z4 D4 | z8 |
+z8 | z8 | z4 D4 | z8 |
+z8 | z4 D4 | z8 | z8 |
+z8 | z4 D4 | z8 | z8 |
+z4 D4 | z8 | z8 | z8 |
+z8 | z4 D4 | z8 | z8 |
+z8 | z8 | z4 D4 | z8 |
+z8 | z8 | z4 D4 | z8 |
+%% Section 9: Night Drive (bars 289-336) - motorik backbeat
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+%% Section 10: Peacock (bars 337-368) - glam snare
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 D z |
+z4 D2 D z | z4 D2 D z | z4 D2 z2 | z4 D2 z2 |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 D z |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 D z |
+z4 D2 D z | z4 D2 D z | z4 D2 D z | z4 D2 D z |
+D2 D2 D2 D2 | D2 D2 D2 D2 | D2 D2 D2 D2 | D2 D2 D2 D2 |
+%% Section 11: Cathedral (bars 369-400) - powerful backbeat
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+%% Section 12: Fade to Static (bars 401-416) - decay
+z4 D2 z2 | z4 D2 z2 | z4 D2 z2 | z4 D2 z2 |
+z4 D2 z2 | z8 | z8 | z8 |
+z4 D4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

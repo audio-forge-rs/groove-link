@@ -1,0 +1,75 @@
+X:1
+T:Voltage Cathedral - Conga
+M:4/4
+L:1/8
+Q:1/4=110
+K:C
+%% Uses C, D, E for low/mid/high conga
+%% Section 1-5: tacet (bars 1-176)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 6: Collision (bars 177-208) - latin conga enters
+CDzE zCzD | ECzD zEzC | CDzE zCzD | z4 CzDz |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | z4 CzDz |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | z4 CzDz |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | z4 CzDz |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | z4 CzDz |
+CDzE zCzD | CDECDEC z | CDECDEC z | z4 CzDz |
+%% Section 7-9: tacet (bars 209-336)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 11: Cathedral (bars 369-400) - epic conga
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDzE zCzD | ECzD zEzC | CDzE zCzD | ECzD zEzC |
+CDECDEC z | CDECDEC z | CDECDEC z | CDECDEC z |
+%% Section 12: Fade to Static (bars 401-416)
+CDzE zCzD | CDz z z4 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

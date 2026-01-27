@@ -1,0 +1,75 @@
+# ============================================================================
+# Mercury Outboard - Track 6 from Cadaver Lab
+# ============================================================================
+# Summer. Wake behind a boat. Learning without words.
+# Someone teaching you something they couldn't say directly.
+# The language of motors and ropes and how to read water.
+# Pedal steel and acoustic guitar intertwined.
+# ============================================================================
+
+song:
+  title: Mercury Outboard
+  tempo: 78
+  key: G
+  time: 4/4
+
+tracks:
+  vocal-melody:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: nektar piano
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/vocal-melody.abc
+
+  guitar-acoustic:
+    note_fx:
+      - Superschnell Strum (4.20ms)
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Physical-Guitar
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/guitar-acoustic.abc
+
+  pedal-steel:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Guitar-Ballad
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/pedal-steel.abc
+
+  bass:
+    note_fx:
+      - Humanize x 3
+      - Multi Expression Randomizer
+    instrument: Acoustic Bass Long
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+      - query: Tool
+        hint: device
+      - Abbey Road
+    part: abc/bass.abc
+
+  drums:
+    instrument: Acoustic Drums Kit Brushed Clean
+    fx:
+      - Dynamic EQ
+      - Multi-Compression
+    part: abc/drums.abc

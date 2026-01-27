@@ -1,0 +1,16 @@
+X:1
+T:The Forum Awakens - Pizzicato Strings
+M:4/4
+L:1/8
+Q:1/4=95
+K:Dm
+%%MIDI program 45
+% Bars 26-50: Bustling marketplace energy, lively rhythmic pulse
+% Playful, bouncing pattern
+D,2 z2 A,2 z2 | D,2 F,2 A,2 D2 | D,2 z2 A,2 z2 | D,2 A,2 D2 F2 |
+D,2 z2 A,2 z2 | D,2 F,2 A,2 D2 | G,2 z2 D2 z2 | G,2 B,2 D2 G2 |
+A,2 z2 E2 z2 | A,2 C2 E2 A2 | D,2 z2 A,2 z2 | D,2 F,2 A,2 D2 |
+B,2 z2 F2 z2 | B,2 D2 F2 B2 | C2 z2 G2 z2 | C2 E2 G2 c2 |
+D,2 z2 A,2 z2 | D,2 F,2 A,2 D2 | D,2 z2 A,2 z2 | D,2 A,2 D2 F2 |
+G,2 z2 D2 z2 | A,2 z2 E2 z2 | D,2 z2 A,2 z2 | D,2 F,2 A,2 D2 |
+D,2 A,2 D2 F2 |

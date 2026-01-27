@@ -1,0 +1,10 @@
+song:
+  title: "Hymn 004"
+  tempo: 72
+  time: 4/4
+  key: C
+
+tracks:
+  main:
+    instrument: Polymer
+    part: traditional_004.abc

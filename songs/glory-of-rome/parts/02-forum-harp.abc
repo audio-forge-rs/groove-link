@@ -1,0 +1,15 @@
+X:1
+T:The Forum Awakens - Harp
+M:4/4
+L:1/16
+Q:1/4=95
+K:Dm
+%%MIDI program 46
+% Bars 26-50: More active arpeggios, marketplace bustle
+D,A,DFA,DF z8 | z4 D,A,DFA,DFA | D,A,DFA,DF z8 | z8 A,DFA,DFA |
+D,A,DFA,DF z8 | z4 D,A,DFA,DFA | G,DGB,DGB, z8 | z8 G,DGB,DGB, |
+A,EAcEAc z8 | z4 A,EAcEAc z4 | D,A,DFA,DF z8 | z4 D,A,DFA,DFA |
+B,DFB,DFB, z8 | z8 B,DFB,DFB, | CEGcEGc z8 | z4 CEGcEGc z4 |
+D,A,DFA,DF z8 | z4 D,A,DFA,DFA | D,A,DFA,DF z8 | z8 A,DFA,DFA |
+G,DGB,DGB, z8 | A,EAcEAc z8 | D,A,DFA,DF z8 | z4 D,A,DFA,DFA |
+D,A,DFA,DFA z4 |

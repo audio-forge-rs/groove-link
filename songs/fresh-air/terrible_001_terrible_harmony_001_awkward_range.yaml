@@ -1,0 +1,10 @@
+song:
+  title: "Terrible Harmony 001 - Awkward Range"
+  tempo: 98
+  time: 4/4
+  key: C
+
+tracks:
+  main:
+    instrument: Polymer
+    part: terrible_001.abc

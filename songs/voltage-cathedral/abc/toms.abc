@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Toms
+M:4/4
+L:1/8
+Q:1/4=110
+K:C
+%% Uses A, B, C for low, mid, high tom
+%% Section 1: Ignition (bars 1-32) - sparse fills
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z6 A,B, |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z6 A,B, |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | CB,A,z CB,A,z |
+%% Section 2: Nerve Endings (bars 33-64) - angular tom hits
+z8 | z6 Cz | z8 | z6 A,z |
+z8 | z4 B,zA,z | z8 | z8 |
+z8 | z6 Cz | z8 | z6 A,z |
+z8 | z4 B,zA,z | z8 | CB,A,z z4 |
+z4 Cz z2 | z4 A,z z2 | z4 B,z z2 | z8 |
+z4 Cz z2 | z4 A,z z2 | z4 B,z z2 | z8 |
+CzB,zA,z z2 | CzB,zA,z z2 | z8 | z4 CB,A,z |
+CzB,zA,z z2 | CzB,zA,z z2 | z8 | CB,A,CB, A,CB,A, |
+%% Section 3: Strut (bars 65-96) - glam fills
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | CCCB,B,B,A,A, |
+%% Section 4: Dissolve (bars 97-128) - fading
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - cinematic
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | CB,A,CB, A,CB,A, |
+%% Section 6: Collision (bars 177-208) - all styles
+z8 | z6 Cz | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z6 Cz | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z4 A,B,Cz |
+CzB,zA,z z2 | z8 | CzB,z A,zCz | z8 |
+CzB,zA,z z2 | z8 | CzB,z A,zCz | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | CCCB,B,B,A,A, |
+%% Section 7: Spasm (bars 209-256) - jerky
+Cz z2 z4 | A,z z2 B,z z2 | Cz z2 z4 | A,z z2 B,z z2 |
+Cz z A,z z2 | Cz z A,z z2 | z8 | CB,A,z z4 |
+Cz z2 z4 | A,z z2 B,z z2 | Cz z2 z4 | A,z z2 B,z z2 |
+Cz z A,z z2 | Cz z A,z z2 | z8 | CB,A,z z4 |
+Cz z2 z2 A,z | z B,z2 z2 Cz | Cz z2 z2 A,z | z B,4 z z2 |
+Cz z2 z2 A,z | z B,z2 z2 Cz | Cz z2 z2 A,z | z B,4 z z2 |
+CzCz z A,z2 | B,z z Cz2 A,z | z B,z Cz2 z2 | CB,A,z z4 |
+CzCz z A,z2 | B,z z Cz2 A,z | z B,z Cz2 z2 | CB,A,z z4 |
+Cz z2 z4 | z8 | Cz z2 z4 | z8 |
+Cz z2 z4 | z8 | Cz z2 z4 | z8 |
+Cz z A,z z2 | Cz z A,z z2 | Cz z A,z z2 | CB,A,z z4 |
+Cz z A,z z2 | Cz z A,z z2 | Cz z A,z z2 | CB,A,CB,A,CB,A, |
+%% Section 8: Void (bars 257-288) - minimal
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 9: Night Drive (bars 289-336) - sparse fills
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z6 A,B, |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z6 A,B, |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z6 A,B, |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | CB,A,z CB,A,z |
+%% Section 10: Peacock (bars 337-368) - glam fills
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z8 | z8 | z8 |
+CCCB,B,B,A,A, | CCCB,B,B,A,A, | CCCB,B,B,A,A, | CCCB,B,B,A,A, |
+%% Section 11: Cathedral (bars 369-400) - epic
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 CB,A,z |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 A,B,Cz |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | CB,A,CB,A,CB,A, |
+%% Section 12: Fade to Static (bars 401-416)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

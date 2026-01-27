@@ -1,0 +1,81 @@
+X:1
+T:Voltage Cathedral - Electric Piano
+M:4/4
+L:1/8
+Q:1/4=110
+K:E
+%% Rhodes-style electric piano
+%% Section 1-2: tacet (bars 1-64)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 3: Strut (bars 65-96) - glam electric piano
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | [A,EA]4 z4 | z4 [A,EA]2 z2 |
+[B,,^D,F,B,]4 z4 | z4 [B,,^D,F,B,]2 z2 | [E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 |
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | [A,EA]4 z4 | z4 [A,EA]2 z2 |
+[B,,^D,F,B,]4 z4 | z4 [B,,^D,F,B,]2 z2 | [E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 |
+[E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 |
+[A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]4 z4 | [B,,^D,F,B,]4 z4 |
+[E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 |
+[A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]2 z2 [^G,^D^G]2 z2 | [B,,^D,F,B,]4 z4 | [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] z4 |
+%% Section 4-7: tacet (bars 97-256)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 8: Void (bars 257-288) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 9: Night Drive (bars 289-336) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - glam returns
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | [A,EA]4 z4 | z4 [A,EA]2 z2 |
+[B,,^D,F,B,]4 z4 | z4 [B,,^D,F,B,]2 z2 | [E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 |
+[E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 |
+[A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]2 z2 [^G,^D^G]2 z2 | [B,,^D,F,B,]4 z4 | [E,^G,B,E]4 z4 |
+[E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 |
+[E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 |
+[A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]2 z2 [^G,^D^G]2 z2 | [A,EA]2 z2 [^G,^D^G]2 z2 |
+[B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] | [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] | [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] | [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] [B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,][B,,^D,F,B,] |
+%% Section 11: Cathedral (bars 369-400) - epic piano
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | [E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 |
+[D,A,D]4 z4 | z4 [D,A,D]2 z2 | [^C,^G,^C]4 z4 | z4 [^C,^G,^C]2 z2 |
+[A,EA]4 z4 | z4 [A,EA]2 z2 | [^G,^D^G]4 z4 | z4 [^G,^D^G]2 z2 |
+[B,,^D,F,B,]4 z4 | z4 [B,,^D,F,B,]2 z2 | [B,,^D,F,B,]4 z4 | z4 [B,,^D,F,B,]2 z2 |
+[E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 | [E,^G,B,E]2 z2 [^D,^A,^D]2 z2 |
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | [D,A,D]4 z4 | z4 [D,A,D]2 z2 |
+[A,EA]4 z4 | z4 [A,EA]2 z2 | [B,,^D,F,B,]4 z4 | z4 [B,,^D,F,B,]2 z2 |
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | [E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 |
+%% Section 12: Fade to Static (bars 401-416)
+[E,^G,B,E]4 z4 | z4 [E,^G,B,E]2 z2 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |

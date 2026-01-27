@@ -1,0 +1,122 @@
+X:1
+T:Voltage Cathedral - Chord Reference (MUTE)
+M:4/4
+L:1/4
+Q:1/4=110
+K:E
+%% Section 1: Ignition (bars 1-32) - Passenger motorik drone
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [A,E,A]4 | [A,E,A]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+%% Section 2: Nerve Endings (bars 33-64) - DEVO angular
+[E,B,E]4 | [D,A,D]4 | [E,B,E]4 | [D,A,D]4 |
+[E,B,E]4 | [D,A,D]4 | [A,E,A]4 | [E,B,E]4 |
+[E,B,E]4 | [D,A,D]4 | [E,B,E]4 | [D,A,D]4 |
+[E,B,E]4 | [D,A,D]4 | [A,E,A]4 | [E,B,E]4 |
+[E,B,E]2 [D,A,D]2 | [E,B,E]2 [D,A,D]2 | [E,B,E]2 [D,A,D]2 | [A,E,A]4 |
+[E,B,E]2 [D,A,D]2 | [E,B,E]2 [D,A,D]2 | [E,B,E]2 [D,A,D]2 | [A,E,A]4 |
+[E,B,E] [D,A,D] [E,B,E] [D,A,D] | [E,B,E] [D,A,D] [E,B,E] [D,A,D] | [A,E,A]4 | [B,,F,B,]4 |
+[E,B,E] [D,A,D] [E,B,E] [D,A,D] | [E,B,E] [D,A,D] [E,B,E] [D,A,D] | [A,E,A]4 | [B,,F,B,]4 |
+%% Section 3: Strut (bars 65-96) - Queen Bitch glam
+[E,B,E]4 | [E,B,E]4 | [A,E,A]4 | [A,E,A]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [A,E,A]4 | [A,E,A]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [^D,^A,^D]4 | [E,B,E]4 | [^D,^A,^D]4 |
+[A,E,A]4 | [^G,^D,^G]4 | [A,E,A]4 | [B,,F,B,]4 |
+[E,B,E]4 | [^D,^A,^D]4 | [E,B,E]4 | [^D,^A,^D]4 |
+[A,E,A]4 | [^G,^D,^G]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+%% Section 4: Dissolve (bars 97-128) - cinematic transition
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[^C,^G,^C]4 | [^C,^G,^C]4 | [^C,^G,^C]4 | [^C,^G,^C]4 |
+[A,E,A]4 | [A,E,A]4 | [A,E,A]4 | [A,E,A]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[^C,^G,^C]4 | [^C,^G,^C]4 | [^C,^G,^C]4 | [^C,^G,^C]4 |
+[A,E,A]4 | [A,E,A]4 | [^F,^C,^F]4 | [^F,^C,^F]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+%% Section 5: Ping Island (bars 129-176) - Mothersbaugh cinematic
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [^G,^D,^G]4 | [^G,^D,^G]4 |
+[A,E,A]4 | [A,E,A]4 | [A,E,A]4 | [A,E,A]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[^C,^G,^C]4 | [^C,^G,^C]4 | [^C,^G,^C]4 | [^C,^G,^C]4 |
+[A,E,A]4 | [A,E,A]4 | [A,E,A]4 | [A,E,A]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [^G,^D,^G]4 | [^G,^D,^G]4 |
+[A,E,A]4 | [A,E,A]4 | [^F,^C,^F]4 | [^F,^C,^F]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+%% Section 6: Collision (bars 177-208) - all influences
+[E,B,E]4 | [D,A,D]4 | [A,E,A]4 | [E,B,E]4 |
+[E,B,E]4 | [^D,^A,^D]4 | [A,E,A]4 | [B,,F,B,]4 |
+[E,B,E]4 | [D,A,D]4 | [^C,^G,^C]4 | [E,B,E]4 |
+[A,E,A]4 | [^G,^D,^G]4 | [B,,F,B,]4 | [E,B,E]4 |
+[E,B,E]2 [D,A,D]2 | [A,E,A]2 [B,,F,B,]2 | [E,B,E]2 [^D,^A,^D]2 | [E,B,E]4 |
+[E,B,E]2 [D,A,D]2 | [^C,^G,^C]2 [B,,F,B,]2 | [A,E,A]2 [^G,^D,^G]2 | [E,B,E]4 |
+[E,B,E]4 | [D,A,D]4 | [^C,^G,^C]4 | [B,,F,B,]4 |
+[A,E,A]4 | [^G,^D,^G]4 | [B,,F,B,]4 | [E,B,E]4 |
+%% Section 7: Spasm (bars 209-256) - DEVO dominant
+[E,B,E]2 z2 | [D,A,D]2 z2 | [E,B,E]2 z2 | [D,A,D]2 z2 |
+[E,B,E] z [D,A,D] z | [E,B,E] z [D,A,D] z | [A,E,A]2 z2 | [E,B,E]2 z2 |
+[E,B,E]2 z2 | [D,A,D]2 z2 | [E,B,E]2 z2 | [D,A,D]2 z2 |
+[E,B,E] z [D,A,D] z | [E,B,E] z [D,A,D] z | [B,,F,B,]2 z2 | [E,B,E]2 z2 |
+[E,B,E] z z [D,A,D] | z [E,B,E] z [D,A,D] | [E,B,E] z z [D,A,D] | z [A,E,A] z2 |
+[E,B,E] z z [D,A,D] | z [E,B,E] z [D,A,D] | [E,B,E] z z [D,A,D] | z [B,,F,B,] z2 |
+[E,B,E] [D,A,D] z [E,B,E] | [D,A,D] z [E,B,E] [D,A,D] | z [E,B,E] [D,A,D] z | [A,E,A]4 |
+[E,B,E] [D,A,D] z [E,B,E] | [D,A,D] z [E,B,E] [D,A,D] | z [E,B,E] [D,A,D] z | [B,,F,B,]4 |
+[E,B,E]2 z2 | [D,A,D]2 z2 | [E,B,E]2 z2 | [A,E,A]2 z2 |
+[E,B,E]2 z2 | [D,A,D]2 z2 | [E,B,E]2 z2 | [B,,F,B,]2 z2 |
+[E,B,E] z [D,A,D] z | [E,B,E] z [D,A,D] z | [E,B,E] z [D,A,D] z | [A,E,A] z z2 |
+[E,B,E] z [D,A,D] z | [E,B,E] z [D,A,D] z | [E,B,E] z [D,A,D] z | [E,B,E]4 |
+%% Section 8: Void (bars 257-288) - sparse breakdown
+z4 | z4 | [E,B,E]4 | z4 |
+z4 | z4 | [E,B,E]4 | z4 |
+z4 | [^C,^G,^C]4 | z4 | z4 |
+z4 | [A,E,A]4 | z4 | z4 |
+[E,B,E]4 | z4 | z4 | z4 |
+z4 | [^C,^G,^C]4 | z4 | z4 |
+z4 | z4 | [A,E,A]4 | z4 |
+z4 | z4 | [B,,F,B,]4 | z4 |
+%% Section 9: Night Drive (bars 289-336) - Passenger returns
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [A,E,A]4 | [A,E,A]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [A,E,A]4 | [A,E,A]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+%% Section 10: Peacock (bars 337-368) - glam peak
+[E,B,E]4 | [E,B,E]4 | [A,E,A]4 | [A,E,A]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [^D,^A,^D]4 | [E,B,E]4 | [^D,^A,^D]4 |
+[A,E,A]4 | [^G,^D,^G]4 | [B,,F,B,]4 | [E,B,E]4 |
+[E,B,E]4 | [^D,^A,^D]4 | [E,B,E]4 | [^D,^A,^D]4 |
+[E,B,E]4 | [^D,^A,^D]4 | [E,B,E]4 | [^D,^A,^D]4 |
+[A,E,A]4 | [^G,^D,^G]4 | [A,E,A]4 | [^G,^D,^G]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+%% Section 11: Cathedral (bars 369-400) - epic convergence
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[D,A,D]4 | [D,A,D]4 | [^C,^G,^C]4 | [^C,^G,^C]4 |
+[A,E,A]4 | [A,E,A]4 | [^G,^D,^G]4 | [^G,^D,^G]4 |
+[B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [^D,^A,^D]4 | [^D,^A,^D]4 |
+[E,B,E]4 | [E,B,E]4 | [D,A,D]4 | [D,A,D]4 |
+[A,E,A]4 | [A,E,A]4 | [B,,F,B,]4 | [B,,F,B,]4 |
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+%% Section 12: Fade to Static (bars 401-416) - outro
+[E,B,E]4 | [E,B,E]4 | [E,B,E]4 | [E,B,E]4 |
+[E,B,E]4 | [E,B,E]4 | z4 | z4 |
+[E,B,E]4 | z4 | z4 | z4 |
+[E,B,E]4 | z4 | z4 | z4 |

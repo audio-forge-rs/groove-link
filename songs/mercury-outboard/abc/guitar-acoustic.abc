@@ -1,0 +1,43 @@
+X:1
+T:Mercury Outboard
+C:Brian Edwards
+M:4/4
+L:1/8
+Q:1/4=78
+K:G
+%%MIDI program 25
+%%MIDI chordprog -1
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G2 c2 G2 E2 |
+E,2 B,2 E2 G2 | B2 e2 B2 G2 |
+D2 A,2 D2 F2 | A2 d2 A2 F2 |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G2 c2 G2 E2 |
+E,2 B,2 E2 G2 | D2 A,2 D2 F2 |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G,2 D2 G2 B2 |
+G,2 D2 G2 B2 | d4 z4 |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G2 c2 G2 E2 |
+E,2 B,2 E2 G2 | D2 A,2 D2 F2 |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G,2 D2 G2 B2 |
+G,2 D2 G2 B2 | d4 z4 |
+[G,2D2G2]z2 [G,2D2G2]z2 | [C2G,2C2]z2 [C2G,2C2]z2 |
+[E,2B,2E2]z2 [E,2B,2E2]z2 | [D2A,2D2]z2 [D2A,2D2]z2 |
+[G,2D2G2]z2 [G,2D2G2]z2 | [C2G,2C2]z2 [C2G,2C2]z2 |
+[D2A,2D2]z2 [D2A,2D2]z2 | [G,8D8G8] |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G2 c2 G2 E2 |
+E,2 B,2 E2 G2 | D2 A,2 D2 F2 |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G,2 D2 G2 B2 |
+G,2 D2 G2 B2 | d4 z4 |
+[G,2D2G2]z2 [G,2D2G2]z2 | [C2G,2C2]z2 [C2G,2C2]z2 |
+[E,2B,2E2]z2 [E,2B,2E2]z2 | [D2A,2D2]z2 [D2A,2D2]z2 |
+[G,2D2G2]z2 [G,2D2G2]z2 | [C2G,2C2]z2 [C2G,2C2]z2 |
+[D2A,2D2]z2 [D2A,2D2]z2 | [G,8D8G8] |
+G,2 D2 G2 B2 | d2 g2 d2 B2 |
+C2 G,2 C2 E2 | G4 z4 |
+G,2 D2 G2 B2 | d4 z4 |
+z8 | G,8 |

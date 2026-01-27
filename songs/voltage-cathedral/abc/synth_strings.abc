@@ -1,0 +1,85 @@
+X:1
+T:Voltage Cathedral - Synth Strings
+M:4/4
+L:1/1
+Q:1/4=110
+K:E
+%% Cinematic string pads
+%% Section 1-4: Ignition through Dissolve (bars 1-128) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 5: Ping Island (bars 129-176) - cinematic strings enter
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [^G^DB] | [^G^DB] |
+[AEA] | [AEA] | [AEA] | [AEA] |
+[BFB] | [BFB] | [BFB] | [BFB] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[^C^G^C] | [^C^G^C] | [^C^G^C] | [^C^G^C] |
+[AEA] | [AEA] | [AEA] | [AEA] |
+[BFB] | [BFB] | [BFB] | [BFB] |
+[E^GB] | [E^GB] | [^G^DB] | [^G^DB] |
+[AEA] | [AEA] | [^F^CA] | [^F^CA] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[BFB] | [BFB] | [BFB] | [BFB] |
+%% Section 6: Collision (bars 177-208) - dramatic strings
+[E^GB] | [DAD] | [AEA] | [E^GB] |
+[E^GB] | [^D^A^D] | [AEA] | [BFB] |
+[E^GB] | [DAD] | [^C^G^C] | [E^GB] |
+[AEA] | [^G^D^G] | [BFB] | [E^GB] |
+[E^GB] | [AEA] | [E^GB] | [E^GB] |
+[E^GB] | [^C^G^C] | [AEA] | [E^GB] |
+[E^GB] | [DAD] | [^C^G^C] | [BFB] |
+[AEA] | [^G^D^G] | [BFB] | [E^GB] |
+%% Section 7-8: Spasm through Void (bars 209-288) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 9: Night Drive (bars 289-336) - subtle strings
+z | z | z | z |
+z | z | z | z |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [AEA] | [AEA] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [BFB] | [BFB] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [AEA] | [AEA] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | [E^GB] | [BFB] | [BFB] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+%% Section 10: Peacock (bars 337-368) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 11: Cathedral (bars 369-400) - epic strings
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[DAD] | [DAD] | [^C^G^C] | [^C^G^C] |
+[AEA] | [AEA] | [^G^D^G] | [^G^D^G] |
+[BFB] | [BFB] | [BFB] | [BFB] |
+[E^GB] | [E^GB] | [^D^A^D] | [^D^A^D] |
+[E^GB] | [E^GB] | [DAD] | [DAD] |
+[AEA] | [AEA] | [BFB] | [BFB] |
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+%% Section 12: Fade to Static (bars 401-416)
+[E^GB] | [E^GB] | [E^GB] | [E^GB] |
+[E^GB] | z | z | z |
+[E^GB] | z | z | z |
+z | z | z | z |

@@ -1,0 +1,10 @@
+song:
+  title: "Experimental 003"
+  tempo: 57
+  time: 4/4
+  key: none
+
+tracks:
+  main:
+    instrument: Polymer
+    part: experimental_003.abc

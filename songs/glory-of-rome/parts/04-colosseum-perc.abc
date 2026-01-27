@@ -1,0 +1,16 @@
+X:1
+T:Colosseum Gates - Percussion Hits
+M:4/4
+L:1/8
+Q:1/4=95
+K:C
+%%MIDI program 47
+% Bars 76-100: Building tension, crowd anticipation
+% Sparse at first, then intensifying
+C2 z6 | z8 | z4 C2 z2 | z8 |
+C2 z2 C2 z2 | z8 | z4 C2 z2 | C2 z2 z4 |
+C2 z2 C2 z2 | z4 C2 z2 | C2 z2 C2 z2 | z4 C2 C2 |
+C2 z2 C2 z2 | C2 z2 C2 z2 | C2 z2 C2 z2 | C2 C2 C2 z2 |
+C2 z2 C2 z2 | C2 z2 C2 C2 | C2 z2 C2 z2 | C2 C2 C2 C2 |
+C2 z2 C2 z2 | C2 C2 C2 z2 | C2 z2 C2 C2 | C2 C2 C2 C2 |
+C2 C2 C2 C2 |

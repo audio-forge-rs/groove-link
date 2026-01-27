@@ -1,0 +1,99 @@
+X:1
+T:Voltage Cathedral - Synth Noise
+M:4/4
+L:1/1
+Q:1/4=110
+K:C
+%% Filtered noise sweeps (use high C as trigger)
+%% Section 1-3: tacet (bars 1-96)
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 4: Dissolve (bars 97-128) - noise swells begin
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+z | z | z | z |
+c' | z | c' | z |
+c' | z | c' | z |
+c' | z | z | z |
+c' | z | z | z |
+%% Section 5: Ping Island (bars 129-176) - cinematic noise
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+%% Section 6: Collision (bars 177-208) - with all
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+%% Section 7: Spasm (bars 209-256) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 8: Void (bars 257-288) - sparse noise
+z | z | c' | z |
+z | z | c' | z |
+z | c' | z | z |
+z | c' | z | z |
+c' | z | z | z |
+z | c' | z | z |
+z | z | c' | z |
+z | z | c' | z |
+%% Section 9: Night Drive (bars 289-336) - constant hiss
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+%% Section 10: Peacock (bars 337-368) - tacet
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+z | z | z | z | z | z | z | z |
+%% Section 11: Cathedral (bars 369-400) - epic noise
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+c' | c' | c' | c' |
+%% Section 12: Fade to Static (bars 401-416)
+c' | c' | c' | c' |
+c' | z | z | z |
+c' | z | z | z |
+z | z | z | z |

@@ -1,0 +1,10 @@
+song:
+  title: "Avant-garde Study 001"
+  tempo: 69
+  time: 5/8
+  key: Elyd
+
+tracks:
+  main:
+    instrument: Polymer
+    part: avantgarde_001.abc

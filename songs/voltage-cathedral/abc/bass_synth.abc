@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Synth Bass
+M:4/4
+L:1/8
+Q:1/4=110
+K:E
+%% Main synth bass - Passenger/motorik pulse
+%% Section 1: Ignition (bars 1-32) - driving 8th notes
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+%% Section 2: Nerve Endings (bars 33-64) - angular syncopation
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, |
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, |
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,E,E,E, |
+E,z E,z D,z D,z | E,z E,z D,z D,z | E,z E,z D,z D,z | A,,A,,A,,A,, A,,A,,A,,A,, |
+E,z E,z D,z D,z | E,z E,z D,z D,z | E,z E,z D,z D,z | A,,A,,A,,A,, A,,A,,A,,A,, |
+E,z D,z E,z D,z | E,z D,z E,z D,z | A,,A,,A,,A,, A,,A,,A,,A,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,z D,z E,z D,z | E,z D,z E,z D,z | A,,A,,A,,A,, A,,A,,A,,A,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+%% Section 3: Strut (bars 65-96) - glam stomp
+E,4 z4 | E,4 z4 | A,,4 z4 | A,,4 z4 |
+B,,4 z4 | B,,4 z4 | E,4 z4 | E,4 z4 |
+E,4 z4 | E,4 z4 | A,,4 z4 | A,,4 z4 |
+B,,4 z4 | B,,4 z4 | E,4 z4 | E,4 z4 |
+E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 |
+A,,4 ^G,,4 | A,,4 ^G,,4 | A,,4 z4 | B,,4 z4 |
+E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 |
+A,,4 ^G,,4 | A,,4 ^G,,4 | B,,4 z4 | B,,B,,B,,B,, B,,B,,B,,B,, |
+%% Section 4: Dissolve (bars 97-128) - thinning out
+E,4 z4 | E,4 z4 | E,4 z4 | E,4 z4 |
+^C,4 z4 | ^C,4 z4 | ^C,4 z4 | ^C,4 z4 |
+A,,4 z4 | A,,4 z4 | A,,4 z4 | A,,4 z4 |
+B,,4 z4 | B,,4 z4 | B,,4 z4 | B,,4 z4 |
+E,4 z4 | z8 | E,4 z4 | z8 |
+^C,4 z4 | z8 | ^C,4 z4 | z8 |
+A,,4 z4 | z8 | z8 | z8 |
+B,,4 z4 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - cinematic, sparse
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+E,4 z4 | z8 | E,4 z4 | z8 |
+B,,4 z4 | z8 | B,,4 z4 | z8 |
+E,4 z4 | E,4 z4 | E,4 z4 | E,4 z4 |
+^C,4 z4 | ^C,4 z4 | ^C,4 z4 | ^C,4 z4 |
+A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 z2 |
+B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | ^G,,^G,,^G,,^G,, ^G,,^G,,^G,,^G,, | ^G,,^G,,^G,,^G,, ^G,,^G,,^G,,^G,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, | ^F,,^F,,^F,,^F,, ^F,,^F,,^F,,^F,, | ^F,,^F,,^F,,^F,, ^F,,^F,,^F,,^F,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+%% Section 6: Collision (bars 177-208) - everything blends
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | A,,A,,A,,A,, A,,A,,A,,A,, | E,E,E,E, E,E,E,E, |
+E,4 ^D,4 | E,4 ^D,4 | A,,A,,A,,A,, A,,A,,A,,A,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | ^C,^C,^C,^C, ^C,^C,^C,^C, | E,E,E,E, E,E,E,E, |
+A,,4 ^G,,4 | A,,4 ^G,,4 | B,,B,,B,,B,, B,,B,,B,,B,, | E,E,E,E, E,E,E,E, |
+E,z D,z E,z D,z | A,,2 z2 B,,2 z2 | E,4 ^D,4 | E,E,E,E, E,E,E,E, |
+E,z D,z E,z D,z | ^C,2 z2 B,,2 z2 | A,,4 ^G,,4 | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | ^C,^C,^C,^C, ^C,^C,^C,^C, | B,,B,,B,,B,, B,,B,,B,,B,, |
+A,,A,,A,,A,, A,,A,,A,,A,, | ^G,,^G,,^G,,^G,, ^G,,^G,,^G,,^G,, | B,,B,,B,,B,, B,,B,,B,,B,, | E,E,E,E, E,E,E,E, |
+%% Section 7: Spasm (bars 209-256) - jerky stabs
+E,2 z2 z4 | D,z z2 D,z z2 | E,2 z2 z4 | D,z z2 D,z z2 |
+E,z z E,z2 z2 | E,z z E,z2 z2 | A,,2 z2 z4 | E,2 z2 z4 |
+E,2 z2 z4 | D,z z2 D,z z2 | E,2 z2 z4 | D,z z2 D,z z2 |
+E,z z E,z2 z2 | E,z z E,z2 z2 | B,,2 z2 z4 | E,2 z2 z4 |
+E,z z2 z2 D,z | z E,z2 z2 D,z | E,z z2 z2 D,z | z A,,4 z z2 |
+E,z z2 z2 D,z | z E,z2 z2 D,z | E,z z2 z2 D,z | z B,,4 z z2 |
+E,z D,z z E,z2 | D,z z E,z2 D,z | z E,z D,z2 z2 | A,,4 z4 |
+E,z D,z z E,z2 | D,z z E,z2 D,z | z E,z D,z2 z2 | B,,4 z4 |
+E,2 z2 z4 | D,z z2 D,z z2 | E,2 z2 z4 | A,,2 z2 z4 |
+E,2 z2 z4 | D,z z2 D,z z2 | E,2 z2 z4 | B,,2 z2 z4 |
+E,z z E,z2 z2 | E,z z E,z2 z2 | E,z z E,z2 z2 | A,,z z z z4 |
+E,z z E,z2 z2 | E,z z E,z2 z2 | E,z z E,z2 z2 | E,4 z4 |
+%% Section 8: Void (bars 257-288) - minimal bass
+z8 | z8 | E,4 z4 | z8 |
+z8 | z8 | E,4 z4 | z8 |
+z8 | ^C,4 z4 | z8 | z8 |
+z8 | A,,4 z4 | z8 | z8 |
+E,4 z4 | z8 | z8 | z8 |
+z8 | ^C,4 z4 | z8 | z8 |
+z8 | z8 | A,,4 z4 | z8 |
+z8 | z8 | B,,4 z4 | z8 |
+%% Section 9: Night Drive (bars 289-336) - motorik returns
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+%% Section 10: Peacock (bars 337-368) - glam bass
+E,4 z4 | E,4 z4 | A,,4 z4 | A,,4 z4 |
+B,,4 z4 | B,,4 z4 | E,4 z4 | E,4 z4 |
+E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 |
+A,,4 ^G,,4 | A,,4 ^G,,4 | B,,4 z4 | E,4 z4 |
+E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 |
+E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 | E,4 ^D,4 |
+A,,4 ^G,,4 | A,,4 ^G,,4 | A,,4 ^G,,4 | A,,4 ^G,,4 |
+B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+%% Section 11: Cathedral (bars 369-400) - epic drone
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+D,D,D,D, D,D,D,D, | D,D,D,D, D,D,D,D, | ^C,^C,^C,^C, ^C,^C,^C,^C, | ^C,^C,^C,^C, ^C,^C,^C,^C, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, | ^G,,^G,,^G,,^G,, ^G,,^G,,^G,,^G,, | ^G,,^G,,^G,,^G,, ^G,,^G,,^G,,^G,, |
+B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | ^D,^D,^D,^D, ^D,^D,^D,^D, | ^D,^D,^D,^D, ^D,^D,^D,^D, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | D,D,D,D, D,D,D,D, | D,D,D,D, D,D,D,D, |
+A,,A,,A,,A,, A,,A,,A,,A,, | A,,A,,A,,A,, A,,A,,A,,A,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+%% Section 12: Fade to Static (bars 401-416)
+E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, | E,E,E,E, E,E,E,E, |
+E,4 z4 | E,4 z4 | z8 | z8 |
+E,4 z4 | z8 | z8 | z8 |
+E,4 z4 | z8 | z8 | z8 |

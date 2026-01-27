@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Sub Bass
+M:4/4
+L:1/4
+Q:1/4=110
+K:E
+%% Deep sub bass for weight in key sections
+%% Section 1: Ignition (bars 1-32) - tacet
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+%% Section 2: Nerve Endings (bars 33-64) - tacet
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+%% Section 3: Strut (bars 65-96) - tacet
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+%% Section 4: Dissolve (bars 97-128) - tacet
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+%% Section 5: Ping Island (bars 129-176) - cinematic sub enters
+z4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |
+E,,4 | z4 | E,,4 | z4 |
+B,,,4 | z4 | B,,,4 | z4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+^C,,4 | ^C,,4 | ^C,,4 | ^C,,4 |
+A,,,4 | A,,,4 | A,,,4 | A,,,4 |
+B,,,4 | B,,,4 | B,,,4 | B,,,4 |
+E,,4 | E,,4 | ^G,,,4 | ^G,,,4 |
+A,,,4 | A,,,4 | ^F,,,4 | ^F,,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+B,,,4 | B,,,4 | B,,,4 | B,,,4 |
+%% Section 6: Collision (bars 177-208) - full sub
+E,,4 | D,,4 | A,,,4 | E,,4 |
+E,,4 | ^D,,4 | A,,,4 | B,,,4 |
+E,,4 | D,,4 | ^C,,4 | E,,4 |
+A,,,4 | ^G,,,4 | B,,,4 | E,,4 |
+E,,2 D,,2 | A,,,2 B,,,2 | E,,2 ^D,,2 | E,,4 |
+E,,2 D,,2 | ^C,,2 B,,,2 | A,,,2 ^G,,,2 | E,,4 |
+E,,4 | D,,4 | ^C,,4 | B,,,4 |
+A,,,4 | ^G,,,4 | B,,,4 | E,,4 |
+%% Section 7: Spasm (bars 209-256) - jerky sub
+E,,2 z2 | D,,z z2 | E,,2 z2 | D,,z z2 |
+E,,z E,,z | E,,z E,,z | A,,,2 z2 | E,,2 z2 |
+E,,2 z2 | D,,z z2 | E,,2 z2 | D,,z z2 |
+E,,z E,,z | E,,z E,,z | B,,,2 z2 | E,,2 z2 |
+E,,z z D,,z | z E,,z D,,z | E,,z z D,,z | z A,,,4 |
+E,,z z D,,z | z E,,z D,,z | E,,z z D,,z | z B,,,4 |
+E,,z D,,z E,,z | D,,z E,,z D,,z | z E,,z D,,z | A,,,4 |
+E,,z D,,z E,,z | D,,z E,,z D,,z | z E,,z D,,z | B,,,4 |
+E,,2 z2 | D,,z z2 | E,,2 z2 | A,,,2 z2 |
+E,,2 z2 | D,,z z2 | E,,2 z2 | B,,,2 z2 |
+E,,z E,,z | E,,z E,,z | E,,z E,,z | A,,,z z2 |
+E,,z E,,z | E,,z E,,z | E,,z E,,z | E,,4 |
+%% Section 8: Void (bars 257-288) - minimal
+z4 | z4 | E,,4 | z4 |
+z4 | z4 | E,,4 | z4 |
+z4 | ^C,,4 | z4 | z4 |
+z4 | A,,,4 | z4 | z4 |
+E,,4 | z4 | z4 | z4 |
+z4 | ^C,,4 | z4 | z4 |
+z4 | z4 | A,,,4 | z4 |
+z4 | z4 | B,,,4 | z4 |
+%% Section 9: Night Drive (bars 289-336) - full sub drone
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | A,,,4 | A,,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | B,,,4 | B,,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | A,,,4 | A,,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | E,,4 | B,,,4 | B,,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+%% Section 10: Peacock (bars 337-368) - glam sub
+E,,4 | E,,4 | A,,,4 | A,,,4 |
+B,,,4 | B,,,4 | E,,4 | E,,4 |
+E,,4 | ^D,,4 | E,,4 | ^D,,4 |
+A,,,4 | ^G,,,4 | B,,,4 | E,,4 |
+E,,4 | ^D,,4 | E,,4 | ^D,,4 |
+E,,4 | ^D,,4 | E,,4 | ^D,,4 |
+A,,,4 | ^G,,,4 | A,,,4 | ^G,,,4 |
+B,,,4 | B,,,4 | B,,,4 | B,,,4 |
+%% Section 11: Cathedral (bars 369-400) - epic drone
+E,,4 | E,,4 | E,,4 | E,,4 |
+D,,4 | D,,4 | ^C,,4 | ^C,,4 |
+A,,,4 | A,,,4 | ^G,,,4 | ^G,,,4 |
+B,,,4 | B,,,4 | B,,,4 | B,,,4 |
+E,,4 | E,,4 | ^D,,4 | ^D,,4 |
+E,,4 | E,,4 | D,,4 | D,,4 |
+A,,,4 | A,,,4 | B,,,4 | B,,,4 |
+E,,4 | E,,4 | E,,4 | E,,4 |
+%% Section 12: Fade to Static (bars 401-416)
+E,,4 | E,,4 | E,,4 | E,,4 |
+E,,4 | z4 | z4 | z4 |
+E,,4 | z4 | z4 | z4 |
+z4 | z4 | z4 | z4 |

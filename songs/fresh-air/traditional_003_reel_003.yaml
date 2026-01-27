@@ -1,0 +1,10 @@
+song:
+  title: "Reel 003"
+  tempo: 126
+  time: 4/4
+  key: A
+
+tracks:
+  main:
+    instrument: Polymer
+    part: traditional_003.abc

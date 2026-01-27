@@ -1,0 +1,18 @@
+X:1
+T:Eternal Empire - Horns
+M:4/4
+L:1/4
+Q:1/4=95
+K:Dm
+%%MIDI program 60
+% Bars 126-150: Majestic horn melody resolving
+D2 F2 | A2 d2 | d2 c A | d4 |
+D2 G2 | B2 d2 | c2 A2 | A4 |
+D2 F2 | A2 d2 | d2 c A | d2 ^c2 |
+% Shifting to major
+D2 ^F2 | A2 d2 | B2 G2 | A4 |
+% D major finale
+K:D
+D2 ^F2 | A2 d2 | d2 B2 | A4 |
+D2 ^F2 | A2 B2 | A2 ^F2 | D4 |
+D4 |

@@ -1,0 +1,10 @@
+song:
+  title: "Avant-garde Study 004"
+  tempo: 62
+  time: 5/8
+  key: Floc
+
+tracks:
+  main:
+    instrument: Polymer
+    part: avantgarde_004.abc

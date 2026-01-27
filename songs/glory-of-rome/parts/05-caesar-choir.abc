@@ -1,0 +1,16 @@
+X:1
+T:Ave Caesar - Choir
+M:4/4
+L:1/2
+Q:1/4=95
+K:Dm
+%%MIDI program 52
+% Bars 101-125: Climactic glory, full choir power
+% Grand chords, triumphant
+[D,A,DF]4 | [D,A,DF]4 | [D,A,DF]2 [F,A,FA]2 | [D,A,DF]4 |
+[G,B,DG]4 | [G,B,DG]4 | [A,CEA]4 | [A,CEA]4 |
+[D,A,DF]4 | [D,A,DF]4 | [D,A,DF]2 [F,A,FA]2 | [D,A,DF]4 |
+[B,,DFB,]4 | [C,EGc]4 | [D,A,DF]4 | [D,A,DF]4 |
+[D,A,DF]4 | [G,B,DG]4 | [A,CEA]4 | [D,A,DF]4 |
+[D,A,DF]4 | [D,A,DF]2 [G,B,DG]2 | [A,CEA]4 | [D,A,DF]4 |
+[D,A,DF]4 |

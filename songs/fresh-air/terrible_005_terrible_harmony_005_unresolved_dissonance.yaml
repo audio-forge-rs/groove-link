@@ -1,0 +1,10 @@
+song:
+  title: "Terrible Harmony 005 - Unresolved Dissonance"
+  tempo: 84
+  time: 4/4
+  key: G
+
+tracks:
+  main:
+    instrument: Polymer
+    part: terrible_005.abc

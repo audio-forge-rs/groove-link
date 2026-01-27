@@ -1,0 +1,36 @@
+X:1
+T:Porch Light - Sparse Piano
+M:4/4
+L:1/4
+Q:1/4=95
+K:G
+% Sparse, tasteful piano fills - not playing constantly
+% Intro (4 bars) - piano enters gently
+z4 | z4 | z2 [EG]2 | z2 [FA]2 |
+% Verse 1 (16 bars) - very sparse, just accents
+z4 | z2 D2 | z4 | z2 [EG]2 |
+z4 | z2 B,2 | z4 | z2 [FA]2 |
+z4 | z2 D2 | z4 | z2 [EG]2 |
+z4 | z2 B,2 | z4 | z2 [DF]2 |
+% Chorus 1 (8 bars) - a bit more present
+[CE]2 z2 | z2 [GB]2 | [DF]2 z2 | z2 [GB]2 |
+[CE]2 z2 | z2 [DG]2 | [DF]2 z2 | z2 [GB]2 |
+% Verse 2 (16 bars) - sparse again
+z4 | z2 D2 | z4 | z2 [EG]2 |
+z4 | z2 B,2 | z4 | z2 [FA]2 |
+z4 | z2 D2 | z4 | z2 [EG]2 |
+z4 | z2 B,2 | z4 | z2 [DF]2 |
+% Chorus 2 (8 bars)
+[CE]2 z2 | z2 [GB]2 | [DF]2 z2 | z2 [GB]2 |
+[CE]2 z2 | z2 [DG]2 | [DF]2 z2 | z2 [GB]2 |
+% Bridge (8 bars) - melodic fill
+E2 G2 | E2 C2 | D2 G2 | A2 F2 |
+E2 G2 | E2 C2 | D2 F2 | A2 D2 |
+% Verse 3 short (8 bars)
+z4 | z2 D2 | z4 | z2 [EG]2 |
+z4 | z2 B,2 | z4 | z2 [FA]2 |
+% Chorus 3 (8 bars)
+[CE]2 z2 | z2 [GB]2 | [DF]2 z2 | z2 [GB]2 |
+[CE]2 z2 | z2 [DG]2 | [DF]2 z2 | z2 [GB]2 |
+% Outro (4 bars) - gentle ending
+[CE]2 z2 | [DF]2 z2 | [GB,]2 z2 | [G,B,D]4 |

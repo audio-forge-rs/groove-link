@@ -1,0 +1,10 @@
+song:
+  title: "Silence Study 002"
+  tempo: 56
+  time: 4/4
+  key: Em
+
+tracks:
+  main:
+    instrument: Polymer
+    part: silence_002.abc

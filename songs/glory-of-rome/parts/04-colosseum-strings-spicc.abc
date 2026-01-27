@@ -1,0 +1,16 @@
+X:1
+T:Colosseum Gates - Spiccato Strings
+M:4/4
+L:1/16
+Q:1/4=95
+K:Dm
+%%MIDI program 44
+% Bars 76-100: Tense, building intensity
+% Tremolo-like patterns getting more intense
+D,4 z4 D,4 z4 | z16 | D,4 z4 D,4 z4 | z8 D,4 z4 |
+D,4 z4 D,4 z4 | D,4 z4 D,4 z4 | z8 A,4 z4 | A,4 z4 A,4 z4 |
+D,4 D,4 D,4 z4 | D,4 z4 D,4 D,4 | D,4 D,4 D,4 z4 | D,4 A,4 D,4 A,4 |
+D,4 D,4 D,4 D,4 | z8 D,4 D,4 | D,4 D,4 D,4 D,4 | D,4 D,4 A,4 A,4 |
+D,D,D,D, D,D,D,D, D,D,D,D, z4 | D,D,D,D, z4 D,D,D,D, z4 | D,D,D,D, D,D,D,D, D,D,D,D, z4 | D,D,D,D, D,D,D,D, A,A,A,A, A,A,A,A, |
+D,D,D,D, D,D,D,D, D,D,D,D, D,D,D,D, | D,D,D,D, D,D,D,D, A,A,A,A, A,A,A,A, | D,D,D,D, D,D,D,D, D,D,D,D, D,D,D,D, | D,D,D,D, D,D,D,D, D,D,D,D, D,D,D,D, |
+D,D,D,D, D,D,D,D, D,D,D,D, D,D,D,D, |

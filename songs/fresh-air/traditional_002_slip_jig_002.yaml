@@ -1,0 +1,10 @@
+song:
+  title: "Slip Jig 002"
+  tempo: 106
+  time: 9/8
+  key: Am
+
+tracks:
+  main:
+    instrument: Polymer
+    part: traditional_002.abc

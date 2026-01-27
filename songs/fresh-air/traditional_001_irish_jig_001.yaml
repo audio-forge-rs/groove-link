@@ -1,0 +1,10 @@
+song:
+  title: "Irish Jig 001"
+  tempo: 118
+  time: 6/8
+  key: G
+
+tracks:
+  main:
+    instrument: Polymer
+    part: traditional_001.abc

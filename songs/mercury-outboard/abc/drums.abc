@@ -1,0 +1,23 @@
+X:1
+T:Mercury Outboard - Drums
+C:Brian Edwards
+M:4/4
+L:1/8
+Q:1/4=78
+K:C
+%%MIDI channel 10
+% Kick on C (36), Snare on D (38)
+% Intro - sparse
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+% Verse 1 - gentle groove
+C4 z4 | z4 D4 | C4 z4 | z4 D4 | C4 z4 | C4 D4 | C4 z4 | z4 D4 | C4 z4 | C4 D4 | C4 z4 | z4 D4 |
+% Verse 2 - same pattern
+C4 z4 | z4 D4 | C4 z4 | z4 D4 | C4 z4 | C4 D4 | C4 z4 | z4 D4 | C4 z4 | C4 D4 | C4 z4 | z4 D4 |
+% Chorus - fuller
+C4 C4 | D4 D4 | C4 C4 | D4 D4 | C4 C4 | D4 D4 | C4 C4 | D4 z4 |
+% Verse 3
+C4 z4 | z4 D4 | C4 z4 | z4 D4 | C4 z4 | C4 D4 | C4 z4 | z4 D4 | C4 z4 | C4 D4 | C4 z4 | z4 D4 |
+% Chorus 2 - fuller
+C4 C4 | D4 D4 | C4 C4 | D4 D4 | C4 C4 | D4 D4 | C4 C4 | D4 z4 |
+% Outro - fade
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |

@@ -1,0 +1,10 @@
+song:
+  title: "Terrible Harmony 002 - Parallel Fifths"
+  tempo: 113
+  time: 4/4
+  key: G
+
+tracks:
+  main:
+    instrument: Polymer
+    part: terrible_002.abc

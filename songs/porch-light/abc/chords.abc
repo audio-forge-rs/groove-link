@@ -1,0 +1,27 @@
+X:1
+T:Porch Light - Chord Reference (MUTE THIS TRACK)
+M:4/4
+L:1/4
+Q:1/4=95
+K:G
+%%MIDI program 0
+% Intro (4 bars)
+[G,B,D]4 | [G,B,D]4 | [C,E,G,]4 | [D,F,A,]4 |
+% Verse 1 (16 bars) - G G C C G G D D x2
+[G,B,D]4 | [G,B,D]4 | [C,E,G,]4 | [C,E,G,]4 | [G,B,D]4 | [G,B,D]4 | [D,F,A,]4 | [D,F,A,]4 |
+[G,B,D]4 | [G,B,D]4 | [C,E,G,]4 | [C,E,G,]4 | [G,B,D]4 | [G,B,D]4 | [D,F,A,]4 | [D,F,A,]4 |
+% Chorus 1 (8 bars) - C G D G C G D G
+[C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [G,B,D]4 | [C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [G,B,D]4 |
+% Verse 2 (16 bars)
+[G,B,D]4 | [G,B,D]4 | [C,E,G,]4 | [C,E,G,]4 | [G,B,D]4 | [G,B,D]4 | [D,F,A,]4 | [D,F,A,]4 |
+[G,B,D]4 | [G,B,D]4 | [C,E,G,]4 | [C,E,G,]4 | [G,B,D]4 | [G,B,D]4 | [D,F,A,]4 | [D,F,A,]4 |
+% Chorus 2 (8 bars)
+[C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [G,B,D]4 | [C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [G,B,D]4 |
+% Bridge (8 bars) - Em C G D Em C D D
+[E,G,B,]4 | [C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [E,G,B,]4 | [C,E,G,]4 | [D,F,A,]4 | [D,F,A,]4 |
+% Verse 3 short (8 bars)
+[G,B,D]4 | [G,B,D]4 | [C,E,G,]4 | [C,E,G,]4 | [G,B,D]4 | [G,B,D]4 | [D,F,A,]4 | [D,F,A,]4 |
+% Chorus 3 (8 bars)
+[C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [G,B,D]4 | [C,E,G,]4 | [G,B,D]4 | [D,F,A,]4 | [G,B,D]4 |
+% Outro (4 bars)
+[C,E,G,]4 | [D,F,A,]4 | [G,B,D]4 | [G,B,D]4 |

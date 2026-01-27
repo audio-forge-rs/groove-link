@@ -1,0 +1,10 @@
+song:
+  title: "Terrible Harmony 003 - Voice Crossing"
+  tempo: 106
+  time: 4/4
+  key: G
+
+tracks:
+  main:
+    instrument: Polymer
+    part: terrible_003.abc

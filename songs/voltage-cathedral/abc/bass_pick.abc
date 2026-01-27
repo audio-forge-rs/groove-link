@@ -1,0 +1,123 @@
+X:1
+T:Voltage Cathedral - Pick Bass
+M:4/4
+L:1/8
+Q:1/4=110
+K:E
+%% Pick bass for glam/rock sections
+%% Section 1: Ignition (bars 1-32) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 2: Nerve Endings (bars 33-64) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 3: Strut (bars 65-96) - glam rock bass enters
+E,2 z2 E,2 z2 | E,2 z2 E,2 E,z | A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 A,,z |
+B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 B,,z | E,2 z2 E,2 z2 | E,2 z2 E,2 E,z |
+E,2 z2 E,2 z2 | E,2 z2 E,2 E,z | A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 A,,z |
+B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 B,,z | E,2 z2 E,2 z2 | E,2 z2 E,2 E,z |
+E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 |
+A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 z2 A,,2 z2 | B,,2 z2 B,,2 z2 |
+E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 |
+A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 | B,,2 z2 B,,2 z2 | B,,B,,B,,B,, B,,B,,B,,B,, |
+%% Section 4: Dissolve (bars 97-128) - fading
+E,2 z2 z4 | E,2 z2 z4 | E,2 z2 z4 | E,2 z2 z4 |
+^C,2 z2 z4 | ^C,2 z2 z4 | ^C,2 z2 z4 | ^C,2 z2 z4 |
+A,,2 z2 z4 | A,,2 z2 z4 | z8 | z8 |
+B,,2 z2 z4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 5: Ping Island (bars 129-176) - tacet (cinematic)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 6: Collision (bars 177-208) - mixing styles
+E,2 z2 E,2 z2 | D,2 z2 D,2 z2 | A,,2 z2 A,,2 z2 | E,2 z2 E,2 z2 |
+E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | A,,2 z2 A,,2 z2 | B,,2 z2 B,,2 z2 |
+E,2 z2 E,2 z2 | D,2 z2 D,2 z2 | ^C,2 z2 ^C,2 z2 | E,2 z2 E,2 z2 |
+A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 | B,,2 z2 B,,2 z2 | E,2 z2 E,2 z2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+E,2 z2 E,2 z2 | D,2 z2 D,2 z2 | ^C,2 z2 ^C,2 z2 | B,,2 z2 B,,2 z2 |
+A,,2 z2 A,,2 z2 | ^G,,2 z2 ^G,,2 z2 | B,,B,,B,,B,, B,,B,,B,,B,, | E,2 z2 E,2 z2 |
+%% Section 7: Spasm (bars 209-256) - tacet (synth bass dominates)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 8: Void (bars 257-288) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 9: Night Drive (bars 289-336) - tacet (synth bass only)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%% Section 10: Peacock (bars 337-368) - glam bass returns
+E,2 z2 E,2 z2 | E,2 z2 E,2 E,z | A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 A,,z |
+B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 B,,z | E,2 z2 E,2 z2 | E,2 z2 E,2 E,z |
+E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 |
+A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 | B,,2 z2 B,,2 z2 | E,2 z2 E,2 z2 |
+E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 |
+E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 | E,2 ^D,2 E,2 ^D,2 |
+A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 | A,,2 ^G,,2 A,,2 ^G,,2 |
+B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, | B,,B,,B,,B,, B,,B,,B,,B,, |
+%% Section 11: Cathedral (bars 369-400) - epic support
+E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | E,2 z2 E,2 z2 |
+D,2 z2 D,2 z2 | D,2 z2 D,2 z2 | ^C,2 z2 ^C,2 z2 | ^C,2 z2 ^C,2 z2 |
+A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 z2 | ^G,,2 z2 ^G,,2 z2 | ^G,,2 z2 ^G,,2 z2 |
+B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 |
+E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | ^D,2 z2 ^D,2 z2 | ^D,2 z2 ^D,2 z2 |
+E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | D,2 z2 D,2 z2 | D,2 z2 D,2 z2 |
+A,,2 z2 A,,2 z2 | A,,2 z2 A,,2 z2 | B,,2 z2 B,,2 z2 | B,,2 z2 B,,2 z2 |
+E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | E,2 z2 E,2 z2 |
+%% Section 12: Fade to Static (bars 401-416)
+E,2 z2 E,2 z2 | E,2 z2 E,2 z2 | E,2 z2 z4 | E,2 z2 z4 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
