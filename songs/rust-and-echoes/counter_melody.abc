@@ -1,0 +1,42 @@
+X:1
+T:Counter Melody
+M:4/4
+L:1/8
+K:Amin
+%%MIDI channel 1
+% Intro (4)
+E4 z4 | E4 z4 | E4 z4 | E4 z4 |
+% Verse 1 (8)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+% Verse 2 (8)
+E2 z6 | z8 | C2 z6 | z8 |
+E2 z6 | z8 | C2 z6 | z8 |
+% PC 1 (4)
+F2 z2 A2 z2 | E2 z2 A2 z2 | ^D2 z2 F2 z2 | E2 z2 ^G2 z2 |
+% Chorus 1 (8)
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | c2 A2 E2 A2 |
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | ^G2 E2 B,2 E2 |
+% Inst 1 (4)
+E2 A2 c2 A2 | E2 A2 c2 A2 | E2 A2 c2 A2 | E2 A2 c2 A2 |
+% Verse 3 (8)
+E2 z6 | z8 | C2 z6 | z8 |
+E2 z6 | z8 | C2 z6 | z8 |
+% PC 2 (4)
+F2 z2 A2 z2 | E2 z2 A2 z2 | ^D2 z2 F2 z2 | E2 z2 ^G2 z2 |
+% Bridge (8)
+A2 F2 C2 F2 | _A2 F2 C2 F2 | G2 E2 C2 E2 | A2 E2 ^C2 E2 |
+F2 D2 A,2 D2 | G2 D2 B,2 D2 | G2 E2 C2 E2 | ^G2 E2 B,2 E2 |
+% Inst 2 (4)
+E2 A2 c2 A2 | E2 A2 c2 A2 | E2 A2 c2 A2 | E2 A2 c2 A2 |
+% Chorus 2 (8)
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | c2 A2 E2 A2 |
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | ^G2 E2 B,2 E2 |
+% Chorus 3 (8)
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | c2 A2 E2 A2 |
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | ^G2 E2 B,2 E2 |
+% Chorus 4 (8)
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | c2 A2 E2 A2 |
+c2 A2 F2 A2 | c2 G2 E2 G2 | B2 G2 D2 G2 | ^G2 E2 B,2 E2 |
+% Outro (4)
+E4 z4 | E4 z4 | E8 | z8 |

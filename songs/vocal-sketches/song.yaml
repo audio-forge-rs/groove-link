@@ -1,0 +1,73 @@
+# ============================================================================
+# Vocal Sketches - 12 solo vocal melodies for lyric writing inspiration
+# ============================================================================
+# Each track is meant to be soloed independently. Set tempo per track:
+#
+#   John Prine ......... 80  4/4
+#   Leonard Cohen ...... 66  6/8
+#   Bob Dylan .......... 96  4/4
+#   Woody Guthrie ...... 112 4/4
+#   Blaze Foley ........ 74  4/4
+#   CAAMP .............. 92  4/4
+#   Townes Van Zandt ... 70  3/4
+#   Guy Clark .......... 88  4/4
+#   REM ................ 100 4/4
+#   Jesse Welles ....... 84  4/4
+#   Lead Belly ......... 108 4/4
+#   Nirvana ............ 120 4/4
+# ============================================================================
+
+song:
+  title: Vocal Sketches
+  tempo: 84
+  key: C
+  time: 4/4
+
+tracks:
+  john-prine:
+    instrument: nektar piano
+    part: abc/john-prine.abc
+
+  leonard-cohen:
+    instrument: nektar piano
+    part: abc/leonard-cohen.abc
+
+  bob-dylan:
+    instrument: nektar piano
+    part: abc/bob-dylan.abc
+
+  woody-guthrie:
+    instrument: nektar piano
+    part: abc/woody-guthrie.abc
+
+  blaze-foley:
+    instrument: nektar piano
+    part: abc/blaze-foley.abc
+
+  caamp:
+    instrument: nektar piano
+    part: abc/caamp.abc
+
+  townes-van-zandt:
+    instrument: nektar piano
+    part: abc/townes-van-zandt.abc
+
+  guy-clark:
+    instrument: nektar piano
+    part: abc/guy-clark.abc
+
+  rem:
+    instrument: nektar piano
+    part: abc/rem.abc
+
+  jesse-welles:
+    instrument: nektar piano
+    part: abc/jesse-welles.abc
+
+  lead-belly:
+    instrument: nektar piano
+    part: abc/lead-belly.abc
+
+  nirvana:
+    instrument: nektar piano
+    part: abc/nirvana.abc

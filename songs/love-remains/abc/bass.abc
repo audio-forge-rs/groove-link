@@ -1,0 +1,26 @@
+X:1
+T:Love Remains - Bass
+M:4/4
+L:1/4
+Q:1/4=72
+K:Eb bass
+%%MIDI program 32
+%
+% Bass line following chord roots
+% Verse: simple root notes, Chorus: root-fifth movement
+% Bridge: walking bass for emotional drive
+%
+%% Verse 1 (bars 1-6) - simple roots, open feel
+E, z E, z | D, z D, z | C, z C, z | G,, z G,, z |
+F,, z F,, z | B,, z B,, z |
+%% Chorus (bars 7-13) - root-fifth motion
+E, B,, E, z | B,, F,, B,, z | C, G,, C, z | G,, D,, G,, z |
+A,, E,, A,, z | B,, F,, B,, z | E, z z2 |
+%% Verse 2 (bars 14-19) - same as V1
+E, z E, z | D, z D, z | C, z C, z | G,, z G,, z |
+F,, z F,, z | B,, z E, z |
+%% Bridge (bars 20-26) - walking bass, most movement
+A,, C, E, A,, | G,, B,, E, G,, | C, E, G, C, | B,, D, F, B,, |
+A,, C, E, C, | B,, D, F, D, | E, z z2 |
+%% Final Chorus (bars 27-30) - sparse, gentle
+A,, z B,, z | z4 | E, z z2 | E,4 |

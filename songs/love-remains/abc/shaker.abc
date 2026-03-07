@@ -1,0 +1,23 @@
+X:1
+T:Love Remains - Shaker
+M:4/4
+L:1/8
+Q:1/4=72
+K:C
+%% Uses A for shaker trigger
+%% Active only in Bridge for extra rhythmic texture at emotional peak
+%
+%% Verse 1 (bars 1-6) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Chorus (bars 7-13) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 |
+%% Verse 2 (bars 14-19) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Bridge (bars 20-26) - shaker enters, light sixteenth feel
+A z A z A z A z | A z A z A z A z | A z A z A z A z | A z A z A z A z |
+A z A z A z A z | A z A z A z A z | A z A z z4 |
+%% Final Chorus (bars 27-30) - tacet
+z8 | z8 | z8 | z8 |

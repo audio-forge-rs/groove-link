@@ -1,0 +1,23 @@
+X:1
+T:Love Remains - Snare
+M:4/4
+L:1/8
+Q:1/4=72
+K:C
+%% Uses D for snare/cross-stick trigger (following voltage-cathedral convention)
+%% Active from Chorus onward, drops out for V2 and Final
+%
+%% Verse 1 (bars 1-6) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Chorus (bars 7-13) - gentle cross-stick on beats 2 and 4
+z2 D2 z2 D2 | z2 D2 z2 D2 | z2 D2 z2 D2 | z2 D2 z2 D2 |
+z2 D2 z2 D2 | z2 D2 z2 D2 | z2 D4 z2 |
+%% Verse 2 (bars 14-19) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Bridge (bars 20-26) - snare returns, standard backbeat
+z2 D2 z2 D2 | z2 D2 z2 D2 | z2 D2 z2 D2 | z2 D2 z2 D2 |
+z2 D2 z2 D2 | z2 D2 z2 D2 | z2 D4 z2 |
+%% Final Chorus (bars 27-30) - tacet
+z8 | z8 | z8 | z8 |

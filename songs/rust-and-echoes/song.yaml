@@ -1,0 +1,65 @@
+song:
+  title: Rust & Echoes
+  tempo: 84
+  key: Amin
+  time: 4/4
+
+tracks:
+  reference_chords:
+    instrument: Violins 1 Basic
+    fx:
+      - EQ-5
+    part: chords.abc
+
+  drums:
+    instrument: 808 Core Kit
+    fx:
+      - Drum Bus Compressor
+      - Saturator
+    part: drums.abc
+
+  percussion:
+    instrument: E-Hat 808
+    note_fx:
+      - Humanize
+    fx:
+      - Reverb
+      - Delay
+    part: percussion.abc
+
+  bass:
+    instrument: Analog Bass
+    fx:
+      - Bass Enhancer
+      - Sidechain Compressor
+    part: bass.abc
+
+  pad:
+    instrument: Warm Analog Pad
+    fx:
+      - Chorus
+      - Hall Reverb
+    part: pad.abc
+
+  main_melody:
+    instrument: Polysynth Lead
+    fx:
+      - Delay-2
+      - Plate Reverb
+    part: main_melody.abc
+
+  counter_melody:
+    instrument: FM Pluck
+    fx:
+      - Echo
+    part: counter_melody.abc
+
+  vocal_guide:
+    instrument: Flute
+    part: vocal_guide.abc
+
+  master:
+    fx:
+      - EQ-5
+      - Multiband Dynamics
+      - Limiter

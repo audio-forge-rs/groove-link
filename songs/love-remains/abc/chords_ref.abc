@@ -1,0 +1,25 @@
+X:1
+T:Love Remains - Chord Reference (MUTE)
+M:4/4
+L:1/4
+Q:1/4=72
+K:Eb
+%% Verse 1 (bars 1-6)
+%% | Eb | Bb/D | Cm7 | Gm7 | Fm7 | Bbsus Bb |
+[E,G,B,E]4 | [D,F,B,D]4 | [C,E,G,B,]4 | [G,B,DF]4 |
+[F,A,CE]4 | [B,,E,F,]2 [B,,D,F,]2 |
+%% Chorus (bars 7-13)
+%% | Eb | Bb | Cm7 | Gm7 | Ab | Bb | Eb |
+[E,G,B,E]4 | [B,,D,F,B,]4 | [C,E,G,B,]4 | [G,B,DF]4 |
+[A,CE]4 | [B,,D,F,B,]4 | [E,G,B,E]4 |
+%% Verse 2 (bars 14-19)
+%% | Eb | Bb/D | Cm7 | Gm7 | Fm7 | Bb Eb |
+[E,G,B,E]4 | [D,F,B,D]4 | [C,E,G,B,]4 | [G,B,DF]4 |
+[F,A,CE]4 | [B,,D,F,B,]2 [E,G,B,E]2 |
+%% Bridge (bars 20-26)
+%% | Ab | Eb/G | Cm7 | Bb | Ab | Bb | Eb |
+[A,CE]4 | [G,B,E]4 | [C,E,G,B,]4 | [B,,D,F,B,]4 |
+[A,CE]4 | [B,,D,F,B,]4 | [E,G,B,E]4 |
+%% Final Chorus (bars 27-30)
+%% | Ab | Bb | Ebadd2 | Eb |
+[A,CE]4 | [B,,D,F,B,]4 | [E,F,G,B,]4 | [E,G,B,E]4 |

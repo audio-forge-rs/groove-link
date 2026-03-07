@@ -1,0 +1,76 @@
+X:1
+T:Love Remains - Vocal Melody
+M:4/4
+L:1/8
+Q:1/4=72
+K:Eb
+%%MIDI program 85
+%
+% Main vocal melody - faithful transcription from sheet music
+% Notes match the provided melody line for each lyric phrase
+%
+%% Verse 1 (bars 1-6) - conversational, almost spoken
+% "In a quiet, sovereign way"
+G F E F G B G z |
+% "God was writing grace that day"
+F G F D E F G z |
+% "We had more than we could know"
+G A G E F G z2 |
+% "God was teaching love to grow"
+B A G2 F E z2 |
+% "We hoped more than we said out loud"
+F G A G F E z2 |
+% hold D -> resolve Eb
+D4 z2 E2 |
+%% Chorus (bars 7-13) - lift here
+% "Then you gave me the key to your heart"
+G B c B G F E z |
+% "And we learned how to dance even apart"
+F G B c B G F z |
+% "I prayed, and God gave me you"
+G A B c2 B z2 |
+% "To love and be faithful and true" (D5 = emotional peak)
+B c d c B G z2 |
+% "Through every joy and storm"
+G2 F E F2 G2 |
+% (instrumental breath)
+z8 |
+% "Love remains"
+B2 G2 E4 |
+%% Verse 2 (bars 14-19) - same contour as V1
+% "There were dark clouds rolling in"
+G F E F G B G z |
+% "And seasons testing where we'd been"
+F G F D E F G z |
+% "Let the rain fall, let love grow"
+G A G E F G z2 |
+% "Every storm helped us know"
+B A G2 F E z2 |
+% "God's bright rainbow would not fade"
+F G A G F E z2 |
+% resolve up briefly to G before landing Eb
+D2 z2 G E E2 |
+%% Bridge (bars 20-26) - build emotion, strongest section
+% "God blessed me beyond measure"
+c2 B A G F z2 |
+% "You are my God-given treasure"
+G A B c2 B z2 |
+% "I chose you then, I choose you now" (D5 peak)
+G A B c d2 z2 |
+% "Through every question, every vow"
+c B G2 F2 z2 |
+% "You are my forever song"
+c2 B2 G2 F2 |
+% (hold)
+E6 z2 |
+% (piano resolves)
+z8 |
+%% Final Chorus (bars 27-30) - drop back, very soft
+% "Through every joy and storm"
+G2 F2 E2 z2 |
+% (breath)
+z8 |
+% "Love remains" (very soft, hold)
+B2 G2 E4 |
+% (silence - piano resolves)
+z8 |

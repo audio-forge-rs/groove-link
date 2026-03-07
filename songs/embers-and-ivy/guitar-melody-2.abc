@@ -1,0 +1,41 @@
+X:1
+T:Embers and Ivy - Guitar Melody 2
+M:4/4
+L:1/8
+Q:1/4=100
+K:Bb
+%%MIDI program 25
+%
+% Alt melody - call-response with guitar melody 1
+% Offset rhythmically, lower register phrases
+%
+% Part 1: Intro (8 bars) - Tacet, enters last 2 bars
+z8 | z8 | z8 | z8 |
+z8 | z8 | D2G2 _B2A2 | G2D2 G4 |
+%
+% Part 2: Verse 1 (16 bars) - Responding to guitar melody 1
+z4 G2_B2 | A2G2 D4 | z4 D2G2 | A2_B2 G4 |
+z4 _B2A2 | G2D2 z4 | G2_B2 d2c2 | _B4 z4 |
+z4 d2_B2 | G2_B2 d4 | z4 A2G2 | D2G2 _B4 |
+z4 G2A2 | _B2G2 z4 | D2G2 _B2A2 | G4 z4 |
+%
+% Part 3: Chorus (8 bars) - More active, answering
+d2c2 _B2d2 | c2_B2 A4 | _B2d2 c2_B2 | A2G2 _B4 |
+c2_B2 A2G2 | _B2A2 G2D2 | G2_B2 A2G2 | D4 z4 |
+%
+% Part 4: Verse 2 (16 bars) - Different responses
+z4 _B2d2 | c2_B2 G4 | z4 D2G2 | _B2A2 G4 |
+z4 G2_B2 | d2c2 _B4 | z4 A2_B2 | G2D2 z4 |
+G2_B2 d2_B2 | A2G2 D4 | z4 G2A2 | _B2d2 c4 |
+z4 _B2A2 | G2D2 G4 | z4 D2G2 | _B2A2 G4 |
+%
+% Part 5: Bridge (12 bars) - Active, doubling energy
+_E2G2 _B2G2 | D2G2 _B4 | G2_B2 c2_B2 | A2G2 D4 |
+_B2d2 c2_B2 | G2_B2 d4 | c2_B2 A2G2 | D2G2 _B4 |
+G2A2 _B2c2 | d2c2 _B2A2 | G2_B2 A2G2 | G4 z4 |
+%
+% Part 6: Final Chorus + Outro (16 bars)
+d2c2 _B2d2 | c2_B2 A4 | _B2d2 c2_B2 | A2G2 _B4 |
+c2_B2 A2G2 | _B2A2 G2D2 | G2_B2 A2G2 | D4 z4 |
+G2_B2 d2_B2 | A2G2 D4 | z4 G2D2 | z4 G4 |
+z8 | z4 D4 | G4 z4 | G8 |]

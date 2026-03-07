@@ -1,0 +1,60 @@
+X:1
+T:Buzz Riff
+M:4/4
+L:1/8
+Q:1/4=104
+K:D
+%%MIDI channel 1
+% Intro - riff alone (8)
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,] z [=C,G,] z [D,A,] z [=C,G,] z |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,] z [=C,G,] z [D,A,] z [=C,G,] z |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+% Verse 1 - tacet, let other instruments breathe (8)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+% Pre-Chorus 1 (4)
+[G,,D,]2 [G,,D,]2 [G,,D,]2 [G,,D,]2 | [G,,D,]2 [G,,D,]2 [G,,D,]2 [G,,D,]2 |
+[G,,D,] z [G,,D,] z [G,,D,] z [G,,D,] z | [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] |
+% Chorus 1 (8)
+[G,,D,]2 [A,,E,]2 [D,A,]2 z2 | [G,,D,]2 [A,,E,]2 [D,A,]2 z2 |
+[G,,D,]2 [A,,E,]2 [D,A,]4 | [G,,D,]2 [A,,E,]2 [D,A,]4 |
+[G,,D,]2 [A,,E,]2 [D,A,]2 z2 | [G,,D,]2 [A,,E,]2 [D,A,]2 z2 |
+[G,,D,]2 [A,,E,]2 [D,A,]4 | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+% Interlude - riff returns (8)
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,] z [=C,G,] z [D,A,] z [=C,G,] z |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,] z [=C,G,] z [D,A,] z [=C,G,] z |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+% Verse 2 - tacet (8)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+% Pre-Chorus 2 (4)
+[G,,D,]2 [G,,D,]2 [G,,D,]2 [G,,D,]2 | [G,,D,]2 [G,,D,]2 [G,,D,]2 [G,,D,]2 |
+[G,,D,] z [G,,D,] z [G,,D,] z [G,,D,] z | [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] |
+% Chorus 2 (8)
+[G,,D,]2 [A,,E,]2 [D,A,]2 z2 | [G,,D,]2 [A,,E,]2 [D,A,]2 z2 |
+[G,,D,]2 [A,,E,]2 [D,A,]4 | [G,,D,]2 [A,,E,]2 [D,A,]4 |
+[G,,D,]2 [A,,E,]2 [D,A,]2 z2 | [G,,D,]2 [A,,E,]2 [D,A,]2 z2 |
+[G,,D,]2 [A,,E,]2 [D,A,]4 | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+% Bridge - chromatic Bb-C-D (8)
+[_B,,=F,]2 [_B,,=F,]2 [_B,,=F,]2 [_B,,=F,]2 | [_B,,=F,]2 [_B,,=F,]2 [_B,,=F,]2 [_B,,=F,]2 |
+[=C,G,]2 [=C,G,]2 [=C,G,]2 [=C,G,]2 | [=C,G,]2 [=C,G,]2 [=C,G,]2 [=C,G,]2 |
+[D,A,]2 [D,A,]2 [D,A,]2 [D,A,]2 | [D,A,]2 [D,A,]2 [D,A,]2 [D,A,]2 |
+[_B,,=F,]2 [=C,G,]2 [D,A,]2 z2 | [_B,,=F,]2 [=C,G,]2 [D,A,]4 |
+% Breakdown - sparse (8)
+z8 | z8 | z8 | z8 |
+[D,A,] z3 z4 | z8 | [D,A,] z3 z4 | z8 |
+% Build (4)
+[G,,D,]2 [G,,D,]2 [G,,D,]2 [G,,D,]2 | [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] [G,,D,] |
+[A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] | [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] [A,,E,] |
+% Final Chorus (8)
+[G,,D,]2 [A,,E,]2 [D,A,]2 z2 | [G,,D,]2 [A,,E,]2 [D,A,]2 z2 |
+[G,,D,]2 [A,,E,]2 [D,A,]4 | [G,,D,]2 [A,,E,]2 [D,A,]4 |
+[G,,D,]2 [A,,E,]2 [D,A,]2 z2 | [G,,D,]2 [A,,E,]2 [D,A,]2 z2 |
+[G,,D,]2 [A,,E,]2 [D,A,]4 | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+% Outro - riff decaying (8)
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,] z [=C,G,] z [D,A,] z [=C,G,] z |
+[D,A,] z [=C,G,] z [D,A,] z [=C,G,] z | [D,A,]2 [G,,D,]2 [A,,E,] [G,,D,] z2 |
+[D,A,] z [=C,G,] z [D,A,]2 z2 | [D,A,] z [=C,G,] z z4 |
+[D,A,]2 z2 z4 | [D,A,]8 |

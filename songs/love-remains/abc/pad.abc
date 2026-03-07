@@ -1,0 +1,26 @@
+X:1
+T:Love Remains - Pad
+M:4/4
+L:1/1
+Q:1/4=72
+K:Eb
+%%MIDI program 48
+%
+% Sustained string pad - airy upper voicings
+% Active from Chorus onward, drops out in Verse 2, returns for Bridge
+% Whole notes for lush, sustained texture
+%
+%% Verse 1 (bars 1-6) - tacet
+z | z | z | z |
+z | z |
+%% Chorus (bars 7-13) - warm sustained chords
+[EGBe] | [DFB] | [EGB] | [GBd] |
+[Ace] | [DFB] | [EGBe] |
+%% Verse 2 (bars 14-19) - tacet, pull back for intimacy
+z | z | z | z |
+z | z |
+%% Bridge (bars 20-26) - fullest pad, emotional peak
+[Ace] | [GBe] | [EGB] | [DFB] |
+[Ace] | [DFB] | [EGBe] |
+%% Final Chorus (bars 27-30) - very soft, fade
+z | z | [EFGe] | [EGBe] |

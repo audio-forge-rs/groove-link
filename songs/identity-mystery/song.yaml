@@ -1,0 +1,63 @@
+song:
+  title: Identity Mystery
+  tempo: 104
+  key: D
+  time: 4/4
+
+tracks:
+  buzz-riff:
+    instrument: Detuned Saw
+    fx:
+      - Saturator
+      - Lazer Phaser
+    part: buzz-riff.abc
+
+  slide:
+    instrument: Glass Harmonics
+    fx:
+      - Shimmer Verb
+      - Stereo Eigths Delay
+    part: slide.abc
+
+  power:
+    instrument: FM Stab
+    fx:
+      - Transient Shaper
+      - Gated Reverb
+    part: power.abc
+
+  bass:
+    instrument: PlanetSynth - Synth Pop Bass
+    fx:
+      - Bass Driver
+      - Compressor
+    part: bass.abc
+
+  drums:
+    instrument: Organic Rock Drums
+    fx:
+      - Transient Shaper
+      - Drum Bus Compressor
+    part: drums.abc
+
+  atmosphere:
+    instrument: Moving Drone
+    fx:
+      - Diffusing Delay
+      - Tape-Machine
+    part: atmosphere.abc
+
+  room:
+    receives:
+      - buzz-riff: pre
+      - slide: pre
+      - power: pre
+    fx:
+      - Dark Spring
+      - EQ-5
+
+  master:
+    fx:
+      - Solid State Glue
+      - query: Peak Limiter
+        hint: device

@@ -1,0 +1,54 @@
+X:1
+T:Embers and Ivy - Piano Harmony 2
+M:4/4
+L:1/8
+Q:1/4=100
+K:Bb
+%%MIDI program 0
+%
+% Sparse sustain chords - wider voicings with more space
+% Uses inversions and open position chords
+%
+% Part 1: Intro (8 bars) - Very sparse, single chords
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | [G,8D8G8] |
+%
+% Part 2: Verse 1 (16 bars) - Whole note pads, lots of space
+[G,8D8_B8] | z8 | [_B,8F8_B8] | z8 |
+[_E,8_B,8G8] | z8 | [F,8C8A8] | z8 |
+[G,8D8_B8] | z8 | [C8G8_E'8] | z8 |
+[F,8C8A8] | z8 | [_B,8F8_B8] | [G,8D8G8] |
+%
+% Part 3: Chorus (8 bars) - Slightly more active
+[G,8D8_B8] | [_B,8F8_B8] |
+[_E,8_B,8G8] | [F,8C8A8] |
+[G,8D8_B8] | [C8G8_E'8] |
+[F,8C8A8] | [G,8D8G8] |
+%
+% Part 4: Verse 2 (16 bars) - Syncopated entries
+z4 [G,4D4_B4] | z4 [G,4D4_B4] |
+z4 [_B,4F4_B4] | z4 [_B,4F4_B4] |
+[_E,8_B,8G8] | z8 |
+[F,8C8A8] | z8 |
+z4 [G,4D4_B4] | z4 [G,4D4_B4] |
+z4 [C4G4_E'4] | z4 [C4G4_E'4] |
+[F,8C8A8] | z8 |
+[_B,8F8_B8] | [G,8D8G8] |
+%
+% Part 5: Bridge (12 bars) - Sustained, building
+[_E,8_B,8G8] | [_E,8_B,8G8] |
+[_B,8F8_B8] | [_B,8F8_B8] |
+[C8G8_E'8] | [C8G8_E'8] |
+[F,8C8A8] | [F,8C8A8] |
+[C8G8_E'8] | [F,8C8A8] |
+[_B,8F8_B8] | [G,8D8G8] |
+%
+% Part 6: Final Chorus + Outro (16 bars)
+[G,8D8_B8] | [_B,8F8_B8] |
+[_E,8_B,8G8] | [F,8C8A8] |
+[G,8D8_B8] | [C8G8_E'8] |
+[F,8C8A8] | [G,8D8G8] |
+[G,8D8_B8] | [_B,8F8_B8] |
+z4 [G,4D4G4] | z8 |
+z8 | z8 |
+z8 | [G,8D8G8] |]

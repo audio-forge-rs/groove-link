@@ -1,0 +1,42 @@
+X:1
+T:Embers and Ivy - Piano Melody 1
+M:4/4
+L:1/8
+Q:1/4=100
+K:Bb
+%%MIDI program 0
+%
+% Key: G minor (relative Bb major)
+% Scale: G minor pentatonic (G Bb C D F) + blues notes
+% Lead melody - single note lines resolving to G
+%
+% Part 1: Intro (8 bars) - Sparse, establishing mood
+z4 G2A2 | _B4 z4 | z4 d2c2 | _B2A2 G4 |
+z4 G2_B2 | c2d2 c2_B2 | A2G2 z4 | G8 |
+%
+% Part 2: Verse 1 (16 bars) - Full flowing melody
+G2G2 _B2c2 | d4 c2_B2 | c2_B2 A2G2 | G4 z4 |
+F2G2 _B2c2 | d4 f2d2 | c2_B2 A2G2 | _B4 z4 |
+G2_B2 c2d2 | f2d2 c2_B2 | A2_B2 c2A2 | G4 z4 |
+d2d2 f2d2 | c2_B2 A2_B2 | G2F2 G2_B2 | G4 z4 |
+%
+% Part 3: Chorus (8 bars) - Rising, open
+d2f2 g4 | f2d2 c2d2 | _B2c2 d2f2 | d4 z4 |
+g2f2 d2c2 | _B2c2 d2_B2 | A2G2 _B2A2 | G4 z4 |
+%
+% Part 4: Verse 2 (16 bars) - Variation with more movement
+G2A2 _B2c2 | d2c2 _B2A2 | G2_B2 c2d2 | c4 z4 |
+F2G2 A2_B2 | c2d2 f2d2 | c2_B2 G2A2 | _B4 z4 |
+d2c2 _B2G2 | A2_B2 c2d2 | f2d2 c2_B2 | G4 z4 |
+_B2c2 d2f2 | d2c2 _B2A2 | G2_B2 A2G2 | G4 z4 |
+%
+% Part 5: Bridge (12 bars) - New energy, building
+_E2G2 _B2c2 | d4 c4 | _B2A2 G2_B2 | c4 z4 |
+_B2c2 d2f2 | g2f2 d2c2 | d4 c2_B2 | A4 z4 |
+c2d2 f2g2 | f2d2 c2_B2 | A2_B2 G2A2 | G4 z4 |
+%
+% Part 6: Final Chorus + Outro (16 bars)
+d2f2 g4 | f2d2 c2d2 | _B2c2 d2f2 | d4 z4 |
+g2f2 d2c2 | _B2c2 d2_B2 | A2G2 _B2A2 | G4 z4 |
+d2f2 g2f2 | d2c2 _B2A2 | G2_B2 c2_B2 | A2G2 z4 |
+z4 G2_B2 | A2G2 z4 | z4 G4 | G8 |]

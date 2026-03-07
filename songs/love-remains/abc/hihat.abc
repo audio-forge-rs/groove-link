@@ -1,0 +1,23 @@
+X:1
+T:Love Remains - Hi-Hat
+M:4/4
+L:1/8
+Q:1/4=72
+K:C
+%% Uses ^F for closed hi-hat trigger (following voltage-cathedral convention)
+%% Enters at Verse 2 for subtle texture, continues through Bridge
+%
+%% Verse 1 (bars 1-6) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Chorus (bars 7-13) - tacet (kick and snare carry it)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 |
+%% Verse 2 (bars 14-19) - gentle eighth note hi-hat enters
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+%% Bridge (bars 20-26) - hi-hat continues, steady pulse
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F |
+^F^F^F^F ^F^F^F^F | ^F^F^F^F ^F^F^F^F | ^F^F^F^F z4 |
+%% Final Chorus (bars 27-30) - tacet, drop back
+z8 | z8 | z8 | z8 |

@@ -1,0 +1,39 @@
+X:1
+T:Reference Chords
+M:4/4
+L:1/4
+K:Amin
+%%MIDI channel 1
+% Intro (4 bars)
+[A,CE]4 | [A,CE]4 | [A,CE]4 | [A,CE]4 |
+% Verse 1 (8 bars)
+[A,CE]2 [G,B,D]2 | [A,CE]2 [G,B,D]2 | [F,A,C]2 [E,^G,B,]2 | [F,A,C]2 [E,^G,B,]2 |
+[A,CE]2 [G,B,D]2 | [A,CE]2 [G,B,D]2 | [F,A,C]2 [E,^G,B,]2 | [F,A,C]2 [E,^G,B,]2 |
+% PC 1
+[D,F,A,]4 | [A,CE]4 | [B,^D^F]4 | [E,^G,B,]4 |
+% Chorus 1
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+% Inst 1
+[A,CE]4 | [A,CE]4 | [A,CE]4 | [A,CE]4 |
+% Verse 3
+[A,CE]2 [G,B,D]2 | [A,CE]2 [G,B,D]2 | [F,A,C]2 [E,^G,B,]2 | [F,A,C]2 [E,^G,B,]2 |
+[A,CE]2 [G,B,D]2 | [A,CE]2 [G,B,D]2 | [F,A,C]2 [E,^G,B,]2 | [F,A,C]2 [E,^G,B,]2 |
+% PC 2
+[D,F,A,]4 | [A,CE]4 | [B,^D^F]4 | [E,^G,B,]4 |
+% Bridge
+[F,A,C]4 | [F,_A,C]4 | [C,E,G,]4 | [A,^CE]4 | 
+[D,F,A,]4 | [G,B,D]4 | [C,E,G,]4 | [E,^G,B,]4 |
+% Inst 2
+[A,CE]4 | [A,CE]4 | [A,CE]4 | [A,CE]4 |
+% Chorus 2
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+% Chorus 3
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+% Chorus 4
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+[F,A,C]2 [C,E,G,]2 | [F,A,C]2 [C,E,G,]2 | [G,B,D]2 [A,CE]2 | [G,B,D]2 [A,CE]2 |
+% Outro
+[A,CE]4 | [A,CE]4 | [A,CE]4 | [A,CE]4 |

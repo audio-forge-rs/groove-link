@@ -1,0 +1,54 @@
+song:
+  title: Embers and Ivy
+  tempo: 100
+  key: Gm
+  time: 4/4
+
+tracks:
+  # Piano melody 1 - Lead melody, warm tone
+  piano_melody_1:
+    instrument: Acoustic Piano (Nektar)
+    part: piano-melody-1.abc
+
+  # Piano harmony 1 - Chord pads, modeled piano
+  piano_harmony_1:
+    instrument: Physical-Piano
+    part: piano-harmony-1.abc
+
+  # Piano melody 2 - Counter-melody, concert grand
+  piano_melody_2:
+    instrument:
+      query: Piano Uno - Concert
+      hint: kontakt
+    part: piano-melody-2.abc
+
+  # Piano harmony 2 - Sparse sustain chords, dark timbre
+  piano_harmony_2:
+    instrument:
+      query: Piano Uno - Dark
+      hint: kontakt
+    part: piano-harmony-2.abc
+
+  # Guitar melody 1 - Picked melody, fingerstyle
+  guitar_melody_1:
+    instrument:
+      query: Picked Acoustic (Melody)
+      hint: kontakt
+    part: guitar-melody-1.abc
+
+  # Guitar harmony 1 - Strummed chords, folk rhythm
+  guitar_harmony_1:
+    instrument:
+      query: Strummed Acoustic
+      hint: kontakt
+    part: guitar-harmony-1.abc
+
+  # Guitar melody 2 - Alt melody, synthetic acoustic
+  guitar_melody_2:
+    instrument: Physical-Guitar
+    part: guitar-melody-2.abc
+
+  # Guitar harmony 2 - Arpeggiated chords, soft pluck
+  guitar_harmony_2:
+    instrument: Soft Guitar Pluck
+    part: guitar-harmony-2.abc

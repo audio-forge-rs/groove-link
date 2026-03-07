@@ -1,0 +1,59 @@
+X:1
+T:Embers and Ivy - Piano Harmony 1
+M:4/4
+L:1/8
+Q:1/4=100
+K:Bb
+%%MIDI program 0
+%
+% Chord pads - half/quarter note voicings
+% Gm = [G,B,D] or [G,_Bb,D], Bb = [_B,D,F], Eb = [_E,G,_B], F = [F,A,C]
+% Cm = [C,_E,G]
+%
+% Part 1: Intro (8 bars) - Sparse chords, piano enters gently
+z8 | [G,2_B,2D2]z2 z4 | z8 | [G,4_B,4D4] z4 |
+[_B,2D2F2] z2 z4 | [_E,2G,2_B,2] z2 z4 | [F,2A,2C2] z2 z4 | [G,4_B,4D4] z4 |
+%
+% Part 2: Verse 1 (16 bars) - Steady chord pads
+[G,4_B,4D4] [G,4_B,4D4] | [_B,4D4F4] [_B,4D4F4] |
+[_E,4G,4_B,4] [_E,4G,4_B,4] | [F,4A,4C4] [F,4A,4C4] |
+[G,4_B,4D4] [G,4_B,4D4] | [C4_E4G4] [C4_E4G4] |
+[F,4A,4C4] [F,4A,4C4] | [_B,4D4F4] [_B,4D4F4] |
+[G,4_B,4D4] [G,4_B,4D4] | [_B,4D4F4] [_B,4D4F4] |
+[_E,4G,4_B,4] [_E,4G,4_B,4] | [F,4A,4C4] [F,4A,4C4] |
+[G,4_B,4D4] [G,4_B,4D4] | [C4_E4G4] [C4_E4G4] |
+[F,4A,4C4] [F,4A,4C4] | [G,4_B,4D4] z4 |
+%
+% Part 3: Chorus (8 bars) - Open voicings, lift
+[G,4_B,4D4] [_B,4D4F4] | [_E,4G,4_B,4] [F,4A,4C4] |
+[G,4_B,4D4] [_B,4D4F4] | [_E,4G,4_B,4] [F,4A,4C4] |
+[G,4_B,4D4] [_B,4D4F4] | [C4_E4G4] [F,4A,4C4] |
+[_B,4D4F4] [_E,4G,4_B,4] | [G,4_B,4D4] z4 |
+%
+% Part 4: Verse 2 (16 bars) - Slightly different voicing rhythm
+[G,2_B,2D2] z2 [G,4_B,4D4] | [_B,2D2F2] z2 [_B,4D4F4] |
+[_E,2G,2_B,2] z2 [_E,4G,4_B,4] | [F,2A,2C2] z2 [F,4A,4C4] |
+[G,4_B,4D4] [G,4_B,4D4] | [C2_E2G2] z2 [C4_E4G4] |
+[F,4A,4C4] [F,4A,4C4] | [_B,4D4F4] z4 |
+[G,2_B,2D2] z2 [G,4_B,4D4] | [_B,2D2F2] z2 [_B,4D4F4] |
+[_E,2G,2_B,2] z2 [_E,4G,4_B,4] | [F,2A,2C2] z2 [F,4A,4C4] |
+[G,4_B,4D4] [G,4_B,4D4] | [C4_E4G4] [C4_E4G4] |
+[F,4A,4C4] [F,4A,4C4] | [G,4_B,4D4] z4 |
+%
+% Part 5: Bridge (12 bars) - New progression
+[_E,4G,4_B,4] [_E,4G,4_B,4] | [_B,4D4F4] [_B,4D4F4] |
+[C4_E4G4] [C4_E4G4] | [F,4A,4C4] [F,4A,4C4] |
+[_E,4G,4_B,4] [_E,4G,4_B,4] | [_B,4D4F4] [_B,4D4F4] |
+[C4_E4G4] [C4_E4G4] | [F,4A,4C4] [F,4A,4C4] |
+[C4_E4G4] [C4_E4G4] | [F,4A,4C4] [F,4A,4C4] |
+[_B,4D4F4] [_E,4G,4_B,4] | [G,4_B,4D4] z4 |
+%
+% Part 6: Final Chorus + Outro (16 bars)
+[G,4_B,4D4] [_B,4D4F4] | [_E,4G,4_B,4] [F,4A,4C4] |
+[G,4_B,4D4] [_B,4D4F4] | [_E,4G,4_B,4] [F,4A,4C4] |
+[G,4_B,4D4] [_B,4D4F4] | [C4_E4G4] [F,4A,4C4] |
+[_B,4D4F4] [_E,4G,4_B,4] | [G,4_B,4D4] z4 |
+[G,4_B,4D4] [_B,4D4F4] | [_E,4G,4_B,4] [F,4A,4C4] |
+[G,4_B,4D4] z4 | z4 [G,4_B,4D4] |
+z4 [G,4_B,4D4] | z8 |
+[G,2_B,2D2] z6 | [G,8_B,8D8] |]

@@ -1,0 +1,29 @@
+X:1
+T:Love Remains - Arpeggiated Chords
+M:4/4
+L:1/8
+Q:1/4=72
+K:Eb
+%%MIDI program 4
+%
+% Broken chord arpeggios - active only in Chorus and Bridge
+% Pattern: ascending chord tones up and back down
+%
+%% Verse 1 (bars 1-6) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Chorus (bars 7-13) - gentle arpeggios
+E, G, B, E E B, G, z | B,, D, F, B, B, F, D, z |
+C, E, G, B, G, E, C, z | G, B, D F D B, G, z |
+A, C E A E C A, z | B,, D, F, B, B, F, D, z |
+E, G, B, E z4 |
+%% Verse 2 (bars 14-19) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Bridge (bars 20-26) - arpeggios return, fuller
+A, C E A E C A, C | G, B, E G E B, G, B, |
+C, E, G, B, G, E, C, E, | B,, D, F, B, B, F, D, F, |
+A, C E A E C A, C | B,, D, F, B, B, F, D, z |
+E, G, B, E E B, G, E, |
+%% Final Chorus (bars 27-30) - tacet
+z8 | z8 | z8 | z8 |

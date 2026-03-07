@@ -1,0 +1,43 @@
+X:1
+T:Atmosphere
+M:4/4
+L:1/8
+Q:1/4=104
+K:D
+%%MIDI channel 5
+% Intro - swelling in (8)
+z8 | z8 | z8 | z8 |
+z8 | z8 | [DAd]8 | [DAd]8 |
+% Verse 1 - low drone wash (8)
+[D,A,]8 | [D,A,]8 | [=C,G,]8 | [=C,G,]8 |
+[D,A,]8 | [D,A,]8 | [G,D]8 | [A,E]8 |
+% Pre-Chorus 1 (4)
+[G,DG]8 | [G,DG]8 | [A,EA]8 | [A,EA]8 |
+% Chorus 1 - opens up (8)
+[G,Bd]8 | [A,=ce]8 | [DAd]8 | [DAd]8 |
+[G,Bd]8 | [A,=ce]8 | [DAd]8 | [DAd]8 |
+% Interlude (8)
+z8 | z8 | z8 | z8 |
+z8 | z8 | [DAd]8 | [DAd]8 |
+% Verse 2 (8)
+[D,A,]8 | [D,A,]8 | [=C,G,]8 | [=C,G,]8 |
+[D,A,]8 | [D,A,]8 | [G,D]8 | [A,E]8 |
+% Pre-Chorus 2 (4)
+[G,DG]8 | [G,DG]8 | [A,EA]8 | [A,EA]8 |
+% Chorus 2 (8)
+[G,Bd]8 | [A,=ce]8 | [DAd]8 | [DAd]8 |
+[G,Bd]8 | [A,=ce]8 | [DAd]8 | [DAd]8 |
+% Bridge - dark pads, Bb chromatic color (8)
+[_B,=Fd]8 | [_B,=Fd]8 | [=C,Ge]8 | [=C,Ge]8 |
+[DAf]8 | [DAf]8 | [_B,=Fd]4 [=C,Ge]4 | [DAf]8 |
+% Breakdown - spacious texture, featured (8)
+[EGB]8 | [EGB]8 | [GBd]8 | [GBd]8 |
+[EGB]8 | [EGB]8 | [A,=CEA]8 | [A,=CEA]8 |
+% Build (4)
+[G,DG]8 | [G,DG]8 | [A,EA]8 | [A,EA]8 |
+% Final Chorus (8)
+[G,Bd]8 | [A,=ce]8 | [DAd]8 | [DAd]8 |
+[G,Bd]8 | [A,=ce]8 | [DAd]8 | [DAd]8 |
+% Outro - atmosphere is last thing heard (8)
+[DAd]8 | [DAd]8 | [=C,G,=c]8 | [=C,G,=c]8 |
+[DAd]8 | [DAd]8 | [DAd]8 | [DAd]8 |

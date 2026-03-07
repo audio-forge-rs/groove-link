@@ -1,0 +1,60 @@
+X:1
+T:Embers and Ivy - Guitar Harmony 2
+M:4/4
+L:1/8
+Q:1/4=100
+K:Bb
+%%MIDI program 25
+%
+% Arpeggiated chords - broken fingerpick patterns
+% Rolling arpeggios through chord tones
+%
+% Part 1: Intro (8 bars) - Enters bar 3 with gentle arpeggios
+z8 | z8 |
+G,2D2 G2_B2 | D2G2 _B2D2 |
+F,2_B,2 D2F2 | _E,2G,2 _B,2G2 |
+F,,2C2 A,2C2 | G,2D2 G4 |
+%
+% Part 2: Verse 1 (16 bars) - Flowing arpeggios
+G,2_B,2 D2G2 | _B2G2 D2_B,2 |
+_B,,2F,2 _B,2D2 | F2D2 _B,2F,2 |
+_E,2_B,2 _E2G2 | _B2G2 _E2_B,2 |
+F,,2C,2 F,2A,2 | C2A,2 F,2C,2 |
+G,2_B,2 D2G2 | _B2G2 D2_B,2 |
+C,2_E,2 G,2C2 | _E2C2 G,2_E,2 |
+F,,2C,2 F,2A,2 | C2A,2 F,2C,2 |
+_B,,2F,2 _B,2D2 | G,2D2 G4 |
+%
+% Part 3: Chorus (8 bars) - Faster arpeggios, more energy
+G,2D2 G2_B2 | _B,,2F2 _B2D'2 |
+_E,2_B,2 _E2G2 | F,,2C2 F2A2 |
+G,2D2 G2_B2 | C,2G,2 C2_E2 |
+F,,2C2 F2A2 | G,2D2 G4 |
+%
+% Part 4: Verse 2 (16 bars) - Varied arpeggio direction
+G2D2 _B,2G,2 | D2_B,2 G,2D2 |
+F2D2 _B,2F,2 | _B,2D2 F2_B2 |
+_E2_B,2 G,2_E,2 | _B,2_E2 G2_B2 |
+C2A,2 F,2C,2 | F,2A,2 C2F2 |
+G2D2 _B,2G,2 | D2_B,2 G,2D2 |
+_E2C2 G,2_E,2 | G,2C2 _E2G2 |
+C2A,2 F,2C,2 | F,2A,2 C2F2 |
+F2D2 _B,2F,2 | G,2D2 G4 |
+%
+% Part 5: Bridge (12 bars) - Wider arpeggios
+_E,2G,2 _B,2_E2 | G2_B2 _E2G,2 |
+_B,,2F,2 _B,2D2 | F2_B2 D2F,2 |
+C,2_E,2 G,2C2 | _E2G2 C2_E,2 |
+F,,2C,2 F,2A,2 | C2F2 A,2C,2 |
+C,2G,2 C2_E2 | F,,2C,2 F,2A,2 |
+_B,,2F,2 _B,2_E2 | G,2D2 G4 |
+%
+% Part 6: Final Chorus + Outro (16 bars)
+G,2D2 G2_B2 | _B,,2F2 _B2D'2 |
+_E,2_B,2 _E2G2 | F,,2C2 F2A2 |
+G,2D2 G2_B2 | C,2G,2 C2_E2 |
+F,,2C2 F2A2 | G,2D2 G4 |
+G,2D2 G2_B2 | _B,,2F2 _B4 |
+G,2D2 G4 | z4 G,2D2 |
+G2D2 G,4 | z8 |
+G,2D2 G4 | G,8 |]

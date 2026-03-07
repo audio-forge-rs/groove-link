@@ -1,0 +1,40 @@
+song:
+  title: Neon Drift
+  tempo: 128
+  key: Dmin
+  time: 4/4
+
+tracks:
+  drums:
+    instrument: 808 Core Kit
+    fx:
+      - Compressor
+    part: drums.abc
+
+  bass:
+    instrument: Analog Bass
+    fx:
+      - Saturator
+    part: bass.abc
+
+  pads:
+    instrument: Warm Analog Pad
+    note_fx:
+      - Humanize
+    fx:
+      - Chorus
+      - Reverb
+    part: pads.abc
+
+  lead:
+    instrument: Polysynth Lead
+    note_fx:
+      - Arpeggiator
+    fx:
+      - Delay
+    part: lead.abc
+
+  master:
+    fx:
+      - Compressor
+      - Peak Limiter

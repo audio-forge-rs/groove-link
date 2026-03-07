@@ -1,0 +1,50 @@
+X:1
+T:Love Remains - Counter Melody
+M:4/4
+L:1/8
+Q:1/4=72
+K:Eb
+%%MIDI program 88
+%
+% Counter melody and call-and-response
+% Active only in Chorus and Bridge - answers vocal phrases
+% Sits a 3rd/6th below or fills gaps when vocal rests
+%
+%% Verse 1 (bars 1-6) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Chorus (bars 7-13) - gentle answers
+% answer after "key to your heart"
+z6 B,2 |
+% melodic fill
+E F G B z4 |
+% answer after "gave me you"
+z4 E2 G2 |
+% rising response (parallel 3rd below vocal)
+z4 F G A B |
+% harmony below "joy and storm"
+E2 D2 E2 z2 |
+% fill the vocal rest
+G4 F4 |
+% parallel below "Love remains"
+G2 E2 B,4 |
+%% Verse 2 (bars 14-19) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Bridge (bars 20-26) - fuller call-and-response
+% answer "beyond measure"
+z4 E2 G2 |
+% weave with vocal
+E2 z2 G2 z2 |
+% build with vocal toward D5
+z4 G2 B2 |
+% answer "every vow"
+E2 G2 F E z2 |
+% parallel 3rds below "forever song"
+A2 G2 E2 D2 |
+% harmony above held note
+G4 z4 |
+% descending resolution
+E2 G2 B2 z2 |
+%% Final Chorus (bars 27-30) - tacet, let vocal be alone
+z8 | z8 | z8 | z8 |

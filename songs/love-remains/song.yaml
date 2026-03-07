@@ -1,0 +1,130 @@
+# Love Remains - Contemporary Worship Ballad
+#
+# Key: Eb Major | Time: 4/4 | Tempo: 72 BPM
+#
+# Structure (30 bars):
+#   Verse 1 (1-6):   Sparse - chords + vocal + bass only
+#   Chorus (7-13):   Lift - add pad, drums, counter melody, arpeggios
+#   Verse 2 (14-19): Intimate - add hi-hat, drop drums
+#   Bridge (20-26):  Emotional peak - full arrangement, shaker
+#   Final (27-30):   Drop back - near silence, piano resolves
+#
+# Usage:
+#   bitwig project create songs/love-remains/song.yaml
+
+song:
+  title: Love Remains
+  tempo: 72
+  key: Eb
+  time: 4/4
+
+tracks:
+  # === REFERENCE (MUTE) ===
+  # Whole-note chords for visual reference while arranging
+  chords_ref:
+    note_fx:
+      - Humanize x 3
+    instrument: Acoustic Piano (Nektar)
+    part: abc/chords_ref.abc
+
+  # === HARMONIC FOUNDATION ===
+  # Rhythmic piano comping - the heart of the arrangement
+  chords_comping:
+    note_fx:
+      - Humanize x 3
+    instrument: Acoustic Piano (Nektar)
+    fx:
+      - Smooth Compression
+      - Tape-Machine
+    part: abc/chords_comping.abc
+
+  # Arpeggiated chords - electric piano texture (chorus + bridge only)
+  chords_arpeggiated:
+    note_fx:
+      - Humanize x 3
+    instrument: FM Piano 2
+    fx:
+      - Handmade Chorus
+      - Smooth Compression
+    part: abc/chords_arpeggiated.abc
+
+  # Sustained pad - warmth and atmosphere
+  pad:
+    note_fx:
+      - Humanize x 3
+    instrument: Ambient Strings
+    fx:
+      - Handmade Chorus
+      - Smooth Compression
+    part: abc/pad.abc
+
+  # === MELODY ===
+  # Main vocal melody line
+  vocal_melody:
+    instrument: Warm Strata
+    fx:
+      - Smooth Compression
+    part: abc/vocal_melody.abc
+
+  # Counter melody - call and response (chorus + bridge only)
+  counter_melody:
+    instrument: FM Piano 2
+    fx:
+      - Slapback Delay
+      - Smooth Compression
+    part: abc/counter_melody.abc
+
+  # === BASS ===
+  bass:
+    instrument: Acoustic Bass Long
+    fx:
+      - Analogue Compressor
+    part: abc/bass.abc
+
+  # === DRUMS (separate tracks) ===
+  kick:
+    instrument:
+      query: Drum Machine
+      hint: device
+    part: abc/kick.abc
+
+  snare:
+    instrument:
+      query: Drum Machine
+      hint: device
+    part: abc/snare.abc
+
+  hihat:
+    instrument:
+      query: Drum Machine
+      hint: device
+    part: abc/hihat.abc
+
+  # === PERCUSSION ===
+  shaker:
+    instrument:
+      query: Drum Machine
+      hint: device
+    part: abc/shaker.abc
+
+  # === BUSES ===
+  # Shared reverb for cohesion
+  room:
+    receives:
+      - chords_comping: pre
+      - vocal_melody: pre
+      - counter_melody: pre
+      - chords_arpeggiated: pre
+    fx:
+      - Room One
+      - query: EQ-5
+        hint: device
+
+  # Master bus - final polish
+  master:
+    fx:
+      - query: EQ-5
+        hint: device
+      - Solid State Glue
+      - query: Peak Limiter
+        hint: device

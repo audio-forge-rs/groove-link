@@ -1,0 +1,48 @@
+song:
+  title: Dust and Roses
+  tempo: 88
+  key: G
+  time: 4/4
+
+tracks:
+  vocal:
+    instrument: Clean Organ
+    note_fx:
+      - Humanize
+    part: vocal.abc
+
+  guitar:
+    instrument:
+      query: Picked Acoustic (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: guitar.abc
+
+  bass:
+    instrument: Acoustic Bass Long
+    note_fx:
+      - Humanize
+    part: bass.abc
+
+  fiddle:
+    instrument:
+      query: Spitfire Solo Violin
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: fiddle.abc
+
+  room:
+    receives:
+      - vocal: pre
+      - guitar: pre
+      - bass: pre
+      - fiddle: pre
+    fx:
+      - Room One
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

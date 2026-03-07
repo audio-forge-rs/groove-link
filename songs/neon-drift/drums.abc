@@ -1,0 +1,7 @@
+X:1
+T:Drums
+M:4/4
+L:1/8
+K:Dmin
+%%MIDI channel 10
+|: [C,,^F,,] ^F,, [D,,^F,,] ^F,, [C,,^F,,] ^F,, [D,,^F,,] ^F,, :|

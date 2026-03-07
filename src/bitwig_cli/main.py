@@ -689,7 +689,7 @@ def _create_track(
     with get_client(host, port) as client:
         try:
             # Longer timeout for track creation with multiple devices
-            timeout = 5.0 + len(resolved_devices) * 2.0
+            timeout = 30.0 + len(resolved_devices) * 5.0
             rpc_result = client.call_with_progress(
                 "track.create",
                 params,

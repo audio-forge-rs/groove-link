@@ -1,0 +1,29 @@
+X:1
+T:Love Remains - Chord Comping
+M:4/4
+L:1/8
+Q:1/4=72
+K:Eb
+%%MIDI program 0
+%
+% Rhythmic piano comping - gentle worship feel
+% Verse: sparse (half note + rest), Chorus: flowing, Bridge: driving
+%
+%% Verse 1 (bars 1-6) - intimate, sparse
+[E,G,B,E]4 z4 | [D,F,B,D]4 z4 | [C,E,G,B,]4 z4 | [G,B,DF]4 z4 |
+[F,A,CE]4 z4 | [B,,E,F,]4 [B,,D,F,]2 z2 |
+%% Chorus (bars 7-13) - flowing, dotted quarter pulse
+[E,G,B,E]3 z [E,G,B,E]3 z | [B,,D,F,B,]3 z [B,,D,F,B,]3 z |
+[C,E,G,B,]3 z [C,E,G,B,]3 z | [G,B,DF]3 z [G,B,DF]3 z |
+[A,CE]3 z [A,CE]3 z | [B,,D,F,B,]3 z [B,,D,F,B,]3 z |
+[E,G,B,E]4 z4 |
+%% Verse 2 (bars 14-19) - sparse again
+[E,G,B,E]4 z4 | [D,F,B,D]4 z4 | [C,E,G,B,]4 z4 | [G,B,DF]4 z4 |
+[F,A,CE]4 z4 | [B,,D,F,B,]4 [E,G,B,E]2 z2 |
+%% Bridge (bars 20-26) - driving eighth note pulse
+[A,CE]2 z [A,CE] [A,CE]2 z [A,CE] | [G,B,E]2 z [G,B,E] [G,B,E]2 z [G,B,E] |
+[C,E,G,B,]2 z [C,E,G,B,] [C,E,G,B,]2 z [C,E,G,B,] | [B,,D,F,B,]2 z [B,,D,F,B,] [B,,D,F,B,]2 z [B,,D,F,B,] |
+[A,CE]2 z [A,CE] [A,CE]2 z [A,CE] | [B,,D,F,B,]2 z [B,,D,F,B,] [B,,D,F,B,]2 z [B,,D,F,B,] |
+[E,G,B,E]4 z4 |
+%% Final Chorus (bars 27-30) - drop back to sparse
+[A,CE]4 z4 | [B,,D,F,B,]4 z4 | [E,F,G,B,]4 z4 | [E,G,B,E]8 |

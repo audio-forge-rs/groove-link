@@ -1,0 +1,23 @@
+X:1
+T:Love Remains - Kick
+M:4/4
+L:1/8
+Q:1/4=72
+K:C
+%% Uses C, for kick drum trigger (following voltage-cathedral convention)
+%% Active from Chorus onward, drops out for V2 and Final
+%
+%% Verse 1 (bars 1-6) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Chorus (bars 7-13) - gentle kick on beats 1 and 3
+C,2 z2 C,2 z2 | C,2 z2 C,2 z2 | C,2 z2 C,2 z2 | C,2 z2 C,2 z2 |
+C,2 z2 C,2 z2 | C,2 z2 C,2 z2 | C,4 z4 |
+%% Verse 2 (bars 14-19) - tacet
+z8 | z8 | z8 | z8 |
+z8 | z8 |
+%% Bridge (bars 20-26) - kick returns, slightly more drive
+C,2 z2 C,2 z2 | C,2 z2 C,2 z2 | C,2 z2 C,2 z2 | C,2 z2 C,2 z2 |
+C,2 z2 C,2 z2 | C,2 z2 C,2 z2 | C,4 z4 |
+%% Final Chorus (bars 27-30) - tacet, let it breathe
+z8 | z8 | z8 | z8 |

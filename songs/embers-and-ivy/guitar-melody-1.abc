@@ -1,0 +1,41 @@
+X:1
+T:Embers and Ivy - Guitar Melody 1
+M:4/4
+L:1/8
+Q:1/4=100
+K:Bb
+%%MIDI program 25
+%
+% Picked acoustic melody - blues-inflected single notes
+% More angular, rhythmically offset from piano melodies
+%
+% Part 1: Intro (8 bars) - Silent first 4 bars, enters bar 5
+z8 | z8 | z8 | z8 |
+G,2_B,2 D2G2 | _B2A2 G2D2 | G,2D2 G2_B2 | G4 z4 |
+%
+% Part 2: Verse 1 (16 bars) - Picked melody, folk feel
+d2_B2 G2_B2 | d2c2 _B2G2 | A2_B2 d2c2 | _B4 z4 |
+G2A2 _B2d2 | f2d2 c2_B2 | G2_B2 A2G2 | F2G2 z4 |
+_B2d2 c2_B2 | A2G2 F2G2 | _B2c2 d2_B2 | G4 z4 |
+d2f2 d2c2 | _B2A2 G2_B2 | d2c2 _B2A2 | G4 z4 |
+%
+% Part 3: Chorus (8 bars) - Higher register, driving
+g2f2 d2f2 | g2_b2 g2f2 | d2f2 d2c2 | _B2d2 c4 |
+f2d2 _B2d2 | c2_B2 A2G2 | _B2A2 G2F2 | G4 z4 |
+%
+% Part 4: Verse 2 (16 bars) - Variation, different phrasing
+_B2G2 d2_B2 | G2_B2 d2f2 | d2c2 _B2G2 | A4 z4 |
+G2_B2 d2c2 | _B2A2 G2F2 | G2_B2 d2c2 | _B4 z4 |
+d2c2 _B2d2 | f2d2 c2_B2 | A2_B2 G2A2 | _B4 z4 |
+c2_B2 A2G2 | _B2d2 c2_B2 | A2G2 _B2A2 | G4 z4 |
+%
+% Part 5: Bridge (12 bars) - Searching, building tension
+_E2G2 _B2G2 | _B2d2 c2_B2 | G2_B2 c2d2 | f4 z4 |
+d2f2 g2f2 | d2_B2 c2d2 | f2g2 f2d2 | c2_B2 A4 |
+_B2c2 d2f2 | d2c2 _B2A2 | G2_B2 A2G2 | G4 z4 |
+%
+% Part 6: Final Chorus + Outro (16 bars)
+g2f2 d2f2 | g2_b2 g2f2 | d2f2 d2c2 | _B2d2 c4 |
+f2d2 _B2d2 | c2_B2 A2G2 | _B2A2 G2F2 | G4 z4 |
+d2_B2 G2_B2 | d2c2 _B2A2 | G2_B2 G4 | z4 G2_B2 |
+A2G2 z4 | z4 D2G2 | _B2A2 G4 | G8 |]

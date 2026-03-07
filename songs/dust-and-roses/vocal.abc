@@ -1,0 +1,67 @@
+X:1
+T:Dust and Roses - Vocal Melody
+M:4/4
+L:1/8
+Q:1/4=88
+K:G
+%%MIDI program 53
+%
+% Verse 1
+% G                  C
+D2D2 G2A2 | B4 A2G2 |
+% G                  D
+A2B2 A2G2 | A4 z4   |
+% G                  C
+D2D2 G2A2 | B4 B2c2 |
+% D                  G
+d2c2 B2A2 | G4 z4   |
+%
+% Chorus
+% C                  G
+B2c2 d2c2 | B4 A2G2 |
+% Am                 D
+A2B2 c2B2 | A4 z4   |
+% C                  G
+B2c2 d2c2 | B4 A2B2 |
+% D                  G
+A2G2 E2D2 | G4 z4   |
+%
+% Verse 2
+% G                  C
+D2D2 G2A2 | B4 A2G2 |
+% G                  D
+A2B2 A2G2 | A4 z4   |
+% G                  C
+D2D2 G2A2 | B4 B2c2 |
+% D                  G
+d2c2 B2A2 | G4 z4   |
+%
+% Chorus
+% C                  G
+B2c2 d2c2 | B4 A2G2 |
+% Am                 D
+A2B2 c2B2 | A4 z4   |
+% C                  G
+B2c2 d2c2 | B4 A2B2 |
+% D                  G
+A2G2 E2D2 | G4 z4   |
+%
+% Bridge
+% Em                 C
+E2E2 G2B2 | c4 B2A2 |
+% G                  D
+G2A2 B2d2 | d4 z4   |
+% Em                 C
+E2E2 G2B2 | c4 B2c2 |
+% Am                 D
+d2c2 B2A2 | A4 z4   |
+%
+% Final Chorus
+% C                  G
+B2c2 d2c2 | B4 A2G2 |
+% Am                 D
+A2B2 c2B2 | A4 z4   |
+% C                  G
+B2c2 d2c2 | B4 A2B2 |
+% D                  G
+A2G2 E2D2 | G6 z2  |]
