@@ -1,0 +1,38 @@
+X:1
+T:Long Road Home - Chord Reference (MUTE THIS TRACK)
+M:4/4
+L:1/4
+Q:1/4=118
+K:G
+%%MIDI program 0
+% Intro (8 bars) - G G C C Em Em D D
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [CEG]4 | [EGB]4 | [EGB]4 | [D^FA]4 | [D^FA]4 |
+% Verse 1 (16 bars) - G G C G Am Am C D  G G C G Em Em C D
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [ACE]4 | [ACE]4 | [CEG]4 | [D^FA]4 |
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [EGB]4 | [EGB]4 | [CEG]4 | [D^FA]4 |
+% Pre-Chorus 1 (4 bars) - Em C Am D
+[EGB]4 | [CEG]4 | [ACE]4 | [D^FA]4 |
+% Chorus 1 (8 bars) - G D Em C G D C G
+[G,B,D]4 | [D^FA]4 | [EGB]4 | [CEG]4 | [G,B,D]4 | [D^FA]4 | [CEG]4 | [G,B,D]4 |
+% Interlude (4 bars) - G G C D
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [D^FA]4 |
+% Verse 2 (16 bars)
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [ACE]4 | [ACE]4 | [CEG]4 | [D^FA]4 |
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [EGB]4 | [EGB]4 | [CEG]4 | [D^FA]4 |
+% Pre-Chorus 2 (4 bars)
+[EGB]4 | [CEG]4 | [ACE]4 | [D^FA]4 |
+% Chorus 2 (8 bars)
+[G,B,D]4 | [D^FA]4 | [EGB]4 | [CEG]4 | [G,B,D]4 | [D^FA]4 | [CEG]4 | [G,B,D]4 |
+% Bridge (8 bars) - Am Em C G Am Em D D
+[ACE]4 | [EGB]4 | [CEG]4 | [G,B,D]4 | [ACE]4 | [EGB]4 | [D^FA]4 | [D^FA]4 |
+% Solo (16 bars) - same as verse
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [ACE]4 | [ACE]4 | [CEG]4 | [D^FA]4 |
+[G,B,D]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [EGB]4 | [EGB]4 | [CEG]4 | [D^FA]4 |
+% Pre-Chorus 3 (4 bars)
+[EGB]4 | [CEG]4 | [ACE]4 | [D^FA]4 |
+% Chorus 3 (8 bars)
+[G,B,D]4 | [D^FA]4 | [EGB]4 | [CEG]4 | [G,B,D]4 | [D^FA]4 | [CEG]4 | [G,B,D]4 |
+% Final Chorus (8 bars) - bigger, same chords
+[G,B,D]4 | [D^FA]4 | [EGB]4 | [CEG]4 | [G,B,D]4 | [D^FA]4 | [CEG]4 | [G,B,D]4 |
+% Outro (8 bars) - G C Em D G C G G
+[G,B,D]4 | [CEG]4 | [EGB]4 | [D^FA]4 | [G,B,D]4 | [CEG]4 | [G,B,D]4 | [G,B,D]4 |

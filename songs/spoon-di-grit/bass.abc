@@ -1,0 +1,54 @@
+X:1
+T:Spoon DI Grit - Bass
+M:4/4
+L:1/8
+Q:1/4=128
+K:E
+%%MIDI program 33
+%
+% Spoon-style bass: locked to the kick, punchy, minimal
+% Sits in the pocket — root notes with occasional chromatic walk
+%
+% Intro — sparse, mirroring kick pattern (4 bars)
+E,,2 z2 z2 E,,2 | z2 z2 E,,2 z2 |
+E,,2 z2 z2 E,,2 | z2 z2 E,,2 z2 |
+%
+% Verse 1 — tight with guitar stabs (8 bars)
+% E
+E,,2 z2 E,,z E,,z | E,,2 z2 E,,2 z2 |
+% A                            B
+A,,2 z2 A,,z A,,z | B,,2 z2 B,,2 z2 |
+% E
+E,,2 z2 E,,z E,,z | E,,2 z2 E,,2 z2 |
+% A                            B
+A,,2 z2 A,,z A,,z | B,,2 z2 z2 E,,2 |
+%
+% Chorus — driving eighth notes (8 bars)
+% A                            E
+A,,2 A,,A,, A,,2 A,,A,, | E,,2 E,,E,, E,,2 E,,E,, |
+% A                            B
+A,,2 A,,A,, A,,2 A,,A,, | B,,2 B,,B,, B,,2 B,,B,, |
+% A                            E
+A,,2 A,,A,, A,,2 A,,A,, | E,,2 E,,E,, E,,2 E,,E,, |
+% B                            E
+B,,2 B,,B,, B,,2 B,,B,, | E,,4 z4 |
+%
+% Verse 2 — variation, chromatic walks (8 bars)
+% E
+E,,2 z2 E,,z ^D,,z | E,,2 z2 E,,2 z2 |
+% A                            B
+A,,2 z2 A,,z ^G,,z | B,,2 z2 B,,2 z2 |
+% E
+E,,2 z2 E,,z ^D,,z | E,,2 z2 E,,2 z2 |
+% A                            B
+A,,2 z2 A,,z ^G,,z | B,,2 z2 z2 E,,2 |
+%
+% Chorus 2 — driving (8 bars)
+% A                            E
+A,,2 A,,A,, A,,2 A,,A,, | E,,2 E,,E,, E,,2 E,,E,, |
+% A                            B
+A,,2 A,,A,, A,,2 A,,A,, | B,,2 B,,B,, B,,2 B,,B,, |
+% A                            E
+A,,2 A,,A,, A,,2 A,,A,, | E,,2 E,,E,, E,,2 E,,E,, |
+% B                            E
+B,,2 B,,B,, B,,2 B,,B,, | E,,4 z4 |]

@@ -1,0 +1,39 @@
+song:
+  title: Long Road Home
+  tempo: 118
+  key: G
+  time: 4/4
+
+tracks:
+  drums:
+    part: abc/drums.abc
+
+  bass:
+    part: abc/bass.abc
+
+  acoustic-guitar:
+    part: abc/acoustic-guitar.abc
+
+  electric-guitar:
+    part: abc/electric-guitar.abc
+
+  piano:
+    part: abc/piano.abc
+
+  fiddle:
+    part: abc/fiddle.abc
+
+  mandolin:
+    part: abc/mandolin.abc
+
+  vocal:
+    part: abc/vocal.abc
+
+  harmony:
+    part: abc/harmony.abc
+
+  tambourine:
+    part: abc/tambourine.abc
+
+  chords:
+    part: abc/chords.abc

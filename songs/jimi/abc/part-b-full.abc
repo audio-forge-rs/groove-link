@@ -1,0 +1,263 @@
+X:1
+T:Jimi - Part B Full
+M:4/4
+L:1/16
+Q:1/4=92
+K:Em
+%%MIDI program 27
+%
+% Part B - Rhythm/Countermelody Guitar
+% 184 bars at 92 BPM (~8 minutes)
+% Key: E minor (Dorian inflections in solo sections)
+%
+% ============================================
+% SECTION 1: Bars 1-16 - Rhythmic Foundation
+% Clean arpeggiated chords, Em Am Bm C patterns
+% ============================================
+%
+% Bar 1-2: Em arpeggios, gentle entry
+E,2B,2e2g2 b2g2e2B,2 | E,2e2g2b2 e'2b2g2e2 |
+% Bar 3-4: Am arpeggios rising
+A,2E2A2c2 e2c2A2E2 | A,2c2e2a2 c'2a2e2c2 |
+% Bar 5-6: Bm arpeggios
+B,2^F2B2d2 ^f2d2B2^F2 | B,2d2^f2b2 d'2b2^f2d2 |
+% Bar 7-8: C to B7 resolution
+C2E2G2c2 e2c2G2E2 | B,2^D2^F2B2 ^d2B2^F2^D2 |
+% Bar 9-10: Em with wider spacing
+E,4B,4 e4g4 | b4g4 e4B,4 |
+% Bar 11-12: Am with syncopation
+z2A,2E2A2 c2e2z2c2 | A,2z2c2e2 a2e2c2z2 |
+% Bar 13-14: Bm descending with rests
+B,2^F2B2d2 z4^f2d2 | B,4z2^F2 B2d2^f2z2 |
+% Bar 15-16: C-B7 turnaround, more motion
+C2G2c2e2 G2c2e2g2 | B,2^F2B2^d2 ^f4z2E,2 |
+%
+% ============================================
+% SECTION 2: Bars 17-32 - Countermelody Emerges
+% Answer phrases to Part A, call-and-response
+% ============================================
+%
+% Bar 17-18: Wait for Part A, then respond
+z8 z4e2g2 | a2g2e2B2 E4z4 |
+% Bar 19-20: Short rhythmic answer
+z8 z2B2e2^f2 | g4e4 z8 |
+% Bar 21-22: Longer melodic response
+z4e2g2 a2b2a2g2 | e2^f2g2a2 b4z4 |
+% Bar 23-24: Syncopated answer phrase
+z2e4g2 z2a4^f2 | g2e2B2E2 z8 |
+% Bar 25-26: Rising response, more confident
+z4B2e2 g2a2b2e'2 | d'2b2g2e2 z4B2d2 |
+% Bar 27-28: Doubled answer phrase
+e2g2a2g2 e4z4 | e2g2a2b2 a2g2e2z2 |
+% Bar 29-30: Chromatic approach tones
+z4^d2e2 g2^f2g2a2 | b2a2g2^f2 e4z4 |
+% Bar 31-32: Cadential response
+z2b2a2g2 ^f2e2^d2e2 | g2^f2e2B2 E,8 |
+%
+% ============================================
+% SECTION 3: Bars 33-48 - Driving Rhythm
+% Palm-muted eighth notes, power chord accents
+% ============================================
+%
+% Bar 33-34: Em power chord chugs (eighth notes = 2 units each)
+[E,B,]2[E,B,]2[E,B,]2[E,B,]2 [E,B,]2[E,B,]2[E,B,]2[E,B,]2 | [E,B,]2[E,B,]2[E,B,]2[E,B,]2 [E,B,]4z2[E,B,]2 |
+% Bar 35-36: G5 power chord
+[G,D]2[G,D]2[G,D]2[G,D]2 [G,D]2[G,D]2[G,D]2[G,D]2 | [G,D]2[G,D]2[G,D]2[G,D]2 [G,D]4z2[G,D]2 |
+% Bar 37-38: A5 with accent pattern
+[A,E]4[A,E]2[A,E]2 [A,E]2[A,E]2[A,E]4 | z2[A,E]2[A,E]4 [A,E]2[A,E]2[A,E]2[A,E]2 |
+% Bar 39-40: B5 to Em resolution
+[B,^F]2[B,^F]2[B,^F]2[B,^F]2 [B,^F]4[B,^F]2[B,^F]2 | [E,B,]4[E,B,]2[E,B,]2 [E,B,]2[E,B,]2[E,B,]4 |
+% Bar 41-42: Galloping rhythm Em
+[E,B,]4[E,B,]2[E,B,]2 [E,B,]2[E,B,]4[E,B,]2 | [E,B,]4[E,B,]2[E,B,]2 [E,B,]2[E,B,]2z4 |
+% Bar 43-44: C5 D5 movement
+[C,G,]2[C,G,]2[C,G,]2[C,G,]2 [D,A,]2[D,A,]2[D,A,]2[D,A,]2 | [C,G,]2[C,G,]4[C,G,]2 [D,A,]4[D,A,]2[D,A,]2 |
+% Bar 45-46: Syncopated power chord hits
+[E,B,]4z4 z2[G,D]4z2 | z4[A,E]4 [B,^F]4z4 |
+% Bar 47-48: Build-up to next section
+[E,B,]2[E,B,]2[G,D]2[G,D]2 [A,E]2[A,E]2[B,^F]2[B,^F]2 | [E,B,]2[G,D]2[A,E]2[B,^F]2 [E,B,]4[E,B,]4 |
+%
+% ============================================
+% SECTION 4: Bars 49-72 - Takes Melodic Lead
+% Lyrical phrases, Dorian feel (C# natural)
+% Part A drops out or holds chords
+% ============================================
+%
+% Bar 49-50: Dorian melody entrance
+e4^f4 g4a4 | b2a2g2^f2 e4z4 |
+% Bar 51-52: Dorian color, C# note
+e2g2^f2e2 ^c2e2^f2g2 | a4g4 e4z4 |
+% Bar 53-54: Rising phrase with ornament
+B2e2^f2g2 a2b2^c'2e'2 | d'2^c'2b2a2 g2^f2e2z2 |
+% Bar 55-56: Sustained notes with space
+e8 z4^f4 | g8 z4a2g2 |
+% Bar 57-58: Descending Dorian run
+e'2d'2^c'2b2 a2g2^f2e2 | ^c2e2^f2g2 a4z4 |
+% Bar 59-60: Call phrase, Hendrix-flavored bends
+e2z2g4 z2a2b2a2 | g2^f2e4 z4B2e2 |
+% Bar 61-62: Wider intervals, expressive
+e4b4 a4e4 | g4^f4 e8 |
+% Bar 63-64: Rhythmic melody, dotted feel
+e6z2 g6z2 | a6z2 b6z2 |
+% Bar 65-66: Double-stop melody
+[eg]4[^fa]4 [gb]4[ae']4 | [bd']4[a^c']4 [gb]4[eg]4 |
+% Bar 67-68: Pentatonic descent
+e'2d'2b2a2 g2e2d2B2 | E2G2B2e2 g4z4 |
+% Bar 69-70: Bluesy chromatic line
+e2^f2g2^g2 a2b2^c'2d'2 | e'4d'4 b4a4 |
+% Bar 71-72: Resolve back, prepare for next section
+g2^f2e2^c2 B2^c2e2^f2 | g4e4 E,8 |
+%
+% ============================================
+% SECTION 5: Bars 73-88 - Heavy Riff Lock
+% With Part A but different register/voicing
+% ============================================
+%
+% Bar 73-74: Low register riff
+E,2E,2z2E,2 G,2A,2B,4 | E,2E,2z2E,2 B,2A,2G,4 |
+% Bar 75-76: Octave higher voicing
+E2E2z2E2 G2A2B4 | E2E2z2E2 B2A2G4 |
+% Bar 77-78: Power chord version, different accent
+[E,B,]4z2[E,B,]2 [G,D]2[A,E]2[B,^F]4 | [E,B,]4z2[E,B,]2 [B,^F]2[A,E]2[G,D]4 |
+% Bar 79-80: Variation with chromatic neighbor
+E,2E,2z2^D,2 E,2G,2A,2B,2 | E,2z2^D,2E,2 B,2A,2G,2E,2 |
+% Bar 81-82: Doubled riff, higher octave added
+[E,e]2[E,e]2z2[E,e]2 [G,g]2[A,a]2[B,b]4 | [E,e]2[E,e]2z2[E,e]2 [B,b]2[A,a]2[G,g]4 |
+% Bar 83-84: Rhythmic displacement of the riff
+z2E,2E,2z2 E,2G,2A,4 B,4 | z2E,2E,2z2 E,2B,2A,4 G,4 |
+% Bar 85-86: Double-time riff variation
+E,E,z2E,E,z2 G,G,A,A,B,2z2 | E,E,z2E,E,z2 B,B,A,A,G,2z2 |
+% Bar 87-88: Riff climax, full chords
+[E,B,e]4z2[E,B,e]2 [G,Dg]2[A,Ea]2[B,^Fb]4 | [E,B,e]4[E,B,e]4 [E,B,e]4z4 |
+%
+% ============================================
+% SECTION 6: Bars 89-104 - Textural Role
+% Tremolo-picked single notes, sustained harmonics
+% High register
+% ============================================
+%
+% Bar 89-90: High tremolo on B
+bbbbbbbb bbbbbbbb | bbbbbbbb bbbb z4 |
+% Bar 91-92: Shift to high E
+e'e'e'e'e'e'e'e' e'e'e'e'e'e'e'e' | e'e'e'e'e'e'e'e' e'e'e'e'z4 |
+% Bar 93-94: Tremolo on G, ethereal
+g'g'g'g'g'g'g'g' g'g'g'g'g'g'g'g' | g'g'g'g'g'g'g'g' g'g'g'g'z4 |
+% Bar 95-96: Harmonic sustains (natural harmonics represented as high notes)
+e'8 z4b4 | e'8 z8 |
+% Bar 97-98: Alternating tremolo notes
+b2b2e'2e'2 b2b2e'2e'2 | g'2g'2e'2e'2 b2b2g2g2 |
+% Bar 99-100: Sparse harmonics with space
+e'8 z8 | b8 z8 |
+% Bar 101-102: Tremolo descent
+e'e'e'e'd'd'd'd' b2b2b2b2 a2a2a2a2 | g2g2g2g2 e2e2e2e2 B2B2B2B2 E4 |
+% Bar 103-104: Final harmonic sustain, fade texture
+e'16 | b8 e'4 z4 |
+%
+% ============================================
+% SECTION 7: Bars 105-120 - Counterpoint to Fuzz
+% Cleaner melodic response against Part A fuzz
+% ============================================
+%
+% Bar 105-106: Clean arpeggio against fuzz
+E2B2e2g2 b2e'2b2g2 | e2B2E2B,2 E,4z4 |
+% Bar 107-108: Am countermelody
+A,2E2A2c2 e2a2e2c2 | A2c2e2a2 c'2a2e2c2 |
+% Bar 109-110: Ascending clean line
+E2^F2G2A2 B2^c2d2e2 | ^f2g2a2b2 e'4z4 |
+% Bar 111-112: Descending answer
+d'2^c'2b2a2 g2^f2e2d2 | ^c2B2A2G2 ^F2E2z4 |
+% Bar 113-114: Gentle double stops against fuzz wall
+[Be]4[^ce]4 [dg]4[ea]4 | [^fb]4[gd']4 [ae']4z4 |
+% Bar 115-116: Ringing open strings + melody
+e4z2B2 G2E2B,2z2 | e4^f4 g4a4 |
+% Bar 117-118: Sustained clean notes cutting through
+b8 a4g4 | e8 z8 |
+% Bar 119-120: Melodic resolution, preparing for solo
+g2a2b2^c'2 d'2e'2d'2b2 | a2g2^f2e2 B4E4 |
+%
+% ============================================
+% SECTION 8: Bars 121-140 - Takes the Lead
+% Expressive solo-like lines, Part A supports
+% ============================================
+%
+% Bar 121-122: Solo entrance, confident
+z4e2g2 b2e'2d'2b2 | a2g2e2^f2 g4z4 |
+% Bar 123-124: Hendrix-style phrasing
+e2z2e2g2 z2a2z2b2 | e'4d'2b2 a2g2e4 |
+% Bar 125-126: Wide interval leaps
+e2b2e'2b2 g2e'2b2g2 | e2b2g2e2 B2e2g2b2 |
+% Bar 127-128: Bluesy bends and slides
+e2^f2g2a2 ^a2b2^c'2d'2 | e'4^d'2e'2 d'2b2a2g2 |
+% Bar 129-130: Rapid pentatonic flurry
+egbeg'e'be gbegBEGB, | E,B,EGBegb e'4z4 |
+% Bar 131-132: Sustained note with vibrato feel
+e'16 | d'8 b8 |
+% Bar 133-134: Rhythmic solo phrase
+e'4z2d'2 b4z2a2 | g4z2e2 ^f2g2a2b2 |
+% Bar 135-136: Double-stop solo
+[be']4[ad']4 [gb]4[ea]4 | [^fg]4[ea]4 [Be]4[Eg]4 |
+% Bar 137-138: Climactic phrase, highest register
+e'2^f'2g'4 z2e'2d'2b2 | a2b2e'4 d'2b2a2g2 |
+% Bar 139-140: Solo wind-down
+e2^f2g2a2 b4a4 | g2^f2e4 z4B2e2 |
+%
+% ============================================
+% SECTION 9: Bars 141-160 - Rhythmic Intensity
+% Syncopated chord stabs, funk-influenced
+% ============================================
+%
+% Bar 141-142: Sharp Em9 stabs
+z2[EGBe^f]4z2 z4[EGBe^f]4 | z2[EGBe^f]4z2 [EGBe^f]2z2z4 |
+% Bar 143-144: Am7 funk chop
+[A,EAce]4z4 z2[A,EAce]2z4 | z4[A,EAce]4 z2[A,EAce]2z4 |
+% Bar 145-146: Shifting stab pattern
+[E,B,EB]4z2[G,DGB]4z2 | [A,EAc]4z2[B,^FBd]4z2 |
+% Bar 147-148: Muted scratch rhythm
+z2[E,B,]2z2[E,B,]2 z2[E,B,]2z2[E,B,]2 | z2[E,B,]2[E,B,]2z2 [E,B,]2z4[E,B,]2 |
+% Bar 149-150: Displaced chord hits
+z4[EGBe]4 z4[EGBe]4 | [EGBe]4z4 z4[EGBe]4 |
+% Bar 151-152: 16th note funk strumming
+[EGBe]2z2[EGBe]2z2 [EGBe]2z2[EGBe]2z2 | z2[EGBe]2z2[EGBe]2 z2[EGBe]2z2[EGBe]2 |
+% Bar 153-154: Accented offbeats, Am to Em
+z2[Ace]4z2 [Ace]2z2[Ace]4 | z2[EGB]4z2 [EGB]2z2[EGB]4 |
+% Bar 155-156: Dotted rhythm chord stabs
+[E,B,EB]6z2 [G,DGB]6z2 | [A,EAc]6z2 [E,B,EB]6z2 |
+% Bar 157-158: Double-time stabs
+[EGB]2z2[EGB]2z2 [Ace]2z2[Ace]2z2 | [B,^Fd]2z2[B,^Fd]2z2 [EGB]2z2[EGB]2z2 |
+% Bar 159-160: Final stab pattern, intensity peak
+[E,B,EGBe]4z2[E,B,EGBe]2 z2[E,B,EGBe]4z2 | [E,B,EGBe]2z2[E,B,EGBe]2z2 [E,B,EGBe]8 |
+%
+% ============================================
+% SECTION 10: Bars 161-176 - Interlock with Part A
+% Trading phrases every 2 bars
+% ============================================
+%
+% Bar 161-162: Part B plays (Part A rests)
+e2g2b2e'2 d'2b2g2e2 | ^f2g2a2b2 e'4z4 |
+% Bar 163-164: Part B rests (Part A plays)
+z16 | z16 |
+% Bar 165-166: Part B takes it
+B2e2g2b2 a2g2e2B2 | e2^f2g2^f2 e4z4 |
+% Bar 167-168: Part B rests
+z16 | z16 |
+% Bar 169-170: Part B melodic fragment
+e'4d'4 b2a2g2e2 | ^f2g2a2g2 e4z4 |
+% Bar 171-172: Part B rests
+z16 | z16 |
+% Bar 173-174: Part B - final trade, urgent
+e2e2g2g2 b2b2e'2e'2 | d'2b2a2g2 ^f2e2B2E2 |
+% Bar 175-176: Part B rests, Part A finishes trade
+z16 | z16 |
+%
+% ============================================
+% SECTION 11: Bars 177-184 - Outro
+% Sparse, descending, final resolution to Em
+% ============================================
+%
+% Bar 177-178: High sustained note, slowly fading
+e'8 z8 | d'8 z8 |
+% Bar 179-180: Continuing descent with space
+b8 z8 | a8 z8 |
+% Bar 181-182: Lower still, open feel
+g8 z8 | e8 z8 |
+% Bar 183-184: Final resolution - low Em chord, silence
+[E,B,EGBe]8 z8 | E,16 |]

@@ -1,0 +1,62 @@
+X:1
+T:War on Drugs Atmosphere - Guitar
+M:4/4
+L:1/8
+Q:1/4=118
+K:F
+%%MIDI program 27
+%
+% Red Eyes / Under the Pressure style
+% Arpeggiated, wide, atmospheric — delays do the rest
+%
+% Intro — shimmering arpeggios (4 bars)
+% F                            Bb
+F,A, CF Ac FC | B,,D, FA DF AB, |
+% F                            C
+F,A, CF Ac FC | C,E, GC EG CE |
+%
+% Verse — steady arpeggio patterns
+% F
+F,C FA CF A,F, | F,C FA CF A,F, |
+% Bb                           C
+B,,F, B,D FB, D,B,, | C,G, CE GC E,C, |
+% F
+F,C FA CF A,F, | F,C FA CF A,F, |
+% Dm                           C
+D,A, DF AD F,D, | C,G, CE GC E,C, |
+%
+% Chorus — bigger, sustained with arpeggios
+% Bb                           F
+[B,,DF]2 B,D FA DF | [F,A,CF]2 A,C FA CF |
+% C                            Dm
+[C,EG]2 CE GC EG | [D,A,DF]2 A,D FA DF |
+% Bb                           F
+[B,,DF]2 B,D FA DF | [F,A,CF]2 A,C FA CF |
+% C                            F
+[C,EG]2 CE GC EG | [F,A,CF]4 z4 |
+%
+% Verse 2
+% F
+F,C FA CF A,F, | F,C FA CF A,F, |
+% Bb                           C
+B,,F, B,D FB, D,B,, | C,G, CE GC E,C, |
+% F
+F,C FA CF A,F, | F,C FA CF A,F, |
+% Dm                           C
+D,A, DF AD F,D, | C,G, CE GC E,C, |
+%
+% Chorus
+% Bb                           F
+[B,,DF]2 B,D FA DF | [F,A,CF]2 A,C FA CF |
+% C                            Dm
+[C,EG]2 CE GC EG | [D,A,DF]2 A,D FA DF |
+% Bb                           F
+[B,,DF]2 B,D FA DF | [F,A,CF]2 A,C FA CF |
+% C                            F
+[C,EG]2 CE GC EG | [F,A,CF]4 z4 |
+%
+% Outro — sparse, dissolving
+% F                            Bb
+F,C z2 FA z2 | B,,D, z2 FA z2 |
+% F                            C              F
+F,C z2 FA z2 | C,E, z2 GC z2 | F,4 z4 |]

@@ -1,0 +1,25 @@
+# Jeff Tweedy / Wilco — early Colour Box adopter
+# Tweedy blends clean and dirty, lo-fi textures with melodic playing.
+# Yankee Hotel Foxtrot / A Ghost Is Born territory.
+# Colour Box: step 1-2, subtle warmth, tape compression
+
+song:
+  title: Wilco Tweedy
+  tempo: 108
+  key: A
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Brighter EQ           # pre-gain: slight treble lift for jangle
+      - Clean Guitar           # Amp — step 1, clean console warmth
+      - Light Saturation       # gentle transformer color
+      - Tape-Machine           # tape compression — essential Wilco texture
+      - Analogue Compressor    # glue
+    part: guitar.abc

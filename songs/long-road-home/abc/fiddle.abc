@@ -1,0 +1,53 @@
+X:1
+T:Long Road Home - Fiddle
+M:4/4
+L:1/8
+Q:1/4=118
+K:G
+%%MIDI program 40
+% Intro (8 bars) - sustained drone then melody
+z8 | z8 | z8 | z8 |
+D4 G4 | B4 A4 | G4 ^F4 | G8 |
+% Verse 1 (16 bars) - countermelody fills between vocal phrases
+z4 d2 e2 | g4 ^f2 d2 | z8 | z4 B2 d2 |
+z8 | z4 A2 B2 | d4 c4 | z8 |
+z4 d2 e2 | g4 ^f2 d2 | z8 | z4 B2 d2 |
+z8 | z4 e2 g2 | ^f4 e4 | d4 z4 |
+% Pre-Chorus 1 (4 bars) - ascending melody
+e4 ^f4 | g4 a4 | b4 a4 | a4 ^f4 |
+% Chorus 1 (8 bars) - singing melody
+d2 e2 g2 b2 | a4 ^f4 | g2 ^f2 e2 d2 | e4 c4 |
+d2 e2 g2 b2 | a4 ^f4 | e4 d4 | d4 z4 |
+% Interlude (4 bars) - ornamental
+d2 e2 d2 B2 | G4 A4 | B2 d2 e2 d2 | ^f4 a4 |
+% Verse 2 (16 bars) - similar fills with variations
+z4 e2 ^f2 | g4 a2 g2 | z8 | z4 d2 e2 |
+z8 | z4 c2 d2 | e4 d4 | z8 |
+z4 e2 ^f2 | g4 a2 g2 | z8 | z4 d2 e2 |
+z8 | z4 g2 a2 | b4 a4 | g4 z4 |
+% Pre-Chorus 2 (4 bars)
+e4 ^f4 | g4 a4 | b4 a4 | a4 ^f4 |
+% Chorus 2 (8 bars)
+d2 e2 g2 b2 | a4 ^f4 | g2 ^f2 e2 d2 | e4 c4 |
+d2 e2 g2 b2 | a4 ^f4 | e4 d4 | d4 z4 |
+% Bridge (8 bars) - lyrical, sustained
+a4 e4 | g4 e4 | e4 c4 | d4 B4 |
+a4 e4 | g4 e4 | ^f4 d4 | ^f4 a4 |
+% Solo (16 bars) - harmonizing with guitar solo
+z4 b2 d'2 | g'4 ^f'2 d'2 | z4 e2 g2 | b4 a2 g2 |
+z4 a2 c'2 | e'4 d'2 c'2 | z4 e2 g2 | a4 ^f4 |
+z4 b2 d'2 | g'4 ^f'2 d'2 | z4 e2 g2 | b4 a2 g2 |
+z4 ^f2 a2 | d'4 b4 | e'4 d'4 | d'2 b2 g2 ^f2 |
+% Pre-Chorus 3 (4 bars)
+e4 ^f4 | g4 a4 | b4 a4 | a4 ^f4 |
+% Chorus 3 (8 bars)
+d2 e2 g2 b2 | a4 ^f4 | g2 ^f2 e2 d2 | e4 c4 |
+d2 e2 g2 b2 | a4 ^f4 | e4 d4 | d4 z4 |
+% Final Chorus (8 bars) - double-stop harmonies
+[dg]2 [eb]2 [gd']2 [be']2 | [^fa]2 [ad']2 [^fd']2 [ae']2 |
+[gb]2 [^fa]2 [eg]2 [d^f]2 | [ec]2 [ce]2 [eg]2 [cd]2 |
+[dg]2 [eb]2 [gd']2 [be']2 | [^fa]2 [ad']2 [^fd']2 [ae']2 |
+[ec]2 [ce]2 [eg]2 [cd]2 | [dg]4 [GB]4 |
+% Outro (8 bars) - fading melody
+d2 e2 g2 b2 | a4 g4 | e2 d2 B2 A2 | G4 ^F4 |
+G2 B2 D2 G2 | B4 A4 | G4 z4 | G8 |

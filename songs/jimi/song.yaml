@@ -1,0 +1,247 @@
+# Jimi — 8 tracks demonstrating JHS Pedals techniques in Bitwig
+# Two guitar parts (A and B) split across 4 tracks each
+# Each track: Kontakt 8 → [pre-amp FX] → CLA Guitars Stereo → [post-amp FX]
+# Plus 2 reference tracks with full parts (no FX, just instrument)
+#
+# CLA Guitars Stereo is a Waves plugin inside WaveShell.
+# After loading, select "CLA Guitars Stereo" from the WaveShell sub-plugin list.
+# Each WaveShell instance should be configured with different CLA Guitars settings
+# to match the track's pedal emulation concept.
+
+song:
+  title: Jimi
+  tempo: 92
+  key: Em
+  time: 4/4
+
+tracks:
+  # ═══════════════════════════════════════════════════════════════
+  # REFERENCE TRACKS (full parts, no FX — just for compositional reference)
+  # ═══════════════════════════════════════════════════════════════
+
+  part-a-ref:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    part: abc/part-a-full.abc
+
+  part-b-ref:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    part: abc/part-b-full.abc
+
+  # ═══════════════════════════════════════════════════════════════
+  # PART A TRACKS — primarily lead/melody, 4 tracks with unique FX
+  # ═══════════════════════════════════════════════════════════════
+
+  # Track A1: "Transparent Stack"
+  # JHS concept: Blues breaker transparent OD (stage 1, always on) +
+  # Klon-style mid-heavy OD (stage 2, drive cranked to 75%)
+  # From stack.md: "Morning Glory + Klon Centaur" — the foundational stack
+  # CLA Guitars: Crunch mode, moderate drive
+  a1-transparent-stack:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Blues breaker transparent overdrive (soft clipping, no mid peak)
+      - query: Saturator               # Gentle saturation = transparent OD
+        hint: device
+      - query: EQ-5                    # Flat EQ, slight presence lift = "transparent"
+        hint: device
+      # Amp: CLA Guitars Stereo (Crunch mode, moderate settings)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Klon-style mid-heavy OD (hard clipping, heavy mids)
+      - query: Distortion              # Hard clipping stage = Klon's diodes
+        hint: device
+      - query: EQ-5                    # Mid-frequency boost at 1kHz = Klon character
+        hint: device
+      - query: Compressor              # Gentle compression to glue the stack
+        hint: device
+    part: abc/a1-transparent-stack.abc
+
+  # Track A2: "Octave Fuzz"
+  # JHS concept: Octave pedal (Micro POG) into massive fuzz (Fuzz War)
+  # From stack.md: "octave into fuzz — the loudest, most rambunctious combo"
+  # 50% dry, 75% sub octave, touch of high octave → into fuzz
+  # CLA Guitars: Heavy mode, high gain
+  a2-octave-fuzz:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Octave effect (sub octave dominant)
+      - query: Pitch Shifter           # -12 semitones = sub octave
+        hint: device
+      # Amp: CLA Guitars Stereo (Heavy mode, gain cranked)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Massive fuzz (Fuzz War style)
+      - query: Distortion              # Full-on fuzz distortion
+        hint: device
+      - query: Bit-8                   # Adds grit and texture like analog fuzz
+        hint: device
+      - query: EQ-5                    # Scoop mids slightly (Big Muff character)
+        hint: device
+    part: abc/a2-octave-fuzz.abc
+
+  # Track A3: "Edge Delays"
+  # JHS concept: Dual synced delays — quarter notes + dotted eighths
+  # From stack.md: "The Edge of U2" technique — analog delay (quarters) into
+  # digital delay (dotted eighths). "dadada dadada" rhythmic syncopation.
+  # CLA Guitars: Clean mode (pristine cleans for delay clarity)
+  a3-edge-delays:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Clean boost (slight presence lift for chime)
+      - query: EQ-5                    # Bright, chimey top end
+        hint: device
+      # Amp: CLA Guitars Stereo (Clean mode, minimal coloring)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Dual delay stack
+      - query: Delay-2                 # Quarter note delay (analog character)
+        hint: device
+      - query: Delay-4                 # Dotted eighth delay (digital, precise)
+        hint: device
+      - query: Reverb                  # Subtle shimmer verb tail
+        hint: device
+    part: abc/a3-edge-delays.abc
+
+  # Track A4: "Nirvana Grunge"
+  # JHS concepts: Big Muff fuzz → Tube Screamer (from stack.md + nirvana.md)
+  # "Big Muff has no mid peak, disappears in mix. Fix with Tube Screamer after."
+  # Kurt's rig: DS-1 or Big Muff into Small Clone chorus
+  # CLA Guitars: Heavy mode
+  a4-nirvana-grunge:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Big Muff style fuzz (scooped mids, heavy distortion)
+      - query: Distortion              # Heavy fuzz before amp
+        hint: device
+      - query: EQ-5                    # Scoop mids = Big Muff character
+        hint: device
+      # Amp: CLA Guitars Stereo (Heavy mode, aggressive)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Tube Screamer (mid boost to cut through mix)
+      - query: Saturator               # Soft clipping OD = Tube Screamer
+        hint: device
+      - query: EQ-5                    # Mid-frequency hump at 720Hz = TS character
+        hint: device
+      # Kurt's secret weapon
+      - query: Chorus                  # Small Clone chorus (essential Nirvana)
+        hint: device
+    part: abc/a4-nirvana-grunge.abc
+
+  # ═══════════════════════════════════════════════════════════════
+  # PART B TRACKS — primarily rhythm/countermelody, 4 tracks with unique FX
+  # ═══════════════════════════════════════════════════════════════
+
+  # Track B1: "Clean Chorus"
+  # JHS concept: Clean DI + stereo BBD chorus + studio compression
+  # From chorus.md: INXS clean DI sound, Boss CE-1/CE-2 character
+  # "Shimmering cleans" — the 80s studio guitar sound
+  # CLA Guitars: Clean mode, pristine
+  b1-clean-chorus:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Clean, slight compression (studio DI feel)
+      - query: Compressor              # Studio compression before amp
+        hint: device
+      # Amp: CLA Guitars Stereo (Clean mode, totally clean)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Stereo BBD chorus (the 80s sound)
+      - query: Chorus+                 # Rich stereo chorus = CE-2 / Brigade
+        hint: device
+      - query: EQ-5                    # Slight treble lift for sparkle
+        hint: device
+      - query: Compressor              # Final compression for evenness
+        hint: device
+    part: abc/b1-clean-chorus.abc
+
+  # Track B2: "Tremolo Reverb"
+  # JHS concept: Big ambient reverb THEN tremolo (breaking the conventional rule)
+  # From stack.md: "just like a blackface 65 Princeton — reverb before tremolo"
+  # "Take a big huge ambient reverb, then let tremolo pulse the decay"
+  # CLA Guitars: Clean mode with reverb engaged
+  b2-tremolo-reverb:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Gentle transparent overdrive (light breakup)
+      - query: Saturator               # Light breakup, never fully clean
+        hint: device
+      # Amp: CLA Guitars Stereo (Clean mode, reverb color engaged)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Reverb BEFORE tremolo (the rule-breaking order)
+      - query: Reverb                  # Big ambient wash reverb
+        hint: device
+      - query: Tremolo                 # Pulses the reverb decay + clean signal
+        hint: device
+      - query: EQ-5                    # Shape the final tone
+        hint: device
+    part: abc/b2-tremolo-reverb.abc
+
+  # Track B3: "Boost Cascade"
+  # JHS concept: Two boost pedals cascading = DIY custom overdrive
+  # From stack.md: "ZVEX Super Hard On + EQD Arrows" — gain stages like an amp
+  # First boost's knob becomes master volume, second controls drive amount
+  # CLA Guitars: Crunch mode (the boost cascade drives into amp breakup)
+  b3-boost-cascade:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Dual boost cascade (two gain stages)
+      - query: Tool                    # First boost stage (gain + volume)
+        hint: device
+      - query: Saturator               # Second boost stage (adds saturation)
+        hint: device
+      - query: Filter                  # Tone shaping between stages
+        hint: device
+      # Amp: CLA Guitars Stereo (Crunch mode, edge of breakup)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Minimal — let the boost cascade speak
+      - query: EQ-5                    # Final EQ shaping
+        hint: device
+    part: abc/b3-boost-cascade.abc
+
+  # Track B4: "Ambient Delay Verb"
+  # JHS concept: Quarter note delay into modulated reverb
+  # From stack.md: "one of the best sounds out there" — Diamond Memory Lane Jr
+  # into Boss RV-5 modulated reverb. "Faint but almost strong" delay level.
+  # CLA Guitars: Clean mode (ambient clarity)
+  b4-ambient-delay-verb:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    fx:
+      # Pre-amp: Clean, transparent (nothing to muddy the ambient wash)
+      - query: EQ-5                    # Slight high-frequency air
+        hint: device
+      # Amp: CLA Guitars Stereo (Clean mode, pristine)
+      - query: WaveShell1-VST3 14.19   # → Select "CLA Guitars Stereo" inside
+        hint: plugin
+      # Post-amp: Quarter delay → modulated reverb (the magic combo)
+      - query: Delay-4                 # Quarter note delay, moderate feedback
+        hint: device
+      - query: Chorus                  # Modulation on the reverb tail
+        hint: device
+      - query: Reverb                  # Big modulated reverb wash
+        hint: device
+      - query: Micro-pitch             # Extra width and shimmer
+        hint: device
+    part: abc/b4-ambient-delay-verb.abc

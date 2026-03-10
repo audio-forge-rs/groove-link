@@ -1,0 +1,25 @@
+# The Beatles — DI guitar at Abbey Road Studio 2
+# Pioneered plugging guitar directly into the Neve console.
+# Revolution, Paperback Writer — raw, fuzzy, no amp.
+# Colour Box: step 3-4, heavy pre-gain, full breakup
+
+song:
+  title: Beatles Abbey Road
+  tempo: 136
+  key: D
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Brighter EQ           # pre-gain: treble push for bite
+      - Lead Guitar 1          # Amp — step 3-4, heavy console fuzz
+      - Saturation 2           # thick transformer distortion
+      - Bass Driver            # extra low-mid grit (Revolution tone)
+      - Analogue Compressor    # studio bus compression
+    part: guitar.abc

@@ -1,0 +1,25 @@
+# Mac DeMarco — lo-fi, wobbly, warm jangle
+# Mac texted JHS about the Colour Box. His sound: chorus, vibrato,
+# detuned warmth, tape saturation. Salad Days / 2 era.
+# Colour Box: step 1-2, warm and slightly dirty
+
+song:
+  title: Mac DeMarco Lo-Fi
+  tempo: 92
+  key: G
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Darker EQ             # pre-gain: rolled-off highs, warm lo-fi
+      - Clean Guitar           # Amp — step 1-2, mild console warmth
+      - Saturation 1           # tape-like saturation
+      - Juno Chorus            # wobbly chorus — Mac's signature
+      - Tape-Machine           # tape degradation, essential for lo-fi
+    part: guitar.abc

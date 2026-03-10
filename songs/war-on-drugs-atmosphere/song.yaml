@@ -1,0 +1,27 @@
+# The War on Drugs — atmospheric, big, washed-out guitar
+# They put the Colour Box at front of house on the master fader.
+# Huge ambient washes, delay into reverb, Springsteen-meets-shoegaze.
+# Colour Box: step 1, clean preamp coloring the whole mix
+
+song:
+  title: War on Drugs Atmosphere
+  tempo: 118
+  key: F
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Brighter EQ           # pre-gain: airy highs for atmosphere
+      - Clean Guitar           # Amp — step 1, clean console warmth
+      - Light Saturation       # gentle transformer sheen
+      - One 8th Long Delay     # rhythmic delay — signature WoD sound
+      - Slow Stereo Phaser     # subtle movement and width
+      - Dual Reverb            # big ambient wash
+      - Analogue Compressor    # glue for the wash
+    part: guitar.abc

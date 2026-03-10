@@ -1,0 +1,63 @@
+X:1
+T:Spoon DI Grit - Drums
+M:4/4
+L:1/8
+Q:1/4=128
+K:E
+%%MIDI channel 10
+%
+% Spoon-style drums: tight, minimal, mechanical precision
+% Jim Eno's playing: sparse kick-snare with barely-there hats
+% Lots of space — the guitar riff IS the rhythm section
+%
+% Intro — kick only, setting the pulse (4 bars)
+C,,2 z2 z2 C,,2 | z2 z2 C,,2 z2 |
+C,,2 z2 z2 C,,2 | z2 z2 C,,2 z2 |
+%
+% Verse 1 — minimal kick-snare, no hats (8 bars)
+% E
+C,,2 z2 D,,2 z2 | z2 C,,2 D,,2 z2 |
+% A                            B
+C,,2 z2 D,,2 z2 | z2 z2 D,,2 C,,2 |
+% E
+C,,2 z2 D,,2 z2 | z2 C,,2 D,,2 z2 |
+% A                            B
+C,,2 z2 D,,2 z2 | z2 z2 D,,2 z2 |
+%
+% Chorus — hats enter, more drive (8 bars)
+% A                            E
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+% A                            B
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+% A                            E
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+% B                            E
+[C,,^F,,] ^F,, D,, ^F,, [C,,^F,,] ^F,, D,, ^F,, |
+C,,2 D,,2 C,,2 D,,2 |
+%
+% Verse 2 — back to minimal (8 bars)
+% E
+C,,2 z2 D,,2 z2 | z2 C,,2 D,,2 z2 |
+% A                            B
+C,,2 z2 D,,2 z2 | z2 z2 D,,2 C,,2 |
+% E
+C,,2 z2 D,,2 z2 | z2 C,,2 D,,2 z2 |
+% A                            B
+C,,2 z2 D,,2 z2 | z2 z2 D,,2 z2 |
+%
+% Chorus 2 — full (8 bars)
+% A                            E
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+% A                            B
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+% A                            E
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+[C,,^F,,] ^F,, D,, ^F,, C,, ^F,, D,, ^F,, |
+% B                            E
+[C,,^F,,] ^F,, D,, ^F,, [C,,^F,,] ^F,, D,, ^F,, |
+C,,2 D,,2 C,,4 |]

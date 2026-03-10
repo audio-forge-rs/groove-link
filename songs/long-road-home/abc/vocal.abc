@@ -1,0 +1,48 @@
+X:1
+T:Long Road Home - Vocal Melody
+M:4/4
+L:1/8
+Q:1/4=118
+K:G
+%%MIDI program 53
+% Intro (8 bars) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+% Verse 1 (16 bars) - folk melody, conversational phrasing
+z4 D2 G2 | A2 B2 d4 | z2 e2 d2 c2 | B4 z4 |
+z4 A2 B2 | c2 A2 A4 | z2 G2 A2 B2 | d4 z4 |
+z4 D2 G2 | A2 B2 d4 | z2 e2 d2 c2 | B4 z4 |
+z4 B2 d2 | e2 d2 B4 | z2 G2 A2 B2 | A4 z4 |
+% Pre-Chorus 1 (4 bars) - rising intensity
+e4 e2 d2 | c4 c2 B2 | A4 A2 c2 | d4 ^f4 |
+% Chorus 1 (8 bars) - soaring, memorable hook
+g4 g2 ^f2 | a4 ^f2 d2 | e2 d2 B2 G2 | A4 G4 |
+g4 g2 ^f2 | a4 ^f2 d2 | e4 d4 | d4 z4 |
+% Interlude (4 bars) - tacet
+z8 | z8 | z8 | z8 |
+% Verse 2 (16 bars) - same melody, slight variations
+z4 D2 G2 | A2 B2 d4 | z2 e2 d2 c2 | B4 z4 |
+z4 A2 c2 | d2 c2 A4 | z2 G2 A2 B2 | d4 z4 |
+z4 D2 G2 | A2 B2 d4 | z2 e2 d2 c2 | B4 z4 |
+z4 B2 d2 | e2 ^f2 g4 | z2 e2 d2 B2 | A4 z4 |
+% Pre-Chorus 2 (4 bars)
+e4 e2 d2 | c4 c2 B2 | A4 A2 c2 | d4 ^f4 |
+% Chorus 2 (8 bars)
+g4 g2 ^f2 | a4 ^f2 d2 | e2 d2 B2 G2 | A4 G4 |
+g4 g2 ^f2 | a4 ^f2 d2 | e4 d4 | d4 z4 |
+% Bridge (8 bars) - different melody, emotional peak
+a4 a2 g2 | g4 e4 | e4 e2 d2 | d4 B4 |
+a4 a2 g2 | g4 e4 | ^f4 d4 | d4 z4 |
+% Solo (16 bars) - tacet (guitar solo)
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+% Pre-Chorus 3 (4 bars) - comes back strong
+e4 e2 d2 | c4 c2 B2 | A4 A2 c2 | d4 ^f4 |
+% Chorus 3 (8 bars)
+g4 g2 ^f2 | a4 ^f2 d2 | e2 d2 B2 G2 | A4 G4 |
+g4 g2 ^f2 | a4 ^f2 d2 | e4 d4 | d4 z4 |
+% Final Chorus (8 bars) - belt it, higher energy
+g4 b2 a2 | a4 ^f2 d2 | e2 d2 B2 G2 | A4 G4 |
+g4 b2 a2 | a4 ^f2 d2 | e4 d4 | g4 z4 |
+% Outro (8 bars) - humming the hook
+g4 ^f4 | e4 d4 | B2 d2 B2 G2 | A4 z4 |
+G4 ^F4 | G4 z4 | z8 | z8 |

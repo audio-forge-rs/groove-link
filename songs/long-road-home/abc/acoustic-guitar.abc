@@ -1,0 +1,114 @@
+X:1
+T:Long Road Home - Acoustic Guitar
+M:4/4
+L:1/8
+Q:1/4=118
+K:G
+%%MIDI program 25
+% Intro (8 bars) - arpeggiated picking, building
+G,2 B,2 D2 G2 | G,2 B,2 D2 G2 | C,2 E,2 G,2 C2 | C,2 E,2 G,2 C2 |
+E,2 G,2 B,2 E2 | E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 D2 | D,2 ^F,2 A,2 D2 |
+% Verse 1 (16 bars) - strumming pattern: down down-up up-down-up
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[A,CE]2 [A,CE] [A,CE] [A,CE] [A,CE]2 [A,CE] |
+[A,CE]2 [A,CE] [A,CE] [A,CE] [A,CE]2 [A,CE] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D]2 [D,^F,A,D] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E]2 [E,G,B,E] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E]2 [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D]2 [D,^F,A,D] |
+% Pre-Chorus 1 (4 bars) - open chords ring
+[E,G,B,E]4 [E,G,B,E]4 | [C,E,G,C]4 [C,E,G,C]4 | [A,CE]4 [A,CE]4 | [D,^F,A,D]4 [D,^F,A,D]4 |
+% Chorus 1 (8 bars) - big open strums
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+% Interlude (4 bars) - back to picking
+G,2 B,2 D2 G2 | G,2 B,2 D2 G2 | C,2 E,2 G,2 C2 | D,2 ^F,2 A,2 D2 |
+% Verse 2 (16 bars) - same strumming
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[A,CE]2 [A,CE] [A,CE] [A,CE] [A,CE]2 [A,CE] |
+[A,CE]2 [A,CE] [A,CE] [A,CE] [A,CE]2 [A,CE] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D]2 [D,^F,A,D] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E]2 [E,G,B,E] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E]2 [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D]2 [D,^F,A,D] |
+% Pre-Chorus 2 (4 bars)
+[E,G,B,E]4 [E,G,B,E]4 | [C,E,G,C]4 [C,E,G,C]4 | [A,CE]4 [A,CE]4 | [D,^F,A,D]4 [D,^F,A,D]4 |
+% Chorus 2 (8 bars)
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+% Bridge (8 bars) - sparse arpeggios
+A,2 C2 E2 A2 | E,2 G,2 B,2 E2 | C,2 E,2 G,2 C2 | G,2 B,2 D2 G2 |
+A,2 C2 E2 A2 | E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 D2 | D,2 ^F,2 A,2 D2 |
+% Solo (16 bars) - steady rhythm under solo
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[A,CE]2 [A,CE] [A,CE] [A,CE] [A,CE]2 [A,CE] |
+[A,CE]2 [A,CE] [A,CE] [A,CE] [A,CE]2 [A,CE] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D]2 [D,^F,A,D] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E]2 [E,G,B,E] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E]2 [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D]2 [D,^F,A,D] |
+% Pre-Chorus 3 (4 bars)
+[E,G,B,E]4 [E,G,B,E]4 | [C,E,G,C]4 [C,E,G,C]4 | [A,CE]4 [A,CE]4 | [D,^F,A,D]4 [D,^F,A,D]4 |
+% Chorus 3 (8 bars)
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+% Final Chorus (8 bars) - biggest strums
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[E,G,B,E]2 [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] [E,G,B,E] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+[D,^F,A,D]2 [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] [D,^F,A,D] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C] |
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG] |
+% Outro (8 bars) - winding down to picking
+[G,B,DG]2 [G,B,DG] [G,B,DG] [G,B,DG] [G,B,DG]2 [G,B,DG] |
+[C,E,G,C]2 [C,E,G,C] [C,E,G,C] [C,E,G,C] [C,E,G,C]2 [C,E,G,C] |
+E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 D2 |
+G,2 B,2 D2 G2 | C,2 E,2 G,2 C2 |
+G,2 B,2 D2 z2 | [G,B,DG]8 |

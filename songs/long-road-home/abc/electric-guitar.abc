@@ -1,0 +1,51 @@
+X:1
+T:Long Road Home - Electric Guitar
+M:4/4
+L:1/8
+Q:1/4=118
+K:G
+%%MIDI program 27
+% Intro (8 bars) - clean melodic fill over acoustic picking
+z4 B2 d2 | g4 ^f2 e2 | d4 e2 d2 | c4 B2 A2 |
+G2 B2 d2 e2 | d4 B2 G2 | A2 B2 d2 ^f2 | a4 z4 |
+% Verse 1 (16 bars) - sparse fills, leave space for vocal
+z8 | z4 B2 d2 | e2 d2 c2 B2 | z8 |
+z8 | z4 A2 c2 | e4 d4 | z8 |
+z8 | z4 B2 d2 | e2 d2 c2 B2 | z8 |
+z8 | z4 G2 B2 | e4 d4 | ^f2 a2 d'2 z2 |
+% Pre-Chorus 1 (4 bars) - building sustained notes
+e4 e4 | c4 c4 | A4 c4 | d4 ^f4 |
+% Chorus 1 (8 bars) - power chord rhythm with lead licks
+[GB]2 [GB]2 [GB]2 d2 | [^FA]2 [^FA]2 d2 e2 | [GB]2 [GB]2 e2 g2 | [CE]2 [CE]2 e2 d2 |
+[GB]2 [GB]2 [GB]2 d2 | [^FA]2 [^FA]2 d2 e2 | [CE]2 [CE]2 e2 d2 | [GB]4 z4 |
+% Interlude (4 bars) - echo of intro melody
+z4 B2 d2 | g4 ^f2 e2 | d4 e2 d2 | ^f2 a2 d'2 z2 |
+% Verse 2 (16 bars) - slightly more active fills
+z8 | z4 d2 e2 | g2 ^f2 e2 d2 | z8 |
+z8 | z4 c2 e2 | g4 ^f4 | z8 |
+z8 | z4 d2 e2 | g2 ^f2 e2 d2 | z8 |
+z8 | z4 B2 d2 | g4 ^f4 | a2 g2 ^f2 e2 |
+% Pre-Chorus 2 (4 bars)
+e4 e4 | c4 c4 | A4 c4 | d4 ^f4 |
+% Chorus 2 (8 bars)
+[GB]2 [GB]2 [GB]2 d2 | [^FA]2 [^FA]2 d2 e2 | [GB]2 [GB]2 e2 g2 | [CE]2 [CE]2 e2 d2 |
+[GB]2 [GB]2 [GB]2 d2 | [^FA]2 [^FA]2 d2 e2 | [CE]2 [CE]2 e2 d2 | [GB]4 z4 |
+% Bridge (8 bars) - atmospheric clean tones
+A2 c2 e2 a2 | e2 g2 b2 e'2 | c2 e2 g2 c'2 | B2 d2 g2 b2 |
+A2 c2 e2 a2 | e2 g2 b2 e'2 | d2 ^f2 a2 d'2 | d2 ^f2 a2 d'2 |
+% Solo (16 bars) - lead guitar solo over verse changes
+g2 b2 d'2 b2 | g2 a2 b2 d'2 | e'2 d'2 c'2 b2 | a2 g2 ^f2 e2 |
+d2 e2 ^f2 a2 | g2 ^f2 e2 d2 | c2 d2 e2 g2 | ^f2 a2 d'2 c'2 |
+b2 a2 g2 ^f2 | g2 b2 d'2 g'2 | e'2 d'2 c'2 b2 | a2 g2 a2 b2 |
+g2 ^f2 e2 ^f2 | g2 a2 b2 d'2 | e'4 d'4 | d'2 b2 g2 ^f2 |
+% Pre-Chorus 3 (4 bars)
+e4 e4 | c4 c4 | A4 c4 | d4 ^f4 |
+% Chorus 3 (8 bars)
+[GB]2 [GB]2 [GB]2 d2 | [^FA]2 [^FA]2 d2 e2 | [GB]2 [GB]2 e2 g2 | [CE]2 [CE]2 e2 d2 |
+[GB]2 [GB]2 [GB]2 d2 | [^FA]2 [^FA]2 d2 e2 | [CE]2 [CE]2 e2 d2 | [GB]4 z4 |
+% Final Chorus (8 bars) - doubled lead over chords
+[Gg]2 [Bb]2 [Dd']2 [Gg]2 | [D^f]2 [^Fa]2 [Dd']2 [^Fe]2 | [Eg]2 [Gb]2 [Be']2 [Eg]2 | [Ce]2 [Eg]2 [Ce']2 [Ed]2 |
+[Gg]2 [Bb]2 [Dd']2 [Gg]2 | [D^f]2 [^Fa]2 [Dd']2 [^Fe]2 | [Ce]2 [Eg]2 [Ce']2 [Ed]2 | [GB]4 [Gd]4 |
+% Outro (8 bars) - melodic outro
+g2 ^f2 e2 d2 | e2 d2 c2 B2 | G2 B2 d2 e2 | d4 A4 |
+G2 B2 d2 g2 | e4 d4 | B4 z4 | [G,B,DG]8 |

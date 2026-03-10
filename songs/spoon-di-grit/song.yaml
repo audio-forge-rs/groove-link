@@ -1,0 +1,37 @@
+# Spoon / Britt Daniel — DI guitar into console
+# The sound that inspired the Colour Box: guitar straight into a Neve,
+# no amp, distorting the channel. Gimme Fiction era.
+# Colour Box: step 2-3, moderate pre-gain, mids pushed
+
+song:
+  title: Spoon DI Grit
+  tempo: 128
+  key: E
+  time: 4/4
+
+tracks:
+  drums:
+    instrument: E-Kit Modern
+    part: drums.abc
+
+  bass:
+    instrument: Acoustic Bass Long
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Bass Driver             # gritty DI bass, Spoon style
+      - Bass Compressor          # tight and punchy
+    part: bass.abc
+
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Darker EQ            # pre-gain: cut highs, push mids (console DI is darker)
+      - Guitar Crunchy        # Amp — step 2-3 overdrive, console breakup
+      - Saturation 1          # transformer harmonics
+      - Guitar Compressor     # studio channel compressor, always on the console
+    part: guitar.abc

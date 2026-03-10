@@ -1,0 +1,25 @@
+# INXS — clean DI with stereo chorus and studio compression
+# Josh explicitly mentions INXS: clean DI + stereo chorus + compression.
+# Think "Never Tear Us Apart", "Need You Tonight" — shimmering cleans.
+# Colour Box: step 1, totally clean, just preamp warmth
+
+song:
+  title: INXS Chorus DI
+  tempo: 112
+  key: C
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Brighter EQ           # pre-gain: crisp high end for clean DI
+      - Clean Guitar           # Amp — step 1, clean console preamp only
+      - Light Saturation       # subtle transformer warmth
+      - Juno Chorus            # stereo BBD chorus — the Brigade sound
+      - Analogue Compressor    # studio compression, always paired with DI
+    part: guitar.abc

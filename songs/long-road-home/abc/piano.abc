@@ -1,0 +1,64 @@
+X:1
+T:Long Road Home - Piano
+M:4/4
+L:1/8
+Q:1/4=118
+K:G
+%%MIDI program 0
+% Intro (8 bars) - tacet, let guitar establish
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+% Verse 1 (16 bars) - gentle comping, quarter note chords
+[G,B,D]2 z2 [G,B,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 |
+[A,CE]2 z2 [A,CE]2 z2 | [A,CE]2 z2 [A,CE]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [D,^F,A,]2 z2 [D,^F,A,]2 z2 |
+[G,B,D]2 z2 [G,B,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 |
+[E,G,B,]2 z2 [E,G,B,]2 z2 | [E,G,B,]2 z2 [E,G,B,]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [D,^F,A,]2 z2 [D,^F,A,]2 z2 |
+% Pre-Chorus 1 (4 bars) - building with more active pattern
+[E,G,B,]2 [E,G,B,]2 [E,G,B,]2 [E,G,B,]2 | [C,E,G,]2 [C,E,G,]2 [C,E,G,]2 [C,E,G,]2 |
+[A,CE]2 [A,CE]2 [A,CE]2 [A,CE]2 | [D,^F,A,]2 [D,^F,A,]2 [D,^F,A,]4 |
+% Chorus 1 (8 bars) - full chords, strong rhythm
+[G,B,Dg]2 [G,B,Dg]2 z2 [G,B,Dg]2 | [D,^F,Ad]2 [D,^F,Ad]2 z2 [D,^F,Ad]2 |
+[E,G,Be]2 [E,G,Be]2 z2 [E,G,Be]2 | [C,E,Gc]2 [C,E,Gc]2 z2 [C,E,Gc]2 |
+[G,B,Dg]2 [G,B,Dg]2 z2 [G,B,Dg]2 | [D,^F,Ad]2 [D,^F,Ad]2 z2 [D,^F,Ad]2 |
+[C,E,Gc]2 [C,E,Gc]2 z2 [C,E,Gc]2 | [G,B,Dg]4 z4 |
+% Interlude (4 bars) - sparse
+G,2 B,2 D2 z2 | G,2 B,2 D2 z2 | C,2 E,2 G,2 z2 | D,2 ^F,2 A,2 z2 |
+% Verse 2 (16 bars) - same comping
+[G,B,D]2 z2 [G,B,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 |
+[A,CE]2 z2 [A,CE]2 z2 | [A,CE]2 z2 [A,CE]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [D,^F,A,]2 z2 [D,^F,A,]2 z2 |
+[G,B,D]2 z2 [G,B,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 |
+[E,G,B,]2 z2 [E,G,B,]2 z2 | [E,G,B,]2 z2 [E,G,B,]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [D,^F,A,]2 z2 [D,^F,A,]2 z2 |
+% Pre-Chorus 2 (4 bars)
+[E,G,B,]2 [E,G,B,]2 [E,G,B,]2 [E,G,B,]2 | [C,E,G,]2 [C,E,G,]2 [C,E,G,]2 [C,E,G,]2 |
+[A,CE]2 [A,CE]2 [A,CE]2 [A,CE]2 | [D,^F,A,]2 [D,^F,A,]2 [D,^F,A,]4 |
+% Chorus 2 (8 bars)
+[G,B,Dg]2 [G,B,Dg]2 z2 [G,B,Dg]2 | [D,^F,Ad]2 [D,^F,Ad]2 z2 [D,^F,Ad]2 |
+[E,G,Be]2 [E,G,Be]2 z2 [E,G,Be]2 | [C,E,Gc]2 [C,E,Gc]2 z2 [C,E,Gc]2 |
+[G,B,Dg]2 [G,B,Dg]2 z2 [G,B,Dg]2 | [D,^F,Ad]2 [D,^F,Ad]2 z2 [D,^F,Ad]2 |
+[C,E,Gc]2 [C,E,Gc]2 z2 [C,E,Gc]2 | [G,B,Dg]4 z4 |
+% Bridge (8 bars) - arpeggiated, emotional
+A,2 C2 E2 A2 | E,2 G,2 B,2 E2 | C,2 E,2 G,2 C2 | G,2 B,2 D2 G2 |
+A,2 C2 E2 A2 | E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 D2 | D,2 ^F,2 A,2 D2 |
+% Solo (16 bars) - steady comping under guitar solo
+[G,B,D]2 z2 [G,B,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 |
+[A,CE]2 z2 [A,CE]2 z2 | [A,CE]2 z2 [A,CE]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [D,^F,A,]2 z2 [D,^F,A,]2 z2 |
+[G,B,D]2 z2 [G,B,D]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [G,B,D]2 z2 [G,B,D]2 z2 |
+[E,G,B,]2 z2 [E,G,B,]2 z2 | [E,G,B,]2 z2 [E,G,B,]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 | [D,^F,A,]2 z2 [D,^F,A,]2 z2 |
+% Pre-Chorus 3 (4 bars)
+[E,G,B,]2 [E,G,B,]2 [E,G,B,]2 [E,G,B,]2 | [C,E,G,]2 [C,E,G,]2 [C,E,G,]2 [C,E,G,]2 |
+[A,CE]2 [A,CE]2 [A,CE]2 [A,CE]2 | [D,^F,A,]2 [D,^F,A,]2 [D,^F,A,]4 |
+% Chorus 3 (8 bars)
+[G,B,Dg]2 [G,B,Dg]2 z2 [G,B,Dg]2 | [D,^F,Ad]2 [D,^F,Ad]2 z2 [D,^F,Ad]2 |
+[E,G,Be]2 [E,G,Be]2 z2 [E,G,Be]2 | [C,E,Gc]2 [C,E,Gc]2 z2 [C,E,Gc]2 |
+[G,B,Dg]2 [G,B,Dg]2 z2 [G,B,Dg]2 | [D,^F,Ad]2 [D,^F,Ad]2 z2 [D,^F,Ad]2 |
+[C,E,Gc]2 [C,E,Gc]2 z2 [C,E,Gc]2 | [G,B,Dg]4 z4 |
+% Final Chorus (8 bars) - full with octave doubling
+[G,,G,B,Dg]2 [G,,G,B,Dg]2 z2 [G,,G,B,Dg]2 | [D,,D,^F,Ad]2 [D,,D,^F,Ad]2 z2 [D,,D,^F,Ad]2 |
+[E,,E,G,Be]2 [E,,E,G,Be]2 z2 [E,,E,G,Be]2 | [C,,C,E,Gc]2 [C,,C,E,Gc]2 z2 [C,,C,E,Gc]2 |
+[G,,G,B,Dg]2 [G,,G,B,Dg]2 z2 [G,,G,B,Dg]2 | [D,,D,^F,Ad]2 [D,,D,^F,Ad]2 z2 [D,,D,^F,Ad]2 |
+[C,,C,E,Gc]2 [C,,C,E,Gc]2 z2 [C,,C,E,Gc]2 | [G,,G,B,Dg]4 z4 |
+% Outro (8 bars)
+[G,B,D]2 z2 [G,B,D]2 z2 | [C,E,G,]2 z2 [C,E,G,]2 z2 |
+[E,G,B,]4 z4 | [D,^F,A,]4 z4 |
+G,2 B,2 D2 z2 | C,4 z4 |
+G,4 z4 | [G,,G,B,D]8 |

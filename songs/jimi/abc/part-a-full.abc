@@ -1,0 +1,246 @@
+X:1
+T:Jimi - Part A Full
+M:4/4
+L:1/16
+Q:1/4=92
+K:Em
+%%MIDI program 27
+%
+% ============================================================
+% BARS 1-16: Opening motif - sparse, clean, E minor pentatonic
+% ============================================================
+%
+% Bar 1-2: Silence into first breath
+z16 | z8 E,4 z4 |
+% Bar 3-4: Opening statement - single notes, space
+G,4 z4 B,4 z4 | z4 E4 z4 D4 |
+% Bar 5-6: Call and response with rests
+z4 G4 z2 E2 z4 | B,6 z2 z8 |
+% Bar 7-8: Melodic fragment rising
+E4 z4 G4 A4 | B4 z4 z8 |
+% Bar 9-10: Bending into blue notes
+z4 G4 _B3 A5 | E4 z4 z4 D4 |
+% Bar 11-12: Rhythmic variation with rests
+B,2 z2 E4 z2 G2 z4 | z8 A4 G4 |
+% Bar 13-14: Establishing the home phrase
+E6 z2 D4 B,4 | z4 E4 z8 |
+% Bar 15-16: Pause before development
+G4 z2 A2 B4 z4 | z4 E6 z6 |
+%
+% ============================================================
+% BARS 17-32: Developing theme - bends, wider intervals, climbing
+% ============================================================
+%
+% Bar 17-18: Grace note bends enter
+{D}E4 z4 G4 B4 | {A}B6 z2 A4 G4 |
+% Bar 19-20: Wider leap
+E4 z4 d4 z4 | b4 z2 g2 e4 z4 |
+% Bar 21-22: Climbing phrase
+G4 A4 B4 d4 | e4 z4 {d}e4 z4 |
+% Bar 23-24: Bend and release feel
+{_B}B6 z2 A4 z4 | G4 E4 z4 D4 |
+% Bar 25-26: Double stop hint
+[E,B,]4 z4 [G,D]4 z4 | [A,E]6 z2 z8 |
+% Bar 27-28: Fast ornament into sustained note
+{G}A2 B2 A4 G8 | z4 E4 {D}E4 z4 |
+% Bar 29-30: Peak of the climb
+b4 a4 g4 e4 | d4 z4 B4 z4 |
+% Bar 31-32: Settling back down
+A4 G4 E6 z2 | D4 B,4 z8 |
+%
+% ============================================================
+% BARS 33-48: First overdrive - power chords mixed with runs
+% ============================================================
+%
+% Bar 33-34: Power chord entrance
+[E,B,E]8 z8 | z4 [E,B,E]4 z4 [G,D,G]4 |
+% Bar 35-36: Chord into single-note run
+[A,E,A]8 z4 B,2 D2 | E4 G4 A4 B4 |
+% Bar 37-38: Syncopated power chords
+z2 [E,B,]4 z2 [G,D]4 z4 | [A,E]2 z2 [G,D]4 [E,B,]4 z4 |
+% Bar 39-40: Run into chord stab
+G4 A4 B4 d4 | [e,b]8 z8 |
+% Bar 41-42: Aggressive rhythm
+[E,B,]2 z2 [E,B,]2 z2 [G,D]4 z4 | [A,E]4 z2 [G,D]2 [E,B,]4 z4 |
+% Bar 43-44: Descending run with bite
+e4 d4 B4 A4 | G2 E2 D4 B,4 z4 |
+% Bar 45-46: Stabbing chords - rhythmic
+z4 [E,B,E]4 z4 [E,B,E]4 | z2 [D,A,D]4 z2 [E,B,E]4 z4 |
+% Bar 47-48: Transition - run fading
+E4 G4 B4 z4 | e6 z2 z8 |
+%
+% ============================================================
+% BARS 49-72: Extended melodic exploration - modal shifts
+% ============================================================
+%
+% Bar 49-50: Dorian color (C# appears)
+E4 ^F4 G4 A4 | B4 ^c4 d4 z4 |
+% Bar 51-52: Dorian phrase continues
+e4 d4 ^c4 B4 | A4 G4 ^F4 E4 |
+% Bar 53-54: Mixolydian hint (D major flavor)
+D4 ^F4 A4 d4 | ^f4 z4 e4 d4 |
+% Bar 55-56: Floating over changes
+B4 z4 ^c4 z4 | d6 z2 B4 z4 |
+% Bar 57-58: Return to minor with tension
+E4 G4 _B4 z4 | A4 z4 G4 E4 |
+% Bar 59-60: Blues-inflected phrase
+{_B}B4 A4 G4 E4 | D2 E2 G4 z8 |
+% Bar 61-62: Ascending Dorian sequence
+E4 ^F4 G4 A4 | B4 z2 ^c2 d4 e4 |
+% Bar 63-64: High register sustain
+g8 z4 e4 | d4 B4 z8 |
+% Bar 65-66: Rhythmic modal phrase
+z2 ^F4 z2 A4 z4 | B2 ^c2 d4 e4 z4 |
+% Bar 67-68: Mixolydian descent
+d4 ^c4 B4 A4 | ^F4 E4 D4 z4 |
+% Bar 69-70: Pentatonic reset
+E4 G4 A4 B4 | d4 e4 z8 |
+% Bar 71-72: Section ending - breath
+B4 z4 G4 z4 | E8 z8 |
+%
+% ============================================================
+% BARS 73-88: Heavy section - low register, aggressive, syncopated
+% ============================================================
+%
+% Bar 73-74: Low E riff entrance
+E,4 z2 E,2 G,4 z4 | A,4 G,4 E,4 z4 |
+% Bar 75-76: Syncopated low riff
+z2 E,4 z2 G,2 A,2 _B,2 A,2 | G,4 E,4 z4 D,4 |
+% Bar 77-78: Pounding rhythm
+E,2 E,2 z4 E,2 E,2 z4 | G,4 A,2 z2 E,4 z4 |
+% Bar 79-80: Heavy double stops
+[E,B,]4 z2 [E,B,]2 z4 [D,A,]4 | [E,B,]6 z2 [G,D]4 z4 |
+% Bar 81-82: Aggressive triplet feel approximation
+E,2 G,2 A,2 z2 E,2 G,2 A,2 z2 | _B,4 A,4 G,4 E,4 |
+% Bar 83-84: Churning low end
+E,4 z4 G,2 E,2 z4 | A,2 _B,2 A,2 G,2 E,4 z4 |
+% Bar 85-86: Power chord hits
+[E,B,]4 z4 [D,A,]4 z4 | [C,G,]4 z4 [D,A,]4 z4 |
+% Bar 87-88: Section ending - heavy to silence
+[E,B,E]8 z4 E,4 | E,8 z8 |
+%
+% ============================================================
+% BARS 89-104: Ambient/atmospheric - sustained, wide intervals, sparse
+% ============================================================
+%
+% Bar 89-90: Open space
+z16 | z8 e8 |
+% Bar 91-92: Sustained with wide leap
+b8 z4 E4 | z8 g8 |
+% Bar 93-94: Floating harmonics feel
+e12 z4 | z4 B8 z4 |
+% Bar 95-96: Wide interval - low to high
+E,8 z4 b4 | z8 e8 |
+% Bar 97-98: Sparse double stops
+z8 [eg]8 | z4 [Bd]8 z4 |
+% Bar 99-100: Distant melody fragment
+z4 g4 z4 e4 | z4 d4 z4 B4 |
+% Bar 101-102: Swelling note
+z8 e8 | e8 g8 |
+% Bar 103-104: Fading atmosphere
+b12 z4 | z8 e4 z4 |
+%
+% ============================================================
+% BARS 105-120: Fuzz section - heavy power chords, Nirvana-influenced
+% ============================================================
+%
+% Bar 105-106: Crunching entrance
+[E,B,E]4 [E,B,E]4 z4 [E,B,E]4 | [G,DG]4 z4 [A,EA]4 z4 |
+% Bar 107-108: Stop-start dynamics
+[E,B,E]8 z8 | z4 [E,B,E]4 [E,B,E]4 [D,A,D]4 |
+% Bar 109-110: Driving repetition
+[E,B,E]2 z2 [E,B,E]2 z2 [E,B,E]2 z2 [G,DG]2 z2 | [A,EA]4 [G,DG]4 [E,B,E]4 z4 |
+% Bar 111-112: Verse-chorus contrast
+z8 [C,G,C]4 z4 | [D,A,D]4 z4 [E,B,E]8 |
+% Bar 113-114: Angular rhythm
+[E,B,E]4 z4 [G,DG]2 z2 [A,EA]4 | z2 [E,B,E]4 z2 [G,DG]4 z4 |
+% Bar 115-116: Feedback sustain feel
+[E,B,E]12 z4 | [G,DG]12 z4 |
+% Bar 117-118: Choppy aggression
+[E,B,E]2 z2 [E,B,E]2 z2 [D,A,D]2 z2 [C,G,C]2 z2 | [D,A,D]4 [E,B,E]4 z8 |
+% Bar 119-120: Fuzz section ending
+[E,B,E]4 z4 [G,DG]4 z4 | [E,B,E]8 z8 |
+%
+% ============================================================
+% BARS 121-140: Countermelody role - rhythmic chording under Part B
+% ============================================================
+%
+% Bar 121-122: Simple rhythmic comping begins
+[EGB]4 z4 [EGB]4 z4 | [DGA]4 z4 [EGB]4 z4 |
+% Bar 123-124: Gentle chord rhythm
+[EGB]2 z2 [EGB]2 z2 [DGA]4 z4 | [CEG]4 z4 [DGA]4 z4 |
+% Bar 125-126: Arpeggiated chords
+E2 G2 B2 z2 E2 G2 B2 z2 | D2 G2 A2 z2 D2 G2 A2 z2 |
+% Bar 127-128: Staccato chording
+[EGB]2 z2 z4 [EGB]2 z2 z4 | [DGA]2 z2 z4 [CEG]2 z2 z4 |
+% Bar 129-130: Two-note voicings
+[EB]4 z4 [DA]4 z4 | [CG]4 z4 [DA]4 z4 |
+% Bar 131-132: Off-beat comping
+z4 [EGB]4 z4 [EGB]4 | z4 [DGA]4 z4 [CEG]4 |
+% Bar 133-134: Rhythmic push
+z2 [EGB]4 z2 [DGA]4 z4 | z2 [CEG]4 z2 [DGA]4 z4 |
+% Bar 135-136: Quieter - letting Part B shine
+[EB]8 z8 | [DA]8 z8 |
+% Bar 137-138: Minimal chord stabs
+z8 [EGB]4 z4 | z8 [DGA]4 z4 |
+% Bar 139-140: Building back up
+[EGB]4 z4 [DGA]4 z4 | [CEG]4 [DGA]4 [EGB]4 z4 |
+%
+% ============================================================
+% BARS 141-160: Building intensity - fast runs, ascending patterns
+% ============================================================
+%
+% Bar 141-142: Sixteenth note run begins
+E2 G2 A2 B2 d2 e2 g2 a2 | b4 z4 e4 z4 |
+% Bar 143-144: Descending answer
+b2 a2 g2 e2 d2 B2 A2 G2 | E4 z4 G4 z4 |
+% Bar 145-146: Ascending sequence - different pattern
+E2 G2 B2 d2 e2 d2 B2 G2 | A2 B2 d2 e2 g2 e2 d2 B2 |
+% Bar 147-148: Climbing with rhythm
+E4 G2 A2 B4 d4 | e2 g2 a4 z4 b4 |
+% Bar 149-150: Intensity notch up
+e2 d2 e2 g2 a2 b2 a2 g2 | e2 d2 B2 A2 G2 E2 D2 B,2 |
+% Bar 151-152: Rapid fire repeating pattern
+E2 G2 E2 G2 A2 B2 A2 B2 | d2 e2 d2 e2 g2 a2 g2 a2 |
+% Bar 153-154: Chord stabs between runs
+E2 G2 A2 B2 [dg]4 z4 | d2 B2 A2 G2 [E,B,]4 z4 |
+% Bar 155-156: Pedal tone runs
+E2 B2 E2 d2 E2 e2 E2 g2 | E2 a2 E2 g2 E2 e2 E2 d2 |
+% Bar 157-158: Accelerating feel
+B2 d2 e2 g2 a2 g2 e2 d2 | B2 d2 e2 g2 b4 z4 |
+% Bar 159-160: Top of the build
+e2 g2 a2 b2 a2 g2 e2 d2 | [eb]4 [dg]4 [Be]4 [Ad]4 |
+%
+% ============================================================
+% BARS 161-176: Peak intensity - full range, complex rhythms
+% ============================================================
+%
+% Bar 161-162: Explosive entrance
+[E,B,E]4 z2 e2 g2 a2 b4 | z2 [E,B,E]4 z2 e2 g2 a2 b2 |
+% Bar 163-164: Call and response - chords and runs
+[E,B,E]4 [G,DG]4 z4 b4 | a2 g2 e2 d2 B4 z4 |
+% Bar 165-166: Rhythmic complexity
+E2 z2 G2 z2 B2 d2 [ea]4 | z2 B2 z2 d2 z2 e2 [gb]4 |
+% Bar 167-168: Cross-register leaps
+E,4 e4 E,4 g4 | B,4 b4 D4 d4 |
+% Bar 169-170: Syncopated power with melody
+z2 [E,B,]4 e2 g2 a2 z4 | z2 [D,A,]4 d2 e2 g2 z4 |
+% Bar 171-172: Double-time feel
+E2 G2 B2 e2 E2 G2 B2 e2 | D2 G2 A2 d2 D2 G2 A2 d2 |
+% Bar 173-174: Climax phrase
+e4 g4 b8 | a4 g4 e4 d4 |
+% Bar 175-176: Beginning descent from peak
+B4 G4 E4 D4 | B,4 z4 E4 z4 |
+%
+% ============================================================
+% BARS 177-184: Outro - fading, transformed opening motif
+% ============================================================
+%
+% Bar 177-178: Echo of bar 3 motif, transformed
+G,4 z4 B,4 z4 | z4 E4 z4 D4 |
+% Bar 179-180: Slower, more space than opening
+z4 G4 z8 | E6 z2 z8 |
+% Bar 181-182: Final melodic whisper
+z8 B,4 z4 | G,4 z4 E,4 z4 |
+% Bar 183-184: Fade to silence
+E,8 z8 | z16 |]

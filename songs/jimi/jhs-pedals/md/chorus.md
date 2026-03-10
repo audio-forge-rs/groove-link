@@ -1,0 +1,73 @@
+# The Most Famous Chorus Pedals Ever
+
+**Channel:** JHS Pedals
+**Watch:** [https://www.youtube.com/watch?v=FjClp_J6Nxs](https://www.youtube.com/watch?v=FjClp_J6Nxs)
+
+## Summary
+
+What's not to love about chorus? In this episode share (IMHO) the most legendary Chorus pedals ever. Lemme know down in those comments if you own any of these or if you think you have a good submission for this list.
+
+## Gear Featured
+
+| Timestamp | Pedal/Gear |
+|-----------|------------|
+| 2:05 | Boss CE-1 Chorus Ensemble |
+| 3:21 | TC Electronic Stereo Chorus + |
+| 4:45 | Boss CE-2 |
+| 6:30 | Electro- Harmonix Small Clone |
+| 7:50 | Ibanez CS9 Stereo Chorus |
+| 8:33 | Ibanez CSL Stereo Chorus |
+| 8:33 | Ibanez SC10 Super Stereo Chorus |
+| 9:20 | Guyatone Chorus Machine |
+| 10:45 | Arion SCH-1 Stereo Chorus |
+| 11:12 | JHS Emperor V2 |
+| 12:46 | Boss DC-2 Dimension C |
+| 14:09 | DOD Stereo Chorus FX65 |
+| 15:02 | DOD Stereo Chorus FX60 |
+| 16:08 | Ibanez DCL Digital Stereo Chorus |
+| 16:29 | Ibanez DSC10 Digital Chorus |
+| 17:24 | Ibanez Twin Cam Chorus TC10 |
+| 17:32 | Ibanez BCL Bi-Mode Chorus |
+| 18:58 | Digitech Whammy WH-1 |
+
+## Record Time
+
+*The Japanese House - - Clean: https://amzn.to/2DBFJhI*
+
+## Transcript
+
+on today's episode I'm gonna walk you through the most legendary chorus pedals that were ever made [Music] before we get started let me lay a few ground rules number one is I'm only gonna talk about classic chorus pedals I'm not gonna talk about vibrato pedals I'm not gonna talk about univibe I'm not gonna talk about amps with chorus or rack units I only want to talk about chorus pedals number two is I'm gonna leave something out there is inevitably some pedal somewhere that some of you guys love and I'm not gonna mention them but I've thought this through I have a ton of chorus pedals and I've chosen everything you're about to see for a specific reason and one of those reasons is most anything on earth is a spinoff of what I have here about to show you number three is that a lot
+
+of these are very similar the chorus pedal started in about 1975 with the development of the bucket-brigade device and everything after that is some derivative of that same exact circuit derivative the right word as a derivative is Doretta the word i've lived my whole life 36 years thinking Derrida was a word but I'm from Alabama so I'm not gonna do anything past 1990 because they're really just nothing legendary from the 90s let's be honest about that I mean Bill Clinton maybe Britney Spears anyway same guitar pickup on everyone same amp settings that way when you hear a chorus pedal you can faithfully compare it to what I played before and after can the best way to know these pedals is to try to borrow them or get a hold of them or get a hold of like a line six unit that models these classic
+
+kind of things and play it for yourself but this is just a guide to show you the most legendary chorus pedals ever so without further ado let's jump on in first of our legendary chorus pedals comes from June of 1976 that's right I even know the month it is the boss ce-1 chorus ensemble the boss ce-1 is the first-ever bucket-brigade pedal because the inventor licensed it to rollin they put it in this pedal and the world was kind of forever changed if you've owned a rollin jazz chorus ant it's the same exact circuit this thing is unbeatable it has an amazing vibrato setting it's super simple first played one when I played Britt of spoons bore he uses a ton and you know you just still see these out on the road they're made like a tank little big you got a power cable but
+
+it's worth every bit of the effort and trouble and it's like she's kind of like Fabio's you the second petal is also from 1976 but it came from the Danish a little company was getting started called TC electronic and this is the stereo chorus plus it also has that nifty power cable this is a reissue I do not have an original but this sounds identical I even text some of the TC crew and made sure that it is a phenomenal course unit I love the middle mode which adds some pitch it also has a flange mode speed with an intensity and true stereo this is maybe possibly most likely the most versatile chorus pedal I'll show you today it does a lot of sounds and it's made so well it's a classic you can't get much more classic and it's cool that it was T
+
+C's first 1979 is not just a Smashing Pumpkins song it is when we got the boss ce-2 this is the most known the most selling the most greatest petal of all time when it comes to chorus it's been copied almost everything I'm about to show you afterwards is some form of this pretty much part 4 part I even have the box here you know cost like nine dollars or something boss has made something I think around the lines of 20 gajillion of these the latest Mars photos you can see a situ setting on a stone in the distance there are some different versions this is a Japanese silver screw so very first edition this is an oldie Goldy there's the black screw Japan they sound identical but if you're a nerd you might want the silver screw I don't know and then there's the new
+
+Wazza craft which is dead-on perfect and features a load from the earlier ce-1 that you saw so if you're wanting to know about some real nice clean chorus tones with some versatility of advice that you grab the was a craft because it does a lot of these sounds next is a petal that came out the same year as the ce2 supposedly there is some debate on whether it came out in 78 I'm gonna say 79 because that's what I think it is the electro-harmonix small clone this petal was popular it wasn't as big of a homerun as boss because eh was a smaller company and I know I said I wouldn't talk about the 90s but this petal became something spectacular to a lot of people including myself because of the 90s and a man called Kurt Cobain you've all heard this pedal I'll never
+
+mind come as you are all the live Nirvana stuff not a lot I can say it's one knob one switch and it does chorus in the way course next up is an offering from Ibanez on the year of my birth 1982 it is the Ibanez cs9 stereo chorus this is pretty much a ce2 with a faster rate a little more depth so it's more intense overall and some people prefer this it came out obviously with the ts9 tube screamer and that's what most people know but this is a really classic pedal the color is cool to me I actually hunted this color down to use on the Emperor chorus of mind because it's my favorite chorus pedal color purple you gotta have a purple pedal for chorus or blue blue or purple blue and purple are kind of the same color anything that doesn't matter
+
+Ivan has had other pedals that basically came after this in 85 and 86 you have the power and the tin series stereo chorus and the super stereo chorus these are just modified versions of the cs9 which is a modified version of a ce2 so you're gonna start seeing a little bit more of this where pedals keep coming they keep being designed and they're all coming from that original CD 2 next up is from 1983 I was one-year-old and did not care about chorus but that doesn't matter because this thing was awesome and now I care about it it's pretty rare it's from a Japanese company called Gaia tone and it is almost a part for part of the ce-1 it uses that old original chipset the Inman 300 - and it is widely versatile I think it has the best ratio of slow to fast
+
+and it never gets like unusable crazy a lot of these courses will do things you would never use you know it sounds like a sailor drunk falling in the ocean this doesn't do that every range of every knob is really useful and runs on 18 volts so I mean that means 1985 and there's a new kid on the block boss is reigning Ibanez is huge but they decide to drop their worldwide distribution network and that opened the door for a brand new company from Japan called Ariane this is the SCH one it's made of plastic it's fragile but inside of its fragile nature is a magical circuit and it sounds most like a Leslie cabinet to me and that's why a lot of guys love it blues guys particularly you'll see this on a board and it really replicates a rotary pretty special pedal it
+
+has direct and stereo outputs and a little tidbit I designed my Emperor chorus around this so if you like this if you have a friend that likes this or you think you might like it this is an updated version which allows you to use an expression pedal to control the speed knob you're gonna notice as I play I'll turn this knob and it sounds like a rotating speaker slowing down and Plus on my Emperor I put tap tempo on it as well as some other stuff another funny fact about this is it's basically a c2 topology modified to be a lot more swingy like Leslie Circuit and they added the tone control from the big muff fuzz [Laughter] next up is another pedal from 1985 it is the boss dimension see this is a pedal version of the amazingly popular dimension D chorus rack unit
+
+that Roland had it is the sound of the Talking Heads INXS and Peter Gabriel kind of in a box and you don't need knobs when you can do this watch this have four buttons just four months my favorite sound is number four and where's that color beautiful purple horse we're still in 1985 and I'm not sure if that's because Back to the Future came out that year and there's some weird time based portal I'm trapped in I don't know I really don't care I think Wrestlemania was in 85 as well and Lionel Richie you know he was storming the charts just like these petals that I'm showing you this is the FX 65 this may be my favorite chorus pedal in the entire room DoD is an anomaly they have like 400 versions of every pedal they all look different you can't figure out what
+
+year when why how but here's one in the box $65 it says in 1985 that's pretty expensive even have the manual warranty card I wonder if I could meld that in probably not check this out some sweet colors right there guys guess some pink look at this DoD America's petal t-shirt look at this can you see that it's cool just trust me anyway back to the pedal the FX 65 speed delay time in depth it was marketed as the pro model to the stereo course FX 60 so if you had the FX 60 in your life this is good but I want to go pro then your guide your music store said well sell the 60 and get the 65 and that's the sound of the pro next up I'm going digital all of these have been analog but I need to show you some
+
+digital and to do that I'm gonna have to stay in 1985 for one more pedal I'm sorry we're still in 1985 here we go it's the Ibanez digital stereo course DCL and it's pretty important it's really cool you know digital is a much more crisp and clean chorus sound in a lot of ways it's more subtle where a lot of people being digital is more drastic I feel like most of these digital pedals are more subtle the next year we see the tin series come out this is power Series 85 86 was the 10 series these are the same exact circuit they just replaced the basically the delay time knob with a switch I don't like this one as much because the tweak ability of the potentiometer the knob is much more important in this this looks better I'll give them that but this is
+
+digital stereo course next up is the Ibanez twin-cam chorus from the tin series this is from 1986 and it is an identical circuit to the 1985 by mode chorus from the power series you're seeing that again and this happens a lot in the 10th power series they would just drop the same circuit in knob labels everything this essentially is two of the classic cs9 s which is a variant of the ce2 and you can run them at the same time one fast one slow both fast different depths it's really cool really powerful and it packs a punch much like Mike Tyson this last petal is a bonus pedal it's not a chorus pedal but it does a chorus sound and it does it very well and it's been on a lot of Records and you've heard it and you've thought its course but actually it's
+
+the original WH one digitech whammy from 1989 it has a mode called d2 shallow and deep and the flip controller basically speeds it up messes with the depth a little bit as well it's magical it's special I love it I've used this on my board for a long time I take it off it comes back on the version 2 and all other versions of a whammy usually have this detuned setting even some of the newer units that don't have the treadle so you should check it out you should try to use a whammy as modulation because at the heart of it modulation chorus is simply pitch being changed added to your clean signal so this does it really well it's pretty unique it's worth mentioning it's something you should try definitely try don't take my word for it today's record time is brought to you
+
+by the Japanese house I have not one but three records for you to check out I play these together because there are three different EPS I put them in a playlist and I treat them like one album they fit really well but here they are I'll walk you through them the first one is called clean the second is called pools to bathe N and the third which is my favorite it is called swim against the tide so amber she is the Japanese house I think that she is a creative genius who uses modulation in a very special way so her music is what I go to when I get tired of guitar she makes me like guitar again I love how she uses effects and these songs are very modern they're very advanced they're not classic in any way particularly but she uses classic modulation
+
+sounds and ties it into a very modern sound so in the comments below I would love for you to tell me about your favorite band newer let's not do classic rock bands or classic songs I want to know about newer vans and newer songs that use legendary chorus and modulation sounds in a way that really impresses you and you need to go check these out and tell me in the comments what you think I highly suggest them here they are again the Japanese house that is a wrap on this episode I hope you enjoyed it I need you to put something in those comments for me down below tell me which of the pedals that I played today is your favorite which one would you put on your board and then also if you use course if you have some other classic course that you're
+
+a big fan of drop it down there as well I'd love to read about it hit like if you liked this episode subscribe to the channel and there's a bell icon click that and you'll get notifications of all the future episodes until next time keep it super classy and have a wonderful day

@@ -1,0 +1,26 @@
+# The Edge / U2 — dotted-eighth delay, chiming cleans
+# The Edge posted a pile of pedals with the Colour Box in it.
+# His sound: pristine cleans into rhythmic delay, wide stereo.
+# Colour Box: step 1, totally clean, just Neve warmth under the delays
+
+song:
+  title: U2 Edge Delay
+  tempo: 124
+  key: D
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Electric Sunburst Deluxe (Melody)
+      hint: kontakt
+    note_fx:
+      - Humanize x 3
+    fx:
+      - Brighter EQ           # pre-gain: chimey, bright cleans
+      - Clean Guitar           # Amp — step 1, clean console preamp
+      - Light Saturation       # subtle transformer warmth
+      - Delay Vector-4         # multi-tap delay — Edge's signature
+      - Shimmer Verb           # ethereal reverb tail
+      - Guitar Compressor      # sustain and evenness
+    part: guitar.abc

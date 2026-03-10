@@ -1,0 +1,56 @@
+X:1
+T:INXS Chorus DI - Guitar
+M:4/4
+L:1/8
+Q:1/4=112
+K:C
+%%MIDI program 27
+%
+% Need You Tonight / Never Tear Us Apart style
+% Clean, funky, sparse — letting the chorus effect shimmer
+%
+% Intro — sparse funky stabs (4 bars)
+% Cm
+z2 [C,E,G,]2 z2 [C,E,G,]z | z[C,E,G,] z2 z2 [C,E,G,]z |
+% Ab                           Bb
+z2 [A,,C,E,]2 z2 [A,,C,E,]z | z[B,,D,F,]2 z z2 z2 |
+%
+% Verse — tight, muted rhythm
+% Cm
+C,z C,z [C,E,G,]z C,z | C,z C,z [C,E,G,]2 z2 |
+% Ab                           Bb
+A,,z A,,z [A,,C,E,]z A,,z | B,,z B,,z [B,,D,F,]2 z2 |
+% Cm
+C,z C,z [C,E,G,]z C,z | C,z C,z [C,E,G,]2 z2 |
+% Ab                           Bb
+A,,z A,,z [A,,C,E,]z A,,z | B,,z B,,z [B,,D,F,]2 z2 |
+%
+% Chorus — open chords, let chorus effect ring
+% Eb                           Bb
+[E,G,B,]4 z2 [E,G,B,]2 | [B,,D,F,]4 z2 [B,,D,F,]2 |
+% Ab                           Cm
+[A,,C,E,]4 z2 [A,,C,E,]2 | [C,E,G,]4 z4 |
+% Eb                           Bb
+[E,G,B,]4 z2 [E,G,B,]2 | [B,,D,F,]4 z2 [B,,D,F,]2 |
+% Ab                           Bb
+[A,,C,E,]4 z2 [A,,C,E,]2 | [B,,D,F,]4 z4 |
+%
+% Verse 2
+% Cm
+C,z C,z [C,E,G,]z C,z | C,z C,z [C,E,G,]2 z2 |
+% Ab                           Bb
+A,,z A,,z [A,,C,E,]z A,,z | B,,z B,,z [B,,D,F,]2 z2 |
+% Cm
+C,z C,z [C,E,G,]z C,z | C,z C,z [C,E,G,]2 z2 |
+% Ab                           Bb
+A,,z A,,z [A,,C,E,]z A,,z | B,,z B,,z [B,,D,F,]2 z2 |
+%
+% Chorus
+% Eb                           Bb
+[E,G,B,]4 z2 [E,G,B,]2 | [B,,D,F,]4 z2 [B,,D,F,]2 |
+% Ab                           Cm
+[A,,C,E,]4 z2 [A,,C,E,]2 | [C,E,G,]4 z4 |
+% Eb                           Bb
+[E,G,B,]4 z2 [E,G,B,]2 | [B,,D,F,]4 z2 [B,,D,F,]2 |
+% Ab                           Bb             Cm
+[A,,C,E,]4 z2 [A,,C,E,]2 | [B,,D,F,]4 z4 | [C,E,G,]4 z4 |]

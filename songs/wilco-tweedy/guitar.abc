@@ -1,0 +1,62 @@
+X:1
+T:Wilco Tweedy - Guitar
+M:4/4
+L:1/8
+Q:1/4=108
+K:A
+%%MIDI program 25
+%
+% Melodic arpeggios, country-tinged indie — Tweedy style
+% Warm, open strings, fingerpicked feel
+%
+% Intro — open arpeggios (4 bars)
+% A                            D
+A,E Ac eA cE | D,A, DF Ad FA |
+% A                            E
+A,E Ac eA cE | E,B, EG Be GE |
+%
+% Verse — gentle picking
+% A                            D
+A,E Ac EA ce | D,A, DF A,D FA |
+% E                            A
+E,B, EG B,E GB | A,E Ac EA ce |
+% A                            D
+A,E Ac EA ce | D,A, DF A,D FA |
+% E                            A
+E,B, EG B,E GB | A,E Ac EA z2 |
+%
+% Chorus — fuller, strummed
+% D                            A
+[D,A,DF]4 [D,A,DF]2 DF | [A,EA]4 [A,EA]2 Ac |
+% E                            F#m
+[E,B,EG]4 [E,B,EG]2 EG | [^F,A,^CF]4 [^F,A,^CF]2 z2 |
+% D                            A
+[D,A,DF]4 [D,A,DF]2 DF | [A,EA]4 [A,EA]2 Ac |
+% E                            A
+[E,B,EG]4 [E,B,EG]2 EG | [A,EA]4 z4 |
+%
+% Verse 2
+% A                            D
+A,E Ac EA ce | D,A, DF A,D FA |
+% E                            A
+E,B, EG B,E GB | A,E Ac EA ce |
+% A                            D
+A,E Ac EA ce | D,A, DF A,D FA |
+% E                            A
+E,B, EG B,E GB | A,E Ac EA z2 |
+%
+% Chorus
+% D                            A
+[D,A,DF]4 [D,A,DF]2 DF | [A,EA]4 [A,EA]2 Ac |
+% E                            F#m
+[E,B,EG]4 [E,B,EG]2 EG | [^F,A,^CF]4 [^F,A,^CF]2 z2 |
+% D                            A
+[D,A,DF]4 [D,A,DF]2 DF | [A,EA]4 [A,EA]2 Ac |
+% E                            A
+[E,B,EG]4 [E,B,EG]2 EG | [A,EA]4 z4 |
+%
+% Outro — sparse picking, fading
+% A                            D
+A,E z2 Ac z2 | D,A, z2 DF z2 |
+% A                            E              A
+A,E z2 Ac z2 | E,B, z2 EG z2 | A,4 z4 |]

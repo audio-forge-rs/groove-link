@@ -1,0 +1,57 @@
+X:1
+T:U2 Edge Delay - Guitar
+M:4/4
+L:1/16
+Q:1/4=124
+K:D
+%%MIDI program 27
+%
+% Where the Streets Have No Name / I Still Haven't Found style
+% Chiming single notes, dotted-eighth patterns — delay fills the space
+% Using 1/16 note length to get the dotted-eighth feel
+%
+% Intro — chiming motif (4 bars)
+% D
+D2z2 A,2z2 D2z2 F2z2 | A2z2 F2z2 D2z2 A,2z2 |
+% G                            A
+B,2z2 D2z2 G2z2 B2z2 | A,2z2 E2z2 A2z2 E2z2 |
+%
+% Verse — single-note patterns, delay creates the harmony
+% D
+D2z2 A,2z2 D2z2 F2z2 | A2z2 F2z2 D2z2 A,2z2 |
+% Bm                           G
+B,2z2 ^F,2z2 B,2z2 D2z2 | G,2z2 B,2z2 D2z2 G2z2 |
+% D
+D2z2 A,2z2 D2z2 F2z2 | A2z2 F2z2 D2z2 A,2z2 |
+% A                            G
+A,2z2 ^C2z2 E2z2 A2z2 | G,2z2 B,2z2 D2z2 G2z2 |
+%
+% Chorus — bigger, ringing chords
+% D
+[D,A,DF]4 z4 [D,A,DF]4 z4 | [D,A,DF]4 z4 D2F2 A2F2 |
+% G                            A
+[G,B,DG]4 z4 [G,B,DG]4 z4 | [A,^CEA]4 z4 [A,^CEA]4 z4 |
+% Bm                           G
+[B,^F,B,D]4 z4 [B,^F,B,D]4 z4 | [G,B,DG]4 z4 [G,B,DG]4 z4 |
+% A                            D
+[A,^CEA]4 z4 [A,^CEA]4 z4 | [D,A,DF]4 z4 z8 |
+%
+% Verse 2
+% D
+D2z2 A,2z2 D2z2 F2z2 | A2z2 F2z2 D2z2 A,2z2 |
+% Bm                           G
+B,2z2 ^F,2z2 B,2z2 D2z2 | G,2z2 B,2z2 D2z2 G2z2 |
+% D
+D2z2 A,2z2 D2z2 F2z2 | A2z2 F2z2 D2z2 A,2z2 |
+% A                            G
+A,2z2 ^C2z2 E2z2 A2z2 | G,2z2 B,2z2 D2z2 G2z2 |
+%
+% Chorus
+% D
+[D,A,DF]4 z4 [D,A,DF]4 z4 | [D,A,DF]4 z4 D2F2 A2F2 |
+% G                            A
+[G,B,DG]4 z4 [G,B,DG]4 z4 | [A,^CEA]4 z4 [A,^CEA]4 z4 |
+% Bm                           G
+[B,^F,B,D]4 z4 [B,^F,B,D]4 z4 | [G,B,DG]4 z4 [G,B,DG]4 z4 |
+% A                            D
+[A,^CEA]4 z4 [A,^CEA]4 z4 | [D,A,DF]8 z8 |]

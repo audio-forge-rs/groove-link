@@ -1,0 +1,64 @@
+X:1
+T:Long Road Home - Tambourine
+M:4/4
+L:1/8
+Q:1/4=118
+K:C perc
+%%MIDI channel 10
+% Using shaker/tambourine: ^F,, = closed hi-hat area (MIDI 54 = tambourine)
+% We'll use A,, (MIDI 54 = tambourine in some GM maps) or just a fixed note
+%%MIDI program 0
+% Intro (8 bars) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+% Verse 1 (16 bars) - quarter note hits on 2 and 4
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+% Pre-Chorus 1 (4 bars) - eighth notes
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Chorus 1 (8 bars) - driving eighths
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Interlude (4 bars) - back to 2 and 4
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+% Verse 2 (16 bars) - 2 and 4
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+% Pre-Chorus 2 (4 bars)
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Chorus 2 (8 bars)
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Bridge (8 bars) - tacet for contrast
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+% Solo (16 bars) - 2 and 4
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+% Pre-Chorus 3 (4 bars)
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Chorus 3 (8 bars)
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Final Chorus (8 bars) - all out
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+% Outro (8 bars) - fading
+C,, C,, C,, C,, C,, C,, C,, C,, | C,, C,, C,, C,, C,, C,, C,, C,, |
+z2 C,,2 z2 C,,2 | z2 C,,2 z2 C,,2 |
+z2 C,,2 z2 z4 | z8 | z8 | z8 |

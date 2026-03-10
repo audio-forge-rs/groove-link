@@ -1,0 +1,72 @@
+X:1
+T:Long Road Home - Mandolin
+M:4/4
+L:1/8
+Q:1/4=118
+K:G
+%%MIDI program 25
+% Intro (8 bars) - tacet
+z8 | z8 | z8 | z8 | z8 | z8 | z8 | z8 |
+% Verse 1 (16 bars) - choppy rhythm on off-beats (folk rock chop)
+z [GB] z [GB] z [GB] z [GB] | z [GB] z [GB] z [GB] z [GB] |
+z [CE] z [CE] z [CE] z [CE] | z [GB] z [GB] z [GB] z [GB] |
+z [AC] z [AC] z [AC] z [AC] | z [AC] z [AC] z [AC] z [AC] |
+z [CE] z [CE] z [CE] z [CE] | z [D^F] z [D^F] z [D^F] z [D^F] |
+z [GB] z [GB] z [GB] z [GB] | z [GB] z [GB] z [GB] z [GB] |
+z [CE] z [CE] z [CE] z [CE] | z [GB] z [GB] z [GB] z [GB] |
+z [EG] z [EG] z [EG] z [EG] | z [EG] z [EG] z [EG] z [EG] |
+z [CE] z [CE] z [CE] z [CE] | z [D^F] z [D^F] z [D^F] z [D^F] |
+% Pre-Chorus 1 (4 bars) - tremolo chords
+[EGB]8 | [CEG]8 | [ACE]8 | [D^FA]8 |
+% Chorus 1 (8 bars) - driving chop
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [EGB] z [EGB] z [EGB] z [EGB] | z [CEG] z [CEG] z [CEG] z [CEG] |
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [CEG] z [CEG] z [CEG] z [CEG] | z [GBd] z [GBd] [GBd]2 z2 |
+% Interlude (4 bars) - melodic fill
+G2 B2 d2 e2 | d2 B2 G2 A2 | B2 d2 e2 g2 | ^f2 a2 d2 z2 |
+% Verse 2 (16 bars) - same chop
+z [GB] z [GB] z [GB] z [GB] | z [GB] z [GB] z [GB] z [GB] |
+z [CE] z [CE] z [CE] z [CE] | z [GB] z [GB] z [GB] z [GB] |
+z [AC] z [AC] z [AC] z [AC] | z [AC] z [AC] z [AC] z [AC] |
+z [CE] z [CE] z [CE] z [CE] | z [D^F] z [D^F] z [D^F] z [D^F] |
+z [GB] z [GB] z [GB] z [GB] | z [GB] z [GB] z [GB] z [GB] |
+z [CE] z [CE] z [CE] z [CE] | z [GB] z [GB] z [GB] z [GB] |
+z [EG] z [EG] z [EG] z [EG] | z [EG] z [EG] z [EG] z [EG] |
+z [CE] z [CE] z [CE] z [CE] | z [D^F] z [D^F] z [D^F] z [D^F] |
+% Pre-Chorus 2 (4 bars)
+[EGB]8 | [CEG]8 | [ACE]8 | [D^FA]8 |
+% Chorus 2 (8 bars)
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [EGB] z [EGB] z [EGB] z [EGB] | z [CEG] z [CEG] z [CEG] z [CEG] |
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [CEG] z [CEG] z [CEG] z [CEG] | z [GBd] z [GBd] [GBd]2 z2 |
+% Bridge (8 bars) - sustained tremolo
+[ACE]8 | [EGB]8 | [CEG]8 | [GBd]8 |
+[ACE]8 | [EGB]8 | [D^FA]8 | [D^FA]8 |
+% Solo (16 bars) - chop under solo
+z [GB] z [GB] z [GB] z [GB] | z [GB] z [GB] z [GB] z [GB] |
+z [CE] z [CE] z [CE] z [CE] | z [GB] z [GB] z [GB] z [GB] |
+z [AC] z [AC] z [AC] z [AC] | z [AC] z [AC] z [AC] z [AC] |
+z [CE] z [CE] z [CE] z [CE] | z [D^F] z [D^F] z [D^F] z [D^F] |
+z [GB] z [GB] z [GB] z [GB] | z [GB] z [GB] z [GB] z [GB] |
+z [CE] z [CE] z [CE] z [CE] | z [GB] z [GB] z [GB] z [GB] |
+z [EG] z [EG] z [EG] z [EG] | z [EG] z [EG] z [EG] z [EG] |
+z [CE] z [CE] z [CE] z [CE] | z [D^F] z [D^F] z [D^F] z [D^F] |
+% Pre-Chorus 3 (4 bars)
+[EGB]8 | [CEG]8 | [ACE]8 | [D^FA]8 |
+% Chorus 3 (8 bars)
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [EGB] z [EGB] z [EGB] z [EGB] | z [CEG] z [CEG] z [CEG] z [CEG] |
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [CEG] z [CEG] z [CEG] z [CEG] | z [GBd] z [GBd] [GBd]2 z2 |
+% Final Chorus (8 bars) - all out chop
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [EGB] z [EGB] z [EGB] z [EGB] | z [CEG] z [CEG] z [CEG] z [CEG] |
+z [GBd] z [GBd] z [GBd] z [GBd] | z [D^FA] z [D^FA] z [D^FA] z [D^FA] |
+z [CEG] z [CEG] z [CEG] z [CEG] | z [GBd] z [GBd] [GBd]2 z2 |
+% Outro (8 bars) - fading chop
+z [GB] z [GB] z [GB] z [GB] | z [CE] z [CE] z [CE] z [CE] |
+z [EG] z [EG] z [EG] z [EG] | z [D^F] z [D^F] z [D^F] z [D^F] |
+z [GB] z [GB] z [GB] z2 | z [CE] z [CE] z2 z2 |
+z4 z4 | z8 |

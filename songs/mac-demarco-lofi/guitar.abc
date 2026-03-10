@@ -1,0 +1,62 @@
+X:1
+T:Mac DeMarco Lo-Fi - Guitar
+M:4/4
+L:1/8
+Q:1/4=92
+K:G
+%%MIDI program 27
+%
+% Salad Days / Chamber of Reflection style
+% Lazy, jangly, open chords — wobbly chorus does the heavy lifting
+%
+% Intro — lazy jangle (4 bars)
+% G                            C
+G,B, DG BD z2 | C,E, GC EG z2 |
+% G                            D
+G,B, DG BD z2 | D,^F, AD ^FA z2 |
+%
+% Verse — relaxed, open voicings
+% G                            C
+G,2 B,2 D2 G2 | C,2 E,2 G2 C2 |
+% Em                           D
+E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 D2 |
+% G                            C
+G,2 B,2 D2 G2 | C,2 E,2 G2 C2 |
+% Em                           D
+E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 z2 |
+%
+% Chorus — fuller but still lazy
+% C                            G
+[C,EG]4 z2 EG | [G,B,DG]4 z2 B,D |
+% Am                           D
+[A,,CE]4 z2 CE | [D,^F,AD]4 z4 |
+% C                            G
+[C,EG]4 z2 EG | [G,B,DG]4 z2 B,D |
+% Am                           D
+[A,,CE]4 z2 CE | [D,^F,AD]4 z4 |
+%
+% Verse 2
+% G                            C
+G,2 B,2 D2 G2 | C,2 E,2 G2 C2 |
+% Em                           D
+E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 D2 |
+% G                            C
+G,2 B,2 D2 G2 | C,2 E,2 G2 C2 |
+% Em                           D
+E,2 G,2 B,2 E2 | D,2 ^F,2 A,2 z2 |
+%
+% Chorus
+% C                            G
+[C,EG]4 z2 EG | [G,B,DG]4 z2 B,D |
+% Am                           D
+[A,,CE]4 z2 CE | [D,^F,AD]4 z4 |
+% C                            G
+[C,EG]4 z2 EG | [G,B,DG]4 z2 B,D |
+% Am                           D
+[A,,CE]4 z2 CE | [D,^F,AD]4 z4 |
+%
+% Outro — fading arpeggios
+% G                            C
+G,B, DG z4 | C,E, GC z4 |
+% G
+G,B, DG z2 z2 | G,4 z4 |]
