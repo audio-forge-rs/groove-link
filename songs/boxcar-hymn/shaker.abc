@@ -1,0 +1,67 @@
+X:1
+T:Boxcar Hymn - Shaker
+M:4/4
+L:1/8
+Q:1/4=104
+K:C
+%
+% ── BARS 1-64 tacet ──
+Z64 |
+%
+% ── BRIDGE 1 (bars 65-80) steady eighth notes ──
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+%
+% ── CHORUS 3 (bars 81-88) ──
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) lighter pattern ──
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+C z C z C z C z | C z C z C z C z |
+%
+% ── CHORUS 4 (bars 113-128) steady eighths ──
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 through VERSE 4 (bars 145-176) tacet ──
+Z32 |
+%
+% ── CHORUS 5 (bars 177-192) steady eighths ──
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+C C C C C C C C | C C C C C C C C |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

@@ -1,0 +1,50 @@
+X:1
+T:Boxcar Hymn - Hammond Riff
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Full Organ - short gospel riffs and stabs, very sparse
+%
+% ── BARS 1-56 tacet ──
+Z56 |
+%
+% ── CHORUS 2 (bars 57-64) riff fragments ──
+z4 G2 B2 | c2 A2 F4 | z8 | z8 |
+z4 G2 B2 | c2 A2 F4 | z8 | z8 |
+%
+% ── BRIDGE 1 through CHORUS 3 (bars 65-88) tacet ──
+Z24 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) riffs ──
+z4 G2 B2 | c2 A2 F4 | z8 | z4 D2 F2 |
+z4 G2 B2 | c2 A2 F4 | z8 | z8 |
+z4 G2 B2 | c2 A2 F4 | z4 D2 F2 | G2 F2 D4 |
+z4 G2 B2 | c2 A2 F4 | z8 | z4 D2 F2 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse riff ──
+z8 | z8 | z8 | z4 G,2 B,2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 G,2 B,2 |
+z8 | z8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full riffs ──
+z4 G2 B2 | c2 A2 F4 | z8 | z4 D2 F2 |
+z4 G2 B2 | c2 A2 F4 | z8 | z8 |
+z4 G2 B2 | c2 A2 F4 | z4 D2 F2 | G2 F2 D4 |
+z4 G2 B2 | c2 A2 F4 | z8 | z4 D2 F2 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

@@ -1,0 +1,43 @@
+X:1
+T:Boxcar Hymn - Synth Texture
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Aparillo - evolving texture, very sparse, atmospheric
+%
+% ── BARS 1-64 tacet ──
+Z64 |
+%
+% ── BRIDGE 1 (bars 65-80) texture swell ──
+[G,D]8 | [G,D]8 | [C,G,]8 | [C,G,]8 |
+z8 | z8 | z8 | z8 |
+[G,D]8 | [G,D]8 | [C,G,]8 | [C,G,]8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 3 through CHORUS 4 (bars 81-128) tacet ──
+Z48 |
+%
+% ── SOLO (bars 129-144) texture underneath ──
+[B,F]8 | [B,F]8 | [G,D]8 | [G,D]8 |
+[E,B,]8 | [E,B,]8 | [F,C]8 | [F,C]8 |
+[B,F]8 | [B,F]8 | [G,D]8 | [G,D]8 |
+[E,B,]8 | [F,C]8 | [B,F]8 | [B,F]8 |
+%
+% ── BRIDGE 2 (bars 145-160) texture ──
+[G,D]8 | [G,D]8 | [C,G,]8 | [C,G,]8 |
+z8 | z8 | z8 | z8 |
+[G,D]8 | [G,D]8 | [C,G,]8 | [C,G,]8 |
+z8 | z8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full texture ──
+[E,B,]8 | [F,C]8 | [B,F]8 | [G,D]8 |
+[E,B,]8 | [F,C]8 | [B,F]8 | [B,F]8 |
+[E,B,]8 | [F,C]8 | [G,D]8 | [F,C]8 |
+[E,B,]8 | [F,C]8 | [B,F]8 | [F,C]8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

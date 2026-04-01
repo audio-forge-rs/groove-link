@@ -1,0 +1,49 @@
+X:1
+T:Boxcar Hymn - Harmonica Wail
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Misfit Harmonica (Kontakt) - bluesy bending wails, very sparse
+%
+% ── BARS 1-96 tacet ──
+Z96 |
+%
+% ── VERSE 3 (bars 97-112) first wail ──
+z8 | z8 | z8 | z4 {F}G4 z2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 {F}G4 z2 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 4 (bars 113-128) tacet ──
+Z16 |
+%
+% ── SOLO (bars 129-144) wailing harp ──
+z4 {D}F4 z2 | z4 {F}G4 z2 | z8 | z8 |
+z4 {G}B4 z2 | z4 {B}c4 z2 | z8 | z8 |
+z4 {D}F4 z2 | z4 {F}G4 z2 | z8 | z8 |
+z4 {G}B4 z2 | z4 {F}G4 z2 | z4 {D}F4 z2 | B,4 z4 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse wail ──
+z8 | z8 | z8 | z4 {D}E4 z2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 {D}E4 z2 |
+z8 | z8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) wails ──
+z4 {D}F4 z2 | z8 | z8 | z4 {F}G4 z2 |
+z4 {D}F4 z2 | z8 | z8 | z8 |
+z4 {D}F4 z2 | z8 | z8 | z4 {F}G4 z2 |
+z4 {D}F4 z2 | z8 | z8 | z8 |
+%
+% ── INTERLUDE 3 through VERSE 5 (bars 193-216) tacet ──
+Z24 |
+%
+% ── OUTRO (bars 217-236) final wails ──
+Z8 |
+z4 {F}G4 z2 | z8 | z8 | z4 {D}F4 z2 |
+z8 | z8 | z4 {D}F4 z2 | z8 |
+z8 | z8 | z8 | B,8 |]

@@ -1,0 +1,56 @@
+X:1
+T:Boxcar Hymn - Pedal Steel Chords
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Pedal Steel (Kontakt) - sustained steel chord pads
+%
+% ── BARS 1-24 tacet ──
+Z24 |
+%
+% ── CHORUS 1 (bars 25-32) steel pad ──
+[EG]8 | [FA]8 | [B,D]8 | [G,B,]8 |
+[EG]8 | [FA]8 | [B,D]8 | [B,D]8 |
+%
+% ── INTERLUDE 1 through VERSE 2 (bars 33-56) tacet ──
+Z24 |
+%
+% ── CHORUS 2 (bars 57-64) pad ──
+[EG]8 | [FA]8 | [B,D]8 | [G,B,]8 |
+[EG]8 | [FA]8 | [B,D]8 | [B,D]8 |
+%
+% ── BRIDGE 1 (bars 65-80) minor pad ──
+Z4 |
+[EG]8 | [FA]8 | [G,B,]8 | [G,B,]8 |
+Z4 |
+[EG]8 | [FA]8 | [B,D]8 | [FA]8 |
+%
+% ── CHORUS 3 through VERSE 3 (bars 81-112) tacet ──
+Z32 |
+%
+% ── CHORUS 4 (bars 113-128) pad ──
+[EG]8 | [FA]8 | [B,D]8 | [G,B,]8 |
+[EG]8 | [FA]8 | [B,D]8 | [B,D]8 |
+Z8 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) tacet ──
+Z16 |
+%
+% ── VERSE 4 (bars 161-176) sparse ──
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | [G,B,]8 | z8 | [G,B,]8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 5 (bars 177-192) full pad ──
+[EG]8 | [FA]8 | [B,D]8 | [G,B,]8 |
+[EG]8 | [FA]8 | [B,D]8 | [B,D]8 |
+[EG]8 | [FA]8 | [G,B,]8 | [FA]8 |
+[EG]8 | [FA]8 | [B,D]8 | [FA]8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

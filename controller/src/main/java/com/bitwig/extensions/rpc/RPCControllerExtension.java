@@ -34,7 +34,7 @@ public class RPCControllerExtension extends ControllerExtension {
 
     private static final String MCP_HOST = "localhost";
     private static final int MCP_PORT = 8417;
-    public static final String VERSION = "0.5.12";
+    public static final String VERSION = "0.5.13";
 
     private ControllerHost host;
     private Application application;
@@ -78,7 +78,7 @@ public class RPCControllerExtension extends ControllerExtension {
         // When false: operates on direct child tracks, not all nested tracks
         // This is better for representing nested tracks in groups
         host.println("[init] Creating hierarchical trackBank...");
-        trackBank = host.createTrackBank(16, 0, 8, false);
+        trackBank = host.createTrackBank(64, 0, 8, false);
 
         host.println("[init] Creating cursorTrack...");
         cursorTrack = host.createCursorTrack(0, 0);

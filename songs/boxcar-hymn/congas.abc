@@ -1,0 +1,70 @@
+X:1
+T:Boxcar Hymn - Congas
+M:4/4
+L:1/8
+Q:1/4=104
+K:C
+% Sampler: C=natural pitch, D=higher, G,=lower (slap/tone/bass)
+%
+% ── INTRO through INTERLUDE 1 (bars 1-40) tacet ──
+Z40 |
+%
+% ── VERSE 2 (bars 41-56) sparse conga groove ──
+% enters bar 41
+z4 C z C z | z4 G, z C z | z4 C z C z | z4 G, z z z |
+z4 C z C z | z4 G, z C z | z4 C z C z | z4 G, z z z |
+z4 C z C z | z4 G, z C z | z4 C z C z | z4 G, z z z |
+z4 C z C z | z4 G, z C z | z4 C z D z | C z G, z C z z z |
+%
+% ── CHORUS 2 (bars 57-64) ──
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | C z G, z C z D z |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) ──
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | C z G, z C z D z |
+%
+% ── INTERLUDE 2 through VERSE 3 (bars 89-112) tacet ──
+Z24 |
+%
+% ── CHORUS 4 (bars 113-128) fuller conga ──
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | z z G, z C z z z |
+C z G, z C z C z | C z G, z C z D z |
+C z G, z C D C z | z z G, z C z D z |
+C z G, z C D C z | z z G, z C z z z |
+C z G, z C D C z | z z G, z C z D z |
+C z G, z C D C z | C z G, z C D C D |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse ──
+z4 C z z z | z8 | z4 C z z z | z8 |
+z4 C z z z | z8 | z4 C z z z | z8 |
+z4 C z z z | z8 | z4 C z z z | z8 |
+z4 C z z z | z8 | z4 C z z z | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full groove ──
+C z G, z C D C z | z z G, z C z D z |
+C z G, z C D C z | z z G, z C z z z |
+C z G, z C D C z | z z G, z C z D z |
+C z G, z C D C z | C z G, z C D C D |
+C z G, z C D C z | z z G, z C z D z |
+C z G, z C D C z | z z G, z C z z z |
+C z G, z C D C z | z z G, z C z D z |
+C z G, z C D C z | C z G, z C D C D |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

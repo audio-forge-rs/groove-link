@@ -1,0 +1,44 @@
+X:1
+T:Boxcar Hymn - Pedal Steel Slide
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Pedal Steel (Kontakt) - bending/sliding single notes, very sparse
+%
+% ── BARS 1-64 tacet ──
+Z64 |
+%
+% ── BRIDGE 1 (bars 65-80) sliding notes ──
+z4 {F}G4 z2 | z8 | z4 {D}E4 z2 | z8 |
+z8 | z8 | z4 {F}G4 z2 | z8 |
+z4 {F}G4 z2 | z8 | z4 {D}E4 z2 | z8 |
+z8 | z8 | z4 {D}F4 z2 | z8 |
+%
+% ── CHORUS 3 (bars 81-88) slides ──
+z4 {D}E4 z2 | z8 | z4 {F}G4 z2 | z8 |
+z4 {D}E4 z2 | z8 | z8 | z8 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) sparse slides ──
+z8 | z8 | z8 | z4 {D}F4 z2 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z4 {D}F4 z2 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 4 through BRIDGE 2 (bars 113-160) tacet ──
+Z48 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) slides ──
+z4 {D}E4 z2 | z8 | z4 {F}G4 z2 | z8 |
+z4 {D}E4 z2 | z8 | z8 | z8 |
+z4 {D}E4 z2 | z8 | z4 {F}G4 z2 | z8 |
+z4 {D}E4 z2 | z8 | z8 | z8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

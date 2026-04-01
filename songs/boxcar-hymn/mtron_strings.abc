@@ -1,0 +1,61 @@
+X:1
+T:Boxcar Hymn - M-Tron Strings
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% M-Tron Pro IV - MK II 3 Violins tape - sustained string wash
+%
+% ── BARS 1-24 tacet ──
+Z24 |
+%
+% ── CHORUS 1 (bars 25-32) first strings entry ──
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [G,,B,D]8 |
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [B,,DF]8 |
+%
+% ── INTERLUDE 1 through CHORUS 2 (bars 33-64) tacet ──
+Z32 |
+%
+% ── BRIDGE 1 (bars 65-80) mellotron strings ──
+[G,,B,D]8 | [G,,B,D]8 | [C,EG]8 | [C,EG]8 |
+z8 | z8 | z8 | z8 |
+[G,,B,D]8 | [G,,B,D]8 | [C,EG]8 | [C,EG]8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 3 through INTERLUDE 2 (bars 81-96) tacet ──
+Z16 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) tacet ──
+Z16 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) strings return ──
+[G,,B,D]8 | [G,,B,D]8 | [C,EG]8 | [C,EG]8 |
+[E,GB]8 | [F,Ac]8 | [G,,B,D]8 | [G,,B,D]8 |
+[G,,B,D]8 | [G,,B,D]8 | [C,EG]8 | [C,EG]8 |
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [F,Ac]8 |
+%
+% ── VERSE 4 (bars 161-176) sparse entry ──
+[B,,DF]8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+[B,,DF]8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 5 (bars 177-192) full mellotron ──
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [G,,B,D]8 |
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [B,,DF]8 |
+[E,GB]8 | [F,Ac]8 | [G,,B,D]8 | [F,Ac]8 |
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [F,Ac]8 |
+%
+% ── INTERLUDE 3 through VERSE 5 (bars 193-216) tacet ──
+Z24 |
+%
+% ── OUTRO (bars 217-236) fading strings ──
+[B,,DF]8 | [G,,B,D]8 | [E,GB]8 | [F,Ac]8 |
+[B,,DF]8 | z8 | z8 | z8 |
+Z12 |]

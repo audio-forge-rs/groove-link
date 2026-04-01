@@ -1,0 +1,69 @@
+X:1
+T:Boxcar Hymn - Bass Walk
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Scarbee Rickenbacker Bass - walking bass, enters in choruses
+%
+% ── INTRO + VERSE 1 (bars 1-24) tacet ──
+Z24 |
+%
+% ── CHORUS 1 (bars 25-32) walking line ──
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+%
+% ── INTERLUDE 1 (bars 33-40) tacet ──
+Z8 |
+%
+% ── VERSE 2 (bars 41-56) tacet ──
+Z16 |
+%
+% ── CHORUS 2 (bars 57-64) walking line ──
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) walking ──
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+%
+% ── INTERLUDE 2 + VERSE 3 (bars 89-112) tacet ──
+Z24 |
+%
+% ── CHORUS 4 (bars 113-128) extended walk ──
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | G,,2 B,,2 D,2 G,2 | F,2 A,2 C2 F2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | F,2 C,2 F,,4 |
+%
+% ── SOLO (bars 129-144) driving walk ──
+B,,2 D,2 F,2 B,2 | B,,2 C,2 D,2 F,2 | G,,2 B,,2 D,2 G,2 | G,,2 A,,2 B,,2 D,2 |
+E,2 G,2 B,2 C2 | E,2 F,2 G,2 B,2 | F,2 A,2 C2 F2 | F,2 E,2 D,2 C,2 |
+B,,2 D,2 F,2 B,2 | B,,2 C,2 D,2 F,2 | G,,2 B,,2 D,2 G,2 | G,,2 A,,2 B,,2 D,2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+%
+% ── BRIDGE 2 (bars 145-160) tacet ──
+Z16 |
+%
+% ── VERSE 4 (bars 161-176) sparse walk on last 4 bars ──
+Z12 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+%
+% ── CHORUS 5 (bars 177-192) full walk ──
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | B,,2 F,2 B,,4 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | G,,2 B,,2 D,2 G,2 | F,2 A,2 C2 F2 |
+E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 | B,,2 D,2 F,2 A,2 | F,2 C,2 F,,4 |
+%
+% ── INTERLUDE 3 + VERSE 5 (bars 193-216) tacet ──
+Z24 |
+%
+% ── OUTRO (bars 217-236) fading walk ──
+B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 | E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 |
+B,,2 D,2 F,2 B,2 | G,,2 B,,2 D,2 G,2 | E,2 G,2 B,2 C2 | F,2 A,2 C2 D2 |
+B,,2 D,2 F,4 | G,,2 B,,2 D,4 | E,2 G,4 z2 | F,2 A,4 z2 |
+B,,4 z4 | B,,4 z4 | B,,4 z4 | B,,4 z4 |
+Z4 |]

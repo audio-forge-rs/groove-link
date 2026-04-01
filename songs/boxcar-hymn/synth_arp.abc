@@ -1,0 +1,59 @@
+X:1
+T:Boxcar Hymn - Synth Arp
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Phase-4 with Arpeggiator note_fx - just play chords, arp does the rest
+%
+% ── BARS 1-40 tacet ──
+Z40 |
+%
+% ── VERSE 2 (bars 41-56) sparse chord triggers ──
+[B,DF]8 | z8 | [G,B,D]8 | z8 |
+[EGB]8 | z8 | [FAc]8 | z8 |
+Z8 |
+%
+% ── CHORUS 2 (bars 57-64) chord triggers ──
+[EGB]8 | [FAc]8 | [B,DF]8 | [G,B,D]8 |
+[EGB]8 | [FAc]8 | [B,DF]8 | z8 |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) tacet ──
+Z8 |
+%
+% ── INTERLUDE 2 (bars 89-96) arp solo moment ──
+[G,B,D]8 | [G,B,D]8 | [EGB]8 | [EGB]8 |
+[FAc]8 | [FAc]8 | [B,DF]8 | [B,DF]8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) fuller ──
+[EGB]8 | [FAc]8 | [B,DF]8 | [G,B,D]8 |
+[EGB]8 | [FAc]8 | [B,DF]8 | [B,DF]8 |
+[EGB]8 | [FAc]8 | [G,B,D]8 | [FAc]8 |
+[EGB]8 | [FAc]8 | [B,DF]8 | [FAc]8 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse ──
+Z4 |
+[EGB]8 | [FAc]8 | z8 | z8 |
+Z4 |
+[EGB]8 | [FAc]8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full ──
+[EGB]8 | [FAc]8 | [B,DF]8 | [G,B,D]8 |
+[EGB]8 | [FAc]8 | [B,DF]8 | [B,DF]8 |
+[EGB]8 | [FAc]8 | [G,B,D]8 | [FAc]8 |
+[EGB]8 | [FAc]8 | [B,DF]8 | [FAc]8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

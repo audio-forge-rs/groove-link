@@ -1,0 +1,63 @@
+X:1
+T:Boxcar Hymn - Fiddle Chop
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% The Fiddle (Kontakt) - rhythmic chopping on beats 2 and 4
+%
+% ── BARS 1-56 tacet ──
+Z56 |
+%
+% ── CHORUS 2 (bars 57-64) chop enters ──
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) chop ──
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) sparse chop ──
+z8 | z8 | z2 [G,B,]2 z2 [G,B,]2 | z8 |
+z8 | z8 | z2 [A,C]2 z2 [A,C]2 | z8 |
+z8 | z8 | z2 [G,B,]2 z2 [G,B,]2 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 4 (bars 113-128) full chop ──
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [G,B,]2 z2 [G,B,]2 | z2 [A,C]2 z2 [A,C]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [A,C]2 z2 [A,C]2 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 through VERSE 4 (bars 145-176) tacet ──
+Z32 |
+%
+% ── CHORUS 5 (bars 177-192) full chop ──
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [G,B,]2 z2 [G,B,]2 | z2 [A,C]2 z2 [A,C]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [B,D]2 z2 [B,D]2 |
+z2 [B,D]2 z2 [B,D]2 | z2 [A,C]2 z2 [A,C]2 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

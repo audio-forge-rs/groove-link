@@ -1,0 +1,61 @@
+X:1
+T:Boxcar Hymn - Hammond Swell
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Full Organ - sustained swells, enters later in song
+%
+% ── BARS 1-64 tacet ──
+Z64 |
+%
+% ── BRIDGE 1 (bars 65-80) organ swell ──
+z8 | z8 | [C,EG]8 | [C,EG]8 |
+[E,GB]8 | [F,Ac]8 | z8 | z8 |
+z8 | z8 | [C,EG]8 | [C,EG]8 |
+[E,GB]8 | [F,Ac]8 | z8 | z8 |
+%
+% ── CHORUS 3 (bars 81-88) tacet ──
+Z8 |
+%
+% ── INTERLUDE 2 (bars 89-96) swell ──
+z8 | z8 | [E,B,]8 | [E,B,]8 |
+[F,C]8 | [F,C]8 | z8 | z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) swells under ──
+z8 | z8 | z8 | [G,,D,]8 |
+z8 | z8 | z8 | [B,,F,]8 |
+z8 | z8 | [G,,D,]8 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) swell ──
+z8 | z8 | [C,EG]8 | [C,EG]8 |
+[E,GB]8 | [F,Ac]8 | z8 | z8 |
+z8 | z8 | [C,EG]8 | [C,EG]8 |
+[E,GB]8 | [F,Ac]8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) sparse swell ──
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z8 | [G,,B,D]8 | z8 | [G,,B,D]8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 5 (bars 177-192) full swell ──
+[E,GB]8 | z8 | z8 | [G,,B,D]8 |
+[E,GB]8 | z8 | z8 | [B,,DF]8 |
+[E,GB]8 | z8 | [G,,B,D]8 | z8 |
+[E,GB]8 | z8 | z8 | z8 |
+%
+% ── INTERLUDE 3 through VERSE 5 (bars 193-216) tacet ──
+Z24 |
+%
+% ── OUTRO (bars 217-236) fading swell ──
+z8 | z8 | [E,B,]8 | z8 |
+z8 | z8 | [E,B,]8 | z8 |
+Z12 |]

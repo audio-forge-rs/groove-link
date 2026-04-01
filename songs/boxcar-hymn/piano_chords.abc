@@ -1,0 +1,81 @@
+X:1
+T:Boxcar Hymn - Piano Chords
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Grand Piano - sparse block chords on beat 1
+% Voicings: Bb=[B,DF] Gm=[G,B,D] Eb=[EGB] F=[FAc] Cm=[CEG]
+%
+% ── INTRO (bars 1-8) tacet ──
+Z8 |
+%
+% ── VERSE 1 (bars 9-24) beat 1 only, every other bar ──
+[B,DF]4 z4 | z8 | [G,B,D]4 z4 | z8 |
+[EGB]4 z4 | z8 | [FAc]4 z4 | z8 |
+[B,DF]4 z4 | z8 | [G,B,D]4 z4 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | [B,DF]4 z4 | z8 |
+%
+% ── CHORUS 1 (bars 25-32) slightly more active ──
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]4 z4 | [G,B,D]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]4 z4 | [B,DF]2 z6 |
+%
+% ── INTERLUDE 1 (bars 33-40) tacet ──
+Z8 |
+%
+% ── VERSE 2 (bars 41-56) beat 1, every other bar ──
+[B,DF]4 z4 | z8 | [G,B,D]4 z4 | z8 |
+[EGB]4 z4 | z8 | [FAc]4 z4 | z8 |
+[B,DF]4 z4 | z8 | [G,B,D]4 z4 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | [B,DF]4 z4 | z8 |
+%
+% ── CHORUS 2 (bars 57-64) tacet (hammond takes over) ──
+Z8 |
+%
+% ── BRIDGE 1 (bars 65-80) sustained chords, sparse ──
+z8 | z8 | z8 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | [B,DF]4 z4 | z8 |
+%
+% ── CHORUS 3 (bars 81-88) tacet ──
+Z8 |
+%
+% ── INTERLUDE 2 + VERSE 3 (bars 89-112) tacet ──
+Z24 |
+%
+% ── CHORUS 4 (bars 113-128) fuller ──
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]2 z6 | [G,B,D]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]2 z6 | [B,DF]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [G,B,D]2 z6 | [FAc]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]2 z6 | [FAc]2 z6 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse ──
+z8 | z8 | z8 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | [B,DF]4 z4 | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full chords ──
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]2 z6 | [G,B,D]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]2 z6 | [B,DF]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [G,B,D]2 z6 | [FAc]2 z6 |
+[EGB]2 z6 | [FAc]2 z6 | [B,DF]2 z6 | [FAc]2 z6 |
+%
+% ── INTERLUDE 3 (bars 193-200) tacet ──
+Z8 |
+%
+% ── VERSE 5 (bars 201-216) beat 1 only ──
+[B,DF]4 z4 | z8 | [G,B,D]4 z4 | z8 |
+[EGB]4 z4 | z8 | [FAc]4 z4 | z8 |
+[B,DF]4 z4 | z8 | [G,B,D]4 z4 | z8 |
+[EGB]4 z4 | [FAc]4 z4 | [B,DF]4 z4 | z8 |
+%
+% ── OUTRO (bars 217-236) tacet ──
+Z20 |]

@@ -1,0 +1,131 @@
+BOXCAR HYMN - CHORD CHART
+══════════════════════════════════════════════════════════════════
+Key: Bb Major / G Minor  |  Tempo: 104 BPM  |  Time: 4/4  |  ~9 min (236 bars)
+Scale: Bb C D Eb F G A  |  Pentatonic: Bb C D F G  |  Passing: Eb, A (bluesy)
+
+M-TRON TAPES: Strings=MK II 3 Violins, Flute=MK II Flute, Choir=Chamberlin Mixed Choir
+
+══════════════════════════════════════════════════════════════════
+SECTION PATTERNS
+══════════════════════════════════════════════════════════════════
+
+VERSE (16 bars):
+  | Bb    | Bb    | Gm    | Gm    |
+  | Eb    | Eb    | F     | F     |
+  | Bb    | Bb    | Gm    | Gm    |
+  | Eb    | F     | Bb    | Bb    |
+
+CHORUS (8 bars):
+  | Eb    | F     | Bb    | Gm    |
+  | Eb    | F     | Bb    | Bb    |
+
+CHORUS EXTENDED (16 bars):
+  | Eb    | F     | Bb    | Gm    |
+  | Eb    | F     | Bb    | Bb    |
+  | Eb    | F     | Gm    | F     |
+  | Eb    | F     | Bb    | F     |
+
+BRIDGE (16 bars):
+  | Gm    | Gm    | Cm    | Cm    |
+  | Eb    | F     | Gm    | Gm    |
+  | Gm    | Gm    | Cm    | Cm    |
+  | Eb    | F     | Bb    | F     |
+
+══════════════════════════════════════════════════════════════════
+BAR-BY-BAR CHART
+══════════════════════════════════════════════════════════════════
+
+─── INTRO (bars 1-8) ──────────────────────────────────────────
+  1   | Bb    | Bb    | Bb    | Bb    |
+  5   | Eb    | F     | Bb    | Bb    |
+
+─── VERSE 1 (bars 9-24) ──────────────────────────────────────
+  9   | Bb    | Bb    | Gm    | Gm    |
+  13  | Eb    | Eb    | F     | F     |
+  17  | Bb    | Bb    | Gm    | Gm    |
+  21  | Eb    | F     | Bb    | Bb    |
+
+─── CHORUS 1 (bars 25-32) ────────────────────────────────────
+  25  | Eb    | F     | Bb    | Gm    |
+  29  | Eb    | F     | Bb    | Bb    |
+
+─── INTERLUDE 1 (bars 33-40) ─────────────────────────────────
+  33  | Bb    | Bb    | F     | F     |
+  37  | Gm    | Gm    | Eb    | Bb    |
+
+─── VERSE 2 (bars 41-56) ─────────────────────────────────────
+  41  | Bb    | Bb    | Gm    | Gm    |
+  45  | Eb    | Eb    | F     | F     |
+  49  | Bb    | Bb    | Gm    | Gm    |
+  53  | Eb    | F     | Bb    | Bb    |
+
+─── CHORUS 2 (bars 57-64) ────────────────────────────────────
+  57  | Eb    | F     | Bb    | Gm    |
+  61  | Eb    | F     | Bb    | Bb    |
+
+─── BRIDGE 1 (bars 65-80) ────────────────────────────────────
+  65  | Gm    | Gm    | Cm    | Cm    |
+  69  | Eb    | F     | Gm    | Gm    |
+  73  | Gm    | Gm    | Cm    | Cm    |
+  77  | Eb    | F     | Bb    | F     |
+
+─── CHORUS 3 (bars 81-88) ────────────────────────────────────
+  81  | Eb    | F     | Bb    | Gm    |
+  85  | Eb    | F     | Bb    | Bb    |
+
+─── INTERLUDE 2 (bars 89-96) ─────────────────────────────────
+  89  | Gm    | Gm    | Eb    | Eb    |
+  93  | F     | F     | Bb    | Bb    |
+
+─── VERSE 3 (bars 97-112) — darker variation ─────────────────
+  97  | Bb    | Bb    | Gm    | Gm    |
+  101 | Eb    | Cm    | F     | F     |
+  105 | Bb    | Bb    | Gm    | Gm    |
+  109 | Cm    | F     | Bb    | Bb    |
+
+─── CHORUS 4 (bars 113-128) — extended ───────────────────────
+  113 | Eb    | F     | Bb    | Gm    |
+  117 | Eb    | F     | Bb    | Bb    |
+  121 | Eb    | F     | Gm    | F     |
+  125 | Eb    | F     | Bb    | F     |
+
+─── SOLO (bars 129-144) — over verse changes ─────────────────
+  129 | Bb    | Bb    | Gm    | Gm    |
+  133 | Eb    | Eb    | F     | F     |
+  137 | Bb    | Bb    | Gm    | Gm    |
+  141 | Eb    | F     | Bb    | Bb    |
+
+─── BRIDGE 2 (bars 145-160) ──────────────────────────────────
+  145 | Gm    | Gm    | Cm    | Cm    |
+  149 | Eb    | F     | Gm    | Gm    |
+  153 | Gm    | Gm    | Cm    | Cm    |
+  157 | Eb    | F     | Bb    | F     |
+
+─── VERSE 4 (bars 161-176) — rhythmic variation ──────────────
+  161 | Bb    | Gm    | Bb    | Gm    |
+  165 | Eb    | Eb    | F     | F     |
+  169 | Bb    | Gm    | Bb    | Gm    |
+  173 | Eb    | F     | Bb    | Bb    |
+
+─── CHORUS 5 (bars 177-192) — big, extended ──────────────────
+  177 | Eb    | F     | Bb    | Gm    |
+  181 | Eb    | F     | Bb    | Bb    |
+  185 | Eb    | F     | Gm    | F     |
+  189 | Eb    | F     | Bb    | F     |
+
+─── INTERLUDE 3 (bars 193-200) ───────────────────────────────
+  193 | Gm    | Eb    | Bb    | F     |
+  197 | Gm    | Eb    | F     | F     |
+
+─── VERSE 5 (bars 201-216) ───────────────────────────────────
+  201 | Bb    | Bb    | Gm    | Gm    |
+  205 | Eb    | Eb    | F     | F     |
+  209 | Bb    | Bb    | Gm    | Gm    |
+  213 | Eb    | F     | Bb    | Bb    |
+
+─── OUTRO (bars 217-236) — fade and resolve ──────────────────
+  217 | Bb    | Gm    | Eb    | F     |
+  221 | Bb    | Gm    | Eb    | F     |
+  225 | Bb    | Gm    | Eb    | F     |
+  229 | Bb    | Gm    | Eb    | F     |
+  233 | Bb    | Bb    | Bb    | Bb    |

@@ -1,0 +1,35 @@
+X:1
+T:Boxcar Hymn - M-Tron Choir
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% M-Tron Pro IV - Chamberlin Mixed Choir tape - very sparse, ethereal
+%
+% ── BARS 1-76 tacet ──
+Z76 |
+%
+% ── last 4 bars of BRIDGE 1 (bars 77-80) choir swell ──
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [F,Ac]8 |
+%
+% ── CHORUS 3 (bars 81-88) tacet ──
+Z8 |
+%
+% ── INTERLUDE 2 through CHORUS 4 (bars 89-128) tacet ──
+Z40 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) tacet ──
+Z16 |
+%
+% ── VERSE 4 through CHORUS 5 first half (bars 161-184) tacet ──
+Z24 |
+%
+% ── CHORUS 5 last 8 bars (bars 185-192) choir enters big ──
+[E,GB]8 | [F,Ac]8 | [G,,B,D]8 | [F,Ac]8 |
+[E,GB]8 | [F,Ac]8 | [B,,DF]8 | [F,Ac]8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

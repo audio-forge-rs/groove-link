@@ -1,0 +1,103 @@
+X:1
+T:Boxcar Hymn - Bass Root
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Scarbee Rickenbacker Bass - root notes, whole/half notes, very sparse
+% B=Bb, E=Eb in this key signature
+%
+% ── INTRO (bars 1-8) ──
+B,,4 z4 | z8 | B,,4 z4 | z8 |
+E,4 z4 | F,4 z4 | B,,4 z4 | z8 |
+%
+% ── VERSE 1 (bars 9-24) sparse roots ──
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 z4 | z8 | F,4 z4 | z8 |
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 F,4 | B,,4 z4 | B,,4 z4 | z8 |
+%
+% ── CHORUS 1 (bars 25-32) ──
+E,4 z4 | F,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | B,,4 z4 |
+%
+% ── INTERLUDE 1 (bars 33-40) ──
+B,,4 z4 | z8 | F,4 z4 | z8 |
+G,,4 z4 | z8 | E,4 B,,4 | B,,4 z4 |
+%
+% ── VERSE 2 (bars 41-56) ──
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 z4 | z8 | F,4 z4 | z8 |
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 F,4 | B,,4 z4 | B,,4 z4 | z8 |
+%
+% ── CHORUS 2 (bars 57-64) ──
+E,4 z4 | F,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | B,,4 z4 |
+%
+% ── BRIDGE 1 (bars 65-80) minor feel ──
+G,,4 z4 | z8 | C,4 z4 | z8 |
+E,4 z4 | F,4 z4 | G,,4 z4 | z8 |
+G,,4 z4 | z8 | C,4 z4 | z8 |
+E,4 z4 | F,4 z4 | B,,4 z4 | F,4 z4 |
+%
+% ── CHORUS 3 (bars 81-88) ──
+E,4 z4 | F,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | B,,4 z4 |
+%
+% ── INTERLUDE 2 (bars 89-96) ──
+G,,4 z4 | z8 | E,4 z4 | z8 |
+F,4 z4 | z8 | B,,4 z4 | z8 |
+%
+% ── VERSE 3 (bars 97-112) darker ──
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 z4 | C,4 z4 | F,4 z4 | z8 |
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+C,4 z4 | F,4 z4 | B,,4 z4 | z8 |
+%
+% ── CHORUS 4 (bars 113-128) ──
+E,4 z4 | F,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | B,,4 z4 |
+E,4 z4 | F,4 z4 | G,,4 z4 | F,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | F,4 z4 |
+%
+% ── SOLO (bars 129-144) ──
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 z4 | z8 | F,4 z4 | z8 |
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 F,4 | B,,4 z4 | B,,4 z4 | z8 |
+%
+% ── BRIDGE 2 (bars 145-160) ──
+G,,4 z4 | z8 | C,4 z4 | z8 |
+E,4 z4 | F,4 z4 | G,,4 z4 | z8 |
+G,,4 z4 | z8 | C,4 z4 | z8 |
+E,4 z4 | F,4 z4 | B,,4 z4 | F,4 z4 |
+%
+% ── VERSE 4 (bars 161-176) ──
+B,,4 z4 | G,,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 z4 | z8 | F,4 z4 | z8 |
+B,,4 z4 | G,,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 F,4 | B,,4 z4 | B,,4 z4 | z8 |
+%
+% ── CHORUS 5 (bars 177-192) ──
+E,4 z4 | F,4 z4 | B,,4 z4 | G,,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | B,,4 z4 |
+E,4 z4 | F,4 z4 | G,,4 z4 | F,4 z4 |
+E,4 z4 | F,4 z4 | B,,4 z4 | F,4 z4 |
+%
+% ── INTERLUDE 3 (bars 193-200) ──
+G,,4 z4 | E,4 z4 | B,,4 z4 | F,4 z4 |
+G,,4 z4 | E,4 z4 | F,4 z4 | F,4 z4 |
+%
+% ── VERSE 5 (bars 201-216) ──
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 z4 | z8 | F,4 z4 | z8 |
+B,,4 z4 | z8 | G,,4 z4 | z8 |
+E,4 F,4 | B,,4 z4 | B,,4 z4 | z8 |
+%
+% ── OUTRO (bars 217-236) ──
+B,,4 z4 | G,,4 z4 | E,4 z4 | F,4 z4 |
+B,,4 z4 | G,,4 z4 | E,4 z4 | F,4 z4 |
+B,,4 z4 | G,,4 z4 | E,4 z4 | F,4 z4 |
+B,,4 z4 | G,,4 z4 | E,4 z4 | F,4 z4 |
+B,,4 z4 | B,,4 z4 | B,,4 z4 | B,,8 |]

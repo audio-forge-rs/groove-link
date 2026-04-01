@@ -1,0 +1,235 @@
+song:
+  title: Boxcar Hymn
+  tempo: 104
+  key: Bb
+  time: 4/4
+
+tracks:
+  # ── DRUMS ──────────────────────────────────────────
+  drums:
+    instrument: The Kit Dry
+    part: drums.abc
+
+  congas:
+    instrument: Conga
+    part: congas.abc
+
+  tambourine:
+    instrument: Tambourine
+    part: tambourine.abc
+
+  shaker:
+    instrument: Shaker
+    part: shaker.abc
+
+  clap:
+    instrument: Clap
+    part: clap.abc
+
+  washboard:
+    instrument: Guiro
+    part: washboard.abc
+
+  bicycle:
+    instrument: Cowbell Big
+    part: bicycle.abc
+
+  # ── BASS (3 tracks) ───────────────────────────────
+  bass_root:
+    instrument:
+      query: Scarbee Rickenbacker Bass
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: bass_root.abc
+
+  bass_walk:
+    instrument:
+      query: Scarbee Rickenbacker Bass
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: bass_walk.abc
+
+  bass_fill:
+    instrument:
+      query: Scarbee Rickenbacker Bass
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: bass_fill.abc
+
+  # ── PIANO (3 tracks) ──────────────────────────────
+  piano_chords:
+    instrument: Grand Piano
+    note_fx:
+      - Humanize
+    part: piano_chords.abc
+
+  piano_arp:
+    instrument: Grand Piano
+    note_fx:
+      - Humanize
+    part: piano_arp.abc
+
+  piano_high:
+    instrument: Grand Piano
+    note_fx:
+      - Humanize
+    part: piano_high.abc
+
+  # ── SYNTH (3 tracks) ──────────────────────────────
+  synth_pad:
+    instrument: Warm Pad
+    part: synth_pad.abc
+
+  synth_arp:
+    instrument: Phase-4
+    note_fx:
+      - Arpeggiator
+    part: synth_arp.abc
+
+  synth_texture:
+    instrument:
+      query: Aparillo
+      hint: plugin
+    part: synth_texture.abc
+
+  # ── HAMMOND ORGAN (3 tracks) ───────────────────────
+  hammond_chords:
+    instrument: Full Organ
+    note_fx:
+      - Humanize
+    part: hammond_chords.abc
+
+  hammond_swell:
+    instrument: Full Organ
+    note_fx:
+      - Humanize
+    part: hammond_swell.abc
+
+  hammond_riff:
+    instrument: Full Organ
+    note_fx:
+      - Humanize
+    part: hammond_riff.abc
+
+  # ── PEDAL STEEL (3 tracks) ────────────────────────
+  steel_melody:
+    instrument:
+      query: Pedal Steel
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: steel_melody.abc
+
+  steel_chord:
+    instrument:
+      query: Pedal Steel
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: steel_chord.abc
+
+  steel_slide:
+    instrument:
+      query: Pedal Steel
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: steel_slide.abc
+
+  # ── M-TRON PRO IV (3 tracks) ──────────────────────
+  # Manually set tape: MK II 3 Violins
+  mtron_strings:
+    instrument:
+      query: M-Tron Pro IV
+      hint: plugin
+    part: mtron_strings.abc
+
+  # Manually set tape: MK II Flute
+  mtron_flute:
+    instrument:
+      query: M-Tron Pro IV
+      hint: plugin
+    part: mtron_flute.abc
+
+  # Manually set tape: Chamberlin Mixed Choir
+  mtron_choir:
+    instrument:
+      query: M-Tron Pro IV
+      hint: plugin
+    part: mtron_choir.abc
+
+  # ── FIDDLE (3 tracks) ─────────────────────────────
+  fiddle_melody:
+    instrument:
+      query: The Fiddle
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: fiddle_melody.abc
+
+  fiddle_drone:
+    instrument:
+      query: The Fiddle
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: fiddle_drone.abc
+
+  fiddle_chop:
+    instrument:
+      query: The Fiddle
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: fiddle_chop.abc
+
+  # ── HARMONICA (3 tracks) ──────────────────────────
+  harp_melody:
+    instrument:
+      query: Misfit Harmonica
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: harp_melody.abc
+
+  harp_chords:
+    instrument:
+      query: Misfit Harmonica
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: harp_chords.abc
+
+  harp_wail:
+    instrument:
+      query: Misfit Harmonica
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: harp_wail.abc
+
+  # ── BUSES ─────────────────────────────────────────
+  room:
+    receives:
+      - piano_chords: pre
+      - piano_arp: pre
+      - piano_high: pre
+      - fiddle_melody: pre
+      - fiddle_drone: pre
+      - fiddle_chop: pre
+      - harp_melody: pre
+      - harp_chords: pre
+      - harp_wail: pre
+      - steel_melody: pre
+      - steel_chord: pre
+      - steel_slide: pre
+    fx:
+      - Room One
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

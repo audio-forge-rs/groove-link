@@ -1,0 +1,70 @@
+X:1
+T:Boxcar Hymn - Synth Pad
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Warm Pad - sustained chord washes, very sparse, enters late
+%
+% ── BARS 1-32 tacet ──
+Z32 |
+%
+% ── INTERLUDE 1 (bars 33-40) first pad swell ──
+[B,F]8 | [B,F]8 | [F,C]8 | [F,C]8 |
+[G,D]8 | [G,D]8 | [E,B,]8 | [B,,F,]8 |
+%
+% ── VERSE 2 (bars 41-56) tacet ──
+Z16 |
+%
+% ── CHORUS 2 (bars 57-64) pad underneath ──
+[E,B,]8 | [F,C]8 | [B,,F,]8 | [G,,D,]8 |
+[E,B,]8 | [F,C]8 | [B,,F,]8 | [B,,F,]8 |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) pad ──
+[E,B,]8 | [F,C]8 | [B,,F,]8 | [G,,D,]8 |
+[E,B,]8 | [F,C]8 | [B,,F,]8 | [B,,F,]8 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) fuller pad ──
+[E,B,G]8 | [F,CA]8 | [B,,F,D]8 | [G,,D,B,]8 |
+[E,B,G]8 | [F,CA]8 | [B,,F,D]8 | [B,,F,D]8 |
+[E,B,G]8 | [F,CA]8 | [G,,D,B,]8 | [F,CA]8 |
+[E,B,G]8 | [F,CA]8 | [B,,F,D]8 | [F,CA]8 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse ──
+[G,,D,]8 | [G,,D,]8 | [C,E,]8 | [C,E,]8 |
+Z4 |
+[G,,D,]8 | [G,,D,]8 | [C,E,]8 | [C,E,]8 |
+Z4 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full pad ──
+[E,B,G]8 | [F,CA]8 | [B,,F,D]8 | [G,,D,B,]8 |
+[E,B,G]8 | [F,CA]8 | [B,,F,D]8 | [B,,F,D]8 |
+[E,B,G]8 | [F,CA]8 | [G,,D,B,]8 | [F,CA]8 |
+[E,B,G]8 | [F,CA]8 | [B,,F,D]8 | [F,CA]8 |
+%
+% ── INTERLUDE 3 (bars 193-200) fade out ──
+[G,,D,]8 | [E,B,]8 | [B,,F,]8 | [F,C]8 |
+[G,,D,]4 z4 | z8 | z8 | z8 |
+%
+% ── VERSE 5 (bars 201-216) tacet ──
+Z16 |
+%
+% ── OUTRO (bars 217-236) sparse pad ──
+[B,,F,]8 | [G,,D,]8 | [E,B,]8 | [F,C]8 |
+[B,,F,]8 | [G,,D,]8 | [E,B,]8 | [F,C]8 |
+Z12 |]

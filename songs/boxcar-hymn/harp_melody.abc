@@ -1,0 +1,69 @@
+X:1
+T:Boxcar Hymn - Harmonica Melody
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Misfit Harmonica (Kontakt/8Dio) - bluesy melodic lines
+%
+% ── BARS 1-24 tacet ──
+Z24 |
+%
+% ── CHORUS 1 (bars 25-32) first harp entry ──
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | z8 |
+z4 G2 B2 | c2 B2 G2 F2 | D2 F2 B,4 | z8 |
+%
+% ── INTERLUDE 1 (bars 33-40) tacet ──
+Z8 |
+%
+% ── VERSE 2 (bars 41-56) sparse bluesy ──
+z8 | z8 | z4 B,2 D2 | F4 z4 |
+z8 | z8 | z4 C2 D2 | F4 z4 |
+z8 | z8 | z4 B,2 D2 | F4 z4 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 2 (bars 57-64) melody ──
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | z8 |
+z4 G2 B2 | c2 B2 G2 F2 | D2 F2 B,4 | z8 |
+%
+% ── BRIDGE 1 through CHORUS 3 (bars 65-88) tacet ──
+Z24 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) fuller melody ──
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | z4 B,2 D2 |
+z4 G2 B2 | c2 B2 G2 F2 | D2 F2 B,4 | z8 |
+z4 G2 B2 | c2 B2 G2 F2 | z4 D2 F2 | G2 F2 D4 |
+z4 G2 B2 | c2 B2 G2 F2 | D2 F2 B,4 | z8 |
+%
+% ── SOLO (bars 129-144) harp solo ──
+B,2 D2 F2 G2 | B4 G2 F2 | D2 F2 G2 B2 | c4 B2 G2 |
+F2 D2 B,2 D2 | F2 G2 B2 c2 | d4 c2 B2 | G2 F2 D4 |
+z4 D2 F2 | G2 B2 c2 d2 | c2 B2 G2 F2 | D2 B,2 D2 F2 |
+G2 F2 D2 B,2 | D2 F2 G2 F2 | D2 B,2 D2 B,2 | B,4 z4 |
+%
+% ── BRIDGE 2 (bars 145-160) sparse ──
+z8 | z8 | z4 G,2 B,2 | D4 z4 |
+z8 | z8 | z8 | z8 |
+z8 | z8 | z4 G,2 B,2 | D4 z4 |
+z8 | z8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) sparse melody ──
+z4 B,2 D2 | F4 z4 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+z4 B,2 D2 | F4 z4 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% ── CHORUS 5 (bars 177-192) full harp ──
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | z4 B,2 D2 |
+z4 G2 B2 | c2 B2 G2 F2 | D2 F2 B,4 | z8 |
+z4 G2 B2 | c2 B2 G2 F2 | z4 D2 F2 | G2 F2 D4 |
+z4 G2 B2 | c2 B2 G2 F2 | D2 F2 B,4 | z8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

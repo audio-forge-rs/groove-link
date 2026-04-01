@@ -1,0 +1,75 @@
+X:1
+T:Boxcar Hymn - Piano Arpeggio
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Grand Piano - arpeggiated chords, enters in choruses
+%
+% ── BARS 1-24 tacet ──
+Z24 |
+%
+% ── CHORUS 1 (bars 25-32) gentle arp ──
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | G, B, D B, G, B, D B, |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | B, D F D B, F D B, |
+%
+% ── INTERLUDE 1 (bars 33-40) tacet ──
+Z8 |
+%
+% ── VERSE 2 (bars 41-56) very sparse, last 4 bars only ──
+Z12 |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | B, D F D B, F D B, |
+%
+% ── CHORUS 2 (bars 57-64) arp ──
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | G, B, D B, G, B, D B, |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | B, D F D B, F D B, |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) arp ──
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | G, B, D B, G, B, D B, |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | B, D F D B, F D B, |
+%
+% ── INTERLUDE 2 (bars 89-96) fading arp ──
+G, B, D B, z4 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) fuller arp ──
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | G, B, D B, G, B, D B, |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | B, D F D B, F D B, |
+E G B G E G B G | F A c A F A c A |
+G, B, D G B, D G B | F A c A F c A F |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | F, A, C F A, C F A, |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 + VERSE 4 (bars 145-176) tacet ──
+Z32 |
+%
+% ── CHORUS 5 (bars 177-192) full arp ──
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | G, B, D B, G, B, D B, |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | B, D F D B, F D B, |
+E G B G E G B G | F A c A F A c A |
+G, B, D G B, D G B | F A c A F c A F |
+E G B G E G B G | F A c A F A c A |
+B, D F D B, D F D | F, A, C F A, C F A, |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

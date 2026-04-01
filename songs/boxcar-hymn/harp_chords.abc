@@ -1,0 +1,52 @@
+X:1
+T:Boxcar Hymn - Harmonica Chords
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Misfit Harmonica (Kontakt) - chord pads, two-note dyads
+%
+% ── BARS 1-64 tacet ──
+Z64 |
+%
+% ── BRIDGE 1 (bars 65-80) harp chord pads ──
+[G,D]8 | [G,D]8 | z8 | z8 |
+[E,B,]8 | z8 | [G,D]8 | [G,D]8 |
+[G,D]8 | [G,D]8 | z8 | z8 |
+[E,B,]8 | z8 | z8 | z8 |
+%
+% ── CHORUS 3 (bars 81-88) tacet ──
+Z8 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) chords under ──
+z8 | z8 | [B,F]8 | [G,D]8 |
+z8 | z8 | [B,F]8 | [B,F]8 |
+z8 | z8 | [G,D]8 | z8 |
+z8 | z8 | [B,F]8 | z8 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) chords ──
+[G,D]8 | [G,D]8 | z8 | z8 |
+[E,B,]8 | z8 | [G,D]8 | [G,D]8 |
+[G,D]8 | [G,D]8 | z8 | z8 |
+[E,B,]8 | z8 | z8 | z8 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) full chords ──
+[E,B,]8 | [F,C]8 | [B,F]8 | [G,D]8 |
+[E,B,]8 | [F,C]8 | [B,F]8 | [B,F]8 |
+[E,B,]8 | [F,C]8 | [G,D]8 | [F,C]8 |
+[E,B,]8 | [F,C]8 | [B,F]8 | [F,C]8 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

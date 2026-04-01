@@ -1,0 +1,74 @@
+X:1
+T:Boxcar Hymn - Fiddle Melody
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% The Fiddle (Kontakt/Indiginus) - melodic lines, G3-E6 range
+% Keyswitches: D#1=legato, E1=harmony
+%
+% ── INTRO (bars 1-8) tacet ──
+Z8 |
+%
+% ── VERSE 1 (bars 9-24) sparse fiddle melody ──
+z4 F2 G2 | B4 G2 F2 | D4 z4 | z8 |
+z8 | z8 | z4 C2 D2 | F4 z4 |
+z4 F2 G2 | B4 G2 F2 | D4 z4 | z8 |
+z8 | z8 | z4 D2 F2 | B,4 z4 |
+%
+% ── CHORUS 1 through INTERLUDE 1 (bars 25-40) tacet ──
+Z16 |
+%
+% ── VERSE 2 (bars 41-56) melody variation ──
+z4 D2 F2 | G4 F2 D2 | B,4 z4 | z8 |
+z8 | z8 | z4 F2 G2 | B4 z4 |
+z4 D2 F2 | G4 F2 D2 | B,4 z4 | z8 |
+z8 | z4 C2 D2 | F2 D2 B,4 | z8 |
+%
+% ── CHORUS 2 (bars 57-64) tacet ──
+Z8 |
+%
+% ── BRIDGE 1 (bars 65-80) minor fiddle ──
+z4 G2 B2 | D'4 B2 G2 | z4 E2 G2 | B4 z4 |
+z8 | z8 | z4 G2 B2 | D'4 z4 |
+z4 G2 B2 | D'4 B2 G2 | z4 E2 G2 | B4 z4 |
+z8 | z8 | z4 F2 D2 | B,4 z4 |
+%
+% ── CHORUS 3 through INTERLUDE 2 (bars 81-96) tacet ──
+Z16 |
+%
+% ── VERSE 3 through CHORUS 4 (bars 97-128) tacet ──
+Z32 |
+%
+% ── SOLO (bars 129-144) fiddle solo ──
+B,2 D2 F2 G2 | B4 G2 F2 | D2 F2 G2 B2 | c4 B2 G2 |
+F2 G2 B2 c2 | d4 c2 B2 | G2 F2 D2 F2 | G4 z4 |
+B,2 D2 F2 G2 | B2 c2 d2 f2 | g4 f2 d2 | c2 B2 G2 F2 |
+D2 F2 G2 F2 | D2 B,2 D2 F2 | G2 F2 D2 B,2 | B,4 z4 |
+%
+% ── BRIDGE 2 (bars 145-160) tacet ──
+Z16 |
+%
+% ── VERSE 4 (bars 161-176) tacet ──
+Z16 |
+%
+% ── CHORUS 5 (bars 177-192) fiddle melody ──
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | z4 B,2 D2 |
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | z8 |
+z4 G2 B2 | c2 B2 G2 F2 | z4 D2 F2 | G2 F2 D4 |
+z4 G2 B2 | c2 B2 G2 F2 | D4 z4 | F4 z4 |
+%
+% ── INTERLUDE 3 (bars 193-200) tacet ──
+Z8 |
+%
+% ── VERSE 5 (bars 201-216) sparse return ──
+z4 F2 G2 | B4 G2 F2 | D4 z4 | z8 |
+z8 | z8 | z8 | z8 |
+z4 F2 G2 | B4 G2 F2 | D4 z4 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% ── OUTRO (bars 217-236) fading ──
+z4 F2 G2 | B4 z4 | z8 | z8 |
+z4 D2 F2 | G4 z4 | z8 | z8 |
+z4 B,2 D2 | F4 z4 | z8 | z8 |
+Z8 |]

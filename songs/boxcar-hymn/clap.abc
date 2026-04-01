@@ -1,0 +1,48 @@
+X:1
+T:Boxcar Hymn - Clap
+M:4/4
+L:1/8
+Q:1/4=104
+K:C
+%
+% ── BARS 1-24 tacet ──
+Z24 |
+%
+% ── CHORUS 1 (bars 25-32) beats 2 and 4 ──
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+%
+% ── INTERLUDE 1 + VERSE 2 (bars 33-56) tacet ──
+Z24 |
+%
+% ── CHORUS 2 (bars 57-64) ──
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+%
+% ── BRIDGE 1 (bars 65-80) tacet ──
+Z16 |
+%
+% ── CHORUS 3 (bars 81-88) ──
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+%
+% ── INTERLUDE 2 + VERSE 3 (bars 89-112) tacet ──
+Z24 |
+%
+% ── CHORUS 4 (bars 113-128) ──
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+%
+% ── SOLO + BRIDGE 2 + VERSE 4 (bars 129-176) tacet ──
+Z48 |
+%
+% ── CHORUS 5 (bars 177-192) ──
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 | z2 C2 z2 C2 |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

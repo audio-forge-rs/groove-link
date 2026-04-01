@@ -1,0 +1,60 @@
+X:1
+T:Boxcar Hymn - Bass Fill
+M:4/4
+L:1/8
+Q:1/4=104
+K:Bb
+% Scarbee Rickenbacker Bass - fills and accents, very sparse
+%
+% ── BARS 1-56 tacet ──
+Z56 |
+%
+% ── CHORUS 2 (bars 57-64) occasional fill ──
+Z6 |
+z4 F,2 G,2 | B,,2 F, G, B,,4 z |
+%
+% ── BRIDGE 1 (bars 65-80) ──
+Z12 |
+z4 G, A, B, C | z4 D, E, F, G, | z4 C, D, E, F, | B,,2 z6 |
+%
+% ── CHORUS 3 through INTERLUDE 2 (bars 81-96) tacet ──
+Z16 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) fills at turnarounds ──
+Z3 |
+z4 F, G, B, C |
+Z3 |
+z4 B,, C, D, F, |
+Z3 |
+z4 G, A, B, C |
+Z3 |
+z4 F, G, B, D |
+%
+% ── SOLO (bars 129-144) more active fills ──
+z4 B, C D F | z4 D C B, G, | z4 F, G, B, C | z4 D C B, F, |
+z4 B, C D F | z4 D C B, G, | z4 E, F, G, B, | z4 F, D, C, B,, |
+z4 B, C D F | z4 D C B, G, | z4 F, G, B, C | z4 D C B, F, |
+z4 B, C D F | z4 D C B, G, | z4 E, F, G, B, | B,,2 z6 |
+%
+% ── BRIDGE 2 (bars 145-160) tacet ──
+Z16 |
+%
+% ── VERSE 4 (bars 161-176) sparse fills ──
+Z12 |
+z4 F, G, B, C | z4 D, E, F, G, | z4 B, C D B, | B,,2 z6 |
+%
+% ── CHORUS 5 (bars 177-192) fills ──
+Z3 |
+z4 F, G, B, C |
+Z3 |
+z4 B,, C, D, F, |
+Z3 |
+z4 G, A, B, C |
+Z3 |
+z4 F, G, B, D |
+%
+% ── INTERLUDE 3 through END (bars 193-236) tacet ──
+Z44 |]

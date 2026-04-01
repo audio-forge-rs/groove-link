@@ -1,0 +1,51 @@
+X:1
+T:Boxcar Hymn - Washboard
+M:4/4
+L:1/8
+Q:1/4=104
+K:C
+% Guiro preset as washboard substitute - rhythmic scrub pattern
+%
+% ── BARS 1-64 tacet ──
+Z64 |
+%
+% ── BRIDGE 1 (bars 65-80) washboard scrub ──
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z z z z |
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z z z z |
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z z z z |
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z C C C |
+%
+% ── CHORUS 3 (bars 81-88) tacet ──
+Z8 |
+%
+% ── INTERLUDE 2 (bars 89-96) tacet ──
+Z8 |
+%
+% ── VERSE 3 (bars 97-112) tacet ──
+Z16 |
+%
+% ── CHORUS 4 (bars 113-128) sparse scrub, every other bar ──
+C z C C z C z z | z8 | C z C C z C z z | z8 |
+C z C C z C z z | z8 | C z C C z C z z | z8 |
+C z C C z C z z | z8 | C z C C z C z z | z8 |
+C z C C z C z z | z8 | C z C C z C z z | z8 |
+%
+% ── SOLO (bars 129-144) tacet ──
+Z16 |
+%
+% ── BRIDGE 2 (bars 145-160) scrub pattern ──
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z z z z |
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z z z z |
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z z z z |
+C z C C z C z z | C z C C z C z z |
+C z C C z C z z | C z C C z C C C |
+%
+% ── VERSE 4 through END (bars 161-236) tacet ──
+Z76 |]
