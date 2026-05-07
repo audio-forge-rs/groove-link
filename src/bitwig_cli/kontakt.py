@@ -45,6 +45,8 @@ NKI_SEARCH_PATHS = [
     Path("/Library/Application Support/Native Instruments/Kontakt 8/Content"),
     Path("/Users/Shared"),
     Path.home() / "Documents/Native Instruments",
+    Path("/Volumes/Lacie/kontakt-libraries"),
+    Path("/Volumes/Lacie/spitfire-libraries"),
 ]
 
 
@@ -148,22 +150,23 @@ def _parse_nki_path(path: str) -> tuple[str, str, str | None]:
 def get_all_kontakt_instruments() -> list[KontaktMatch]:
     """Get all Kontakt instruments.
 
-    Tries database first, falls back to Spotlight search.
+    Queries database and merges with Spotlight results to cover
+    unregistered libraries on external volumes.
 
     Returns:
         List of KontaktMatch objects (unsorted, unscored)
     """
-    # Try database first
-    db_path = _get_kontakt_db()
-    if db_path:
-        instruments = _query_kontakt_db(db_path)
-        if instruments:
-            return instruments
-
-    # Fallback to Spotlight
     instruments: list[KontaktMatch] = []
     seen_paths: set[str] = set()
 
+    # Query database for registered instruments
+    db_path = _get_kontakt_db()
+    if db_path:
+        for inst in _query_kontakt_db(db_path):
+            seen_paths.add(inst.file_path)
+            instruments.append(inst)
+
+    # Also scan Spotlight for unregistered NKIs (external volumes, etc.)
     for path in find_nki_spotlight():
         if path in seen_paths:
             continue

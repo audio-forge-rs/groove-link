@@ -30,6 +30,7 @@ from .devices import search_devices
 from .kontakt import search_kontakt
 from .mtron import search_mtron
 from .plugins import search_plugins
+from .splice import search_splice
 from .presets import search_presets
 from .resolve import resolve_device
 from .table import Column, adaptive_table
@@ -322,6 +323,65 @@ def mtron(
 
 
 @app.command()
+def splice(
+    query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
+    limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
+    type: Annotated[
+        str | None,
+        typer.Option("-t", "--type", help="Filter by type (patch, preset, sample)"),
+    ] = None,
+    pack: Annotated[
+        str | None,
+        typer.Option("-p", "--pack", help="Filter by pack name"),
+    ] = None,
+    root: Annotated[
+        str | None,
+        typer.Option("--root", help="Splice library root path"),
+    ] = None,
+    paths: Annotated[bool, typer.Option("--paths", help="Output file paths only")] = False,
+    verbose: VerboseOption = False,
+) -> None:
+    """Search for Splice instruments.
+
+    Examples:
+        bitwig splice piano
+        bitwig splice "ambient guitars"
+        bitwig splice drums --type patch
+        bitwig splice cello -p "LABS"
+        bitwig splice strings -n 10
+    """
+    import time
+    from pathlib import Path
+
+    setup_logging(verbose)
+    start = time.perf_counter()
+
+    root_path = Path(root) if root else None
+    results = search_splice(
+        query, limit=limit, type_filter=type, pack_filter=pack, root=root_path
+    )
+    elapsed = time.perf_counter() - start
+
+    if not results:
+        rprint(f"[yellow]No Splice instruments found for '{query}'[/yellow]")
+        raise typer.Exit(0)
+
+    if paths:
+        for r in results:
+            print(r.file_path)
+    else:
+        columns = [
+            Column("Name", "name", min_width=15, max_width=40, priority=3),
+            Column("Pack", "pack", min_width=15, max_width=45, priority=2),
+            Column("Type", "type", min_width=6, max_width=7, priority=2),
+        ]
+        table = adaptive_table(results, columns)
+        wide_console = Console(width=300)
+        wide_console.print(table)
+        rprint(f"[dim]Found {len(results)} items in {elapsed:.2f}s[/dim]")
+
+
+@app.command()
 def device(
     query: Annotated[str, typer.Argument(help="Search query (fuzzy, case insensitive)")],
     limit: Annotated[int, typer.Option("-n", "--limit", help="Max results")] = 20,
@@ -554,7 +614,20 @@ def track_create(
                 rprint(f"  [yellow]Warning:[/yellow] MIDI file not found: {midi_path}")
             else:
                 rprint(f"  [dim]Inserting MIDI:[/dim] {midi_path.name}")
-                if _insert_midi(track_index, 0, str(midi_path), host, port):
+                # Query actual track index by name after creation
+                actual_index = None
+                try:
+                    with get_client(host, port) as client:
+                        tracks = client.call("list.tracks", {})
+                        for t in tracks:
+                            if t.get("name") == tname:
+                                actual_index = t["id"]
+                                break
+                except Exception:
+                    pass
+                if actual_index is None:
+                    rprint(f"  [red]✗[/red] Could not find track '{tname}' for MIDI insertion")
+                elif _insert_midi(actual_index, 0, str(midi_path), host, port):
                     rprint(f"  [green]✓[/green] MIDI inserted into slot 1")
                     midi_inserted += 1
                 else:

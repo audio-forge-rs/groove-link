@@ -721,7 +721,7 @@ Database: `~/Library/Application Support/Native Instruments/Kontakt 8/komplete.d
 Common library paths:
 - `/Library/Application Support/Native Instruments/Kontakt 8/Content/`
 - `/Users/Shared/*Library/`
-- `/Volumes/External/kontakt_libraries/`
+- `/Volumes/Lacie/kontakt-libraries/`
 
 ### M-Tron Pro IV
 

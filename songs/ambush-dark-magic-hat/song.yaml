@@ -1,0 +1,37 @@
+song:
+  title: Ambush from a Dark Magic Hat
+  tempo: 88
+  key: Bb
+  time: 4/4
+
+tracks:
+  guitar:
+    instrument:
+      query: Picked Acoustic (Fingered)
+      hint: kontakt
+    note_fx:
+      - Humanize
+    part: guitar.abc
+
+  bass:
+    instrument: Acoustic Bass Long
+    note_fx:
+      - Humanize
+    part: bass.abc
+
+  drums:
+    instrument: Drum Machine
+    part: drums.abc
+
+  room:
+    receives:
+      - guitar: pre
+      - bass: pre
+      - drums: pre
+    fx:
+      - Room One
+
+  master:
+    fx:
+      - query: Peak Limiter
+        hint: device

@@ -151,7 +151,7 @@ Common library paths:
 ```
 /Library/Application Support/Native Instruments/Kontakt 8/Content/
 /Users/Shared/*Library/
-/Volumes/External/kontakt_libraries/
+/Volumes/Lacie/kontakt-libraries/
 ```
 
 ### KontaktMatch Dataclass

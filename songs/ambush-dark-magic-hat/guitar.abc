@@ -1,0 +1,75 @@
+X:1
+T:Ambush from a Dark Magic Hat - Guitar
+C:Cover arrangement
+M:4/4
+L:1/8
+Q:1/4=88
+K:Bb
+%%MIDI program 25
+%
+% Fingerpicked acoustic guitar in Bb major
+% Verse: Bb - F - Gm - Eb
+% Chorus: Gm - Eb - Bb - F
+% Bridge: Eb - Bb - F - Gm
+%
+% Intro - guitar alone, sparse (4 bars)
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2z2 |
+%
+% Verse 1 - band enters softly (8 bars)
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+%
+% Verse 2 - add subtle warmth (8 bars)
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+%
+% Chorus 1 - drums enter, more open strumming (8 bars)
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+%
+% Bridge - strip back, almost bare (8 bars, 2 bars each chord)
+% Eb                              Eb
+E,2[G,B,E]2 B,,2[G,B,E]2 | E,2[G,B,E]2 B,,2z2 |
+% Bb                              Bb
+B,,2[DFB,]2 F,2[DFB,]2 | B,,2[DFB,]2 F,2z2 |
+% F                               F
+F,,2[CFA,]2 C,2[CFA,]2 | F,,2[CFA,]2 C,2z2 |
+% Gm                              Gm
+G,,2[B,DG]2 D,2[B,DG]2 | G,,2[B,DG]2 D,2z2 |
+%
+% Chorus 2 - full band, open up (8 bars)
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Gm                              Eb
+G,,2[B,DG]2 D,2[B,DG]2 | E,2[G,B,E]2 B,,2[G,B,E]2 |
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+%
+% Outro - decrescendo, guitar alone (4 bars)
+% Bb                              F
+B,,2[DFB,]2 F,2[DFB,]2 | F,,2[CFA,]2 C,2[CFA,]2 |
+% Bb
+B,,2[DFB,]2 F,2[DFB,]2 | B,,4[DFB,]4 |]

@@ -105,29 +105,33 @@ def _parse_preset_path(path: str) -> tuple[str, str, str, str | None, str | None
 
     parts = p.parts
 
-    # Try to find installed-packages structure
-    try:
-        pkg_idx = parts.index("installed-packages")
-        # installed-packages/5.0/Package/Pack/...
-        if pkg_idx + 3 < len(parts):
-            package = parts[pkg_idx + 2]  # After 5.0
-            pack = parts[pkg_idx + 3]
+    # Try to find installed-packages or "Installed Bitwig Packs" structure
+    # Both have: .../marker/5.0/{Package}/{Pack}/.../{Name}.bwpreset
+    pkg_idx = None
+    for marker in ("installed-packages", "Installed Bitwig Packs"):
+        try:
+            pkg_idx = parts.index(marker)
+            break
+        except ValueError:
+            continue
 
-            # Get everything between pack and filename as category
-            remaining = parts[pkg_idx + 4 : -1]  # Between pack and filename
-            category = "/".join(remaining) if remaining else None
+    if pkg_idx is not None and pkg_idx + 3 < len(parts):
+        package = parts[pkg_idx + 2]  # After 5.0
+        pack = parts[pkg_idx + 3]
 
-            # Extract device from Presets/{Device}/ structure
-            device = None
-            if remaining and remaining[0] == "Presets" and len(remaining) >= 2:
-                device = remaining[1]
-            elif remaining:
-                # Use last subdirectory as device hint
-                device = remaining[-1]
+        # Get everything between pack and filename as category
+        remaining = parts[pkg_idx + 4 : -1]  # Between pack and filename
+        category = "/".join(remaining) if remaining else None
 
-            return name, package, pack, category, device
-    except ValueError:
-        pass
+        # Extract device from Presets/{Device}/ structure
+        device = None
+        if remaining and remaining[0] == "Presets" and len(remaining) >= 2:
+            device = remaining[1]
+        elif remaining:
+            # Use last subdirectory as device hint
+            device = remaining[-1]
+
+        return name, package, pack, category, device
 
     # Try user Library structure
     try:
@@ -169,6 +173,8 @@ def find_presets_filesystem() -> Iterator[str]:
         Path.home() / "Library/Application Support/Bitwig/Bitwig Studio/installed-packages",
         Path.home() / "Documents/Bitwig Studio/Library/Presets",
         Path("/Applications/Bitwig Studio.app/Contents/Resources/Library"),
+        Path("/Volumes/Lacie/bitwig-packages"),
+        Path("/Volumes/Lacie/bitwig-library"),
     ]
 
     for base in search_paths:
@@ -221,7 +227,12 @@ def search_presets(
         name, package, pack, category, device = _parse_preset_path(path)
 
         # Score based on name and device match (boost by device name)
+        # Also check package and pack for matches
         score = fuzzy_match(query, name, device)
+        if package and query.lower() in package.lower():
+            score += 0.30
+        if pack and query.lower() in pack.lower():
+            score += 0.20
 
         if score >= min_score:
             results.append(

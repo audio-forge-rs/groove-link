@@ -1,0 +1,13 @@
+song:
+  title: Crunchy Guitars
+  tempo: 108
+  key: Bb
+
+tracks:
+  lead-guitar:
+    instrument: nektar piano
+    part: abc/lead-guitar.abc
+
+  support-guitar:
+    instrument: nektar piano
+    part: abc/support-guitar.abc

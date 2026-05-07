@@ -1,0 +1,45 @@
+X:1
+T:Ambush from a Dark Magic Hat - Drums
+C:Cover arrangement
+M:4/4
+L:1/8
+Q:1/4=88
+K:C
+%%MIDI channel 10
+%
+% Brush kit feel - sparse and dark
+% Kick=C,, (C1/36), Snare=D,, (D1/38), Closed HH=^F,, (F#1/42)
+% Cross stick=^C,, (C#1/37), Ride=^D (D#5/51)
+%
+% Intro - tacet (4 bars)
+z8 | z8 | z8 | z8 |
+%
+% Verse 1 - tacet, guitar and bass only (8 bars)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% Verse 2 - brushes on ride only, very gentle (8 bars)
+^D,2 z2 ^D,2 z2 | ^D,2 z2 ^D,2 z2 |
+^D,2 z2 ^D,2 z2 | ^D,2 z2 ^D,2 z2 |
+^D,2 z2 ^D,2 z2 | ^D,2 z2 ^D,2 z2 |
+^D,2 z2 ^D,2 z2 | ^D,2 z2 ^D,2 z2 |
+%
+% Chorus 1 - kick on 1 and 3, cross stick on 2 and 4 (8 bars)
+C,,2 ^C,,2 C,,2 ^C,,2 | C,,2 ^C,,2 C,,2 ^C,,2 |
+C,,2 ^C,,2 C,,2 ^C,,2 | C,,2 ^C,,2 C,,2 ^C,,2 |
+C,,2 ^C,,2 C,,2 ^C,,2 | C,,2 ^C,,2 C,,2 ^C,,2 |
+C,,2 ^C,,2 C,,2 ^C,,2 | C,,2 ^C,,2 C,,2 ^C,,2 |
+%
+% Bridge - tacet again, guitar alone (8 bars)
+z8 | z8 | z8 | z8 |
+z8 | z8 | z8 | z8 |
+%
+% Chorus 2 - open up, kick/snare/hh pattern (8 bars)
+[C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 | [C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 |
+[C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 | [C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 |
+[C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 | [C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 |
+[C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 | [C,,^F,,]2 ^F,,2 [^C,,^F,,]2 ^F,,2 |
+%
+% Outro - just ride, fading (4 bars)
+^D,2 z2 ^D,2 z2 | ^D,2 z2 z4 |
+z8 | z8 |]
